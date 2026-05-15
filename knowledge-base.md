@@ -49,20 +49,21 @@ Heavily used in their categories, broadly known beyond their niches.
 Strong adoption inside a specific use-case; less universal name recognition.
 11. **Otter.ai** — leading consumer transcription tool. 20% off Pro + working referral program.
 12. **Granola** — fastest-growing AI notetaker in startup / B-school circles. 12 months free Business is generous.
-13. **QuillBot** — heavy student usage for paraphrasing/grammar.
-14. **Canva** — massive overall user base. *Higher-ed access is institution-led Canva Campus.*
+13. **BizCrush** — real-time in-person meeting agent with multi-language live translation + follow-up email intelligence. Newer / smaller user base than Granola, but specialty differentiation is real and 5-months-free student code makes it actionable now. *Boosted on personal-use signal.*
+14. **QuillBot** — heavy student usage for paraphrasing/grammar.
+15. **Canva** — massive overall user base. *Higher-ed access is institution-led Canva Campus.*
 
 ### Tier C — Specialty / growing
 Real user bases but narrower scope; smaller than the names above.
-15. **Zed** — AI-native dev editor; smaller user base than Cursor but gaining.
-16. **Consensus** — citation-grounded academic search; strong in research-heavy programs.
-17. **SciSpace** — academic research / paper Q&A. *Student policy pending verification.*
-18. **Midjourney** — leading image-gen tool. *No student discount.*
+16. **Zed** — AI-native dev editor; smaller user base than Cursor but gaining.
+17. **Consensus** — citation-grounded academic search; strong in research-heavy programs.
+18. **SciSpace** — academic research / paper Q&A. *Student policy pending verification.*
+19. **Midjourney** — leading image-gen tool. *No student discount.*
 
 ### Tier D — Specialty, smaller
 Niche tools, lower general awareness.
-19. **Julius AI** — data analysis / chart generation. *Student policy pending verification.*
-20. **Humata** — chat-with-long-PDFs. *Student policy pending verification.*
+20. **Julius AI** — data analysis / chart generation. *Student policy pending verification.*
+21. **Humata** — chat-with-long-PDFs. *Student policy pending verification.*
 
 **Referral-expansion tools (Suno, Runway, Gamma, Superhuman, Fathom, Krisp, Bolt.new, HeyGen, Windsurf, etc.) are NOT ranked here** — they don't have validated student discounts, so they sit in a separate axis. See [Peer-Referral Expansion Tools](#peer-referral-expansion-tools-audit-2026-05-14) below for their own ranked picks.
 
@@ -240,11 +241,29 @@ Ranked among themselves; relevant only to students building with AI infrastructu
 - Last checked: 2026-05-14
 - Confidence: Medium (program exists; specifics vary by campaign)
 
+### BizCrush (Student Access Code)
+- Offered tier and pricing:
+  - Original: Paid Pro plan.
+  - Student: **5 months free** via shared access code (until credit runs out).
+- Included features: Real-time AI meeting agent for **in-person** conversations. Live transcription, real-time translation in up to 5 languages, AI-identified summaries / action items / next steps, personalized draft follow-up email per attendee, HubSpot CRM auto-sync (attendee names, emails, contact info, summaries).
+- Effective length: 5 months from code redemption, subject to credit pool depletion. First come, first served.
+- Claim path: Individual-claimable.
+- Verification: Access code (`STUDENT2026`) at signup. No formal student verification — code-gated rather than .edu-gated.
+- Region/country: iOS and Android availability; check app store for region.
+- Referral program: Not separately audited — the student access code is itself the entry point. Possible separate referral mechanism may exist; not researched.
+- My access code: `STUDENT2026` (the shared student code — limited supply).
+- Official source: https://bizcrush.app
+- Founder LinkedIn / context: https://www.linkedin.com/in/taem/ (Taemin Kwak)
+- Differentiator vs Granola: BizCrush is built for live in-person conversations (networking, recruiting coffee chats, conference floors, founder-customer calls) with multi-language and follow-up-action focus. Granola is built for background listening on video calls / lectures with post-hoc structured notes.
+- Last checked: 2026-05-14
+- Confidence: High
+
 ### Granola (Student Program)
 - Offered tier and pricing:
   - Original: Granola Business is a paid tier.
   - Student: 12 months free of Granola Business.
-- Included features: AI notepad for lectures/meetings, transcript capture, structured searchable notes, mobile support.
+- Included features: AI notepad that listens in the background (no bot joins the call) and generates structured searchable notes post-meeting. Transcript capture + clean summaries; mobile support.
+- Positioning: complementary to BizCrush — Granola for the meetings you're *not* leading (lectures, internal team meetings, 1:1s where you want to stay present). BizCrush for live in-person / multi-language / follow-up-heavy work.
 - Effective length: 12 months free; promotion marked as limited edition.
 - Claim path: Individual-claimable.
 - Verification: Student application flow on Granola student page.
@@ -619,6 +638,7 @@ Probed ~30 additional AI tools outside the original student-discount set. 18 con
 - 2026-05-14: Added Popularity Tier Ranking (S/A/B/C/D + cloud-credits axis). Initial pass weighted by general 2026 mindshare and grad-student relevance; awaiting user input for personal-familiarity boosts.
 - 2026-05-14: Expansion audit — probed ~30 additional AI tools for two-sided peer-referral programs. Added 18 new entries under Peer-Referral Expansion Tools (Suno, Runway, Bolt.new/StackBlitz, Fathom, Superhuman, Krisp, HeyGen, Gamma, Tome, Fireflies.ai, Tactiq, Windsurf, Replit, Lovable, v0, Shortwave, Heptabase, Scite). 21 tools ruled out (affiliate-only, B2B-only, or one-sided). Student-discount status for the expansion set is NOT yet validated — separate audit pending.
 - 2026-05-14: Reverted Popularity Tier Ranking back to the 16 student-discount-validated tools only. Expansion tools demoted to their own secondary section so the doc's primary axis stays student-discount-first.
+- 2026-05-14: Added BizCrush as a new Individual-Claimable Offer (5 months free via code `STUDENT2026`). Real-time in-person meeting agent with multi-language translation and follow-up-email intelligence. Repositioned Granola entry as complementary (BizCrush for live in-person work; Granola for background listening on calls / lectures). Slotted BizCrush into Tier B of the popularity ranking on personal-use signal — net tier-ranked set now 17 tools. Hugo post on twyoon.com updated in parallel.
 
 ## Open Questions / Follow-Ups
 
