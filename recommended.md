@@ -38,14 +38,14 @@ AI-native IDE that doubles as a VS Code alternative. Premium LLM access (Claude,
 - Verification: .edu login + SheerID
 - Length: 12 months, then auto-renews at full price unless canceled
 
-### 3. BizCrush — 5 months free (limited credit)
+### 3. BizCrush — 5 months free
 
-Real-time AI meeting agent built for in-person conversations — networking events, recruiting coffee chats, conference floors, founder-customer calls. Especially strong at live multi-language transcription and translation, plus follow-up email drafting per attendee and HubSpot CRM sync.
+Real-time AI meeting agent built for in-person conversations — networking events, recruiting coffee chats, conference floors, founder-customer calls. Especially strong at live multi-language transcription and translation.
 
 - Sign up: https://bizcrush.app (iOS / Android)
-- Student offer: **5 months free** until credit runs out
+- Student offer: **5 months free**
 - Access code: `STUDENT2026`
-- Limit: first come, first served
+- Limit: number of codes is limited — first come, first served
 
 ### 4. Figma Professional — Free
 
@@ -57,7 +57,7 @@ Full Professional plan for verified higher-ed students. Slide alternatives, mock
 
 ### 5. Granola Business — Free for 12 months
 
-AI notepad for the meetings I'm *not* leading. Granola listens in the background (no bot joins your call) and generates structured notes after the fact — for lectures, internal team meetings, and 1:1s where I want to stay present and read the notes later. Pairs naturally with BizCrush: **BizCrush for live in-person work, Granola for everything else.**
+Another AI notepad for meetings. Granola generates clean structured summary notes after the fact — I use it for internal team meetings.
 
 - Sign up: https://www.granola.ai/students
 - Eligibility: enrolled at accredited universities in US / UK / Canada

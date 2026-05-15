@@ -244,9 +244,9 @@ Ranked among themselves; relevant only to students building with AI infrastructu
 ### BizCrush (Student Access Code)
 - Offered tier and pricing:
   - Original: Paid Pro plan.
-  - Student: **5 months free** via shared access code (until credit runs out).
+  - Student: **5 months free** via shared access code.
 - Included features: Real-time AI meeting agent for **in-person** conversations. Live transcription, real-time translation in up to 5 languages, AI-identified summaries / action items / next steps, personalized draft follow-up email per attendee, HubSpot CRM auto-sync (attendee names, emails, contact info, summaries).
-- Effective length: 5 months from code redemption, subject to credit pool depletion. First come, first served.
+- Effective length: 5 months from code redemption. Code-pool size is limited — first come, first served.
 - Claim path: Individual-claimable.
 - Verification: Access code (`STUDENT2026`) at signup. No formal student verification — code-gated rather than .edu-gated.
 - Region/country: iOS and Android availability; check app store for region.
