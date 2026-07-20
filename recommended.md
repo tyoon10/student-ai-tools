@@ -1,8 +1,8 @@
 # AI Tools Worth Setting Up Today (with Student Benefit)
 
-The six AI tools I actually use, plus a curated secondary list. Verified against official sources as of May 2026.
+The five AI tools I actually use, plus a curated secondary list. Verified against official sources as of May 2026.
 
-- **Last refreshed:** 2026-05-14
+- **Last refreshed:** 2026-07-19
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/post/student-ai-tools](https://twyoon.com/post/student-ai-tools/)
 
@@ -18,7 +18,7 @@ So: go claim these TODAY, if they're still live while you're reading this.
 
 ---
 
-## The six I actually use every day
+## The five I actually use every day
 
 Tried, used extensively, kept.
 
@@ -38,16 +38,7 @@ AI-native IDE that doubles as a VS Code alternative. Premium LLM access (Claude,
 - Verification: .edu login + SheerID
 - Length: 12 months, then auto-renews at full price unless canceled
 
-### 3. BizCrush — 5 months free
-
-Real-time AI meeting agent built for in-person conversations — networking events, recruiting coffee chats, conference floors, founder-customer calls. Especially strong at live multi-language transcription and translation.
-
-- Sign up: https://bizcrush.app (iOS / Android)
-- Student offer: **5 months free**
-- Access code: `STUDENT2026`
-- Limit: number of codes is limited — first come, first served
-
-### 4. Figma Professional — Free
+### 3. Figma Professional — Free
 
 Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still one of the most-preferred design tools for Product Designers and PMs.
 
@@ -55,7 +46,7 @@ Full Professional plan for verified higher-ed students. Slide alternatives, mock
 - Verification: school email + education verification
 - Length: typically 1 year, then re-verify
 
-### 5. Granola Business — Free for 12 months
+### 4. Granola Business — Free for 12 months
 
 Another AI notepad for meetings. Granola generates clean structured summary notes after the fact — I use it for internal team meetings.
 
@@ -64,7 +55,7 @@ Another AI notepad for meetings. Granola generates clean structured summary note
 - Length: 12 months
 - Note: promo is marked as limited edition
 
-### 6. GitHub Student Developer Pack — Free
+### 5. GitHub Student Developer Pack — Free
 
 The gold standard student bundle. Copilot, DigitalOcean credits, Namecheap domain, JetBrains, ~30 other dev tools — all included once you verify.
 
@@ -132,6 +123,7 @@ Transcription for lectures, interviews, group meetings. Individual Pro only — 
 
 ## Changelog
 
+- **2026-07-19** — Removed BizCrush from the daily-use list and knowledge base.
 - **2026-05-14** — Added BizCrush (real-time multi-language meeting agent, 5 months free via `STUDENT2026`). Repositioned Granola as the complementary tool for non-BizCrush contexts.
 - **2026-05-14** — Switched framing to urgency-led (Gemini sunset as motivating example). Demoted Perplexity, Adobe, and Otter to "Worth knowing about" to make room for the daily-use six.
 - **2026-05-14** — Initial public-facing version split out from the working research doc. Audited referral programs for all 16 original tools.
