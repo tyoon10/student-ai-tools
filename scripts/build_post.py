@@ -96,6 +96,13 @@ GRID_CSS = """<style>
        shoves the card layout apart. Beaten here with .offergrid img.offercard__logo.
      .markdown-body a    (0,1,1) underlines every link.
    So each rule below is scoped under .offergrid to outrank prose styling. */
+/* The site never loads global.css, where the `* { box-sizing: border-box }`
+   reset lives, so everything computes as content-box. Without this, a card's
+   16px padding and 1px border are ADDED to height:100%, making every <a> 34px
+   taller than its grid row and overlapping the row below. Scoped rather than
+   global: fixing it site-wide is the site owner's call, since global.css also
+   resets all margins and padding. */
+.offergrid,.offergrid *{box-sizing:border-box}
 .offergrid{
   /* Break out of the 62ch prose column so cards get three across on desktop,
      without escaping the page gutter on narrow screens. */
@@ -122,10 +129,10 @@ GRID_CSS = """<style>
 .offergrid .offergrid__count{width:100%;margin:0;font-size:12px;color:var(--ink-quiet)}
 .offergrid .offergrid__list{list-style:none;margin:0;padding:0;display:grid;gap:var(--gap);
   grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
-.offergrid .offercard{margin:0;padding:0}
+.offergrid .offercard{margin:0;padding:0;display:flex}
 .offergrid .offercard::marker{content:""}
 .offergrid .offercard a{display:flex;flex-direction:column;align-items:flex-start;gap:8px;
-  height:100%;padding:16px;text-decoration:none;color:inherit;background:var(--surface);
+  flex:1 1 auto;min-width:0;padding:16px;text-decoration:none;color:inherit;background:var(--surface);
   border:1px solid var(--rule);border-radius:var(--r-action)}
 .offergrid .offercard a:hover{border-color:var(--accent);background:var(--accent-wash)}
 .offergrid .offercard a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}

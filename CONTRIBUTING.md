@@ -38,6 +38,21 @@ python3 scripts/check_links.py
 python3 scripts/build_post.py
 ```
 
+### Checking the published grid renders
+
+The post embeds an interactive grid. Generated markup being correct does not
+mean it renders correctly: it sits inside the site's prose styles, which have
+beaten it on specificity before. After changing anything about the grid, check
+it in a real browser rather than reading the HTML.
+
+```bash
+npm install playwright && npx playwright install chromium
+node scripts/check_render.js https://twyoon.com/writings/student-ai-tools
+```
+
+It fails on JS errors, wrong logo size, hidden controls, cards overlapping each
+other, and filters or search that do nothing.
+
 Commit `data/tools.yml` together with the regenerated markdown.
 
 ## The bar for inclusion
