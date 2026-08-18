@@ -57,7 +57,11 @@ tools:
       World Higher Education Database. Notion does not accept student IDs or other
       documentation.
     caveats:
-      - Notion AI is a separate paid add-on and is not included.
+      - >-
+        Notion AI is NOT usefully included. As of 2026-08-18 there is no standalone
+        AI add-on to buy. Free and Plus get trial-level AI only, and full AI
+        (Agent, Meeting Notes, Enterprise Search) requires the Business tier at
+        20 USD per member per month. Custom Agents are metered separately.
       - Requires a single-member workspace.
     referral:
       status: discontinued
@@ -173,6 +177,16 @@ tools:
       - >-
         The temporary pause on new student sign-ups that GitHub documented in
         early 2026 is no longer present in the docs as of 2026-08-18.
+      - >-
+        Copilot access inside the Pack was restructured in March 2026 into a
+        standalone plan called GitHub Copilot Student. It is still free for
+        verified students. GitHub's changelog says the model lineup changed but
+        does not itemise it, so treat any specific model list you read elsewhere
+        as unverified.
+      - >-
+        The Pack gains and loses partners quietly. Two AI-relevant additions worth
+        knowing about are Camber (research compute) and SlideCoach (AI presentation
+        coaching, 2,000 credits for verified students).
     image:
       src: './images/github-education-email-verification.png'
       alt: 'GitHub Education benefits application screen showing the school email verification step'
@@ -503,6 +517,535 @@ tools:
     last_checked: '2026-08-18'
     confidence: high
 
+  - id: microsoft-365
+    name: Microsoft 365 Personal
+    offer: Personal with Copilot (College student pricing)
+    category: Productivity suite
+    tier: S
+    status: active
+    published: true
+    daily_use: false
+    headline: $4.99/month, 50% off
+    blurb: >-
+      Half price on the full Office suite with Copilot built into Word, Excel,
+      PowerPoint, OneNote and Outlook, plus 1 TB of OneDrive. The broadest single
+      offer on this list, and the one most students will get the most hours out of.
+    pricing:
+      original: 9.99 USD per month, or 99.99 USD per year.
+      student: 4.99 USD per month, a 50 percent discount.
+    features: >-
+      Word, Excel, PowerPoint, OneNote and Outlook desktop apps with Microsoft
+      Copilot, 1 TB of cloud storage, and advanced security across PC, Mac, iOS
+      and Android.
+    length: >-
+      Ongoing while verified. Microsoft re-checks eligibility annually and will
+      prompt you to re-verify.
+    verification: >-
+      School email, enrolment details, International Student Identity Card, or
+      documentation such as a dated student ID, current progress report, dated
+      class schedule or acceptance letter.
+    regions: Enrolled full-time or part-time students at accredited universities and colleges.
+    caveats:
+      - >-
+        You add payment details before verification completes, so set a reminder
+        rather than assuming the re-verification prompt will reach you.
+      - >-
+        This is the consumer Personal plan. It is separate from any Microsoft 365
+        Education licence your school may already give you, which is worth
+        checking first.
+    referral:
+      status: none
+      detail: No peer-referral programme for the student pricing offer.
+      links: []
+    links:
+      - 'https://www.microsoft.com/en-us/microsoft-365/college-student-pricing'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: beautiful-ai
+    name: Beautiful.ai
+    offer: Pro (Education)
+    category: Presentations
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: Free Pro for 12 months
+    blurb: >-
+      AI slide-deck builder that does the layout work for you. A free year of Pro
+      is a strong fit for case competitions and pitch decks, where the bottleneck
+      is usually formatting rather than content.
+    pricing:
+      original: Pro is about 12 USD per month, roughly 144 USD per year.
+      student: Free Pro subscription for 12 months.
+    features: >-
+      Full Pro plan. Unlimited slides, AI content generation, analytics, custom
+      fonts, and PowerPoint import and export.
+    length: 12 months from activation, then it reverts to the free plan unless you renew.
+    verification: >-
+      Verify a .edu email address and Beautiful.ai emails back a custom coupon
+      code. No promo code hunting required.
+    regions: >-
+      Built around .edu addresses. International students without one are told to
+      contact support about alternative verification.
+    caveats:
+      - New student subscribers only. It does not apply to an existing paid account.
+    referral:
+      status: none
+      detail: >-
+        A one-sided referral scheme pays the referrer only, so it is not useful
+        for sharing with classmates.
+      links: []
+    links:
+      - 'https://support.beautiful.ai/hc/en-us/articles/360030719052-Does-Beautiful-ai-offer-discounts-for-education-or-non-profits'
+      - 'https://www.beautiful.ai/education'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: obsidian
+    name: Obsidian
+    offer: Sync and Publish (Education discount)
+    category: Notes and knowledge
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: 40% off Sync and Publish
+    blurb: >-
+      The app itself is free and always has been. This discounts the two paid
+      add-ons, which is what you actually pay for once your vault outgrows one
+      device. A good counterweight to Notion if you want local files you own.
+    pricing:
+      original: Sync is 4 USD per month billed annually. Publish is 8 USD per month per site.
+      student: 40 percent off both, so roughly 2.40 and 4.80 USD per month.
+    features: Discounted Obsidian Sync and Obsidian Publish. The core app is free regardless.
+    length: Ongoing while eligible.
+    verification: >-
+      Apply from your Obsidian account dashboard using an educational email.
+      Support may accept a student ID or transcript if your institution does not
+      issue one.
+    regions: Students and faculty at educational organisations. Non-profit employees also qualify.
+    caveats:
+      - >-
+        Only the paid add-ons are discounted. If you use Obsidian on one machine
+        you are already paying nothing.
+    referral:
+      status: none
+      detail: No referral programme documented.
+      links: []
+    links:
+      - 'https://obsidian.md/help/discounts'
+      - 'https://obsidian.md/pricing'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: loom
+    name: Loom
+    offer: Business and Business+AI (Education discount)
+    category: Async video
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: Up to 50% off, 75% for classroom use
+    blurb: >-
+      Screen recording with AI summaries and transcripts. Genuinely useful for
+      group projects where scheduling a call costs more than recording a
+      four-minute walkthrough.
+    pricing:
+      original: Loom Business and Business+AI paid plans.
+      student: >-
+        Up to 50 percent off for general academic use, and up to 75 percent off
+        for specific classroom use.
+    features: >-
+      Loom Business features. The advanced AI features require the Business+AI
+      plan specifically.
+    length: Ongoing while verified.
+    verification: >-
+      Create the Loom account with your institutional email, then submit the
+      Atlassian classroom licence request. Applications are reviewed by Goodstack
+      and take a few business days.
+    regions: >-
+      Students, teachers and professors at accredited primary, secondary or
+      tertiary institutions. Minimum age 16.
+    caveats:
+      - >-
+        The legacy free education plan is gone and is not available to new
+        applicants. This is a discount, not free access.
+      - Loom is now an Atlassian product, so verification runs through Atlassian rather than loom.com.
+    referral:
+      status: none
+      detail: No peer-referral programme documented for the education discount.
+      links: []
+    links:
+      - 'https://support.atlassian.com/loom/docs/loom-education-discount-verification/'
+      - 'https://www.atlassian.com/software/loom/pricing'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: amp
+    name: Amp
+    offer: Amp Megawatt (Edu discount)
+    category: AI coding agent
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: 50% off, $10/month
+    blurb: >-
+      Sourcegraph's coding agent, half price for students and teachers with no
+      document check. Treat this as provisional. It was announced the same day
+      this entry was written and has no track record yet.
+    pricing:
+      original: 20 USD per month for Amp Megawatt.
+      student: 10 USD per month, a 50 percent discount.
+    features: >-
+      All Amp Megawatt features, 750 hours of agent usage, 10 USD of included
+      agent-usage credit, and unlimited public and private repositories.
+    length: >-
+      Ongoing while enrolled. If you already subscribe, the discount applies at
+      your next renewal with no retroactive refund.
+    verification: >-
+      Self-declaration. Sign in and complete a form declaring student or teacher
+      status. No SheerID, no .edu requirement, no document upload.
+    regions: No geographic restriction stated.
+    caveats:
+      - Applies to the Megawatt tier only, not Gigawatt or other plans.
+      - >-
+        Announced 2026-08-18, the same day it was first recorded here. Unproven.
+        Re-check before relying on it.
+      - Amp states it can change or discontinue the discount and its criteria at any time.
+    referral:
+      status: none
+      detail: No referral programme on the education or pricing pages.
+      links: []
+    links:
+      - 'https://ampcode.com/edu'
+      - 'https://ampcode.com/pricing'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: framer
+    name: Framer
+    offer: Basic (Student)
+    category: Design and web
+    tier: C
+    status: active
+    published: true
+    daily_use: false
+    headline: Free Basic plan, worth $120/year
+    blurb: >-
+      Design-to-web tool with a free student plan that includes monthly AI
+      credits. The obvious use is hosting a portfolio or personal site without
+      paying for a year.
+    pricing:
+      original: Basic plan at about 120 USD per year.
+      student: Free.
+    features: >-
+      Full access to Framer's design canvas and CMS, plus 1,000 AI credits per
+      month for use with Agents.
+    length: One year. You can reapply every 11 months for as long as you are a student.
+    verification: >-
+      Enrolment in a certified in-person or online programme. Framer reviews
+      applications within about five working days, and you can use free account
+      features while you wait.
+    regions: High school, college or university, in person or online.
+    caveats: []
+    referral:
+      status: none
+      detail: No referral programme documented.
+      links: []
+    links:
+      - 'https://www.framer.com/education/'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: reclaim
+    name: Reclaim.ai
+    offer: Starter or Business (Education discount)
+    category: Scheduling
+    tier: C
+    status: active
+    published: true
+    daily_use: false
+    headline: 50% off for 12 months
+    blurb: >-
+      AI calendar that defends time for tasks and habits against meeting creep.
+      Low eligibility bar and a real discount, though you have to actually live
+      in your calendar for it to pay off.
+    pricing:
+      original: Starter and Business plans, roughly 10 to 18 USD per seat per month depending on tier and billing.
+      student: 50 percent off Starter or Business.
+    features: AI-driven scheduling, task and habit time-blocking, calendar sync. Enterprise is excluded.
+    length: >-
+      12 months per application, renewable annually while enrolled. Can be applied
+      retroactively to an existing paid subscription.
+    verification: >-
+      Apply on the education discount page. Eligibility is self-declared as a
+      student, educator or administrator at a degree-granting or non-profit
+      educational institution, minimum age 13.
+    regions: Not region-restricted in the published terms.
+    caveats:
+      - >-
+        Reclaim's own pricing page returned inconsistent monthly and annual
+        labelling across checks, so confirm the base price before subscribing.
+    referral:
+      status: asymmetric
+      detail: >-
+        A separate referral programme gives the referrer free Business access
+        based on signups they drive, with no stated benefit to the person
+        referred. A distinct affiliate programme pays cash commission.
+      links: []
+    links:
+      - 'https://reclaim.ai/pricing/education-discount'
+      - 'https://reclaim.ai/pricing'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: speechify
+    name: Speechify
+    offer: Premium (Student)
+    category: Text to speech
+    tier: C
+    status: active
+    published: true
+    daily_use: false
+    headline: 25% off Premium
+    blurb: >-
+      Text to speech for getting through case studies and papers while doing
+      something else. A modest discount, but the use case is a real one during
+      heavy reading terms.
+    pricing:
+      original: Premium at about 139 USD per year, or 29 USD billed monthly.
+      student: 25 percent off through UNiDAYS or Student Beans.
+    features: Speechify Premium text-to-speech features and voices.
+    length: Ongoing while verification holds.
+    verification: UNiDAYS or Student Beans.
+    regions: Verify at checkout.
+    caveats:
+      - >-
+        The free Premium route Speechify advertises is for US K-12 students, not
+        higher education. University students get the 25 percent discount.
+      - Routed through third-party verification hubs rather than a first-party flow.
+    referral:
+      status: unclear
+      detail: A referral programme is referenced but its two-sided terms are not clearly documented.
+      links: []
+    links:
+      - 'https://www.myunidays.com/US/en-US/partners/speechify/view'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: prezi
+    name: Prezi
+    offer: Student plans
+    category: Presentations
+    tier: B
+    status: active
+    published: false
+    daily_use: false
+    headline: Up to 80% off
+    blurb: >-
+      Presentation tool with student pricing. Held back from the public list
+      because the headline percentage is vendor-confirmed but the underlying
+      dollar figures are not, and Beautiful.ai already fills this slot.
+    pricing:
+      original: Prezi paid plans.
+      student: Advertised as up to 80 percent off. Exact resulting prices unconfirmed.
+    features: Prezi paid plan features.
+    length: Not confirmed.
+    verification: Student verification through Prezi's education flow.
+    caveats:
+      - Headline percentage confirmed, underlying prices not. Do not publish a number.
+    referral:
+      status: unclear
+      detail: Not audited.
+      links: []
+    links:
+      - 'https://prezi.com/students/'
+    last_checked: '2026-08-18'
+    confidence: low
+
+  - id: wordtune
+    name: Wordtune
+    offer: Premium (Student)
+    category: Writing
+    tier: C
+    status: active
+    published: false
+    daily_use: false
+    headline: 30% off
+    blurb: >-
+      Rewriting and paraphrasing assistant. Kept off the public list because it
+      duplicates Grammarly and QuillBot, and stacking rules make the real saving
+      against already-discounted annual pricing marginal.
+    pricing:
+      original: Wordtune Premium standard pricing.
+      student: 30 percent off.
+    features: Wordtune Premium rewriting features.
+    length: Ongoing while eligible.
+    verification: Student verification.
+    caveats:
+      - Does not stack well with existing annual discounts, so the real saving is smaller than 30 percent.
+    referral:
+      status: unclear
+      detail: Not audited.
+      links: []
+    links:
+      - 'https://www.wordtune.com/'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: craft
+    name: Craft
+    offer: Education plan
+    category: Notes and knowledge
+    tier: C
+    status: active
+    published: false
+    daily_use: false
+    headline: Free education plan
+    blurb: >-
+      Genuine free education plan. Kept off the public list because it duplicates
+      Notion's slot for a smaller, less widely used vendor.
+    pricing:
+      original: Craft paid plans.
+      student: Free education plan.
+    features: Craft document and notes features under the education plan.
+    length: Ongoing while eligible.
+    verification: Educational email verification.
+    caveats: []
+    referral:
+      status: unclear
+      detail: Not audited.
+      links: []
+    links:
+      - 'https://www.craft.do/'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: litmaps
+    name: Litmaps
+    offer: Pro (Student)
+    category: Academic search
+    tier: C
+    status: active
+    published: false
+    daily_use: false
+    headline: 75% off
+    blurb: >-
+      Literature-mapping tool for tracing citation networks. Strong discount but
+      narrow. Kept in the knowledge base because it overlaps Consensus and suits
+      PhD work more than an MBA-weighted audience.
+    pricing:
+      original: Litmaps Pro standard pricing.
+      student: 75 percent off.
+    features: Citation mapping and literature discovery.
+    length: Ongoing while eligible.
+    verification: Student verification.
+    caveats: []
+    referral:
+      status: unclear
+      detail: Not audited.
+      links: []
+    links:
+      - 'https://www.litmaps.com/pricing'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: trinka
+    name: Trinka AI
+    offer: Premium (Student)
+    category: Academic writing
+    tier: C
+    status: active
+    published: false
+    daily_use: false
+    headline: Discount size undisclosed
+    blurb: >-
+      Academic writing and grammar tool with a real student claim mechanism.
+      Withheld from the public list because the vendor does not publish the
+      discount size anywhere, and this guide does not publish "email us to find out".
+    pricing:
+      original: Trinka Premium standard pricing.
+      student: A student discount exists. The percentage is not disclosed on any vendor page.
+    features: Academic grammar, style and technical writing checks.
+    length: Not disclosed.
+    verification: Student verification through Trinka's flow.
+    caveats:
+      - Publish only once the vendor states an actual number.
+    referral:
+      status: unclear
+      detail: Not audited.
+      links: []
+    links:
+      - 'https://www.trinka.ai/pricing'
+    last_checked: '2026-08-18'
+    confidence: low
+
+  - id: sunsama
+    name: Sunsama
+    offer: Pro (Student)
+    category: Daily planning
+    tier: D
+    status: active
+    published: false
+    daily_use: false
+    headline: Discount size undisclosed
+    blurb: >-
+      Daily planning tool with a documented student mechanism and duration but no
+      published discount percentage. Same reason as Trinka for staying off the
+      public list.
+    pricing:
+      original: Pro at 17 USD per month billed yearly, or 22 USD billed monthly.
+      student: >-
+        A student rate exists. The percentage is not disclosed on any vendor page.
+        Third-party sites claim about 30 percent, which is unverified.
+    features: Full Sunsama daily planning, task and calendar integration.
+    length: Until graduation or four years from application, whichever comes first. Not retroactive.
+    verification: Manual request through Sunsama support.
+    caveats:
+      - Publish only once the vendor states an actual number.
+    referral:
+      status: unclear
+      detail: A separate referral programme exists but was not audited.
+      links: []
+    links:
+      - 'https://help.sunsama.com/docs/billing/overview/'
+      - 'https://www.sunsama.com/pricing'
+    last_checked: '2026-08-18'
+    confidence: low
+
+  - id: tabnine
+    name: Tabnine
+    offer: Student plan
+    category: AI coding assistant
+    tier: D
+    status: ended
+    published: false
+    daily_use: false
+    ended_on: '2025-04-01'
+    headline: No longer offered
+    blurb: >-
+      Tabnine ended its free Basic plan in April 2025 and no longer offers a
+      student plan. Recorded so the question stays answered.
+    pricing:
+      original: Paid plans only.
+      student: None. The student plan was withdrawn and the free tier followed.
+    features: n/a
+    length: n/a
+    verification: n/a
+    caveats:
+      - The current pricing page shows no free tier, no trial and no student pricing.
+    referral:
+      status: none
+      detail: None documented.
+      links: []
+    links:
+      - 'https://www.tabnine.com/pricing/'
+    last_checked: '2026-08-18'
+    confidence: medium
+
 # ---------------------------------------------------------------------------
 # Cloud credits. Adjacent to the list, ranked separately.
 # ---------------------------------------------------------------------------
@@ -564,7 +1107,10 @@ cloud_credits:
     student: >-
       Free self-paced cloud training and hands-on labs covering S3, EC2, VPC, RDS
       and cloud operations, with digital badges.
-    extras: Job board access for users aged 18 and over.
+    extras: >-
+      Job board access for users aged 18 and over. Note the section heading. AWS
+      Educate is training and labs, NOT an account-credit grant. Unlike Azure and
+      Google Cloud above it, there is no spendable credit here.
     length: Ongoing.
     verification: >-
       Email address only, no credit card. Open from age 13 and to anyone regardless
@@ -599,12 +1145,16 @@ excluded:
       2026-06-30, plus Northeastern, the London School of Economics, Champlain
       College and Northumbria.
     individual_routes: >-
-      Two routes are open to any student with a school email regardless of
-      institution. Student Builder credits grant roughly 50 USD in Anthropic API
-      credit, and the External Researcher Access Program grants around 1,000 USD in
-      credit. Neither is a Pro subscription. Outside those, the cheapest official
-      option is Pro on annual billing at 17 USD per month, billed 200 USD up front,
-      against 20 USD billed monthly.
+      The old self-serve Student Builder path (a form, a school email, roughly
+      50 USD in API credit) is gone from Anthropic's site. It has been folded into
+      the Claude Campus Program, which runs two application-gated tracks: Campus
+      Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus
+      unspecified API credits and a stipend, but neither publishes a dollar figure,
+      and applications for the current cohort are CLOSED as of 2026-08-18. The
+      External Researcher Access Program (around 1,000 USD in credit) remains a
+      separate route. Outside those, the cheapest official option is Pro on annual
+      billing at 17 USD per month, billed 200 USD up front, against 20 USD billed
+      monthly.
     check_path: Ask your IT or procurement team whether your campus holds a Claude for Education agreement.
     links:
       - 'https://claude.com/solutions/education'
@@ -693,6 +1243,39 @@ excluded:
     last_checked: '2026-08-18'
     confidence: high
 
+  - id: capcut-campus
+    name: CapCut Creative Campus
+    status: institutional
+    published: true
+    reason: >-
+      Restricted to a small set of named partner schools, none of them business or
+      graduate programmes. There is no individual claim path.
+    check_path: Check whether your institution is a named Creative Campus partner.
+    links:
+      - 'https://www.capcut.com/'
+    last_checked: '2026-08-18'
+    confidence: medium
+
+  - id: coda-superhuman-docs
+    name: Coda (now Superhuman Docs)
+    status: ended
+    published: true
+    ended_on: '2026-06-30'
+    reason: >-
+      The student, teacher and non-profit discount is paused for new applications
+      as of 2026-06-30, following Coda's rebrand to Superhuman Docs.
+    detail: >-
+      Flagged as UNCONFIRMED rather than confirmed. Both help.coda.io and
+      help.superhuman.com returned HTTP 403 on every direct attempt, so the pause
+      is supported only by search-engine-indexed snippets of those exact vendor
+      URLs. The rebrand itself was confirmed directly on coda.io. Worth re-checking
+      once the help centres become reachable.
+    check_path: Watch for Superhuman Docs to reintroduce an education rate.
+    links:
+      - 'https://coda.io/solutions/role/students'
+    last_checked: '2026-08-18'
+    confidence: low
+
 # ---------------------------------------------------------------------------
 # Dropped after failing to confirm official terms. Not on the public list.
 # ---------------------------------------------------------------------------
@@ -741,24 +1324,150 @@ referral_tools:
     for BOTH the referrer and the referee. Affiliate-only, B2B-only and
     ambassador-style programmes do not qualify.
   entries:
-    - {id: suno,        name: Suno,             category: Music,        referrer: 250 credits, referee: 250 credits, caveats: 'Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member.', link: 'https://x.com/SunoMusic/status/1843739161783599518', confidence: high}
-    - {id: runway,      name: Runway,           category: Video,        referrer: 1000 credits, referee: 1000 credits, caveats: 'Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months.', link: 'https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes', confidence: high}
-    - {id: bolt,        name: Bolt.new,         category: App builders, referrer: 200k tokens plus 5M on Pro upgrade, referee: 200k tokens plus 5M on Pro upgrade, caveats: 'Two-tier. The 5M bonus requires the referrer to also be on Pro.', link: 'https://support.bolt.new/external-resources/referral-program', confidence: high}
-    - {id: stackblitz,  name: StackBlitz,       category: App builders, referrer: 200k tokens, referee: 200k tokens, caveats: "Same mechanic as Bolt.new, its parent platform.", link: 'https://stackblitz.mintlify.app/external-resources/referral-program', confidence: high}
-    - {id: fathom,      name: Fathom,           category: Meeting AI,   referrer: 100 points plus 30 extra days of Premium, referee: Trial extended from 30 to 60 days of Premium, caveats: 'Referrals must come from a different company or email domain.', link: 'https://help.fathom.video/en/articles/4381825', confidence: high}
-    - {id: superhuman,  name: Superhuman,       category: Email,        referrer: 1 free month, referee: 1 free month, caveats: 'Standard markets only, US and UK. Referral link lives under Cmd+K.', link: 'https://new.superhuman.com/two-ways-to-get-superhuman-for-free!-265980', confidence: high}
-    - {id: krisp,       name: Krisp,            category: Calls,        referrer: 2 months free Pro per friend, referee: 1 month free Pro, caveats: 'Cumulative for the referrer.', link: 'https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals', confidence: high}
-    - {id: tome,        name: Tome,             category: Slides,       referrer: 30 percent off 3 months plus 10 USD credits, referee: 30 percent off 3 months plus 10 USD credits, caveats: 'Friend must upgrade to Pro for the reward to fire.', link: 'https://invitation.codes/tome', confidence: medium}
-    - {id: fireflies,   name: Fireflies.ai,     category: Meeting AI,   referrer: 3 transcription credits or 5 AI credits, referee: 10 percent off any plan for the first 3 days, caveats: 'New users only. Reward is small on the free tier.', link: 'https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program', confidence: high}
-    - {id: tactiq,      name: Tactiq,           category: Meeting AI,   referrer: 5 free meetings plus 1 AI credit, referee: Free meetings plus AI credits, caveats: 'Friend must be brand new to Tactiq.', link: 'https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account', confidence: high}
-    - {id: windsurf,    name: Windsurf,         category: AI code editor, referrer: 10 USD usage or 500 flex credits, referee: 250 free flex credits on Pro signup, caveats: 'Friend must upgrade to Pro for the full reward.', link: 'https://windsurf.com/refer', confidence: high}
-    - {id: replit,      name: Replit,           category: App builders, referrer: 10 USD in Core credits, referee: No explicit bonus beyond the standard new-user grant, caveats: 'Skewed toward the referrer. Friend must upgrade to paid Core.', link: 'https://replit.com/refer', confidence: medium}
-    - {id: lovable,     name: Lovable,          category: App builders, referrer: 10 credits, referee: 10 credits, caveats: 'Referrer must publish a first site. Some reports say a paid plan is required.', link: 'https://lovable.dev/faq/referral', confidence: medium}
-    - {id: v0,          name: v0 (Vercel),      category: App builders, referrer: 5 credits, referee: Standard new-user credits, caveats: 'Community reports of occasional credit-application bugs.', link: 'https://community.vercel.com/t/referral-code/28465', confidence: medium}
-    - {id: shortwave,   name: Shortwave,        category: Email,        referrer: 1 free month of Premium, referee: 1 free month of Premium, caveats: 'Friend must upgrade. Verify the current promo in-app.', link: 'https://x.com/Shortwave/status/1722728816488137018', confidence: medium}
-    - {id: gamma,       name: Gamma,            category: Slides,       referrer: 200 credits per signup, referee: Standard new-user credits only, caveats: 'Referrer-skewed. The friend gets nothing extra over a normal signup.', link: 'https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma', confidence: medium}
-    - {id: heptabase,   name: Heptabase,        category: Notes,        referrer: 5 USD off, referee: 5 USD off, caveats: 'Friend must complete the trial and subscribe. One-time.', link: 'https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a', confidence: medium}
-    - {id: scite,       name: Scite,            category: Research,     referrer: 1 free month of Premium, referee: Trial available, referrer benefit is primary, caveats: 'Weakly documented. Verify in-product before relying on it.', link: 'https://scite.ai/affiliate', confidence: low}
+    - id: 'suno'
+      name: 'Suno'
+      category: 'Music'
+      referrer: '250 credits'
+      referee: '250 credits'
+      caveats: 'Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member.'
+      link: 'https://x.com/SunoMusic/status/1843739161783599518'
+      confidence: 'high'
+    - id: 'runway'
+      name: 'Runway'
+      category: 'Video'
+      referrer: '1000 credits'
+      referee: '1000 credits'
+      caveats: 'Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months.'
+      link: 'https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes'
+      confidence: 'high'
+    - id: 'bolt'
+      name: 'Bolt.new'
+      category: 'App builders'
+      referrer: '200k tokens plus 5M on Pro upgrade'
+      referee: '200k tokens plus 5M on Pro upgrade'
+      caveats: 'Two-tier. The 5M bonus requires the referrer to also be on Pro.'
+      link: 'https://support.bolt.new/external-resources/referral-program'
+      confidence: 'high'
+    - id: 'stackblitz'
+      name: 'StackBlitz'
+      category: 'App builders'
+      referrer: '200k tokens'
+      referee: '200k tokens'
+      caveats: '"Same mechanic as Bolt.new, its parent platform."'
+      link: 'https://stackblitz.mintlify.app/external-resources/referral-program'
+      confidence: 'high'
+    - id: 'fathom'
+      name: 'Fathom'
+      category: 'Meeting AI'
+      referrer: '100 points plus 30 extra days of Premium'
+      referee: 'Trial extended from 30 to 60 days of Premium'
+      caveats: 'Referrals must come from a different company or email domain.'
+      link: 'https://help.fathom.video/en/articles/4381825'
+      confidence: 'high'
+    - id: 'superhuman'
+      name: 'Superhuman'
+      category: 'Email'
+      referrer: '1 free month'
+      referee: '1 free month'
+      caveats: 'Standard markets only, US and UK. Referral link lives under Cmd+K.'
+      link: 'https://new.superhuman.com/two-ways-to-get-superhuman-for-free!-265980'
+      confidence: 'high'
+    - id: 'krisp'
+      name: 'Krisp'
+      category: 'Calls'
+      referrer: '2 months free Pro per friend'
+      referee: '1 month free Pro'
+      caveats: 'Cumulative for the referrer.'
+      link: 'https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals'
+      confidence: 'high'
+    - id: 'tome'
+      name: 'Tome'
+      category: 'Slides'
+      referrer: '30 percent off 3 months plus 10 USD credits'
+      referee: '30 percent off 3 months plus 10 USD credits'
+      caveats: 'Friend must upgrade to Pro for the reward to fire.'
+      link: 'https://invitation.codes/tome'
+      confidence: 'medium'
+    - id: 'fireflies'
+      name: 'Fireflies.ai'
+      category: 'Meeting AI'
+      referrer: '3 transcription credits or 5 AI credits'
+      referee: '10 percent off any plan for the first 3 days'
+      caveats: 'New users only. Reward is small on the free tier.'
+      link: 'https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program'
+      confidence: 'high'
+    - id: 'tactiq'
+      name: 'Tactiq'
+      category: 'Meeting AI'
+      referrer: '5 free meetings plus 1 AI credit'
+      referee: 'Free meetings plus AI credits'
+      caveats: 'Friend must be brand new to Tactiq.'
+      link: 'https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account'
+      confidence: 'high'
+    - id: 'windsurf'
+      name: 'Windsurf'
+      category: 'AI code editor'
+      referrer: '10 USD usage or 500 flex credits'
+      referee: '250 free flex credits on Pro signup'
+      caveats: 'Friend must upgrade to Pro for the full reward.'
+      link: 'https://windsurf.com/refer'
+      confidence: 'high'
+    - id: 'replit'
+      name: 'Replit'
+      category: 'App builders'
+      referrer: '10 USD in Core credits'
+      referee: 'No explicit bonus beyond the standard new-user grant'
+      caveats: 'Skewed toward the referrer. Friend must upgrade to paid Core.'
+      link: 'https://replit.com/refer'
+      confidence: 'medium'
+    - id: 'lovable'
+      name: 'Lovable'
+      category: 'App builders'
+      referrer: '10 credits'
+      referee: '10 credits'
+      caveats: 'Referrer must publish a first site. Some reports say a paid plan is required.'
+      link: 'https://lovable.dev/faq/referral'
+      confidence: 'medium'
+    - id: 'v0'
+      name: 'v0 (Vercel)'
+      category: 'App builders'
+      referrer: '5 credits'
+      referee: 'Standard new-user credits'
+      caveats: 'Community reports of occasional credit-application bugs.'
+      link: 'https://community.vercel.com/t/referral-code/28465'
+      confidence: 'medium'
+    - id: 'shortwave'
+      name: 'Shortwave'
+      category: 'Email'
+      referrer: '1 free month of Premium'
+      referee: '1 free month of Premium'
+      caveats: 'Friend must upgrade. Verify the current promo in-app.'
+      link: 'https://x.com/Shortwave/status/1722728816488137018'
+      confidence: 'medium'
+    - id: 'gamma'
+      name: 'Gamma'
+      category: 'Slides'
+      referrer: '200 credits per signup'
+      referee: 'Standard new-user credits only'
+      caveats: 'Referrer-skewed. The friend gets nothing extra over a normal signup.'
+      link: 'https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma'
+      confidence: 'medium'
+    - id: 'heptabase'
+      name: 'Heptabase'
+      category: 'Notes'
+      referrer: '5 USD off'
+      referee: '5 USD off'
+      caveats: 'Friend must complete the trial and subscribe. One-time.'
+      link: 'https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a'
+      confidence: 'medium'
+    - id: 'scite'
+      name: 'Scite'
+      category: 'Research'
+      referrer: '1 free month of Premium'
+      referee: 'Trial available, referrer benefit is primary'
+      caveats: 'Weakly documented. Verify in-product before relying on it.'
+      link: 'https://scite.ai/affiliate'
+      confidence: 'low'
 
 # ---------------------------------------------------------------------------
 # Probed and ruled out. Listed so they are not re-probed each cycle.
@@ -766,40 +1475,110 @@ referral_tools:
 ruled_out:
   audited: '2026-05-14'
   entries:
-    - {name: HeyGen, reason: 'Reclassified 2026-08-18. The two-sided referral article is gone (404) and the replacement Ambassador programme rewards the ambassador only, with 5,000 generative credits and a 6-month Creator trial. No documented referee benefit, so it no longer clears the bar.'}
-    - {name: Read.ai, reason: No public peer-referral programme.}
-    - {name: DeepL, reason: Affiliate-only.}
-    - {name: ElevenLabs, reason: Affiliate-only commission, no friend bonus.}
-    - {name: Mem.ai, reason: Invitations are for collaboration, not rewarded referrals.}
-    - {name: Reflect.app, reason: Friend Codes exist but no documented reward.}
-    - {name: Tana, reason: Invite-based access with no two-sided reward.}
-    - {name: Hugging Face, reason: No public referral, only Fellowship and Pro promos.}
-    - {name: Together AI, reason: Startup-credit programme only.}
-    - {name: Modal Labs, reason: Startup and academic credit grants only.}
-    - {name: Elicit, reason: Affiliate programme closed to new signups in May 2025.}
-    - {name: Mistral Le Chat, reason: No referral programme documented.}
-    - {name: Poe (Quora), reason: No first-party referral found.}
-    - {name: Linear, reason: No referral programme. The Startup Program is separate.}
-    - {name: Height, reason: No referral programme documented.}
-    - {name: Phind, reason: No referral programme documented.}
-    - {name: Synthesia, reason: Affiliate-only commission, no friend benefit.}
-    - {name: Decktopus, reason: Affiliate-only commission, no friend benefit.}
-    - {name: Beautiful.ai, reason: One-sided, 10 USD off for the referrer only.}
-    - {name: Scholarcy, reason: No referral programme found.}
-    - {name: Luma / Pika, reason: No documented two-sided peer referral on official pages.}
-    - {name: Descript, reason: Pays 20 USD cash to the referrer only.}
+    - name: 'HeyGen'
+      reason: 'Reclassified 2026-08-18. The two-sided referral article is gone (404) and the replacement Ambassador programme rewards the ambassador only, with 5,000 generative credits and a 6-month Creator trial. No documented referee benefit, so it no longer clears the bar.'
+    - name: 'Read.ai'
+      reason: 'No public peer-referral programme.'
+    - name: 'DeepL'
+      reason: 'Affiliate-only.'
+    - name: 'ElevenLabs'
+      reason: 'Affiliate-only commission, no friend bonus.'
+    - name: 'Mem.ai'
+      reason: 'Invitations are for collaboration, not rewarded referrals.'
+    - name: 'Reflect.app'
+      reason: 'Friend Codes exist but no documented reward.'
+    - name: 'Tana'
+      reason: 'Invite-based access with no two-sided reward.'
+    - name: 'Hugging Face'
+      reason: 'No public referral, only Fellowship and Pro promos.'
+    - name: 'Together AI'
+      reason: 'Startup-credit programme only.'
+    - name: 'Modal Labs'
+      reason: 'Startup and academic credit grants only.'
+    - name: 'Elicit'
+      reason: 'Affiliate programme closed to new signups in May 2025.'
+    - name: 'Mistral Le Chat'
+      reason: 'No referral programme documented.'
+    - name: 'Poe (Quora)'
+      reason: 'No first-party referral found.'
+    - name: 'Linear'
+      reason: 'No referral programme. The Startup Program is separate.'
+    - name: 'Height'
+      reason: 'No referral programme documented.'
+    - name: 'Phind'
+      reason: 'No referral programme documented.'
+    - name: 'Synthesia'
+      reason: 'Affiliate-only commission, no friend benefit.'
+    - name: 'Decktopus'
+      reason: 'Affiliate-only commission, no friend benefit.'
+    - name: 'Scholarcy'
+      reason: 'No referral programme found.'
+    - name: 'Luma / Pika'
+      reason: 'No documented two-sided peer referral on official pages.'
+    - name: 'Descript'
+      reason: 'Pays 20 USD cash to the referrer only.'
 
 # ---------------------------------------------------------------------------
 # Coverage the guide does not yet have. Drives the next audit.
 # ---------------------------------------------------------------------------
 backlog:
-  - 'Agentic coding tools: Claude Code, Codex CLI, Gemini CLI. Squarely in the target use case and entirely absent.'
-  - 'NotebookLM: heavy student adoption, student-offer status never audited.'
-  - 'Run the student-discount audit over the referral_tools set. Open since 2026-05-14.'
-  - 'Decide whether seasonal campaign offers (Grammarly, QuillBot) belong on a list that claims to be always-on.'
+  - >-
+    Agentic coding CLIs were NOT checked: Claude Code, Codex CLI, Gemini CLI. The
+    2026-08-18 sweep found Amp instead, which is a real offer but not a substitute
+    for verifying Anthropic's, OpenAI's and Google's own CLI tools directly.
+  - 'NotebookLM: heavy student adoption, still never audited.'
+  - >-
+    Run the student-discount audit over the referral_tools set as its own pass.
+    The 2026-08-18 sweep surfaced fragments incidentally (Reclaim, Speechify and
+    Sunsama all run separate referral programmes) but did not do it systematically.
+  - >-
+    Write the seasonal-versus-always-on campaign policy. Raw material now exists:
+    Perplexity's expired campaign sits beside its always-on Education Pro rate,
+    Grammarly and QuillBot are both campaign-based, and CapCut's rollout was dated.
+  - >-
+    Get vendor-side discount numbers for Prezi, Trinka and Sunsama. All three are
+    confirmed to have a student offer but none publishes a percentage, which is why
+    all three are held back from the public list.
   - 'Re-verify Adobe pricing manually each cycle since Adobe blocks automated checks.'
+  - >-
+    Re-check Amp around 2026-11-01. It was announced the same day it was recorded
+    here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-18 (sweep)'
+    entries:
+      - >-
+        Multi-agent sweep across six discovery angles. 29 candidates, 26 confirmed
+        against vendor pages, 8 added to the public list.
+      - >-
+        Added Microsoft 365 Personal (50 percent off at 4.99 USD per month with
+        Copilot included), the strongest find of the sweep.
+      - >-
+        Added Beautiful.ai, Obsidian, Loom, Amp, Framer, Reclaim.ai and Speechify.
+      - >-
+        Added Prezi, Wordtune, Craft, Litmaps, Trinka and Sunsama to the knowledge
+        base only. Prezi, Trinka and Sunsama are withheld from the public list
+        because no vendor page discloses the actual discount size.
+      - >-
+        Notion AI correction: there is no standalone AI add-on any more. Free and
+        Plus get trial-level AI only and full AI now requires the Business tier.
+      - >-
+        Claude correction: the self-serve Student Builder credit path is gone,
+        folded into the application-gated Campus Program, currently closed.
+      - >-
+        GitHub: Copilot for students was restructured in March 2026 into a
+        standalone GitHub Copilot Student plan, still free.
+      - 'Recorded Tabnine as ended, CapCut Creative Campus as institutional, and Coda/Superhuman Docs as paused.'
+      - >-
+        Dropped Manus (refuted: its "student" credit grant is the standard grant
+        every new user gets), ClickUp and Vimeo.
+      - >-
+        FIXED A DATA BUG: seven entries in ruled_out and referral_tools used
+        unquoted commas inside YAML flow mappings, which silently split their
+        values into phantom keys and truncated the published text. Mem.ai's reason
+        had been inverted to "Invitations are for collaboration", dropping "not
+        rewarded referrals". Both sections converted to block style and a schema
+        check added to CI.
   - date: '2026-08-18'
     entries:
       - 'Restructured the repo. data/tools.yml is now the single source of truth; recommended.md and knowledge-base.md are generated from it.'

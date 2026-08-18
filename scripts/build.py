@@ -27,6 +27,9 @@ BANNER = (
     "     Source: data/tools.yml   Rebuild: python3 scripts/build.py -->\n"
 )
 
+# Tiers that earn a full write-up in recommended.md rather than a one-line bullet.
+FULL_ENTRY_TIERS = ("S", "A", "B")
+
 TIER_LABELS = {
     "S": ("Tier S", "Ubiquitous, mainstream AI tools"),
     "A": ("Tier A", "Major, widely adopted tools"),
@@ -126,8 +129,9 @@ def build_recommended(d: dict) -> str:
     secondary = [
         t for t in tools
         if t["status"] == "active" and t.get("published") and not t.get("daily_use")
-        and t.get("tier") in ("S", "A")
+        and t.get("tier") in FULL_ENTRY_TIERS
     ]
+    secondary.sort(key=lambda t: FULL_ENTRY_TIERS.index(t["tier"]))
     out.append("## Worth knowing about")
     out.append("")
     out.append("Strong offers, just not in my daily stack.")
@@ -139,7 +143,7 @@ def build_recommended(d: dict) -> str:
     rest = [
         t for t in tools
         if t["status"] == "active" and t.get("published") and not t.get("daily_use")
-        and t.get("tier") not in ("S", "A")
+        and t.get("tier") not in FULL_ENTRY_TIERS
     ]
     if rest:
         out.append("### The rest")

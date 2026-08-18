@@ -22,6 +22,9 @@ jobs:
       - name: Check data/tools.yml parses
         run: python3 -c "import yaml; yaml.safe_load(open('data/tools.yml')); print('tools.yml OK')"
 
+      - name: Check data/tools.yml schema
+        run: python3 scripts/check_schema.py
+
       - name: Check generated markdown is up to date
         run: python3 scripts/build.py --check
 
