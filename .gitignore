@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build and check artefacts
+report.md
+*.log
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
