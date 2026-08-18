@@ -6,9 +6,11 @@ own pages, with a `Last checked` date on every published entry.
 **Read the guide: [recommended.md](./recommended.md)** ·
 Live post: [twyoon.com/post/student-ai-tools](https://twyoon.com/post/student-ai-tools/)
 
-> **No affiliate or referral links.** Every link goes to the vendor's own
-> help-centre or pricing page. Referral programmes are documented as facts about
-> each tool, not as an invitation to use anyone's link.
+> **One referral link.** The guide carries exactly one, for Otter.ai, labelled
+> where it appears with what each side gets. Every other link goes to the
+> vendor's own help-centre or pricing page and earns nothing. Referral
+> programmes for all other tools are documented as facts, not as an invitation
+> to use anyone's link.
 
 ## What is in this repo
 

@@ -8,7 +8,7 @@ The full working record behind the public list. Every tool evaluated, with claim
 - **Last full review:** 2026-08-18
 - **Previous reviews:** 2026-07-19, 2026-05-14, 2026-05-03
 - **Source of truth:** `data/tools.yml`. This file and `recommended.md` are both generated from it, so the two can no longer drift apart.
-- **Disclosure:** This guide contains no affiliate or referral links. Every link goes to the vendor's own help-centre or pricing page. Referral programmes are documented as facts about each tool, not as an invitation to use anyone's link.
+- **Disclosure:** This guide contains exactly one referral link, for Otter.ai, and it is labelled where it appears. Using it gives you a free month of Otter Pro Lite and gives me referral credit. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
 
 ## Per-entry schema
 
@@ -842,6 +842,7 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-18 (referral audit)** Added one referral link, for Otter.ai, at the maintainer's request. The no-affiliate-links policy was rewritten in the same change, and the README, the guide, CONTRIBUTING and the live post were all updated, so no surface is left claiming the guide carries none. The link renders with a disclosure naming what each side gets.
 - **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.
 - **2026-08-18 (referral audit)** Granola confirmed referee-only with its four rules: friend must be new, their company must have no existing workspace, signup must use a company email, and the trial extension applies automatically.
 - **2026-08-18 (referral audit)** Added a cross-reference table for tracked tools that also run referral programmes. Without it the referral table omitted Granola, Perplexity, Otter and six others, and read as complete when it was not.

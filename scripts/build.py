@@ -219,9 +219,12 @@ def build_recommended(d: dict) -> str:
         out.append("### The rest")
         out.append("")
         for t in rest:
-            out.append(
-                f"- **{t['name']}** ({t['headline']}). {clean(t['blurb'])} {t['links'][0]}"
-            )
+            line = (f"- **{t['name']}** ({t['headline']}). {clean(t['blurb'])} "
+                    f"{t['links'][0]}")
+            if t.get("referral_link"):
+                line += (f" Referral link (you get a free month, I get credit): "
+                         f"{t['referral_link']['url']}")
+            out.append(line)
         out.append("")
 
     # Cloud credits
@@ -319,6 +322,12 @@ def _recommended_entry(t: dict, heading: str) -> list[str]:
         out.append(f"- Eligibility: {clean(t['regions'])}")
     for cav in t.get("caveats") or []:
         out.append(f"- Note: {clean(cav)}")
+    rl = t.get("referral_link")
+    if rl:
+        out.append(f"- **Referral link:** {rl['url']}")
+        out.append(f"  - **Disclosure.** You get {clean(rl['you_get'])}. "
+                   f"I get {clean(rl['i_get'])}. The plain links above earn nothing.")
+        out.append(f"  - {clean(rl['caveat'])}")
     out.append("")
     img = t.get("image")
     if img:

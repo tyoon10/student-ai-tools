@@ -30,10 +30,16 @@ meta:
   maintainer: 'Taewan Yoon'
   # Hard rule enforced by scripts/check_freshness.py
   max_age_days: 90
+  # Changed 2026-08-18. The guide previously carried none. It now carries exactly
+  # one, and every surface that used to claim otherwise was updated in the same
+  # commit rather than left stating something untrue.
   affiliate_policy: >-
-    This guide contains no affiliate or referral links. Every link goes to the
-    vendor's own help-centre or pricing page. Referral programmes are documented
-    as facts about each tool, not as an invitation to use anyone's link.
+    This guide contains exactly one referral link, for Otter.ai, and it is labelled
+    where it appears. Using it gives you a free month of Otter Pro Lite and gives
+    me referral credit. Every other link goes to the vendor's own help-centre or
+    pricing page and earns nothing. Referral programmes for all other tools are
+    documented as facts, not as an invitation to use anyone's link.
+  referral_link_count: 1
 
 # ---------------------------------------------------------------------------
 # Tools with a student offer that an individual can claim.
@@ -365,6 +371,18 @@ tools:
     links:
       - 'https://help.otter.ai/hc/en-us/articles/4402467517847-Student-Teacher-discount-program-for-the-Pro-plan'
       - 'https://otter.ai/pricing'
+    # The only referral link in this repo. Rendered with an explicit disclosure
+    # by both generators; do not surface it as a plain link.
+    referral_link:
+      url: 'https://otter.ai/referrals/SSHQGFP3'
+      you_get: '1 month of Otter Pro Lite free, 300 minutes per month'
+      i_get: 'Promotional credits or Pro Lite minutes, capped at 10,000 minutes or 12 months'
+      caveat: >-
+        This is the referral programme, which is separate from the 20 percent
+        student discount above. Otter states the referral cannot be combined with
+        other referral promotions. Whether it stacks with the student discount is
+        not documented either way, so if the student rate matters more to you,
+        claim that first and skip this link.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1789,6 +1807,12 @@ backlog:
 changelog:
   - date: '2026-08-18 (referral audit)'
     entries:
+      - >-
+        Added one referral link, for Otter.ai, at the maintainer's request. The
+        no-affiliate-links policy was rewritten in the same change, and the README,
+        the guide, CONTRIBUTING and the live post were all updated, so no surface
+        is left claiming the guide carries none. The link renders with a disclosure
+        naming what each side gets.
       - >-
         Suno and Granola confirmed from in-product panels, which is first-party
         evidence and outranks the help pages used before. Two corrections to Suno:

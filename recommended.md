@@ -8,7 +8,7 @@ The AI tools I actually use, plus a curated secondary list. Every offer on this 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
-- **Disclosure:** This guide contains no affiliate or referral links. Every link goes to the vendor's own help-centre or pricing page. Referral programmes are documented as facts about each tool, not as an invitation to use anyone's link.
+- **Disclosure:** This guide contains exactly one referral link, for Otter.ai, and it is labelled where it appears. Using it gives you a free month of Otter Pro Lite and gives me referral credit. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
 
 ---
 
@@ -200,6 +200,9 @@ Transcription for lectures, interviews and group meetings. Individual Pro only, 
 - Length: Ongoing while discount eligibility is met.
 - Eligibility: Verify at checkout, availability is not clearly global.
 - Note: Applies to the individual Pro plan only, not workspace or team plans.
+- **Referral link:** https://otter.ai/referrals/SSHQGFP3
+  - **Disclosure.** You get 1 month of Otter Pro Lite free, 300 minutes per month. I get Promotional credits or Pro Lite minutes, capped at 10,000 minutes or 12 months. The plain links above earn nothing.
+  - This is the referral programme, which is separate from the 20 percent student discount above. Otter states the referral cannot be combined with other referral promotions. Whether it stacks with the student discount is not documented either way, so if the student rate matters more to you, claim that first and skip this link.
 
 ### QuillBot (Up to 25% off)
 
@@ -325,6 +328,7 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-18 (referral audit)** Added one referral link, for Otter.ai, at the maintainer's request. The no-affiliate-links policy was rewritten in the same change, and the README, the guide, CONTRIBUTING and the live post were all updated, so no surface is left claiming the guide carries none. The link renders with a disclosure naming what each side gets.
 - **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.
 - **2026-08-18 (referral audit)** Granola confirmed referee-only with its four rules: friend must be new, their company must have no existing workspace, signup must use a company email, and the trial extension applies automatically.
 - **2026-08-18 (referral audit)** Added a cross-reference table for tracked tools that also run referral programmes. Without it the referral table omitted Granola, Perplexity, Otter and six others, and read as complete when it was not.

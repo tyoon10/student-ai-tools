@@ -72,8 +72,22 @@ An entry only goes on the public list if all of these hold:
 Offers that end are moved to `status: ended` rather than deleted. Knowing an
 offer is gone is as useful as knowing one exists.
 
-## No affiliate links
+## Referral links
 
-This guide carries no affiliate or referral links, and pull requests adding them
-will be declined. Referral programmes are documented as facts about each tool.
-That distinction is the whole point of the list being trustworthy.
+The guide carries exactly one referral link, for Otter.ai. It is declared in
+`data/tools.yml` under that tool's `referral_link` field and both generators
+render it with a disclosure naming what the reader gets and what the maintainer
+gets.
+
+The rules, if another is ever added:
+
+1. **Declare it in the data**, never inline in the markdown. A referral link
+   that is not in `referral_link` will not carry a disclosure.
+2. **Disclose at the point of use**, not only in a policy line at the top. The
+   reader deciding whether to click is the one who needs to know.
+3. **Never replace the vendor link.** The plain source link stays, so the offer
+   can always be verified without going through anyone's link.
+4. **Update `meta.affiliate_policy` and the README in the same change.** The
+   count is stated in several places and they must not disagree.
+5. **Say plainly if the reader gets nothing.** A one-sided link is allowed, but
+   it must not be presented as if it benefits them.

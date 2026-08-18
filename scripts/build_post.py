@@ -378,7 +378,17 @@ def offer_table(t: dict) -> list[str]:
     if t.get("regions"):
         out.append(row("Eligibility", clean(t["regions"])))
     out.append(row("Sign up", f"[{_domain(t['links'][0])}]({t['links'][0]})"))
+    rl = t.get("referral_link")
+    if rl:
+        out.append(row("Referral link",
+                       f"[{_domain(rl['url'])}]({rl['url']}) **You get "
+                       f"{clean(rl['you_get'])}. I get referral credit.**"))
     out.append("")
+    if rl:
+        out.append(f"*Disclosure: that referral link earns me credit. "
+                   f"{clean(rl['caveat'])} Every other link on this page earns "
+                   f"me nothing.*")
+        out.append("")
     return out
 
 
@@ -448,8 +458,20 @@ def build(d: dict) -> str:
              "research notes, including the tools I ruled out and why, live at "
              f"[github.com/tyoon10/student-ai-tools]({meta['repo']}).")
     o.append("")
-    o.append("> **No affiliate links.** Nothing here pays me. Every link goes straight "
-             "to the vendor.")
+    # Derived from meta so this line can never drift from the actual link count.
+    n = meta.get("referral_link_count", 0)
+    if n == 0:
+        o.append("> **No affiliate links.** Nothing here pays me. Every link goes "
+                 "straight to the vendor.")
+    else:
+        subject = "One link" if n == 1 else f"{n} links"
+        verb = "is" if n == 1 else "are"
+        pronoun = "it" if n == 1 else "they"
+        o.append(
+            f"> **Disclosure.** {subject} on this page {verb} a referral link, "
+            f"labelled where {pronoun} appears with what you get and what I get. "
+            "Every other link goes straight to the vendor and earns me nothing."
+        )
     o.append("")
     o.append("---")
     o.append("")
@@ -607,6 +629,18 @@ def main() -> int:
                 print(f"blank line inside a <{tag}> block. Markdown will close the "
                       f"tag there and mangle the rest.", file=sys.stderr)
                 return 1
+    # An unrendered f-string is a silent content bug: the page still builds and
+    # still deploys, it just prints Python at the reader. Check the prose only,
+    # since the embedded CSS legitimately contains braces.
+    prose = re.sub(r"<(style|script)>.*?</\1>", "", content, flags=re.S)
+    leaked = re.findall(r"\{[a-z_][a-z0-9_]*\}|\{'[^']*'[^}]*\}|\{[a-z_]+ if [^}]*\}",
+                        prose)
+    if leaked:
+        print(f"unrendered f-string expression in output: {sorted(set(leaked))[:4]}. "
+              f"A line in a multi-line string is probably missing its f prefix.",
+              file=sys.stderr)
+        return 1
+
     if any(c in content for c in "\u2018\u2019\u201c\u201d"):
         print("typographic quotes found in generated output; markdown may have "
               "already mangled a raw HTML block", file=sys.stderr)
