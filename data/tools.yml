@@ -85,6 +85,7 @@ tools:
     confidence: high
 
   - id: figma
+    logo_domain: 'figma.com'
     name: Figma
     offer: Professional (Education)
     category: Design
@@ -160,6 +161,7 @@ tools:
     confidence: high
 
   - id: github
+    logo_domain: 'github.com'
     name: GitHub Student Developer Pack
     offer: Student Developer Pack (incl. Copilot)
     category: Developer tools
@@ -321,6 +323,7 @@ tools:
     confidence: medium
 
   - id: otter
+    logo_domain: 'otter.ai'
     name: Otter.ai
     offer: Pro (Student and Teacher discount)
     category: Transcription
@@ -358,6 +361,7 @@ tools:
     confidence: high
 
   - id: consensus
+    logo_domain: 'consensus.app'
     name: Consensus
     offer: Premium (Student and Faculty)
     category: Academic search
@@ -390,6 +394,7 @@ tools:
     confidence: medium
 
   - id: openai-codex
+    logo_domain: 'openai.com'
     name: OpenAI Codex
     offer: Codex for Students credits
     category: AI coding
@@ -433,6 +438,7 @@ tools:
     confidence: high
 
   - id: grammarly
+    logo_domain: 'grammarly.com'
     name: Grammarly
     offer: Premium (SheerID campaign)
     category: Writing
@@ -578,6 +584,7 @@ tools:
     confidence: high
 
   - id: beautiful-ai
+    logo_domain: 'beautiful.ai'
     name: Beautiful.ai
     offer: Pro (Education)
     category: Presentations
@@ -655,6 +662,7 @@ tools:
     confidence: high
 
   - id: loom
+    logo_domain: 'loom.com'
     name: Loom
     offer: Business and Business+AI (Education discount)
     category: Async video
@@ -818,6 +826,7 @@ tools:
     confidence: high
 
   - id: speechify
+    logo_domain: 'speechify.com'
     name: Speechify
     offer: Premium (Student)
     category: Text to speech
@@ -1067,6 +1076,9 @@ tools:
 cloud_credits:
 
   - id: azure
+    # Domain discovery returns the generic Microsoft favicon here, which is
+    # byte-identical to the Microsoft 365 entry's. Pin the product mark.
+    logo_url: 'https://azure.microsoft.com/svghandler/azure?width=600'
     name: Microsoft Azure for Students
     status: active
     published: true

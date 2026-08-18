@@ -33,6 +33,9 @@ from slug import slugify, verify_anchors  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "tools.yml"
+LOGO_DIR = pathlib.Path(
+    "/home/taewan/workspace/initiatives/twyoon-com/repos/site/public/media/logos"
+)
 SITE_DIR = pathlib.Path(
     "/home/taewan/workspace/initiatives/twyoon-com/repos/site"
     "/src/content/writings/student-ai-tools"
@@ -53,6 +56,209 @@ def clean(text) -> str:
     return " ".join(str(text or "").split())
 
 
+# Category -> coarse filter group. This is presentation, so it lives in the
+# generator rather than the data. Unmapped categories are reported by build_grid
+# so a new tool never lands silently in a catch-all bucket.
+FILTER_GROUPS = {
+    "coding": ("Coding and dev", [
+        "AI code editor", "AI coding", "AI coding agent", "Developer tools",
+        "Cloud and infrastructure",
+    ]),
+    "writing": ("Writing and research", [
+        "Writing", "Academic writing", "Academic search", "AI search",
+        "Transcription", "Text to speech",
+    ]),
+    "notes": ("Notes and meetings", [
+        "Notes and knowledge", "Meeting notes", "Scheduling", "Daily planning",
+    ]),
+    "design": ("Design and media", [
+        "Design", "Design and creative", "Design and web", "Presentations",
+        "Async video",
+    ]),
+    "productivity": ("Productivity", ["Productivity suite"]),
+}
+_CATEGORY_TO_GROUP = {
+    cat: key for key, (_, cats) in FILTER_GROUPS.items() for cat in cats
+}
+
+GRID_CSS = """<style>
+.offergrid{--gap:14px;margin:32px 0 40px}
+.offergrid__controls{display:none;flex-wrap:wrap;gap:10px;align-items:center;
+  padding:14px;border:1px solid var(--rule);border-radius:var(--r-action);
+  background:var(--sunk);margin-bottom:var(--gap)}
+.offergrid--live .offergrid__controls{display:flex}
+.offergrid__search{flex:1 1 200px;min-width:0;font:inherit;font-size:14px;
+  padding:8px 12px;border:1px solid var(--rule);border-radius:var(--r-action);
+  background:var(--canvas);color:var(--ink)}
+.offergrid__search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.offergrid__chips{display:flex;flex-wrap:wrap;gap:6px}
+.offergrid__chip{font:inherit;font-size:12px;line-height:1;padding:7px 12px;cursor:pointer;
+  border:1px solid var(--rule);border-radius:var(--r-pill);
+  background:var(--canvas);color:var(--ink-muted)}
+.offergrid__chip:hover{border-color:var(--accent);color:var(--accent)}
+.offergrid__chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.offergrid__toggle{display:inline-flex;align-items:center;gap:6px;font-size:12px;
+  color:var(--ink-muted);cursor:pointer;white-space:nowrap}
+.offergrid__count{width:100%;margin:0;font-size:12px;color:var(--ink-quiet)}
+.offergrid__list{list-style:none;margin:0;padding:0;display:grid;gap:var(--gap);
+  grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.offercard{margin:0}
+.offercard a{display:flex;flex-direction:column;gap:8px;height:100%;padding:16px;
+  text-decoration:none;color:inherit;background:var(--surface);
+  border:1px solid var(--rule);border-radius:var(--r-action)}
+.offercard a:hover{border-color:var(--accent);background:var(--accent-wash)}
+.offercard a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.offercard__top{display:flex;align-items:center;gap:10px}
+.offercard__logo{width:32px;height:32px;object-fit:contain;flex:none;border-radius:4px}
+.offercard__mono{width:32px;height:32px;flex:none;border-radius:4px;display:grid;
+  place-items:center;background:var(--accent);color:#fff;font-weight:600;font-size:14px}
+.offercard__name{font-weight:600;font-size:15px;line-height:1.2}
+.offercard__offer{align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.02em;
+  padding:4px 8px;border-radius:var(--r-pill);background:var(--accent-wash);color:var(--accent)}
+.offercard--free .offercard__offer{background:var(--accent);color:#fff}
+.offercard__desc{font-size:13px;line-height:1.45;color:var(--ink-muted);margin:0}
+.offercard__cat{margin-top:auto;font-size:11px;color:var(--ink-quiet)}
+.offergrid__empty{display:none;padding:20px;text-align:center;color:var(--ink-muted);
+  border:1px dashed var(--rule);border-radius:var(--r-action);font-size:14px}
+.offergrid--empty .offergrid__empty{display:block}
+.offergrid--empty .offergrid__list{display:none}
+@media (max-width:520px){.offergrid__list{grid-template-columns:1fr}}
+</style>"""
+
+GRID_JS = """<script>
+(function () {
+  var root = document.querySelector('[data-offergrid]');
+  if (!root) return;
+  // Controls stay hidden until JS is running, so the no-JS view is the full
+  // grid rather than dead filters.
+  root.classList.add('offergrid--live');
+
+  var cards = Array.prototype.slice.call(root.querySelectorAll('.offercard'));
+  var search = root.querySelector('[data-search]');
+  var chips = Array.prototype.slice.call(root.querySelectorAll('[data-filter]'));
+  var freeOnly = root.querySelector('[data-free]');
+  var count = root.querySelector('[data-count]');
+  var group = 'all';
+
+  function apply() {
+    var q = (search.value || '').trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (card) {
+      var okGroup = group === 'all' || card.dataset.group === group;
+      var okFree = !freeOnly.checked || card.dataset.free === 'true';
+      var okText = !q || card.dataset.search.indexOf(q) !== -1;
+      var visible = okGroup && okFree && okText;
+      card.hidden = !visible;
+      if (visible) shown++;
+    });
+    root.classList.toggle('offergrid--empty', shown === 0);
+    count.textContent = shown === cards.length
+      ? 'Showing all ' + cards.length + ' offers'
+      : 'Showing ' + shown + ' of ' + cards.length + ' offers';
+  }
+
+  search.addEventListener('input', apply);
+  freeOnly.addEventListener('change', apply);
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      group = chip.dataset.filter;
+      chips.forEach(function (c) {
+        c.setAttribute('aria-pressed', String(c === chip));
+      });
+      apply();
+    });
+  });
+  apply();
+})();
+</script>"""
+
+
+def _first_sentence(text: str, limit: int = 120) -> str:
+    text = clean(text)
+    for i, ch in enumerate(text):
+        if ch == "." and i + 1 < len(text) and text[i + 1] == " ":
+            text = text[: i + 1]
+            break
+    if len(text) > limit:
+        text = text[:limit].rsplit(" ", 1)[0] + "..."
+    return text
+
+
+def _esc(text: str) -> str:
+    return (str(text).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str]:
+    """Interactive, filterable card grid.
+
+    `rows` is (entry, anchor). Anchor may be a section anchor for entries that
+    have no heading of their own.
+    """
+    unmapped = sorted({e["category"] for e, _ in rows
+                       if e.get("category") and e["category"] not in _CATEGORY_TO_GROUP})
+    if unmapped:
+        print(f"WARNING: categories with no filter group, shown under All only: "
+              f"{unmapped}", file=sys.stderr)
+
+    used = {g for e, _ in rows if (g := _CATEGORY_TO_GROUP.get(e.get("category", "")))}
+
+    o = [GRID_CSS, "", '<div class="offergrid" data-offergrid>']
+    o.append('  <div class="offergrid__controls">')
+    o.append('    <input id="offer-search" class="offergrid__search" type="search" '
+             'data-search placeholder="Search tools, offers, categories..." '
+             'aria-label="Search offers">')
+    o.append('    <div class="offergrid__chips" role="group" aria-label="Filter by category">')
+    o.append('      <button type="button" class="offergrid__chip" data-filter="all" '
+             'aria-pressed="true">All</button>')
+    for key, (label, _) in FILTER_GROUPS.items():
+        if key in used:
+            o.append(f'      <button type="button" class="offergrid__chip" '
+                     f'data-filter="{key}" aria-pressed="false">{_esc(label)}</button>')
+    o.append('    </div>')
+    o.append('    <label class="offergrid__toggle"><input type="checkbox" data-free> '
+             'Free only</label>')
+    o.append('    <p class="offergrid__count" data-count aria-live="polite"></p>')
+    o.append('  </div>')
+    o.append('  <ul class="offergrid__list">')
+
+    for e, anchor in rows:
+        name = e["name"]
+        headline = e.get("headline", "")
+        desc = _first_sentence(e.get("blurb") or e.get("student") or "")
+        cat = e.get("category", "Cloud and infrastructure")
+        group = _CATEGORY_TO_GROUP.get(cat, "")
+        is_free = "free" in headline.lower()
+        haystack = " ".join([name, headline, desc, cat]).lower()
+
+        logo = next(iter(sorted(logo_dir.glob(f"{e['id']}.*"))), None) if logo_dir.exists() else None
+        if logo:
+            media = (f'<img class="offercard__logo" src="/media/logos/{logo.name}" '
+                     f'alt="" width="32" height="32" loading="lazy" decoding="async">')
+        else:
+            media = f'<span class="offercard__mono" aria-hidden="true">{_esc(name[0])}</span>'
+
+        o.append(f'    <li class="offercard{" offercard--free" if is_free else ""}" '
+                 f'data-group="{group}" data-free="{str(is_free).lower()}" '
+                 f'data-search="{_esc(haystack)}">')
+        o.append(f'      <a href="#{anchor}">')
+        o.append(f'        <span class="offercard__top">{media}'
+                 f'<span class="offercard__name">{_esc(name)}</span></span>')
+        o.append(f'        <span class="offercard__offer">{_esc(headline)}</span>')
+        o.append(f'        <span class="offercard__desc">{_esc(desc)}</span>')
+        o.append(f'        <span class="offercard__cat">{_esc(cat)}</span>')
+        o.append('      </a>')
+        o.append('    </li>')
+
+    o.append('  </ul>')
+    o.append('  <p class="offergrid__empty">No offers match that. Clear the search or '
+             'pick a different category.</p>')
+    o.append('</div>')
+    o.append(GRID_JS)
+    o.append("")
+    return o
+
+
 def daily_heading(i: int, t: dict) -> str:
     return f"{i}. {t['name']}: **{t['headline']}**"
 
@@ -62,7 +268,8 @@ def secondary_heading(t: dict) -> str:
 
 
 def toc(daily, secondary, rest, cloud, lost) -> list[str]:
-    """A navigable index of every offer, keyed to the real heading anchors."""
+    """Markdown-table index. Superseded by build_grid in the post, kept for
+    the --plain fallback and for anyone regenerating without the site assets."""
     o = ["## Every offer at a glance", ""]
     o.append("Jump straight to any tool. Prices and terms are in each entry.")
     o.append("")
@@ -203,7 +410,24 @@ def build(d: dict) -> str:
     o.append("---")
     o.append("")
 
-    o.extend(toc(daily, secondary, rest, d["cloud_credits"], lost))
+    rows = [(t, slugify(daily_heading(i, t))) for i, t in enumerate(daily, 1)]
+    rows += [(t, slugify(secondary_heading(t))) for t in secondary]
+    rows += [(t, slugify("The rest")) for t in rest]
+    rows += [(c, slugify("Cloud credits")) for c in d["cloud_credits"]]
+
+    o.append("## Every offer at a glance")
+    o.append("")
+    o.append("Filter by category, search by name, or narrow to the free ones. "
+             "Each card links to the full entry with terms and sources.")
+    o.append("")
+    o.extend(build_grid(rows, LOGO_DIR))
+    if lost:
+        names = ", ".join(t["name"] for t in lost)
+        o.append(f"**[Recently closed](#{slugify('Recently closed')}):** {names}. "
+                 "Kept on the page so you know not to go looking.")
+        o.append("")
+    o.append("---")
+    o.append("")
 
     o.append(f"## The {_word(len(daily))} I actually use every day")
     o.append("")
