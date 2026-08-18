@@ -29,10 +29,20 @@ import yaml
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "tools.yml"
-DEFAULT_OUT = pathlib.Path(
+SITE_DIR = pathlib.Path(
     "/home/taewan/workspace/initiatives/twyoon-com/repos/site"
-    "/src/content/writings/student-ai-tools/index.draft.md"
+    "/src/content/writings/student-ai-tools"
 )
+
+
+def default_out(meta: dict) -> pathlib.Path:
+    """Astro's loader matches **/index.{md,mdx}, so the filename IS the switch.
+
+    index.draft.md  -> not built at all
+    index.md        -> built at /writings/student-ai-tools
+    """
+    name = "index.md" if meta.get("live_post_published") else "index.draft.md"
+    return SITE_DIR / name
 
 
 def clean(text) -> str:
@@ -86,6 +96,10 @@ def build(d: dict) -> str:
     o.append('description: "The AI tools I actually use, plus a curated secondary '
              f'list. Every offer verified against the vendor\'s own pages on {date}."')
     o.append("featured: false")
+    if meta.get("live_post_unlisted"):
+        # Builds at its own URL, hidden from the writings index, the homepage
+        # and the sitemap, and served with noindex. Direct-link sharing only.
+        o.append("unlisted: true")
     o.append('coverImage: "./featured.png"')
     o.append("tags:")
     for tag in ("AI Tools", "Students", "MBA", "Productivity"):
@@ -238,11 +252,14 @@ def _word(n: int) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", type=pathlib.Path, default=DEFAULT_OUT)
+    ap.add_argument("--out", type=pathlib.Path)
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
 
     data = yaml.safe_load(DATA.read_text(encoding="utf-8"))
+    meta = data["meta"]
+    if args.out is None:
+        args.out = default_out(meta)
     content = build(data)
 
     if args.check:
@@ -259,7 +276,16 @@ def main() -> int:
     print(f"wrote {args.out} ({len(content):,} bytes)")
     if args.out.name.endswith(".draft.md"):
         print("NOTE: this is a draft. Astro ignores index.draft.md. "
-              "Rename to index.md to publish, and set meta.live_post_published: true.")
+              "Set meta.live_post_published: true in data/tools.yml to publish.")
+    elif meta.get("live_post_unlisted"):
+        print("NOTE: published as UNLISTED. It builds at "
+              f"{meta['live_post']} and is reachable by direct link, but is "
+              "hidden from the writings index, the homepage and the sitemap, "
+              "and served with noindex.")
+    stale = SITE_DIR / ("index.draft.md" if args.out.name == "index.md" else "index.md")
+    if stale.exists():
+        print(f"WARNING: {stale.name} also exists and will confuse the loader. "
+              f"Remove it.")
     return 0
 
 

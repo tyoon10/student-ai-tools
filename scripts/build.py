@@ -73,7 +73,10 @@ def build_recommended(d: dict) -> str:
     out.append(f"- **Last refreshed:** {meta['last_full_review']}")
     out.append("- **Full research notes:** [knowledge-base.md](./knowledge-base.md)")
     if meta.get("live_post_published"):
-        out.append(f"- **Live post:** [twyoon.com/writings/student-ai-tools]({meta['live_post']})")
+        suffix = (" (unlisted: reachable by link, not indexed or listed)"
+                  if meta.get("live_post_unlisted") else "")
+        out.append(f"- **Live post:** [twyoon.com/writings/student-ai-tools]"
+                   f"({meta['live_post']}){suffix}")
     else:
         out.append("- **Live post:** not yet published. This repo is the canonical version.")
     out.append(f"- **Disclosure:** {clean(meta['affiliate_policy'])}")

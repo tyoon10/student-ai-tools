@@ -21,7 +21,11 @@ meta:
   # returns 200 but is only a legacy redirect stub pointing at a 404. Do not
   # advertise it as live until the draft is promoted to index.md.
   live_post: 'https://twyoon.com/writings/student-ai-tools'
-  live_post_published: false
+  live_post_published: true
+  # Unlisted: the page builds at its own URL and anyone with the link can read
+  # it, but it is kept out of the writings index, the homepage and the sitemap,
+  # and served with noindex. Share the link deliberately rather than broadcasting.
+  live_post_unlisted: true
   repo: 'https://github.com/tyoon10/student-ai-tools'
   maintainer: 'Taewan Yoon'
   # Hard rule enforced by scripts/check_freshness.py

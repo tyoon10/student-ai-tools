@@ -7,7 +7,7 @@ The AI tools I actually use, plus a curated secondary list. Every offer on this 
 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
-- **Live post:** not yet published. This repo is the canonical version.
+- **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
 - **Disclosure:** This guide contains no affiliate or referral links. Every link goes to the vendor's own help-centre or pricing page. Referral programmes are documented as facts about each tool, not as an invitation to use anyone's link.
 
 ---
