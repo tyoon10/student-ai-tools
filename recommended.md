@@ -325,6 +325,14 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-18 (referral audit)** Widened the referral bar from "both parties must benefit" to "either party benefits", and added a `sided` field so a referrer-only scheme is never presented as mutual. 17 two-sided, 6 referrer-only, 3 affiliate.
+- **2026-08-18 (referral audit)** Added Raycast (1 month each way), Recraft (200 credits each way) and Kling AI (500 credits to the sharer, 50 percent bonus to the friend).
+- **2026-08-18 (referral audit)** Moved Descript, HeyGen, ElevenLabs, Synthesia and Decktopus in from ruled_out. All were rejected earlier only for being one-sided.
+- **2026-08-18 (referral audit)** Reclassified Replit, v0, Gamma and Scite from two-sided to referrer-only. The friend never got more than a standard new-user grant in any of them.
+- **2026-08-18 (referral audit)** Re-verified Suno, Fathom and Superhuman against vendor pages. Superhuman has a second route: signups via the "Sent via Superhuman" signature.
+- **2026-08-18 (referral audit)** Perplexity: both referral routes are now closed. The Comet programme concluded 2025-11-06 and the student extension ended 2026-05-31.
+- **2026-08-18 (referral audit)** Recorded the Claude Guest Pass programme as UNCONFIRMED. Third-party reporting is consistent but the vendor support article 404s.
+- **2026-08-18 (referral audit)** Every referral entry now carries its own last_checked date, so the 17 rows carried over from May are visibly unverified rather than implicitly current.
 - **2026-08-18 (sweep)** Multi-agent sweep across six discovery angles. 29 candidates, 26 confirmed against vendor pages, 8 added to the public list.
 - **2026-08-18 (sweep)** Added Microsoft 365 Personal (50 percent off at 4.99 USD per month with Copilot included), the strongest find of the sweep.
 - **2026-08-18 (sweep)** Added Beautiful.ai, Obsidian, Loom, Amp, Framer, Reclaim.ai and Speechify.

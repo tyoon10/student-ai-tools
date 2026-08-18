@@ -470,12 +470,17 @@ def build_knowledge_base(d: dict) -> str:
     out.append("")
     out.append(f"**Bar to qualify:** {clean(rt['bar'])}")
     out.append("")
-    out.append("| Tool | Category | Referrer gets | Referee gets | Confidence |")
-    out.append("|---|---|---|---|---|")
-    for e in rt["entries"]:
+    out.append(f"**Coverage:** {clean(rt.get('coverage_note', ''))}")
+    out.append("")
+    out.append("| Tool | Category | Who benefits | Referrer gets | Referee gets | Confidence | Checked |")
+    out.append("|---|---|---|---|---|---|---|")
+    order = {"two-sided": 0, "referee-only": 1, "referrer-only": 2, "affiliate": 3}
+    for e in sorted(rt["entries"], key=lambda x: (order.get(x["sided"], 9),
+                                                  x["last_checked"] < "2026-08-18",
+                                                  x["name"].lower())):
         out.append(
-            f"| **{e['name']}** | {e['category']} | {clean(e['referrer'])} | "
-            f"{clean(e['referee'])} | {e['confidence']} |"
+            f"| **{e['name']}** | {e['category']} | {e['sided']} | {clean(e['referrer'])} | "
+            f"{clean(e['referee'])} | {e['confidence']} | {e['last_checked']} |"
         )
     out.append("")
     out.append("Caveats and sources:")
@@ -483,6 +488,17 @@ def build_knowledge_base(d: dict) -> str:
     for e in rt["entries"]:
         out.append(f"- **{e['name']}**: {clean(e['caveats'])} Source: {e['link']}")
     out.append("")
+    unc = rt.get("unconfirmed") or []
+    if unc:
+        out.append("### Claimed but not confirmed on a vendor page")
+        out.append("")
+        out.append("Credible third-party reporting describes these. None could be "
+                   "verified on the vendor's own domain, so none is recorded as real.")
+        out.append("")
+        for u in unc:
+            out.append(f"- **{u['name']}**: {clean(u['claim'])} *Why unconfirmed:* "
+                       f"{clean(u['why_unconfirmed'])}")
+        out.append("")
 
     ro = d["ruled_out"]
     out.append(f"## Probed and ruled out (audited {ro['audited']})")

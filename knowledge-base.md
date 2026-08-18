@@ -173,7 +173,7 @@ Status: active.
 - Included features: Full Pro plus education features such as Learn Mode.
 - Effective length: Recurring monthly while verified and subscribed.
 - Verification: SheerID, student or faculty at a university-level institution.
-- Referral programme: **two-sided**. The general refer-a-friend programme still gives both sides one free month, capped at 12 months. The student "Back to School" extension that raised the cap to 24 months ENDED on 2026-05-31 and has not been replaced.
+- Referral programme: **two-sided**. Both routes are now closed. The student "Back to School" extension that raised the cap to 24 months ENDED 2026-05-31, and the Comet browser referral (20 USD to the sharer, a free Pro month to the friend) concluded 2025-11-06 with no new commissions after that date. Existing links may still resolve but no longer earn. Verified students still get the 50 percent Education Pro rate through SheerID; nothing stacks on top of it.
 - Official sources:
   - https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro
 - Referral sources:
@@ -716,62 +716,86 @@ These sat in a pending state for more than three months. A maybe is worse than a
 - **Julius AI** (opened 2026-05-03). No stable official student pricing terms found. Open for more than three months with no confirmation. Removed from the tier ranking and excluded from the public list.
 - **Humata** (opened 2026-05-03). The pricing FAQ references student billing while the visible plan cards differ. Open for more than three months with no confirmation. Removed from the tier ranking and excluded from the public list.
 
-## Peer-referral programmes (secondary axis, audited 2026-05-14)
+## Peer-referral programmes (secondary axis, audited 2026-08-18)
 
 A separate audit targeting tools where both parties receive a defined benefit. These are **not** validated for student discounts, so they do not appear on the public list. Recorded here as reference, not as a recommendation to farm credits.
 
-**Bar to qualify:** An official help-centre or refer-a-friend page must document a defined benefit for BOTH the referrer and the referee. Affiliate-only, B2B-only and ambassador-style programmes do not qualify.
+**Bar to qualify:** An official vendor page must document a defined benefit to at least one party. `sided` records who actually benefits, so a referrer-only scheme is never presented as a mutual one. Affiliate programmes are included but labelled, because commission to the sharer is a different thing from a peer reward.
 
-| Tool | Category | Referrer gets | Referee gets | Confidence |
-|---|---|---|---|---|
-| **Suno** | Music | 250 credits | 250 credits | high |
-| **Runway** | Video | 1000 credits | 1000 credits | high |
-| **Bolt.new** | App builders | 200k tokens plus 5M on Pro upgrade | 200k tokens plus 5M on Pro upgrade | high |
-| **StackBlitz** | App builders | 200k tokens | 200k tokens | high |
-| **Fathom** | Meeting AI | 100 points plus 30 extra days of Premium | Trial extended from 30 to 60 days of Premium | high |
-| **Superhuman** | Email | 1 free month | 1 free month | high |
-| **Krisp** | Calls | 2 months free Pro per friend | 1 month free Pro | high |
-| **Tome** | Slides | 30 percent off 3 months plus 10 USD credits | 30 percent off 3 months plus 10 USD credits | medium |
-| **Fireflies.ai** | Meeting AI | 3 transcription credits or 5 AI credits | 10 percent off any plan for the first 3 days | high |
-| **Tactiq** | Meeting AI | 5 free meetings plus 1 AI credit | Free meetings plus AI credits | high |
-| **Windsurf** | AI code editor | 10 USD usage or 500 flex credits | 250 free flex credits on Pro signup | high |
-| **Replit** | App builders | 10 USD in Core credits | No explicit bonus beyond the standard new-user grant | medium |
-| **Lovable** | App builders | 10 credits | 10 credits | medium |
-| **v0 (Vercel)** | App builders | 5 credits | Standard new-user credits | medium |
-| **Shortwave** | Email | 1 free month of Premium | 1 free month of Premium | medium |
-| **Gamma** | Slides | 200 credits per signup | Standard new-user credits only | medium |
-| **Heptabase** | Notes | 5 USD off | 5 USD off | medium |
-| **Scite** | Research | 1 free month of Premium | Trial available, referrer benefit is primary | low |
+**Coverage:** Six entries were re-verified against vendor pages on 2026-08-18 and three new ones added. Runway, Krisp and Perplexity returned 403 to automated checks and Windsurf served an FAQ with no answers, so those keep their 2026-05-14 date and are NOT reconfirmed. Everything still dated 2026-05-14 below is carried over unverified.
+
+| Tool | Category | Who benefits | Referrer gets | Referee gets | Confidence | Checked |
+|---|---|---|---|---|---|---|
+| **Fathom** | Meeting AI | two-sided | 100 points plus 30 extra days of Premium | Trial extended from 30 to 60 days of Premium | high | 2026-08-18 |
+| **Kling AI** | Video generation | two-sided | 500 credits per friend who buys an individual plan | 50 percent bonus credits on first plan purchase, capped at 5,000 | medium | 2026-08-18 |
+| **Raycast** | Productivity | two-sided | 1 free month of Raycast Pro | 1 free month of Raycast Pro | high | 2026-08-18 |
+| **Recraft** | Image generation | two-sided | 200 credits once the friend generates their first image | 200 extra credits on signup | high | 2026-08-18 |
+| **Suno** | Music | two-sided | 250 credits per friend | 250 credits | high | 2026-08-18 |
+| **Superhuman** | Email | two-sided | 1 free month | 1 free month | high | 2026-08-18 |
+| **Bolt.new** | App builders | two-sided | 200k tokens plus 5M on Pro upgrade | 200k tokens plus 5M on Pro upgrade | medium | 2026-05-14 |
+| **Fireflies.ai** | Meeting AI | two-sided | 3 transcription credits on Free, or 5 AI credits on paid | 10 percent off any plan for the first 3 days | medium | 2026-05-14 |
+| **Heptabase** | Notes | two-sided | 5 USD off | 5 USD off | medium | 2026-05-14 |
+| **Krisp** | Calls | two-sided | 2 months free Pro per friend, cumulative | 1 month free Pro | medium | 2026-05-14 |
+| **Lovable** | App builders | two-sided | 10 credits per referral | 10 credits | low | 2026-05-14 |
+| **Runway** | Video generation | two-sided | 1,000 credits | 1,000 credits | medium | 2026-05-14 |
+| **Shortwave** | Email | two-sided | 1 free month of Premium | 1 free month of Premium | low | 2026-05-14 |
+| **StackBlitz** | App builders | two-sided | 200k bonus tokens | 200k bonus tokens | medium | 2026-05-14 |
+| **Tactiq** | Meeting AI | two-sided | 5 free meetings plus 1 AI credit, and 1 AI credit per month while active | Free meetings plus AI credits | medium | 2026-05-14 |
+| **Tome** | Slides | two-sided | 30 percent off 3 months plus 10 USD credits | 30 percent off 3 months plus 10 USD credits | low | 2026-05-14 |
+| **Windsurf** | AI code editor | two-sided | 10 USD usage or 500 flex credits | 250 free flex credits on Pro signup | medium | 2026-05-14 |
+| **Descript** | Audio and video editing | referrer-only | 30 percent of the referred user payments, capped at 20 USD, paid by PayPal or Venmo | Nothing documented | medium | 2026-08-18 |
+| **HeyGen** | Video avatars | referrer-only | 5,000 generative credits and a 6-month Creator trial for accepted ambassadors | Nothing documented | medium | 2026-08-18 |
+| **Gamma** | Slides | referrer-only | 200 credits per signup, balance capped at 2,000 | Standard new-user credits only, no extra for being referred | medium | 2026-05-14 |
+| **Replit** | App builders | referrer-only | 10 USD in Core credits per friend who upgrades | No explicit bonus beyond the standard new-user grant | medium | 2026-05-14 |
+| **Scite** | Research | referrer-only | 1 free month of Premium per referred colleague, repeatable | Trial available, but the referrer benefit is the primary one | low | 2026-05-14 |
+| **v0 (Vercel)** | App builders | referrer-only | 5 credits per friend | Standard new-user credits only | low | 2026-05-14 |
+| **ElevenLabs** | Voice AI | affiliate | 22 percent recurring commission for 12 months, via PartnerStack | Nothing documented | medium | 2026-08-18 |
+| **Decktopus** | Slides | affiliate | Up to 50 percent commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
+| **Synthesia** | Video generation | affiliate | Recurring commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
 
 Caveats and sources:
 
-- **Suno**: Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member. Source: https://x.com/SunoMusic/status/1843739161783599518
-- **Runway**: Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. Source: https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes
-- **Bolt.new**: Two-tier. The 5M bonus requires the referrer to also be on Pro. Source: https://support.bolt.new/external-resources/referral-program
-- **StackBlitz**: "Same mechanic as Bolt.new, its parent platform." Source: https://stackblitz.mintlify.app/external-resources/referral-program
-- **Fathom**: Referrals must come from a different company or email domain. Source: https://help.fathom.video/en/articles/4381825
-- **Superhuman**: Standard markets only, US and UK. Referral link lives under Cmd+K. Source: https://new.superhuman.com/two-ways-to-get-superhuman-for-free!-265980
-- **Krisp**: Cumulative for the referrer. Source: https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals
-- **Tome**: Friend must upgrade to Pro for the reward to fire. Source: https://invitation.codes/tome
-- **Fireflies.ai**: New users only. Reward is small on the free tier. Source: https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program
-- **Tactiq**: Friend must be brand new to Tactiq. Source: https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account
-- **Windsurf**: Friend must upgrade to Pro for the full reward. Source: https://windsurf.com/refer
-- **Replit**: Skewed toward the referrer. Friend must upgrade to paid Core. Source: https://replit.com/refer
-- **Lovable**: Referrer must publish a first site. Some reports say a paid plan is required. Source: https://lovable.dev/faq/referral
-- **v0 (Vercel)**: Community reports of occasional credit-application bugs. Source: https://community.vercel.com/t/referral-code/28465
-- **Shortwave**: Friend must upgrade. Verify the current promo in-app. Source: https://x.com/Shortwave/status/1722728816488137018
-- **Gamma**: Referrer-skewed. The friend gets nothing extra over a normal signup. Source: https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma
-- **Heptabase**: Friend must complete the trial and subscribe. One-time. Source: https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a
-- **Scite**: Weakly documented. Verify in-product before relying on it. Source: https://scite.ai/affiliate
+- **Suno**: Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member. Referral credits persist rather than expiring daily. Source: https://x.com/SunoMusic/status/1843739161783599518
+- **Raycast**: Referrer must be a Raycast Pro subscriber. Codes are shared through the Share Raycast command. Added 2026-08-18. Source: https://www.raycast.com/changelog/1-62-0
+- **Recraft**: Signup must happen on desktop. Cap of 4,000 credits, so only the first 20 referrals earn. Added 2026-08-18. Source: https://www.recraft.ai/blog/earn-free-credits-with-recraft-referrals
+- **Fathom**: Referrals must come from a different company, verified by email domain. Each referral link works once. Individual users only. No cap documented. Source: https://help.fathom.video/en/articles/4381825
+- **Superhuman**: Standard markets only, US and UK. Link lives under Cmd+K. A second route also qualifies: signups through the "Sent via Superhuman" email signature earn both sides a free month. Source: https://new.superhuman.com/two-ways-to-get-superhuman-for-free!-265980
+- **Kling AI**: Only users who have already bought an individual plan can generate a code, and the friend must be a first-time individual-plan buyer. Credits land within an hour and expire after 31 days. Run as a limited-time campaign, so confirm it is live. Added 2026-08-18. Source: https://kling.ai/app/invitation
+- **Descript**: Moved in from ruled_out on 2026-08-18 when the bar widened. Referrals must be new users with no prior account. Paid within 7 days of first payment. Unlimited referrals. Source: https://www.descript.com/
+- **HeyGen**: Moved in from ruled_out on 2026-08-18 when the bar widened. This is an ambassador programme with an application, not a self-serve referral link. The older two-sided article is gone (404). Source: https://help.heygen.com/en/articles/14648487-heygen-ambassador-program-faq
+- **ElevenLabs**: Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. Included because the bar now admits one-sided programmes, but it is an affiliate scheme. Source: https://elevenlabs.io/affiliates
+- **Synthesia**: Moved in from ruled_out on 2026-08-18. Affiliate commission only, no peer benefit. Rate not re-verified. Source: https://www.synthesia.io/affiliate-program
+- **Decktopus**: Moved in from ruled_out on 2026-08-18. Affiliate commission only. Rate not re-verified. Source: https://www.decktopus.com/
+- **Runway**: Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks. Source: https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes
+- **Krisp**: NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks. Source: https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals
+- **Windsurf**: Friend must upgrade to Pro for the full reward. NOT re-verified on 2026-08-18: the referrals page served FAQ headings with no answers. Source: https://windsurf.com/refer
+- **Bolt.new**: Two-tier. The 5M bonus requires the referrer to also be on Pro. Not re-verified on 2026-08-18. Source: https://support.bolt.new/external-resources/referral-program
+- **StackBlitz**: Same mechanic as Bolt.new, its parent platform. Not re-verified on 2026-08-18. Source: https://stackblitz.mintlify.app/external-resources/referral-program
+- **Tactiq**: Friend must be brand new to Tactiq. Not re-verified on 2026-08-18. Source: https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account
+- **Fireflies.ai**: New users only. Reward is small on the free tier. Not re-verified on 2026-08-18. Source: https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program
+- **Tome**: Friend must upgrade to Pro for the reward to fire. Source is a third-party invite-code site, not a vendor page. Not re-verified on 2026-08-18. Source: https://invitation.codes/tome
+- **Replit**: Reclassified from two-sided to referrer-only on 2026-08-18. Friend must upgrade to paid Core. Not re-verified. Source: https://replit.com/refer
+- **Lovable**: Referrer must publish a first site. Some reports say a paid plan is required. Only third-party sources found on 2026-08-18; the vendor states terms in the account dashboard rather than a public page. Source: https://lovable.dev/faq/referral
+- **v0 (Vercel)**: Reclassified from two-sided to referrer-only on 2026-08-18. Community reports of credits not applying. Only a community thread found, no vendor page. Source: https://community.vercel.com/t/referral-code/28465
+- **Shortwave**: Friend must upgrade. Source is an official social post from 2023. Verify in-app. Not re-verified on 2026-08-18. Source: https://x.com/Shortwave/status/1722728816488137018
+- **Gamma**: Reclassified from two-sided to referrer-only on 2026-08-18, which is what the mechanic always was. Not re-verified. Source: https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma
+- **Heptabase**: Friend must complete the trial and subscribe. One-time. Not re-verified on 2026-08-18. Source: https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a
+- **Scite**: Reclassified from two-sided to referrer-only on 2026-08-18. Weakly documented. Not re-verified. Source: https://scite.ai/affiliate
+
+### Claimed but not confirmed on a vendor page
+
+Credible third-party reporting describes these. None could be verified on the vendor's own domain, so none is recorded as real.
+
+- **Claude (Anthropic) Guest Passes**: Max subscribers ($100 and $200 tiers) get 3 guest passes via the /passes command, each giving a brand-new user 7 free days of Claude Pro, with the sender earning 10 USD in credit per pass that converts, up to 30 USD. *Why unconfirmed:* Every source is a third-party blog. The support article that would document it, support.claude.com/en/articles/12184255-guest-passes, returns 404, and support.anthropic.com redirects there. If real, this is the most valuable programme on the list for this audience, so it is worth rechecking.
+- **ChatGPT (OpenAI)**: Invite-only referral granting a free month of Plus. *Why unconfirmed:* Described as a narrow pilot limited to specific universities in Australia and Colombia. No general programme found on OpenAI's own pages.
+- **Meshy, Evoto, Virbo, AI Collab, MindMap AI**: Various two-sided credit bonuses surfaced during discovery. *Why unconfirmed:* Not verified on vendor pages and all are narrow-use tools with little relevance to this guide's audience. Listed only so they are not re-probed.
 
 ## Probed and ruled out (audited 2026-05-14)
 
 Listed so they are not re-probed every cycle.
 
-- **HeyGen**: Reclassified 2026-08-18. The two-sided referral article is gone (404) and the replacement Ambassador programme rewards the ambassador only, with 5,000 generative credits and a 6-month Creator trial. No documented referee benefit, so it no longer clears the bar.
 - **Read.ai**: No public peer-referral programme.
 - **DeepL**: Affiliate-only.
-- **ElevenLabs**: Affiliate-only commission, no friend bonus.
 - **Mem.ai**: Invitations are for collaboration, not rewarded referrals.
 - **Reflect.app**: Friend Codes exist but no documented reward.
 - **Tana**: Invite-based access with no two-sided reward.
@@ -784,18 +808,17 @@ Listed so they are not re-probed every cycle.
 - **Linear**: No referral programme. The Startup Program is separate.
 - **Height**: No referral programme documented.
 - **Phind**: No referral programme documented.
-- **Synthesia**: Affiliate-only commission, no friend benefit.
-- **Decktopus**: Affiliate-only commission, no friend benefit.
 - **Scholarcy**: No referral programme found.
 - **Luma / Pika**: No documented two-sided peer referral on official pages.
-- **Descript**: Pays 20 USD cash to the referrer only.
 
 ## Backlog
 
 - RESOLVED 2026-08-18. Agentic coding CLIs checked. Claude Code has no separate student offer (bundled into Pro and Max). Codex CLI is covered by the existing 100 USD Codex credits entry. Gemini CLI needs no offer because its free tier is already generous. All three recorded rather than listed.
 - RESOLVED 2026-08-18. NotebookLM audited: free to everyone, no student-specific offer.
 - Promote the twyoon.com post from index.draft.md to index.md. It has never been published, and the repo advertised it as live until 2026-08-18.
-- Run the student-discount audit over the referral_tools set as its own pass. The 2026-08-18 sweep surfaced fragments incidentally (Reclaim, Speechify and Sunsama all run separate referral programmes) but did not do it systematically.
+- Run the student-discount audit over the referral_tools set as its own pass. Still open. The 2026-08-18 referral audit went the other direction, widening the referral bar rather than checking those tools for student pricing.
+- Re-verify the 17 referral entries still dated 2026-05-14. Runway, Krisp and Perplexity block automated checks and need a browser; Windsurf serves an FAQ with no answers in the HTML.
+- Recheck the Claude Guest Pass claim. If Max subscribers really do get three 7-day Claude Pro passes plus 10 USD credit per conversion, it is the most valuable programme for this audience, but the support article 404s.
 - Write the seasonal-versus-always-on campaign policy. Raw material now exists: Perplexity's expired campaign sits beside its always-on Education Pro rate, Grammarly and QuillBot are both campaign-based, and CapCut's rollout was dated.
 - Get vendor-side discount numbers for Prezi, Trinka and Sunsama. All three are confirmed to have a student offer but none publishes a percentage, which is why all three are held back from the public list.
 - Re-verify Adobe pricing manually each cycle since Adobe blocks automated checks.
@@ -803,6 +826,14 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-18 (referral audit)** Widened the referral bar from "both parties must benefit" to "either party benefits", and added a `sided` field so a referrer-only scheme is never presented as mutual. 17 two-sided, 6 referrer-only, 3 affiliate.
+- **2026-08-18 (referral audit)** Added Raycast (1 month each way), Recraft (200 credits each way) and Kling AI (500 credits to the sharer, 50 percent bonus to the friend).
+- **2026-08-18 (referral audit)** Moved Descript, HeyGen, ElevenLabs, Synthesia and Decktopus in from ruled_out. All were rejected earlier only for being one-sided.
+- **2026-08-18 (referral audit)** Reclassified Replit, v0, Gamma and Scite from two-sided to referrer-only. The friend never got more than a standard new-user grant in any of them.
+- **2026-08-18 (referral audit)** Re-verified Suno, Fathom and Superhuman against vendor pages. Superhuman has a second route: signups via the "Sent via Superhuman" signature.
+- **2026-08-18 (referral audit)** Perplexity: both referral routes are now closed. The Comet programme concluded 2025-11-06 and the student extension ended 2026-05-31.
+- **2026-08-18 (referral audit)** Recorded the Claude Guest Pass programme as UNCONFIRMED. Third-party reporting is consistent but the vendor support article 404s.
+- **2026-08-18 (referral audit)** Every referral entry now carries its own last_checked date, so the 17 rows carried over from May are visibly unverified rather than implicitly current.
 - **2026-08-18 (sweep)** Multi-agent sweep across six discovery angles. 29 candidates, 26 confirmed against vendor pages, 8 added to the public list.
 - **2026-08-18 (sweep)** Added Microsoft 365 Personal (50 percent off at 4.99 USD per month with Copilot included), the strongest find of the sweep.
 - **2026-08-18 (sweep)** Added Beautiful.ai, Obsidian, Loom, Amp, Framer, Reclaim.ai and Speechify.

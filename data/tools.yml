@@ -271,9 +271,12 @@ tools:
     referral:
       status: two-sided
       detail: >-
-        The general refer-a-friend programme still gives both sides one free month,
-        capped at 12 months. The student "Back to School" extension that raised the
-        cap to 24 months ENDED on 2026-05-31 and has not been replaced.
+        Both routes are now closed. The student "Back to School" extension that
+        raised the cap to 24 months ENDED 2026-05-31, and the Comet browser
+        referral (20 USD to the sharer, a free Pro month to the friend) concluded
+        2025-11-06 with no new commissions after that date. Existing links may
+        still resolve but no longer earn. Verified students still get the 50
+        percent Education Pro rate through SheerID; nothing stacks on top of it.
       links: ['https://www.perplexity.ai/hub/legal/refer-a-friend-program']
     links:
       - 'https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro'
@@ -1398,156 +1401,308 @@ unresolved:
 # Not re-verified in the 2026-08-18 pass.
 # ---------------------------------------------------------------------------
 referral_tools:
-  audited: '2026-05-14'
+  audited: '2026-08-18'
+  previous_audit: '2026-05-14'
+  # Bar widened on 2026-08-18. It used to require a defined benefit for BOTH
+  # parties, which rejected a whole class of real programmes. It now admits any
+  # programme that pays EITHER party, with the `sided` field recording which.
   bar: >-
-    An official help-centre or refer-a-friend page must document a defined benefit
-    for BOTH the referrer and the referee. Affiliate-only, B2B-only and
-    ambassador-style programmes do not qualify.
+    An official vendor page must document a defined benefit to at least one party.
+    `sided` records who actually benefits, so a referrer-only scheme is never
+    presented as a mutual one. Affiliate programmes are included but labelled,
+    because commission to the sharer is a different thing from a peer reward.
+  sided_values: 'two-sided | referrer-only | referee-only | affiliate'
+  coverage_note: >-
+    Six entries were re-verified against vendor pages on 2026-08-18 and three new
+    ones added. Runway, Krisp and Perplexity returned 403 to automated checks and
+    Windsurf served an FAQ with no answers, so those keep their 2026-05-14 date
+    and are NOT reconfirmed. Everything still dated 2026-05-14 below is carried
+    over unverified.
   entries:
     - id: 'suno'
       name: 'Suno'
       category: 'Music'
-      referrer: '250 credits'
+      sided: 'two-sided'
+      referrer: '250 credits per friend'
       referee: '250 credits'
-      caveats: 'Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member.'
+      caveats: 'Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member. Referral credits persist rather than expiring daily.'
       link: 'https://x.com/SunoMusic/status/1843739161783599518'
       confidence: 'high'
-    - id: 'runway'
-      name: 'Runway'
-      category: 'Video'
-      referrer: '1000 credits'
-      referee: '1000 credits'
-      caveats: 'Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months.'
-      link: 'https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes'
+      last_checked: '2026-08-18'
+    - id: 'raycast'
+      name: 'Raycast'
+      category: 'Productivity'
+      sided: 'two-sided'
+      referrer: '1 free month of Raycast Pro'
+      referee: '1 free month of Raycast Pro'
+      caveats: 'Referrer must be a Raycast Pro subscriber. Codes are shared through the Share Raycast command. Added 2026-08-18.'
+      link: 'https://www.raycast.com/changelog/1-62-0'
       confidence: 'high'
-    - id: 'bolt'
-      name: 'Bolt.new'
-      category: 'App builders'
-      referrer: '200k tokens plus 5M on Pro upgrade'
-      referee: '200k tokens plus 5M on Pro upgrade'
-      caveats: 'Two-tier. The 5M bonus requires the referrer to also be on Pro.'
-      link: 'https://support.bolt.new/external-resources/referral-program'
+      last_checked: '2026-08-18'
+    - id: 'recraft'
+      name: 'Recraft'
+      category: 'Image generation'
+      sided: 'two-sided'
+      referrer: '200 credits once the friend generates their first image'
+      referee: '200 extra credits on signup'
+      caveats: 'Signup must happen on desktop. Cap of 4,000 credits, so only the first 20 referrals earn. Added 2026-08-18.'
+      link: 'https://www.recraft.ai/blog/earn-free-credits-with-recraft-referrals'
       confidence: 'high'
-    - id: 'stackblitz'
-      name: 'StackBlitz'
-      category: 'App builders'
-      referrer: '200k tokens'
-      referee: '200k tokens'
-      caveats: '"Same mechanic as Bolt.new, its parent platform."'
-      link: 'https://stackblitz.mintlify.app/external-resources/referral-program'
-      confidence: 'high'
+      last_checked: '2026-08-18'
     - id: 'fathom'
       name: 'Fathom'
       category: 'Meeting AI'
+      sided: 'two-sided'
       referrer: '100 points plus 30 extra days of Premium'
       referee: 'Trial extended from 30 to 60 days of Premium'
-      caveats: 'Referrals must come from a different company or email domain.'
+      caveats: 'Referrals must come from a different company, verified by email domain. Each referral link works once. Individual users only. No cap documented.'
       link: 'https://help.fathom.video/en/articles/4381825'
       confidence: 'high'
+      last_checked: '2026-08-18'
     - id: 'superhuman'
       name: 'Superhuman'
       category: 'Email'
+      sided: 'two-sided'
       referrer: '1 free month'
       referee: '1 free month'
-      caveats: 'Standard markets only, US and UK. Referral link lives under Cmd+K.'
+      caveats: 'Standard markets only, US and UK. Link lives under Cmd+K. A second route also qualifies: signups through the "Sent via Superhuman" email signature earn both sides a free month.'
       link: 'https://new.superhuman.com/two-ways-to-get-superhuman-for-free!-265980'
       confidence: 'high'
+      last_checked: '2026-08-18'
+    - id: 'kling'
+      name: 'Kling AI'
+      category: 'Video generation'
+      sided: 'two-sided'
+      referrer: '500 credits per friend who buys an individual plan'
+      referee: '50 percent bonus credits on first plan purchase, capped at 5,000'
+      caveats: 'Only users who have already bought an individual plan can generate a code, and the friend must be a first-time individual-plan buyer. Credits land within an hour and expire after 31 days. Run as a limited-time campaign, so confirm it is live. Added 2026-08-18.'
+      link: 'https://kling.ai/app/invitation'
+      confidence: 'medium'
+      last_checked: '2026-08-18'
+    - id: 'descript'
+      name: 'Descript'
+      category: 'Audio and video editing'
+      sided: 'referrer-only'
+      referrer: '30 percent of the referred user payments, capped at 20 USD, paid by PayPal or Venmo'
+      referee: 'Nothing documented'
+      caveats: 'Moved in from ruled_out on 2026-08-18 when the bar widened. Referrals must be new users with no prior account. Paid within 7 days of first payment. Unlimited referrals.'
+      link: 'https://www.descript.com/'
+      confidence: 'medium'
+      last_checked: '2026-08-18'
+    - id: 'heygen'
+      name: 'HeyGen'
+      category: 'Video avatars'
+      sided: 'referrer-only'
+      referrer: '5,000 generative credits and a 6-month Creator trial for accepted ambassadors'
+      referee: 'Nothing documented'
+      caveats: 'Moved in from ruled_out on 2026-08-18 when the bar widened. This is an ambassador programme with an application, not a self-serve referral link. The older two-sided article is gone (404).'
+      link: 'https://help.heygen.com/en/articles/14648487-heygen-ambassador-program-faq'
+      confidence: 'medium'
+      last_checked: '2026-08-18'
+    - id: 'elevenlabs'
+      name: 'ElevenLabs'
+      category: 'Voice AI'
+      sided: 'affiliate'
+      referrer: '22 percent recurring commission for 12 months, via PartnerStack'
+      referee: 'Nothing documented'
+      caveats: 'Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. Included because the bar now admits one-sided programmes, but it is an affiliate scheme.'
+      link: 'https://elevenlabs.io/affiliates'
+      confidence: 'medium'
+      last_checked: '2026-08-18'
+    - id: 'synthesia'
+      name: 'Synthesia'
+      category: 'Video generation'
+      sided: 'affiliate'
+      referrer: 'Recurring commission via the affiliate programme'
+      referee: 'Nothing documented'
+      caveats: 'Moved in from ruled_out on 2026-08-18. Affiliate commission only, no peer benefit. Rate not re-verified.'
+      link: 'https://www.synthesia.io/affiliate-program'
+      confidence: 'low'
+      last_checked: '2026-05-14'
+    - id: 'decktopus'
+      name: 'Decktopus'
+      category: 'Slides'
+      sided: 'affiliate'
+      referrer: 'Up to 50 percent commission via the affiliate programme'
+      referee: 'Nothing documented'
+      caveats: 'Moved in from ruled_out on 2026-08-18. Affiliate commission only. Rate not re-verified.'
+      link: 'https://www.decktopus.com/'
+      confidence: 'low'
+      last_checked: '2026-05-14'
+    - id: 'runway'
+      name: 'Runway'
+      category: 'Video generation'
+      sided: 'two-sided'
+      referrer: '1,000 credits'
+      referee: '1,000 credits'
+      caveats: 'Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks.'
+      link: 'https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
     - id: 'krisp'
       name: 'Krisp'
       category: 'Calls'
-      referrer: '2 months free Pro per friend'
+      sided: 'two-sided'
+      referrer: '2 months free Pro per friend, cumulative'
       referee: '1 month free Pro'
-      caveats: 'Cumulative for the referrer.'
+      caveats: 'NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks.'
       link: 'https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals'
-      confidence: 'high'
-    - id: 'tome'
-      name: 'Tome'
-      category: 'Slides'
-      referrer: '30 percent off 3 months plus 10 USD credits'
-      referee: '30 percent off 3 months plus 10 USD credits'
-      caveats: 'Friend must upgrade to Pro for the reward to fire.'
-      link: 'https://invitation.codes/tome'
       confidence: 'medium'
-    - id: 'fireflies'
-      name: 'Fireflies.ai'
-      category: 'Meeting AI'
-      referrer: '3 transcription credits or 5 AI credits'
-      referee: '10 percent off any plan for the first 3 days'
-      caveats: 'New users only. Reward is small on the free tier.'
-      link: 'https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program'
-      confidence: 'high'
-    - id: 'tactiq'
-      name: 'Tactiq'
-      category: 'Meeting AI'
-      referrer: '5 free meetings plus 1 AI credit'
-      referee: 'Free meetings plus AI credits'
-      caveats: 'Friend must be brand new to Tactiq.'
-      link: 'https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account'
-      confidence: 'high'
+      last_checked: '2026-05-14'
     - id: 'windsurf'
       name: 'Windsurf'
       category: 'AI code editor'
+      sided: 'two-sided'
       referrer: '10 USD usage or 500 flex credits'
       referee: '250 free flex credits on Pro signup'
-      caveats: 'Friend must upgrade to Pro for the full reward.'
+      caveats: 'Friend must upgrade to Pro for the full reward. NOT re-verified on 2026-08-18: the referrals page served FAQ headings with no answers.'
       link: 'https://windsurf.com/refer'
-      confidence: 'high'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
+    - id: 'bolt'
+      name: 'Bolt.new'
+      category: 'App builders'
+      sided: 'two-sided'
+      referrer: '200k tokens plus 5M on Pro upgrade'
+      referee: '200k tokens plus 5M on Pro upgrade'
+      caveats: 'Two-tier. The 5M bonus requires the referrer to also be on Pro. Not re-verified on 2026-08-18.'
+      link: 'https://support.bolt.new/external-resources/referral-program'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
+    - id: 'stackblitz'
+      name: 'StackBlitz'
+      category: 'App builders'
+      sided: 'two-sided'
+      referrer: '200k bonus tokens'
+      referee: '200k bonus tokens'
+      caveats: 'Same mechanic as Bolt.new, its parent platform. Not re-verified on 2026-08-18.'
+      link: 'https://stackblitz.mintlify.app/external-resources/referral-program'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
+    - id: 'tactiq'
+      name: 'Tactiq'
+      category: 'Meeting AI'
+      sided: 'two-sided'
+      referrer: '5 free meetings plus 1 AI credit, and 1 AI credit per month while active'
+      referee: 'Free meetings plus AI credits'
+      caveats: 'Friend must be brand new to Tactiq. Not re-verified on 2026-08-18.'
+      link: 'https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
+    - id: 'fireflies'
+      name: 'Fireflies.ai'
+      category: 'Meeting AI'
+      sided: 'two-sided'
+      referrer: '3 transcription credits on Free, or 5 AI credits on paid'
+      referee: '10 percent off any plan for the first 3 days'
+      caveats: 'New users only. Reward is small on the free tier. Not re-verified on 2026-08-18.'
+      link: 'https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program'
+      confidence: 'medium'
+      last_checked: '2026-05-14'
+    - id: 'tome'
+      name: 'Tome'
+      category: 'Slides'
+      sided: 'two-sided'
+      referrer: '30 percent off 3 months plus 10 USD credits'
+      referee: '30 percent off 3 months plus 10 USD credits'
+      caveats: 'Friend must upgrade to Pro for the reward to fire. Source is a third-party invite-code site, not a vendor page. Not re-verified on 2026-08-18.'
+      link: 'https://invitation.codes/tome'
+      confidence: 'low'
+      last_checked: '2026-05-14'
     - id: 'replit'
       name: 'Replit'
       category: 'App builders'
-      referrer: '10 USD in Core credits'
+      sided: 'referrer-only'
+      referrer: '10 USD in Core credits per friend who upgrades'
       referee: 'No explicit bonus beyond the standard new-user grant'
-      caveats: 'Skewed toward the referrer. Friend must upgrade to paid Core.'
+      caveats: 'Reclassified from two-sided to referrer-only on 2026-08-18. Friend must upgrade to paid Core. Not re-verified.'
       link: 'https://replit.com/refer'
       confidence: 'medium'
+      last_checked: '2026-05-14'
     - id: 'lovable'
       name: 'Lovable'
       category: 'App builders'
-      referrer: '10 credits'
+      sided: 'two-sided'
+      referrer: '10 credits per referral'
       referee: '10 credits'
-      caveats: 'Referrer must publish a first site. Some reports say a paid plan is required.'
+      caveats: 'Referrer must publish a first site. Some reports say a paid plan is required. Only third-party sources found on 2026-08-18; the vendor states terms in the account dashboard rather than a public page.'
       link: 'https://lovable.dev/faq/referral'
-      confidence: 'medium'
+      confidence: 'low'
+      last_checked: '2026-05-14'
     - id: 'v0'
       name: 'v0 (Vercel)'
       category: 'App builders'
-      referrer: '5 credits'
-      referee: 'Standard new-user credits'
-      caveats: 'Community reports of occasional credit-application bugs.'
+      sided: 'referrer-only'
+      referrer: '5 credits per friend'
+      referee: 'Standard new-user credits only'
+      caveats: 'Reclassified from two-sided to referrer-only on 2026-08-18. Community reports of credits not applying. Only a community thread found, no vendor page.'
       link: 'https://community.vercel.com/t/referral-code/28465'
-      confidence: 'medium'
+      confidence: 'low'
+      last_checked: '2026-05-14'
     - id: 'shortwave'
       name: 'Shortwave'
       category: 'Email'
+      sided: 'two-sided'
       referrer: '1 free month of Premium'
       referee: '1 free month of Premium'
-      caveats: 'Friend must upgrade. Verify the current promo in-app.'
+      caveats: 'Friend must upgrade. Source is an official social post from 2023. Verify in-app. Not re-verified on 2026-08-18.'
       link: 'https://x.com/Shortwave/status/1722728816488137018'
-      confidence: 'medium'
+      confidence: 'low'
+      last_checked: '2026-05-14'
     - id: 'gamma'
       name: 'Gamma'
       category: 'Slides'
-      referrer: '200 credits per signup'
-      referee: 'Standard new-user credits only'
-      caveats: 'Referrer-skewed. The friend gets nothing extra over a normal signup.'
+      sided: 'referrer-only'
+      referrer: '200 credits per signup, balance capped at 2,000'
+      referee: 'Standard new-user credits only, no extra for being referred'
+      caveats: 'Reclassified from two-sided to referrer-only on 2026-08-18, which is what the mechanic always was. Not re-verified.'
       link: 'https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma'
       confidence: 'medium'
+      last_checked: '2026-05-14'
     - id: 'heptabase'
       name: 'Heptabase'
       category: 'Notes'
+      sided: 'two-sided'
       referrer: '5 USD off'
       referee: '5 USD off'
-      caveats: 'Friend must complete the trial and subscribe. One-time.'
+      caveats: 'Friend must complete the trial and subscribe. One-time. Not re-verified on 2026-08-18.'
       link: 'https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a'
       confidence: 'medium'
+      last_checked: '2026-05-14'
     - id: 'scite'
       name: 'Scite'
       category: 'Research'
-      referrer: '1 free month of Premium'
-      referee: 'Trial available, referrer benefit is primary'
-      caveats: 'Weakly documented. Verify in-product before relying on it.'
+      sided: 'referrer-only'
+      referrer: '1 free month of Premium per referred colleague, repeatable'
+      referee: 'Trial available, but the referrer benefit is the primary one'
+      caveats: 'Reclassified from two-sided to referrer-only on 2026-08-18. Weakly documented. Not re-verified.'
       link: 'https://scite.ai/affiliate'
       confidence: 'low'
+      last_checked: '2026-05-14'
+  # Programmes that credible third-party reporting describes but that could not
+  # be confirmed on the vendor's own domain. Recorded so the next audit starts
+  # here rather than rediscovering them, NOT presented as verified.
+  unconfirmed:
+    - name: 'Claude (Anthropic) Guest Passes'
+      claim: >-
+        Max subscribers ($100 and $200 tiers) get 3 guest passes via the /passes
+        command, each giving a brand-new user 7 free days of Claude Pro, with the
+        sender earning 10 USD in credit per pass that converts, up to 30 USD.
+      why_unconfirmed: >-
+        Every source is a third-party blog. The support article that would document
+        it, support.claude.com/en/articles/12184255-guest-passes, returns 404, and
+        support.anthropic.com redirects there. If real, this is the most valuable
+        programme on the list for this audience, so it is worth rechecking.
+    - name: 'ChatGPT (OpenAI)'
+      claim: 'Invite-only referral granting a free month of Plus.'
+      why_unconfirmed: >-
+        Described as a narrow pilot limited to specific universities in Australia
+        and Colombia. No general programme found on OpenAI's own pages.
+    - name: 'Meshy, Evoto, Virbo, AI Collab, MindMap AI'
+      claim: 'Various two-sided credit bonuses surfaced during discovery.'
+      why_unconfirmed: >-
+        Not verified on vendor pages and all are narrow-use tools with little
+        relevance to this guide's audience. Listed only so they are not re-probed.
 
 # ---------------------------------------------------------------------------
 # Probed and ruled out. Listed so they are not re-probed each cycle.
@@ -1555,14 +1710,10 @@ referral_tools:
 ruled_out:
   audited: '2026-05-14'
   entries:
-    - name: 'HeyGen'
-      reason: 'Reclassified 2026-08-18. The two-sided referral article is gone (404) and the replacement Ambassador programme rewards the ambassador only, with 5,000 generative credits and a 6-month Creator trial. No documented referee benefit, so it no longer clears the bar.'
     - name: 'Read.ai'
       reason: 'No public peer-referral programme.'
     - name: 'DeepL'
       reason: 'Affiliate-only.'
-    - name: 'ElevenLabs'
-      reason: 'Affiliate-only commission, no friend bonus.'
     - name: 'Mem.ai'
       reason: 'Invitations are for collaboration, not rewarded referrals.'
     - name: 'Reflect.app'
@@ -1587,16 +1738,10 @@ ruled_out:
       reason: 'No referral programme documented.'
     - name: 'Phind'
       reason: 'No referral programme documented.'
-    - name: 'Synthesia'
-      reason: 'Affiliate-only commission, no friend benefit.'
-    - name: 'Decktopus'
-      reason: 'Affiliate-only commission, no friend benefit.'
     - name: 'Scholarcy'
       reason: 'No referral programme found.'
     - name: 'Luma / Pika'
       reason: 'No documented two-sided peer referral on official pages.'
-    - name: 'Descript'
-      reason: 'Pays 20 USD cash to the referrer only.'
 
 # ---------------------------------------------------------------------------
 # Coverage the guide does not yet have. Drives the next audit.
@@ -1613,8 +1758,16 @@ backlog:
     published, and the repo advertised it as live until 2026-08-18.
   - >-
     Run the student-discount audit over the referral_tools set as its own pass.
-    The 2026-08-18 sweep surfaced fragments incidentally (Reclaim, Speechify and
-    Sunsama all run separate referral programmes) but did not do it systematically.
+    Still open. The 2026-08-18 referral audit went the other direction, widening
+    the referral bar rather than checking those tools for student pricing.
+  - >-
+    Re-verify the 17 referral entries still dated 2026-05-14. Runway, Krisp and
+    Perplexity block automated checks and need a browser; Windsurf serves an FAQ
+    with no answers in the HTML.
+  - >-
+    Recheck the Claude Guest Pass claim. If Max subscribers really do get three
+    7-day Claude Pro passes plus 10 USD credit per conversion, it is the most
+    valuable programme for this audience, but the support article 404s.
   - >-
     Write the seasonal-versus-always-on campaign policy. Raw material now exists:
     Perplexity's expired campaign sits beside its always-on Education Pro rate,
@@ -1629,6 +1782,34 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-18 (referral audit)'
+    entries:
+      - >-
+        Widened the referral bar from "both parties must benefit" to "either party
+        benefits", and added a `sided` field so a referrer-only scheme is never
+        presented as mutual. 17 two-sided, 6 referrer-only, 3 affiliate.
+      - >-
+        Added Raycast (1 month each way), Recraft (200 credits each way) and
+        Kling AI (500 credits to the sharer, 50 percent bonus to the friend).
+      - >-
+        Moved Descript, HeyGen, ElevenLabs, Synthesia and Decktopus in from
+        ruled_out. All were rejected earlier only for being one-sided.
+      - >-
+        Reclassified Replit, v0, Gamma and Scite from two-sided to referrer-only.
+        The friend never got more than a standard new-user grant in any of them.
+      - >-
+        Re-verified Suno, Fathom and Superhuman against vendor pages. Superhuman
+        has a second route: signups via the "Sent via Superhuman" signature.
+      - >-
+        Perplexity: both referral routes are now closed. The Comet programme
+        concluded 2025-11-06 and the student extension ended 2026-05-31.
+      - >-
+        Recorded the Claude Guest Pass programme as UNCONFIRMED. Third-party
+        reporting is consistent but the vendor support article 404s.
+      - >-
+        Every referral entry now carries its own last_checked date, so the 17
+        rows carried over from May are visibly unverified rather than implicitly
+        current.
   - date: '2026-08-18 (sweep)'
     entries:
       - >-

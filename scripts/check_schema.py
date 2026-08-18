@@ -40,7 +40,8 @@ REFERRAL_STATUSES = {"two-sided", "asymmetric", "campaign-gated", "affiliate-onl
                      "b2b", "discontinued", "none", "unclear"}
 RULED_OUT_KEYS = {"name", "reason"}
 REFERRAL_KEYS = {"id", "name", "category", "referrer", "referee", "caveats",
-                 "link", "confidence"}
+                 "link", "confidence", "sided", "last_checked"}
+SIDED_VALUES = {"two-sided", "referrer-only", "referee-only", "affiliate"}
 
 errors: list[str] = []
 
@@ -116,6 +117,17 @@ def main() -> int:
             if got != keyset:
                 err(f"{section} entry {e.get('name', e)!r}: keys {sorted(got)} "
                     f"!= expected {sorted(keyset)}")
+
+    for e in (data.get("referral_tools") or {}).get("entries") or []:
+        if e.get("sided") not in SIDED_VALUES:
+            err(f"referral entry {e.get('name')!r}: sided {e.get('sided')!r} "
+                f"not in {sorted(SIDED_VALUES)}")
+        if e.get("confidence") not in CONFIDENCES:
+            err(f"referral entry {e.get('name')!r}: bad confidence")
+        check_date(e.get("last_checked"), f"referral {e.get('name')!r} last_checked")
+        # A two-sided claim must actually name a referee benefit.
+        if e.get("sided") == "two-sided" and not str(e.get("referee", "")).strip():
+            err(f"referral entry {e.get('name')!r}: marked two-sided but referee is empty")
 
     for c in data.get("cloud_credits") or []:
         check_date(c.get("last_checked"), f"cloud_credit {c.get('name')!r} last_checked")
