@@ -81,65 +81,93 @@ _CATEGORY_TO_GROUP = {
     cat: key for key, (_, cats) in FILTER_GROUPS.items() for cat in cats
 }
 
+# CRITICAL: no blank lines inside these blocks.
+#
+# Markdown ends a raw-HTML block at the first blank line. A blank line inside
+# <style> or <script> therefore closes the block early, wraps the remainder in
+# <p>, and lets smartypants rewrite ' into a typographic quote, which is a
+# syntax error in JavaScript. That is exactly how the first version shipped
+# broken. emit_html_block() below enforces this.
 GRID_CSS = """<style>
-.offergrid{--gap:14px;margin:32px 0 40px}
-.offergrid__controls{display:none;flex-wrap:wrap;gap:10px;align-items:center;
+/* The grid lives inside .markdown-body, whose prose rules would otherwise win.
+   Two conflicts matter:
+     .markdown-body img  (0,1,1) forces width/height:auto, display:block and
+       margin:32px auto, which blows every logo up to its intrinsic size and
+       shoves the card layout apart. Beaten here with .offergrid img.offercard__logo.
+     .markdown-body a    (0,1,1) underlines every link.
+   So each rule below is scoped under .offergrid to outrank prose styling. */
+.offergrid{
+  /* Break out of the 62ch prose column so cards get three across on desktop,
+     without escaping the page gutter on narrow screens. */
+  --breakout:clamp(0px,(100vw - 48px - var(--prose-width))/2,180px);
+  --gap:14px;
+  margin:32px calc(-1 * var(--breakout)) 40px;
+  font-family:var(--sans);letter-spacing:0}
+.offergrid .offergrid__controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;
   padding:14px;border:1px solid var(--rule);border-radius:var(--r-action);
-  background:var(--sunk);margin-bottom:var(--gap)}
-.offergrid--live .offergrid__controls{display:flex}
-.offergrid__search{flex:1 1 200px;min-width:0;font:inherit;font-size:14px;
-  padding:8px 12px;border:1px solid var(--rule);border-radius:var(--r-action);
+  background:var(--sunk);margin:0 0 var(--gap)}
+.offergrid .offergrid__search{flex:1 1 210px;min-width:0;font:inherit;font-size:14px;
+  padding:9px 12px;border:1px solid var(--rule);border-radius:var(--r-action);
   background:var(--canvas);color:var(--ink)}
-.offergrid__search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.offergrid__chips{display:flex;flex-wrap:wrap;gap:6px}
-.offergrid__chip{font:inherit;font-size:12px;line-height:1;padding:7px 12px;cursor:pointer;
-  border:1px solid var(--rule);border-radius:var(--r-pill);
+.offergrid .offergrid__search:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.offergrid .offergrid__chips{display:flex;flex-wrap:wrap;gap:6px}
+.offergrid .offergrid__chip{font:inherit;font-size:12px;line-height:1;padding:8px 12px;
+  cursor:pointer;border:1px solid var(--rule);border-radius:var(--r-pill);
   background:var(--canvas);color:var(--ink-muted)}
-.offergrid__chip:hover{border-color:var(--accent);color:var(--accent)}
-.offergrid__chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.offergrid__toggle{display:inline-flex;align-items:center;gap:6px;font-size:12px;
+.offergrid .offergrid__chip:hover{border-color:var(--accent);color:var(--accent)}
+.offergrid .offergrid__chip[aria-pressed="true"]{background:var(--accent);
+  border-color:var(--accent);color:#fff}
+.offergrid .offergrid__toggle{display:inline-flex;align-items:center;gap:6px;font-size:12px;
   color:var(--ink-muted);cursor:pointer;white-space:nowrap}
-.offergrid__count{width:100%;margin:0;font-size:12px;color:var(--ink-quiet)}
-.offergrid__list{list-style:none;margin:0;padding:0;display:grid;gap:var(--gap);
-  grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
-.offercard{margin:0}
-.offercard a{display:flex;flex-direction:column;gap:8px;height:100%;padding:16px;
-  text-decoration:none;color:inherit;background:var(--surface);
+.offergrid .offergrid__count{width:100%;margin:0;font-size:12px;color:var(--ink-quiet)}
+.offergrid .offergrid__list{list-style:none;margin:0;padding:0;display:grid;gap:var(--gap);
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.offergrid .offercard{margin:0;padding:0}
+.offergrid .offercard::marker{content:""}
+.offergrid .offercard a{display:flex;flex-direction:column;align-items:flex-start;gap:8px;
+  height:100%;padding:16px;text-decoration:none;color:inherit;background:var(--surface);
   border:1px solid var(--rule);border-radius:var(--r-action)}
-.offercard a:hover{border-color:var(--accent);background:var(--accent-wash)}
-.offercard a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.offercard__top{display:flex;align-items:center;gap:10px}
-.offercard__logo{width:32px;height:32px;object-fit:contain;flex:none;border-radius:4px}
-.offercard__mono{width:32px;height:32px;flex:none;border-radius:4px;display:grid;
+.offergrid .offercard a:hover{border-color:var(--accent);background:var(--accent-wash)}
+.offergrid .offercard a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.offergrid .offercard__top{display:flex;align-items:center;gap:10px;width:100%}
+/* Specificity 0,2,1 so it beats .markdown-body img (0,1,1). */
+.offergrid img.offercard__logo{width:32px;height:32px;min-width:32px;max-width:32px;
+  max-height:32px;margin:0;display:block;object-fit:contain;border-radius:4px;flex:none}
+.offergrid .offercard__mono{width:32px;height:32px;flex:none;border-radius:4px;display:grid;
   place-items:center;background:var(--accent);color:#fff;font-weight:600;font-size:14px}
-.offercard__name{font-weight:600;font-size:15px;line-height:1.2}
-.offercard__offer{align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.02em;
-  padding:4px 8px;border-radius:var(--r-pill);background:var(--accent-wash);color:var(--accent)}
-.offercard--free .offercard__offer{background:var(--accent);color:#fff}
-.offercard__desc{font-size:13px;line-height:1.45;color:var(--ink-muted);margin:0}
-.offercard__cat{margin-top:auto;font-size:11px;color:var(--ink-quiet)}
-.offergrid__empty{display:none;padding:20px;text-align:center;color:var(--ink-muted);
-  border:1px dashed var(--rule);border-radius:var(--r-action);font-size:14px}
+.offergrid .offercard__name{font-weight:600;font-size:14px;line-height:1.25;
+  font-family:var(--sans)}
+.offergrid .offercard__offer{font-size:11px;font-weight:600;letter-spacing:.02em;
+  padding:4px 9px;border-radius:var(--r-pill);background:var(--accent-wash);color:var(--accent)}
+.offergrid .offercard--free .offercard__offer{background:var(--accent);color:#fff}
+.offergrid .offercard__desc{font-size:13px;line-height:1.45;color:var(--ink-muted);margin:0}
+.offergrid .offercard__cat{margin-top:auto;padding-top:4px;font-size:11px;color:var(--ink-quiet)}
+.offergrid .offergrid__empty{display:none;padding:20px;text-align:center;
+  color:var(--ink-muted);border:1px dashed var(--rule);border-radius:var(--r-action);
+  font-size:14px;margin:0}
 .offergrid--empty .offergrid__empty{display:block}
 .offergrid--empty .offergrid__list{display:none}
-@media (max-width:520px){.offergrid__list{grid-template-columns:1fr}}
-</style>"""
+@media (max-width:560px){
+  .offergrid{margin-left:0;margin-right:0}
+  .offergrid .offergrid__list{grid-template-columns:1fr}
+}
+</style>
+<noscript><style>
+/* Without JS the controls cannot work, so hide them rather than showing dead
+   inputs. The full grid stays visible and every card is a plain link. */
+.offergrid .offergrid__controls{display:none}
+</style></noscript>"""
 
 GRID_JS = """<script>
 (function () {
   var root = document.querySelector('[data-offergrid]');
   if (!root) return;
-  // Controls stay hidden until JS is running, so the no-JS view is the full
-  // grid rather than dead filters.
-  root.classList.add('offergrid--live');
-
   var cards = Array.prototype.slice.call(root.querySelectorAll('.offercard'));
   var search = root.querySelector('[data-search]');
   var chips = Array.prototype.slice.call(root.querySelectorAll('[data-filter]'));
   var freeOnly = root.querySelector('[data-free]');
   var count = root.querySelector('[data-count]');
   var group = 'all';
-
   function apply() {
     var q = (search.value || '').trim().toLowerCase();
     var shown = 0;
@@ -156,7 +184,6 @@ GRID_JS = """<script>
       ? 'Showing all ' + cards.length + ' offers'
       : 'Showing ' + shown + ' of ' + cards.length + ' offers';
   }
-
   search.addEventListener('input', apply);
   freeOnly.addEventListener('change', apply);
   chips.forEach(function (chip) {
@@ -171,6 +198,15 @@ GRID_JS = """<script>
   apply();
 })();
 </script>"""
+
+
+def emit_html_block(block: str) -> list[str]:
+    """Return *block* as markdown-safe lines: no blank lines, none stripped.
+
+    Raises if a line is blank, since silently dropping it would change the
+    meaning of CSS or JS in ways that are hard to spot.
+    """
+    return [ln for ln in block.splitlines() if ln.strip()]
 
 
 def _first_sentence(text: str, limit: int = 120) -> str:
@@ -203,7 +239,8 @@ def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str
 
     used = {g for e, _ in rows if (g := _CATEGORY_TO_GROUP.get(e.get("category", "")))}
 
-    o = [GRID_CSS, "", '<div class="offergrid" data-offergrid>']
+    o = emit_html_block(GRID_CSS)
+    o.append('<div class="offergrid" data-offergrid>')
     o.append('  <div class="offergrid__controls">')
     o.append('    <input id="offer-search" class="offergrid__search" type="search" '
              'data-search placeholder="Search tools, offers, categories..." '
@@ -254,7 +291,7 @@ def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str
     o.append('  <p class="offergrid__empty">No offers match that. Clear the search or '
              'pick a different category.</p>')
     o.append('</div>')
-    o.append(GRID_JS)
+    o.extend(emit_html_block(GRID_JS))
     o.append("")
     return o
 
@@ -552,6 +589,21 @@ def main() -> int:
     if args.out is None:
         args.out = default_out(meta)
     content = build(data)
+
+    # A blank line inside <style>/<script> ends markdown's raw-HTML block, which
+    # closes the tag early and lets smartypants rewrite quotes into typographic
+    # ones. That silently breaks the JS. Catch it before it ships again.
+    for tag in ("style", "script"):
+        for m in re.finditer(rf"<{tag}>(.*?)</{tag}>", content, re.S):
+            body = m.group(1)
+            if any(not ln.strip() for ln in body.strip("\n").splitlines()):
+                print(f"blank line inside a <{tag}> block. Markdown will close the "
+                      f"tag there and mangle the rest.", file=sys.stderr)
+                return 1
+    if any(c in content for c in "\u2018\u2019\u201c\u201d"):
+        print("typographic quotes found in generated output; markdown may have "
+              "already mangled a raw HTML block", file=sys.stderr)
+        return 1
 
     anchors = re.findall(r"\]\(#([^)]+)\)", content)
     missing = verify_anchors(content, anchors)
