@@ -1808,6 +1808,11 @@ changelog:
   - date: '2026-08-18 (referral audit)'
     entries:
       - >-
+        The Otter card in the offer grid now carries a second, outlined badge
+        reading "+1 month Pro Lite free (referral)". It is a label rather than a
+        link, since the card is already one anchor and nesting anchors is invalid,
+        so the link and its disclosure stay in the entry the card points at.
+      - >-
         Added one referral link, for Otter.ai, at the maintainer's request. The
         no-affiliate-links policy was rewritten in the same change, and the README,
         the guide, CONTRIBUTING and the live post were all updated, so no surface

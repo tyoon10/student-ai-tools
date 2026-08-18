@@ -328,6 +328,7 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-18 (referral audit)** The Otter card in the offer grid now carries a second, outlined badge reading "+1 month Pro Lite free (referral)". It is a label rather than a link, since the card is already one anchor and nesting anchors is invalid, so the link and its disclosure stay in the entry the card points at.
 - **2026-08-18 (referral audit)** Added one referral link, for Otter.ai, at the maintainer's request. The no-affiliate-links policy was rewritten in the same change, and the README, the guide, CONTRIBUTING and the live post were all updated, so no surface is left claiming the guide carries none. The link renders with a disclosure naming what each side gets.
 - **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.
 - **2026-08-18 (referral audit)** Granola confirmed referee-only with its four rules: friend must be new, their company must have no existing workspace, signup must use a company email, and the trial extension applies automatically.

@@ -137,6 +137,7 @@ GRID_CSS = """<style>
 .offergrid .offercard a:hover{border-color:var(--accent);background:var(--accent-wash)}
 .offergrid .offercard a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .offergrid .offercard__top{display:flex;align-items:center;gap:10px;width:100%}
+.offergrid .offercard__badges{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 /* Specificity 0,2,1 so it beats .markdown-body img (0,1,1). */
 .offergrid img.offercard__logo{width:32px;height:32px;min-width:32px;max-width:32px;
   max-height:32px;margin:0;display:block;object-fit:contain;border-radius:4px;flex:none}
@@ -147,6 +148,13 @@ GRID_CSS = """<style>
 .offergrid .offercard__offer{font-size:11px;font-weight:600;letter-spacing:.02em;
   padding:4px 9px;border-radius:var(--r-pill);background:var(--accent-wash);color:var(--accent)}
 .offergrid .offercard--free .offercard__offer{background:var(--accent);color:#fff}
+/* Secondary badge, deliberately outlined rather than filled so it reads as an
+   extra rather than as the headline offer. Not a link: the card is already one
+   <a>, and nesting anchors is invalid. The actual link and its disclosure live
+   in the entry the card points at. */
+.offergrid .offercard__bonus{font-size:11px;font-weight:600;letter-spacing:.02em;
+  padding:3px 8px;border-radius:var(--r-pill);background:transparent;
+  color:var(--accent);border:1px dashed var(--accent)}
 .offergrid .offercard__desc{font-size:13px;line-height:1.45;color:var(--ink-muted);margin:0}
 .offergrid .offercard__cat{margin-top:auto;padding-top:4px;font-size:11px;color:var(--ink-quiet)}
 .offergrid .offergrid__empty{display:none;padding:20px;text-align:center;
@@ -273,7 +281,13 @@ def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str
         cat = e.get("category", "Cloud and infrastructure")
         group = _CATEGORY_TO_GROUP.get(cat, "")
         is_free = "free" in headline.lower()
-        haystack = " ".join([name, headline, desc, cat]).lower()
+        rl = e.get("referral_link")
+        bonus = ""
+        if rl:
+            # Precise tier: the referral grants Pro Lite, not the Pro the
+            # headline discount applies to. "1 month free" alone would overstate.
+            bonus = "+1 month Pro Lite free (referral)"
+        haystack = " ".join([name, headline, desc, cat, bonus]).lower()
 
         logo = next(iter(sorted(logo_dir.glob(f"{e['id']}.*"))), None) if logo_dir.exists() else None
         if logo:
@@ -288,7 +302,10 @@ def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str
         o.append(f'      <a href="#{anchor}">')
         o.append(f'        <span class="offercard__top">{media}'
                  f'<span class="offercard__name">{_esc(name)}</span></span>')
-        o.append(f'        <span class="offercard__offer">{_esc(headline)}</span>')
+        o.append('        <span class="offercard__badges">'
+                 f'<span class="offercard__offer">{_esc(headline)}</span>'
+                 + (f'<span class="offercard__bonus">{_esc(bonus)}</span>' if bonus else '')
+                 + '</span>')
         o.append(f'        <span class="offercard__desc">{_esc(desc)}</span>')
         o.append(f'        <span class="offercard__cat">{_esc(cat)}</span>')
         o.append('      </a>')
