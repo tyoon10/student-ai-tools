@@ -19,6 +19,9 @@ Live post: [twyoon.com/post/student-ai-tools](https://twyoon.com/post/student-ai
 | [`knowledge-base.md`](./knowledge-base.md) | Generated. The full working record, including tools excluded from the public list. |
 | [`scripts/`](./scripts) | Build and validation scripts. |
 
+The post at twyoon.com is generated from the same file by `scripts/build_post.py`,
+so there are three outputs and still one input.
+
 `recommended.md` and `knowledge-base.md` are both generated from `data/tools.yml`.
 That is deliberate. The two files previously drifted apart, and at one point the
 website became the de facto source of truth while the repo claimed it was not.
@@ -33,7 +36,14 @@ python3 scripts/build.py            # regenerate both markdown files
 python3 scripts/build.py --check    # fail if they are stale (runs in CI)
 python3 scripts/check_freshness.py  # fail if a published entry is over 90 days old
 python3 scripts/check_links.py      # probe every outbound URL
+python3 scripts/check_schema.py     # validate tools.yml shape (runs in CI)
+python3 scripts/build_post.py       # regenerate the twyoon.com post from the same data
 ```
+
+`scripts/build_post.py` writes the Astro post for twyoon.com. It is generated
+from `data/tools.yml` too, so the site and the repo cannot drift apart the way
+they did in May 2026. It writes `index.draft.md` by default, which Astro's
+loader deliberately ignores; rename it to `index.md` to publish.
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for the bar an entry has to clear.
 

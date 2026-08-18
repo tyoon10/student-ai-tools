@@ -1,0 +1,267 @@
+#!/usr/bin/env python3
+"""Generate the twyoon.com Astro post from data/tools.yml.
+
+The post and the repo guide drifted apart badly once before: two commits in May
+2026 pulled edits FROM the website back INTO the repo, which contradicted the
+knowledge base's own claim to be the source of truth. Generating the post from
+the same YAML removes that failure mode entirely.
+
+The post is a different artefact from recommended.md, not a copy. It carries
+front matter, a narrative voice, and per-offer tables, and it omits the
+repo-facing machinery (schema notes, referral audit, validation log).
+
+Usage:
+    python3 scripts/build_post.py                       # write to the default site path
+    python3 scripts/build_post.py --out path/index.md   # write elsewhere
+    python3 scripts/build_post.py --check               # exit 1 if stale
+
+By default this writes `index.draft.md`. Astro's loader matches
+`**/index.{md,mdx}`, so a draft file is NOT published. Rename it to index.md to
+publish, and set meta.live_post_published to true in data/tools.yml.
+"""
+from __future__ import annotations
+
+import argparse
+import pathlib
+import sys
+
+import yaml
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+DATA = ROOT / "data" / "tools.yml"
+DEFAULT_OUT = pathlib.Path(
+    "/home/taewan/workspace/initiatives/twyoon-com/repos/site"
+    "/src/content/writings/student-ai-tools/index.draft.md"
+)
+
+
+def clean(text) -> str:
+    return " ".join(str(text or "").split())
+
+
+def row(label: str, value: str) -> str:
+    return f"| {label} | {value} |"
+
+
+def offer_table(t: dict) -> list[str]:
+    out = ["", "| Field | Value |", "|---|---|"]
+    out.append(row("Original price", clean(t["pricing"]["original"])))
+    out.append(row("Student price", f"**{clean(t['pricing']['student'])}**"))
+    out.append(row("Verification", clean(t["verification"])))
+    out.append(row("Length", clean(t["length"])))
+    if t.get("regions"):
+        out.append(row("Eligibility", clean(t["regions"])))
+    out.append(row("Sign up", f"[{_domain(t['links'][0])}]({t['links'][0]})"))
+    out.append("")
+    return out
+
+
+def _domain(url: str) -> str:
+    return url.split("//", 1)[-1].split("/", 1)[0].removeprefix("www.")
+
+
+def build(d: dict) -> str:
+    meta = d["meta"]
+    tools = d["tools"]
+    date = meta["last_full_review"]
+
+    active_pub = [t for t in tools if t["status"] == "active" and t.get("published")]
+    daily = sorted([t for t in active_pub if t.get("daily_use")],
+                   key=lambda t: t.get("rank", 99))
+    secondary = [t for t in active_pub if not t.get("daily_use")
+                 and t.get("tier") in ("S", "A", "B")]
+    secondary.sort(key=lambda t: ("S", "A", "B").index(t["tier"]))
+    rest = [t for t in active_pub if not t.get("daily_use")
+            and t.get("tier") not in ("S", "A", "B")]
+    ended = [t for t in tools + d["excluded"] if t.get("status") == "ended"]
+    # Only offers that were actually on the published list belong in the intro.
+    # Everything else still appears under "Recently closed" as a record.
+    lost = [t for t in ended if t.get("headline_loss")]
+    ended.sort(key=lambda t: t.get("ended_on", ""), reverse=True)
+
+    o: list[str] = []
+    o.append("---")
+    o.append('title: "AI Tools Worth Setting Up Today (with Student Benefit)"')
+    o.append(f"date: {date}")
+    o.append('description: "The AI tools I actually use, plus a curated secondary '
+             f'list. Every offer verified against the vendor\'s own pages on {date}."')
+    o.append("featured: false")
+    o.append('coverImage: "./featured.png"')
+    o.append("tags:")
+    for tag in ("AI Tools", "Students", "MBA", "Productivity"):
+        o.append(f'  - "{tag}"')
+    o.append("---")
+    o.append("")
+
+    o.append("Summer is the best time of year to build, learn and try new tools. It is "
+             "also the moment to lock in every student-only AI offer you can, especially "
+             "if you are graduating.")
+    o.append("")
+    o.append("> **If you are a graduating student, move fast.** Most of these offers "
+             "verify against your .edu email or active student status. The day you lose "
+             "either, you lose the offer.")
+    o.append("")
+    o.append("There is a bigger pattern here. AI tools open free or deeply discounted "
+             "student plans early to drive adoption, then quietly close the door once "
+             "they have enough traction. This is not hypothetical. Since I started "
+             f"tracking these, {_word(len(lost))} of the offers on this very list "
+             "have gone:")
+    o.append("")
+    for t in sorted(lost, key=lambda x: x.get("ended_on", "")):
+        o.append(f"- **{t['name']}** closed **{t.get('ended_on', 'recently')}**. "
+                 f"{clean(t.get('reason') or t.get('blurb'))}")
+    o.append("")
+    o.append("So claim the live ones today, while they are still live.")
+    o.append("")
+    o.append(f"> **Last refreshed:** {date}. Every entry below was checked against the "
+             "vendor's own help-centre or pricing page, not a coupon site. The full "
+             "research notes, including the tools I ruled out and why, live at "
+             f"[github.com/tyoon10/student-ai-tools]({meta['repo']}).")
+    o.append("")
+    o.append("> **No affiliate links.** Nothing here pays me. Every link goes straight "
+             "to the vendor.")
+    o.append("")
+    o.append("---")
+    o.append("")
+
+    o.append(f"## The {_word(len(daily))} I actually use every day")
+    o.append("")
+    o.append("Tried, used extensively, kept. These are the ones I would tell a "
+             "classmate to set up first.")
+    o.append("")
+    for i, t in enumerate(daily, 1):
+        o.append(f"### {i}. {t['name']}: **{t['headline']}**")
+        o.append("")
+        o.append(clean(t["blurb"]))
+        o.extend(offer_table(t))
+        for cav in t.get("caveats") or []:
+            o.append(f"*Note: {clean(cav)}*")
+            o.append("")
+
+    o.append("---")
+    o.append("")
+    o.append("## Worth knowing about")
+    o.append("")
+    o.append("Strong offers that are not part of my daily stack.")
+    o.append("")
+    for t in secondary:
+        o.append(f"### {t['name']}: **{t['headline']}**")
+        o.append("")
+        o.append(clean(t["blurb"]))
+        o.extend(offer_table(t))
+
+    if rest:
+        o.append("### The rest")
+        o.append("")
+        o.append("| Tool | Offer | What it is |")
+        o.append("|---|---|---|")
+        for t in rest:
+            o.append(f"| [{t['name']}]({t['links'][0]}) | **{t['headline']}** | "
+                     f"{clean(t['blurb'])} |")
+        o.append("")
+
+    o.append("### Cloud credits")
+    o.append("")
+    o.append("| Programme | Offer | Notes |")
+    o.append("|---|---|---|")
+    for c in d["cloud_credits"]:
+        o.append(f"| [{c['name']}]({c['links'][0]}) | **{c['headline']}** | "
+                 f"{clean(c['student'])} |")
+    o.append("")
+    o.append("---")
+    o.append("")
+
+    if ended:
+        o.append("## Recently closed")
+        o.append("")
+        o.append("I keep dead offers on the page instead of deleting them. Knowing "
+                 "an offer is gone saves you the search, and it shows how quickly "
+                 "these things move.")
+        o.append("")
+        for t in ended:
+            o.append(f"**{t['name']}**, closed {t.get('ended_on', 'recently')}. "
+                     f"{clean(t.get('reason') or t.get('blurb'))}")
+            o.append("")
+            for cav in t.get("caveats") or []:
+                o.append(f"- {clean(cav)}")
+            if t.get("length") and t.get("status") == "ended" and t in tools:
+                o.append(f"- Existing subscribers: {clean(t['length'])}")
+            o.append("")
+        o.append("---")
+        o.append("")
+
+    o.append("## What is not on this list, and why")
+    o.append("")
+    for e in d["excluded"]:
+        if e.get("status") == "ended":
+            continue
+        line = f"**{e['name']}.** {clean(e['reason'])}"
+        for extra in ("individual_routes", "detail", "check_path"):
+            if e.get(extra):
+                line += f" {clean(e[extra])}"
+        o.append(line)
+        o.append("")
+    unresolved = d.get("unresolved") or []
+    if unresolved:
+        names = ", ".join(u["name"] for u in unresolved)
+        o.append(f"**{names}.** Dropped. I could not confirm official student terms "
+                 "after more than three months, so they are off the list rather than "
+                 "on it with a question mark.")
+        o.append("")
+    o.append("---")
+    o.append("")
+
+    o.append("## How to verify anything here")
+    o.append("")
+    o.append("1. **Click the official link.** Every source here is a help-centre or "
+             "pricing page. Coupon and deal-aggregator sites routinely advertise "
+             "offers that the vendor's own site does not mention, and several on "
+             "this list were rejected for exactly that reason.")
+    o.append(f"2. **Check the refresh date.** If it is more than "
+             f"{meta['max_age_days']} days old, re-verify before you rely on it.")
+    o.append("3. **Try SheerID, Student Beans or UNiDAYS directly** if you are hunting "
+             "beyond this list. A lot of discounts route through them.")
+    o.append("")
+    o.append("---")
+    o.append("")
+    o.append(f"*Maintained openly at [github.com/tyoon10/student-ai-tools]({meta['repo']}). "
+             "The list is generated from a single data file, checked by CI, and "
+             "re-verified on a schedule. Spot something out of date? Open an issue.*")
+    o.append("")
+    return "\n".join(o)
+
+
+def _word(n: int) -> str:
+    return {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
+            6: "six", 7: "seven", 8: "eight"}.get(n, str(n))
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", type=pathlib.Path, default=DEFAULT_OUT)
+    ap.add_argument("--check", action="store_true")
+    args = ap.parse_args()
+
+    data = yaml.safe_load(DATA.read_text(encoding="utf-8"))
+    content = build(data)
+
+    if args.check:
+        if not args.out.exists() or args.out.read_text(encoding="utf-8") != content:
+            print(f"stale: {args.out}", file=sys.stderr)
+            return 1
+        print("post is up to date")
+        return 0
+
+    if not args.out.parent.exists():
+        print(f"target directory does not exist: {args.out.parent}", file=sys.stderr)
+        return 1
+    args.out.write_text(content, encoding="utf-8")
+    print(f"wrote {args.out} ({len(content):,} bytes)")
+    if args.out.name.endswith(".draft.md"):
+        print("NOTE: this is a draft. Astro ignores index.draft.md. "
+              "Rename to index.md to publish, and set meta.live_post_published: true.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

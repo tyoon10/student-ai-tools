@@ -76,6 +76,15 @@ def main() -> int:
     data = yaml.safe_load(DATA.read_text(encoding="utf-8"))
     owners: dict[str, set[str]] = {}
     collect_urls(data, owners)
+
+    # The live post URL is aspirational until the draft is promoted to index.md.
+    # Skip it while unpublished, but say so rather than hiding the exclusion.
+    meta = data.get("meta", {})
+    skipped = None
+    if not meta.get("live_post_published") and meta.get("live_post") in owners:
+        skipped = meta["live_post"]
+        owners.pop(skipped)
+
     urls = sorted(owners)
 
     with ThreadPoolExecutor(max_workers=8) as pool:
@@ -88,6 +97,10 @@ def main() -> int:
 
     if args.md:
         print(f"Checked **{len(urls)}** links from `data/tools.yml`.")
+        if skipped:
+            print()
+            print(f"> Skipped `{skipped}` (meta.live_post): the post is not "
+                  f"published yet, so this URL is expected to 404.")
         print()
         print(f"- OK: {len(buckets['OK'])}")
         print(f"- Blocked to bots (not rot): {len(buckets['BLOCKED'])}")
@@ -108,6 +121,8 @@ def main() -> int:
             for url, code, note in buckets[state]:
                 who = ", ".join(sorted(owners[url]))
                 print(f"  {code or note:>10}  {url}  [{who}]")
+        if skipped:
+            print(f"\nskipped (unpublished live_post, expected 404): {skipped}")
         print(f"\n{len(buckets['OK'])}/{len(urls)} OK, "
               f"{len(buckets['BLOCKED'])} blocked, "
               f"{len(buckets['UNREACHED'])} unreachable, "

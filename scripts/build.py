@@ -72,7 +72,10 @@ def build_recommended(d: dict) -> str:
     out.append("")
     out.append(f"- **Last refreshed:** {meta['last_full_review']}")
     out.append("- **Full research notes:** [knowledge-base.md](./knowledge-base.md)")
-    out.append(f"- **Live post:** [twyoon.com/post/student-ai-tools]({meta['live_post']})")
+    if meta.get("live_post_published"):
+        out.append(f"- **Live post:** [twyoon.com/writings/student-ai-tools]({meta['live_post']})")
+    else:
+        out.append("- **Live post:** not yet published. This repo is the canonical version.")
     out.append(f"- **Disclosure:** {clean(meta['affiliate_policy'])}")
     out.append("")
     out.append("---")
@@ -92,15 +95,18 @@ def build_recommended(d: dict) -> str:
 
     # Urgency framing, driven by whatever is actually in `ended` state.
     ended = [t for t in tools + d["excluded"] if t.get("status") == "ended"]
+    # Only offers that were actually on the published list belong in the intro.
+    # Everything else still appears under "Recently closed" as a record.
+    lost = [t for t in ended if t.get("headline_loss")]
     out.append(
         "There is a bigger pattern at work. AI tools open free or deeply discounted "
         "student plans early to drive adoption, then quietly close the door once they "
-        f"have enough traction. {_number_word(len(ended)).capitalize()} "
-        f"{'offer' if len(ended) == 1 else 'offers'} tracked here "
-        f"{'has' if len(ended) == 1 else 'have'} already gone that way:"
+        f"have enough traction. {_number_word(len(lost)).capitalize()} "
+        f"{'offer' if len(lost) == 1 else 'offers'} that were on this list "
+        f"{'has' if len(lost) == 1 else 'have'} already gone that way:"
     )
     out.append("")
-    for t in sorted(ended, key=lambda x: x.get("ended_on", "")):
+    for t in sorted(lost, key=lambda x: x.get("ended_on", "")):
         out.append(
             f"- **{t['name']}** closed on **{t.get('ended_on', 'an unannounced date')}**. "
             f"{clean(t.get('reason') or t.get('blurb'))}"

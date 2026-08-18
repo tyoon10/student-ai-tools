@@ -250,6 +250,7 @@ Status: active.
 - Regions: Degree-granting universities in the US or Canada, and you must be residing in the US or Canada when you claim. One offer per student.
 - Caveat: Requires an existing ChatGPT Free, Go, Plus or Pro account.
 - Caveat: Announced 2026-03-21 with no published end date. Still live as of 2026-08-18.
+- Caveat: This is the route to Codex CLI for students. There is no separate CLI offer. The credits are spent through whichever Codex surface you use, including the CLI and IDE extensions.
 - Referral programme: **campaign-gated**. Separate from this offer, eligible Plus subscribers sometimes hold one to three invite codes granting short Plus trials, and past campaigns have offered a free month or account credit. Availability is gated per campaign and region and does not stack with other promotions.
 - Official sources:
   - https://developers.openai.com/community/students
@@ -618,7 +619,7 @@ Status: active.
 - Reason: No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro.
 - Detail: Access for students runs through Claude for Education, a university-wide plan licensed to the institution. Campus-wide agreements in place by mid-2026 include Stanford, which rolled out to all students, faculty and staff from 2026-06-30, plus Northeastern, the London School of Economics, Champlain College and Northumbria.
 - Individual routes: The old self-serve Student Builder path (a form, a school email, roughly 50 USD in API credit) is gone from Anthropic's site. It has been folded into the Claude Campus Program, which runs two application-gated tracks: Campus Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus unspecified API credits and a stipend, but neither publishes a dollar figure, and applications for the current cohort are CLOSED as of 2026-08-18. The External Researcher Access Program (around 1,000 USD in credit) remains a separate route. Outside those, the cheapest official option is Pro on annual billing at 17 USD per month, billed 200 USD up front, against 20 USD billed monthly.
-- Check path: Ask your IT or procurement team whether your campus holds a Claude for Education agreement.
+- Check path: Ask your IT or procurement team whether your campus holds a Claude for Education agreement. If it does, signing in to claude.ai with your school email provisions the account at no cost to you.
 - Sources:
   - https://claude.com/solutions/education
   - https://claude.com/pricing
@@ -628,10 +629,11 @@ Status: active.
 
 - Status: ended
 - Reason: The free year of Google AI Pro for students ended on 2026-03-11. The student page now reads "Our previous student offer ended on March 11, 2026 and is no longer available in your region."
-- Detail: This is the clearest example of the pattern the guide warns about. A generous student offer ran long enough to drive adoption and was then withdrawn.
+- Detail: This is the clearest example of the pattern the guide warns about. A generous student offer ran long enough to drive adoption and was then withdrawn. Note that a SECOND Google student promotion also existed and also expired: the Google One special student pricing offer (US only, 18+, SheerID verification, subscribe through the Play Store) had to be redeemed by 2026-04-30. Aggregator sites still advertise both as live, quoting a 9.99 USD student rate. Neither is claimable. If you find such a claim, check the redemption deadline in Google's own offer terms before believing it.
 - Check path: Monitor the student page for a regional relaunch.
 - Sources:
   - https://gemini.google/students/
+  - https://one.google.com/offer/studentoffer6
 - Last checked: 2026-08-18 | Confidence: high
 
 ### Microsoft Copilot (Microsoft 365 Education)
@@ -685,6 +687,26 @@ Status: active.
 - Sources:
   - https://coda.io/solutions/role/students
 - Last checked: 2026-08-18 | Confidence: low
+
+### Gemini CLI
+
+- Status: none
+- Reason: No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here.
+- Detail: Flash is the default on the free tier, so the 1,000 daily requests are not 1,000 Pro requests. Authenticating with an unpaid API key instead of a Google account is materially worse: 250 requests per day, 10 per minute, Flash only. Sign in with the account, not the key.
+- Check path: Nothing to claim. Install it and sign in.
+- Sources:
+  - https://github.com/google-gemini/gemini-cli
+- Last checked: 2026-08-18 | Confidence: medium
+
+### NotebookLM
+
+- Status: none
+- Reason: No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access.
+- Detail: Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, whose student offers have all expired. See the Google Gemini entry.
+- Check path: Nothing to claim. Use it free, and check Google Classroom if your course uses it.
+- Sources:
+  - https://edu.google.com/intl/ALL_us/ai-notebooklm/
+- Last checked: 2026-08-18 | Confidence: medium
 
 ## Dropped: unresolved after repeated attempts
 
@@ -770,8 +792,9 @@ Listed so they are not re-probed every cycle.
 
 ## Backlog
 
-- Agentic coding CLIs were NOT checked: Claude Code, Codex CLI, Gemini CLI. The 2026-08-18 sweep found Amp instead, which is a real offer but not a substitute for verifying Anthropic's, OpenAI's and Google's own CLI tools directly.
-- NotebookLM: heavy student adoption, still never audited.
+- RESOLVED 2026-08-18. Agentic coding CLIs checked. Claude Code has no separate student offer (bundled into Pro and Max). Codex CLI is covered by the existing 100 USD Codex credits entry. Gemini CLI needs no offer because its free tier is already generous. All three recorded rather than listed.
+- RESOLVED 2026-08-18. NotebookLM audited: free to everyone, no student-specific offer.
+- Promote the twyoon.com post from index.draft.md to index.md. It has never been published, and the repo advertised it as live until 2026-08-18.
 - Run the student-discount audit over the referral_tools set as its own pass. The 2026-08-18 sweep surfaced fragments incidentally (Reclaim, Speechify and Sunsama all run separate referral programmes) but did not do it systematically.
 - Write the seasonal-versus-always-on campaign policy. Raw material now exists: Perplexity's expired campaign sits beside its always-on Education Pro rate, Grammarly and QuillBot are both campaign-based, and CapCut's rollout was dated.
 - Get vendor-side discount numbers for Prezi, Trinka and Sunsama. All three are confirmed to have a student offer but none publishes a percentage, which is why all three are held back from the public list.

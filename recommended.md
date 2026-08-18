@@ -7,7 +7,7 @@ The AI tools I actually use, plus a curated secondary list. Every offer on this 
 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
-- **Live post:** [twyoon.com/post/student-ai-tools](https://twyoon.com/post/student-ai-tools/)
+- **Live post:** not yet published. This repo is the canonical version.
 - **Disclosure:** This guide contains no affiliate or referral links. Every link goes to the vendor's own help-centre or pricing page. Referral programmes are documented as facts about each tool, not as an invitation to use anyone's link.
 
 ---
@@ -16,12 +16,10 @@ Summer is the best time of year to build, learn and try new tools. It is also th
 
 > **If you are a graduating student, move fast.** Most of these offers verify against your .edu email or active student status. The day you lose either, you lose the offer.
 
-There is a bigger pattern at work. AI tools open free or deeply discounted student plans early to drive adoption, then quietly close the door once they have enough traction. Four offers tracked here have already gone that way:
+There is a bigger pattern at work. AI tools open free or deeply discounted student plans early to drive adoption, then quietly close the door once they have enough traction. Two offers that were on this list have already gone that way:
 
-- **Tabnine** closed on **2025-04-01**. Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered.
 - **Google Gemini** closed on **2026-03-11**. The free year of Google AI Pro for students ended on 2026-03-11. The student page now reads "Our previous student offer ended on March 11, 2026 and is no longer available in your region."
 - **Cursor** closed on **2026-06-25**. Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. It was a full year of Pro free and it was the strongest offer on this list, so its removal is the single biggest change since the last refresh.
-- **Coda (now Superhuman Docs)** closed on **2026-06-30**. The student, teacher and non-profit discount is paused for new applications as of 2026-06-30, following Coda's rebrand to Superhuman Docs.
 
 So claim the live ones today, while they are still live.
 
@@ -120,6 +118,7 @@ The full app suite plus Firefly generative AI in Photoshop, Illustrator and Prem
 - Eligibility: Degree-granting universities in the US or Canada, and you must be residing in the US or Canada when you claim. One offer per student.
 - Note: Requires an existing ChatGPT Free, Go, Plus or Pro account.
 - Note: Announced 2026-03-21 with no published end date. Still live as of 2026-08-18.
+- Note: This is the route to Codex CLI for students. There is no separate CLI offer. The credits are spent through whichever Codex surface you use, including the CLI and IDE extensions.
 
 ### Microsoft 365 Personal ($4.99/month, 50% off)
 
@@ -254,11 +253,13 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## What is *not* on this list (and why)
 
-- **Claude (Anthropic)**. No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro. The old self-serve Student Builder path (a form, a school email, roughly 50 USD in API credit) is gone from Anthropic's site. It has been folded into the Claude Campus Program, which runs two application-gated tracks: Campus Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus unspecified API credits and a stipend, but neither publishes a dollar figure, and applications for the current cohort are CLOSED as of 2026-08-18. The External Researcher Access Program (around 1,000 USD in credit) remains a separate route. Outside those, the cheapest official option is Pro on annual billing at 17 USD per month, billed 200 USD up front, against 20 USD billed monthly. Ask your IT or procurement team whether your campus holds a Claude for Education agreement.
+- **Claude (Anthropic)**. No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro. The old self-serve Student Builder path (a form, a school email, roughly 50 USD in API credit) is gone from Anthropic's site. It has been folded into the Claude Campus Program, which runs two application-gated tracks: Campus Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus unspecified API credits and a stipend, but neither publishes a dollar figure, and applications for the current cohort are CLOSED as of 2026-08-18. The External Researcher Access Program (around 1,000 USD in credit) remains a separate route. Outside those, the cheapest official option is Pro on annual billing at 17 USD per month, billed 200 USD up front, against 20 USD billed monthly. Ask your IT or procurement team whether your campus holds a Claude for Education agreement. If it does, signing in to claude.ai with your school email provisions the account at no cost to you.
 - **Microsoft Copilot (Microsoft 365 Education)**. Microsoft 365 Copilot Chat costs nothing extra when you sign in with a school account, but only if your institution holds an eligible Microsoft 365 Education licence (A1, A3 or A5) and an admin has switched it on. Neither is something you can claim yourself. Microsoft confirmed in May 2025 that students aged 13 and over can use Copilot Chat once the school enables it. Note the scope: Education A1 does not include the consumer Copilot embedded in Word, Excel and PowerPoint, only the more limited Copilot Chat. Ask your school IT team whether the tenant holds an A1, A3 or A5 licence and whether Copilot Chat is enabled for student accounts.
 - **Canva**. Canva for Education is the eligibility-based K-12 offer. Higher-education access runs through Canva Campus, which the institution buys and manages. There is no individual higher-ed claim, so without a Campus licence a university student is on Canva Free. One adjacent route exists. Canva opened Campus Canvassadors, a student ambassador programme for US university students, with its first cohort running August to December 2026. Applications are prioritised for students already at Canva for Campus schools, so it rewards existing access rather than creating it. Ask whether your school has procured Canva Campus.
 - **Midjourney**. No individual student programme in 2026. The 20 percent saving on annual billing is available to everyone and is not a student discount. Midjourney's educational-use policy is explicit that each student needs their own account and their own subscription. There are no shared accounts, no group plans and no way for a school to manage student accounts centrally, though schools can reimburse students directly.
 - **CapCut Creative Campus**. Restricted to a small set of named partner schools, none of them business or graduate programmes. There is no individual claim path. Check whether your institution is a named Creative Campus partner.
+- **Gemini CLI**. No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here. Flash is the default on the free tier, so the 1,000 daily requests are not 1,000 Pro requests. Authenticating with an unpaid API key instead of a Google account is materially worse: 250 requests per day, 10 per minute, Flash only. Sign in with the account, not the key. Nothing to claim. Install it and sign in.
+- **NotebookLM**. No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access. Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, whose student offers have all expired. See the Google Gemini entry. Nothing to claim. Use it free, and check Google Classroom if your course uses it.
 - **SciSpace, Julius AI, Humata**. Dropped. Official student terms could not be confirmed after more than three months of trying, so they are excluded rather than listed on a maybe.
 
 ---

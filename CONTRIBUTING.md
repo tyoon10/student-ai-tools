@@ -30,8 +30,12 @@ pip install pyyaml
 python3 scripts/build.py
 
 # 4. confirm the checks pass
+python3 scripts/check_schema.py
 python3 scripts/check_freshness.py
 python3 scripts/check_links.py
+
+# 5. if the published post needs updating too
+python3 scripts/build_post.py
 ```
 
 Commit `data/tools.yml` together with the regenerated markdown.
