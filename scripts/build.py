@@ -488,6 +488,23 @@ def build_knowledge_base(d: dict) -> str:
     for e in rt["entries"]:
         out.append(f"- **{e['name']}**: {clean(e['caveats'])} Source: {e['link']}")
     out.append("")
+    # Tools tracked on the student-offer axis can ALSO run referral programmes.
+    # Their detail lives in their own entry, so without this the referral table
+    # silently omits them and reads as the complete picture when it is not.
+    also = [t for t in d["tools"]
+            if (t.get("referral") or {}).get("status") not in (None, "none", "unclear")]
+    if also:
+        out.append("### Tracked tools that also run a referral programme")
+        out.append("")
+        out.append("These are on the student-offer axis above, so they are not "
+                   "repeated in the table. Full terms are in each tool's own entry.")
+        out.append("")
+        out.append("| Tool | Referral status |")
+        out.append("|---|---|")
+        for t in also:
+            out.append(f"| **{t['name']}** | {t['referral']['status']} |")
+        out.append("")
+
     unc = rt.get("unconfirmed") or []
     if unc:
         out.append("### Claimed but not confirmed on a vendor page")

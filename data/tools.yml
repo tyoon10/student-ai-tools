@@ -148,10 +148,15 @@ tools:
     referral:
       status: asymmetric
       detail: >-
-        The referee gets 2 months of Granola Business and a work email is required.
-        The referrer gets no documented benefit. A separate Dub-hosted affiliate
-        programme pays a per-signup commission. Largely redundant for students who
-        already hold the 12-month plan.
+        Referee-only, confirmed in-product on 2026-08-18. The friend gets 2 months
+        of Granola Business free and the referrer gets nothing. The in-app panel
+        states four rules: the friend must be new to Granola, their company must
+        not already have a Granola workspace, they must sign up with a company
+        email rather than Gmail or Outlook, and the extra trial time is applied
+        automatically at signup. Invite links take the form join.granola.ai/t/CODE.
+        A separate Dub-hosted affiliate programme pays a per-signup commission.
+        Largely redundant between students, since anyone eligible for the company
+        email requirement is unlikely to be the classmate you would share it with.
       links:
         - 'https://docs.granola.ai/help-center/managing-your-account/referral-program'
         - 'https://partners.dub.co/granola'
@@ -1425,8 +1430,8 @@ referral_tools:
       sided: 'two-sided'
       referrer: '250 credits per friend'
       referee: '250 credits'
-      caveats: 'Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member. Referral credits persist rather than expiring daily.'
-      link: 'https://x.com/SunoMusic/status/1843739161783599518'
+      caveats: 'Confirmed in-product 2026-08-18 from the invite panel, which reads "When your friend signs up and creates 10 songs, you both receive 250 free credits. Limit of 2500 credits per person." Two corrections from that: the cap is 2,500 credits PER PERSON rather than per ten referrals, and the panel offers subscribing as an alternative rather than a prerequisite, so the earlier "referrer must be a paid member" note is dropped as unsupported. Invite links take the form suno.com/invite/@username. Referral credits persist rather than expiring daily.'
+      link: 'https://suno.com/invite'
       confidence: 'high'
       last_checked: '2026-08-18'
     - id: 'raycast'
@@ -1784,6 +1789,20 @@ backlog:
 changelog:
   - date: '2026-08-18 (referral audit)'
     entries:
+      - >-
+        Suno and Granola confirmed from in-product panels, which is first-party
+        evidence and outranks the help pages used before. Two corrections to Suno:
+        the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier
+        "referrer must be a paid member" note is dropped, since the panel offers
+        subscribing as an alternative rather than a prerequisite.
+      - >-
+        Granola confirmed referee-only with its four rules: friend must be new,
+        their company must have no existing workspace, signup must use a company
+        email, and the trial extension applies automatically.
+      - >-
+        Added a cross-reference table for tracked tools that also run referral
+        programmes. Without it the referral table omitted Granola, Perplexity,
+        Otter and six others, and read as complete when it was not.
       - >-
         Widened the referral bar from "both parties must benefit" to "either party
         benefits", and added a `sided` field so a referrer-only scheme is never

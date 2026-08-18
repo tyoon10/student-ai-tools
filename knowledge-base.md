@@ -119,7 +119,7 @@ Status: active.
 - Verification: Student application flow on the Granola student page.
 - Regions: Currently enrolled students at accredited universities in the US, UK and Canada.
 - Caveat: The page labels this a LIMITED EDITION promotion, so it may be withdrawn without notice.
-- Referral programme: **asymmetric**. The referee gets 2 months of Granola Business and a work email is required. The referrer gets no documented benefit. A separate Dub-hosted affiliate programme pays a per-signup commission. Largely redundant for students who already hold the 12-month plan.
+- Referral programme: **asymmetric**. Referee-only, confirmed in-product on 2026-08-18. The friend gets 2 months of Granola Business free and the referrer gets nothing. The in-app panel states four rules: the friend must be new to Granola, their company must not already have a Granola workspace, they must sign up with a company email rather than Gmail or Outlook, and the extra trial time is applied automatically at signup. Invite links take the form join.granola.ai/t/CODE. A separate Dub-hosted affiliate programme pays a per-signup commission. Largely redundant between students, since anyone eligible for the company email requirement is unlikely to be the classmate you would share it with.
 - Official sources:
   - https://www.granola.ai/students
 - Referral sources:
@@ -755,7 +755,7 @@ A separate audit targeting tools where both parties receive a defined benefit. T
 
 Caveats and sources:
 
-- **Suno**: Friend must create 10 original songs. Cap of 2,500 credits across 10 referrals. Referrer must be a paid member. Referral credits persist rather than expiring daily. Source: https://x.com/SunoMusic/status/1843739161783599518
+- **Suno**: Confirmed in-product 2026-08-18 from the invite panel, which reads "When your friend signs up and creates 10 songs, you both receive 250 free credits. Limit of 2500 credits per person." Two corrections from that: the cap is 2,500 credits PER PERSON rather than per ten referrals, and the panel offers subscribing as an alternative rather than a prerequisite, so the earlier "referrer must be a paid member" note is dropped as unsupported. Invite links take the form suno.com/invite/@username. Referral credits persist rather than expiring daily. Source: https://suno.com/invite
 - **Raycast**: Referrer must be a Raycast Pro subscriber. Codes are shared through the Share Raycast command. Added 2026-08-18. Source: https://www.raycast.com/changelog/1-62-0
 - **Recraft**: Signup must happen on desktop. Cap of 4,000 credits, so only the first 20 referrals earn. Added 2026-08-18. Source: https://www.recraft.ai/blog/earn-free-credits-with-recraft-referrals
 - **Fathom**: Referrals must come from a different company, verified by email domain. Each referral link works once. Individual users only. No cap documented. Source: https://help.fathom.video/en/articles/4381825
@@ -781,6 +781,22 @@ Caveats and sources:
 - **Gamma**: Reclassified from two-sided to referrer-only on 2026-08-18, which is what the mechanic always was. Not re-verified. Source: https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma
 - **Heptabase**: Friend must complete the trial and subscribe. One-time. Not re-verified on 2026-08-18. Source: https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a
 - **Scite**: Reclassified from two-sided to referrer-only on 2026-08-18. Weakly documented. Not re-verified. Source: https://scite.ai/affiliate
+
+### Tracked tools that also run a referral programme
+
+These are on the student-offer axis above, so they are not repeated in the table. Full terms are in each tool's own entry.
+
+| Tool | Referral status |
+|---|---|
+| **Notion** | discontinued |
+| **Granola** | asymmetric |
+| **Perplexity** | two-sided |
+| **Otter.ai** | two-sided |
+| **Consensus** | b2b |
+| **OpenAI Codex** | campaign-gated |
+| **Grammarly** | discontinued |
+| **QuillBot** | affiliate-only |
+| **Reclaim.ai** | asymmetric |
 
 ### Claimed but not confirmed on a vendor page
 
@@ -826,6 +842,9 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.
+- **2026-08-18 (referral audit)** Granola confirmed referee-only with its four rules: friend must be new, their company must have no existing workspace, signup must use a company email, and the trial extension applies automatically.
+- **2026-08-18 (referral audit)** Added a cross-reference table for tracked tools that also run referral programmes. Without it the referral table omitted Granola, Perplexity, Otter and six others, and read as complete when it was not.
 - **2026-08-18 (referral audit)** Widened the referral bar from "both parties must benefit" to "either party benefits", and added a `sided` field so a referrer-only scheme is never presented as mutual. 17 two-sided, 6 referrer-only, 3 affiliate.
 - **2026-08-18 (referral audit)** Added Raycast (1 month each way), Recraft (200 credits each way) and Kling AI (500 credits to the sharer, 50 percent bonus to the friend).
 - **2026-08-18 (referral audit)** Moved Descript, HeyGen, ElevenLabs, Synthesia and Decktopus in from ruled_out. All were rejected earlier only for being one-sided.

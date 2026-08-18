@@ -325,6 +325,9 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.
+- **2026-08-18 (referral audit)** Granola confirmed referee-only with its four rules: friend must be new, their company must have no existing workspace, signup must use a company email, and the trial extension applies automatically.
+- **2026-08-18 (referral audit)** Added a cross-reference table for tracked tools that also run referral programmes. Without it the referral table omitted Granola, Perplexity, Otter and six others, and read as complete when it was not.
 - **2026-08-18 (referral audit)** Widened the referral bar from "both parties must benefit" to "either party benefits", and added a `sided` field so a referrer-only scheme is never presented as mutual. 17 two-sided, 6 referrer-only, 3 affiliate.
 - **2026-08-18 (referral audit)** Added Raycast (1 month each way), Recraft (200 credits each way) and Kling AI (500 credits to the sharer, 50 percent bonus to the friend).
 - **2026-08-18 (referral audit)** Moved Descript, HeyGen, ElevenLabs, Synthesia and Decktopus in from ruled_out. All were rejected earlier only for being one-sided.
