@@ -13,9 +13,13 @@ from __future__ import annotations
 
 import argparse
 import pathlib
+import re
 import sys
 
 import yaml
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from slug import slugify, verify_anchors  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "tools.yml"
@@ -44,6 +48,62 @@ def clean(text) -> str:
     if text is None:
         return ""
     return " ".join(str(text).split())
+
+
+def rec_daily_heading(i: int, t: dict) -> str:
+    return f"{i}. {t['name']} ({t['headline']})"
+
+
+def rec_secondary_heading(t: dict) -> str:
+    return f"{t['name']} ({t['headline']})"
+
+
+def rec_toc(daily, secondary, rest, cloud, lost, daily_title) -> list[str]:
+    """Navigable index. Anchors are verified against the emitted headings."""
+    o = ["## Every offer at a glance", ""]
+    o.append("Jump straight to any tool. Terms and sources are in each entry.")
+    o.append("")
+
+    def table(rows):
+        return ["| Tool | Offer | Category |", "|---|---|---|", *rows, ""]
+
+    o.append(f"**[{daily_title}](#{slugify(daily_title)})**")
+    o.append("")
+    o.extend(table([
+        f"| [{t['name']}](#{slugify(rec_daily_heading(i, t))}) | {t['headline']} | {t['category']} |"
+        for i, t in enumerate(daily, 1)
+    ]))
+
+    o.append(f"**[Worth knowing about](#{slugify('Worth knowing about')})**")
+    o.append("")
+    o.extend(table([
+        f"| [{t['name']}](#{slugify(rec_secondary_heading(t))}) | {t['headline']} | {t['category']} |"
+        for t in secondary
+    ]))
+
+    if rest:
+        o.append(f"**[The rest](#{slugify('The rest')})**")
+        o.append("")
+        o.extend(table([
+            f"| [{t['name']}](#{slugify('The rest')}) | {t['headline']} | {t['category']} |"
+            for t in rest
+        ]))
+
+    o.append(f"**[Cloud credits](#{slugify('Cloud credits')})**")
+    o.append("")
+    o.extend(table([
+        f"| [{c['name']}](#{slugify('Cloud credits')}) | {c['headline']} | Cloud and infrastructure |"
+        for c in cloud
+    ]))
+
+    if lost:
+        names = ", ".join(t["name"] for t in lost)
+        o.append(f"**Recently closed:** {names}. Kept on the page so you know not to go looking.")
+        o.append("")
+
+    o.append("---")
+    o.append("")
+    return o
 
 
 def links_block(urls, indent="- ") -> list[str]:
@@ -125,35 +185,36 @@ def build_recommended(d: dict) -> str:
         [t for t in tools if t.get("daily_use") and t["status"] == "active"],
         key=lambda t: t.get("rank", 99),
     )
-    out.append(f"## The {_number_word(len(daily))} I actually use every day")
-    out.append("")
-    out.append("Tried, used extensively, kept.")
-    out.append("")
-    for i, t in enumerate(daily, 1):
-        out.extend(_recommended_entry(t, f"{i}. {t['name']} ({t['headline']})"))
-    out.append("---")
-    out.append("")
-
-    # Worth knowing about: active, published, not daily use, top two tiers.
     secondary = [
         t for t in tools
         if t["status"] == "active" and t.get("published") and not t.get("daily_use")
         and t.get("tier") in FULL_ENTRY_TIERS
     ]
     secondary.sort(key=lambda t: FULL_ENTRY_TIERS.index(t["tier"]))
-    out.append("## Worth knowing about")
-    out.append("")
-    out.append("Strong offers, just not in my daily stack.")
-    out.append("")
-    for t in secondary:
-        out.extend(_recommended_entry(t, f"{t['name']} ({t['headline']})"))
-
-    # Compact remainder
     rest = [
         t for t in tools
         if t["status"] == "active" and t.get("published") and not t.get("daily_use")
         and t.get("tier") not in FULL_ENTRY_TIERS
     ]
+    daily_title = f"The {_number_word(len(daily))} I actually use every day"
+    out.extend(rec_toc(daily, secondary, rest, d["cloud_credits"], lost, daily_title))
+
+    out.append(f"## {daily_title}")
+    out.append("")
+    out.append("Tried, used extensively, kept.")
+    out.append("")
+    for i, t in enumerate(daily, 1):
+        out.extend(_recommended_entry(t, rec_daily_heading(i, t)))
+    out.append("---")
+    out.append("")
+
+    out.append("## Worth knowing about")
+    out.append("")
+    out.append("Strong offers, just not in my daily stack.")
+    out.append("")
+    for t in secondary:
+        out.extend(_recommended_entry(t, rec_secondary_heading(t)))
+
     if rest:
         out.append("### The rest")
         out.append("")
@@ -489,6 +550,14 @@ def main() -> int:
         RECOMMENDED: build_recommended(data),
         KNOWLEDGE_BASE: build_knowledge_base(data),
     }
+
+    for path, content in targets.items():
+        anchors = re.findall(r"\]\(#([^)]+)\)", content)
+        missing = verify_anchors(content, anchors)
+        if missing:
+            print(f"{path.name}: broken table-of-contents anchors: "
+                  f"{sorted(set(missing))}", file=sys.stderr)
+            return 1
 
     if args.check:
         stale = [p.name for p, content in targets.items()

@@ -25,6 +25,57 @@ So claim the live ones today, while they are still live.
 
 ---
 
+## Every offer at a glance
+
+Jump straight to any tool. Terms and sources are in each entry.
+
+**[The five I actually use every day](#the-five-i-actually-use-every-day)**
+
+| Tool | Offer | Category |
+|---|---|---|
+| [Notion](#1-notion-free) | Free | Notes and knowledge |
+| [Figma](#2-figma-free-for-1-year) | Free for 1 year | Design |
+| [Granola](#3-granola-free-for-12-months) | Free for 12 months | Meeting notes |
+| [GitHub Student Developer Pack](#4-github-student-developer-pack-free) | Free | Developer tools |
+| [Zed](#5-zed-free-for-1-year) | Free for 1 year | AI code editor |
+
+**[Worth knowing about](#worth-knowing-about)**
+
+| Tool | Offer | Category |
+|---|---|---|
+| [Perplexity](#perplexity-10month-50-off) | $10/month, 50% off | AI search |
+| [Adobe Creative Cloud](#adobe-creative-cloud-71-off-first-year) | ~71% off first year | Design and creative |
+| [OpenAI Codex](#openai-codex-100-in-codex-credits) | $100 in Codex credits | AI coding |
+| [Microsoft 365 Personal](#microsoft-365-personal-499month-50-off) | $4.99/month, 50% off | Productivity suite |
+| [Grammarly](#grammarly-50-off-seasonal) | 50% off, seasonal | Writing |
+| [Otter.ai](#otterai-20-off-pro) | 20% off Pro | Transcription |
+| [QuillBot](#quillbot-up-to-25-off) | Up to 25% off | Writing |
+| [Beautiful.ai](#beautifulai-free-pro-for-12-months) | Free Pro for 12 months | Presentations |
+| [Obsidian](#obsidian-40-off-sync-and-publish) | 40% off Sync and Publish | Notes and knowledge |
+| [Loom](#loom-up-to-50-off-75-for-classroom-use) | Up to 50% off, 75% for classroom use | Async video |
+| [Amp](#amp-50-off-10month) | 50% off, $10/month | AI coding agent |
+
+**[The rest](#the-rest)**
+
+| Tool | Offer | Category |
+|---|---|---|
+| [Consensus](#the-rest) | 40% off Premium | Academic search |
+| [Framer](#the-rest) | Free Basic plan, worth $120/year | Design and web |
+| [Reclaim.ai](#the-rest) | 50% off for 12 months | Scheduling |
+| [Speechify](#the-rest) | 25% off Premium | Text to speech |
+
+**[Cloud credits](#cloud-credits)**
+
+| Tool | Offer | Category |
+|---|---|---|
+| [Microsoft Azure for Students](#cloud-credits) | $100 credit, no card needed | Cloud and infrastructure |
+| [Google Cloud for Students](#cloud-credits) | 200 Google Skills credits | Cloud and infrastructure |
+| [AWS Educate](#cloud-credits) | Free self-paced labs | Cloud and infrastructure |
+
+**Recently closed:** Cursor, Google Gemini. Kept on the page so you know not to go looking.
+
+---
+
 ## The five I actually use every day
 
 Tried, used extensively, kept.

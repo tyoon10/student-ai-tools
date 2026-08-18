@@ -23,9 +23,13 @@ from __future__ import annotations
 
 import argparse
 import pathlib
+import re
 import sys
 
 import yaml
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from slug import slugify, verify_anchors  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "tools.yml"
@@ -47,6 +51,67 @@ def default_out(meta: dict) -> pathlib.Path:
 
 def clean(text) -> str:
     return " ".join(str(text or "").split())
+
+
+def daily_heading(i: int, t: dict) -> str:
+    return f"{i}. {t['name']}: **{t['headline']}**"
+
+
+def secondary_heading(t: dict) -> str:
+    return f"{t['name']}: **{t['headline']}**"
+
+
+def toc(daily, secondary, rest, cloud, lost) -> list[str]:
+    """A navigable index of every offer, keyed to the real heading anchors."""
+    o = ["## Every offer at a glance", ""]
+    o.append("Jump straight to any tool. Prices and terms are in each entry.")
+    o.append("")
+
+    def table(rows):
+        out = ["| Tool | Offer | What it is for |", "|---|---|---|"]
+        out.extend(rows)
+        out.append("")
+        return out
+
+    o.append(f"**[The {_word(len(daily))} I use every day](#"
+             f"{slugify(f'The {_word(len(daily))} I actually use every day')})**")
+    o.append("")
+    o.extend(table([
+        f"| [{t['name']}](#{slugify(daily_heading(i, t))}) | {t['headline']} | {t['category']} |"
+        for i, t in enumerate(daily, 1)
+    ]))
+
+    o.append(f"**[Worth knowing about](#{slugify('Worth knowing about')})**")
+    o.append("")
+    o.extend(table([
+        f"| [{t['name']}](#{slugify(secondary_heading(t))}) | {t['headline']} | {t['category']} |"
+        for t in secondary
+    ]))
+
+    if rest:
+        o.append(f"**[The rest](#{slugify('The rest')})**")
+        o.append("")
+        o.extend(table([
+            f"| [{t['name']}](#{slugify('The rest')}) | {t['headline']} | {t['category']} |"
+            for t in rest
+        ]))
+
+    o.append(f"**[Cloud credits](#{slugify('Cloud credits')})**")
+    o.append("")
+    o.extend(table([
+        f"| [{c['name']}](#{slugify('Cloud credits')}) | {c['headline']} | Cloud and infrastructure |"
+        for c in cloud
+    ]))
+
+    if lost:
+        names = ", ".join(t["name"] for t in lost)
+        o.append(f"**[Recently closed](#{slugify('Recently closed')}):** {names}. "
+                 "Kept on the page so you know not to go looking.")
+        o.append("")
+
+    o.append("---")
+    o.append("")
+    return o
 
 
 def row(label: str, value: str) -> str:
@@ -138,13 +203,15 @@ def build(d: dict) -> str:
     o.append("---")
     o.append("")
 
+    o.extend(toc(daily, secondary, rest, d["cloud_credits"], lost))
+
     o.append(f"## The {_word(len(daily))} I actually use every day")
     o.append("")
     o.append("Tried, used extensively, kept. These are the ones I would tell a "
              "classmate to set up first.")
     o.append("")
     for i, t in enumerate(daily, 1):
-        o.append(f"### {i}. {t['name']}: **{t['headline']}**")
+        o.append(f"### {daily_heading(i, t)}")
         o.append("")
         o.append(clean(t["blurb"]))
         o.extend(offer_table(t))
@@ -159,7 +226,7 @@ def build(d: dict) -> str:
     o.append("Strong offers that are not part of my daily stack.")
     o.append("")
     for t in secondary:
-        o.append(f"### {t['name']}: **{t['headline']}**")
+        o.append(f"### {secondary_heading(t)}")
         o.append("")
         o.append(clean(t["blurb"]))
         o.extend(offer_table(t))
@@ -261,6 +328,13 @@ def main() -> int:
     if args.out is None:
         args.out = default_out(meta)
     content = build(data)
+
+    anchors = re.findall(r"\]\(#([^)]+)\)", content)
+    missing = verify_anchors(content, anchors)
+    if missing:
+        print(f"broken table-of-contents anchors: {sorted(set(missing))}",
+              file=sys.stderr)
+        return 1
 
     if args.check:
         if not args.out.exists() or args.out.read_text(encoding="utf-8") != content:
