@@ -131,15 +131,21 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 
 Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers something nothing else here does: Otter transcribes meetings and Speechify reads to you, but neither turns your voice into the text you are writing right now.
 
+**How to claim Wispr Flow**
+
+1. **[Open the partner link](https://ref.wisprflow.ai/taewan)** My partner link. It earns me 25 percent of your first year and gives you nothing extra, so skip to step 2 if you would rather it did not.
+2. **[Claim the student rate](https://wisprflow.ai/students)** Sign up with your .edu address and the offer activates automatically: 3 months free, then 6 USD a month billed annually.
+3. **No .edu address?** Submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form. Reviewed in a few business days.
+
 - Sign up: https://wisprflow.ai/students
 - Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
 - Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
 - Eligibility: Not restricted in the published terms.
 - Note: The 3-month free trial is for new subscribers only.
 - Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
-- **Referral link:** https://wisprflow.ai/students?via=taewan
-  - **Disclosure.** You get exactly the same offer as the plain link above, 3 months free then 50 percent off. Nothing extra, and nothing less. I get 25 percent of your first year if you subscribe. The plain links above earn nothing.
-  - Worth being blunt about the difference from the Otter link: that one gives you a free month you would not otherwise get, so clicking it is in your interest. This one gives you nothing you cannot get from the plain link beside it. It only tells Wispr Flow the visit came from here. Use either. Separately, Wispr Flow runs an in-app referral that is better for you than both: a friend's link gets you a 30-day Pro trial, or 90 days on a Student plan, and pays them a free month. If you know an existing user, ask them.
+- **Referral link:** https://ref.wisprflow.ai/taewan
+  - **Disclosure.** You get the same 3 months free then 50 percent off, claimed at step 2. The link itself adds nothing for you. I get 25 percent of your first year if you subscribe. The plain links above earn nothing.
+  - Worth being blunt about the difference from the Otter link: that one gives you a free month you would not otherwise get, so clicking it is in your interest. This one gives you nothing you cannot get by going straight to wisprflow.ai/students. It routes through my partner link first, which is how I get credited. If you would rather not, skip step 1 and start at step 2; the offer is identical. Separately, Wispr Flow's in-app referral beats both for you: a friend's link gets you a 30-day Pro trial, or 90 days on a Student plan.
 
 ---
 
@@ -337,6 +343,8 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-19** Restructured the Wispr Flow entry into a numbered claim flow that leads with the partner link. Verified first that this costs the reader nothing: the partner link sets a dub_id cookie on wisprflow.ai and Dub's script runs there, so attribution survives the move to /students at step 2.
+- **2026-08-19** The bare partner link redirects to the homepage, so the student page is a named step rather than something the reader has to find. Step 1 says what the link is and tells anyone who would rather not use it to start at step 2 instead.
 - **2026-08-19** Added the Wispr Flow affiliate link, approved the same day. Used the /students?via=taewan form rather than the bare partner link, because ref.wisprflow.ai/taewan redirects to the homepage and would drop readers off the page where the student offer is actually claimed.
 - **2026-08-19** Its disclosure says plainly that the link gives the reader nothing extra, unlike the Otter one, and points to Wispr Flow's in-app referral as the better option for the reader since it grants a 30 or 90-day Pro trial.
 - **2026-08-19** No bonus badge on the Wispr Flow card. The badge component advertises a reader benefit and there is none here; using it would imply otherwise.

@@ -386,6 +386,25 @@ def row(label: str, value: str) -> str:
     return f"| {label} | {value} |"
 
 
+def onboarding_block(t: dict) -> list[str]:
+    """Numbered claim flow, rendered before the offer table.
+
+    Where a tool has one, this is the first thing a reader meets, so whatever
+    leads it must state plainly what it is. Step notes carry that inline rather
+    than deferring to the disclosure further down.
+    """
+    steps = t.get("onboarding")
+    if not steps:
+        return []
+    out = ["", f"**How to claim {t['name']}**", ""]
+    for i, st in enumerate(steps, 1):
+        head = (f"[{clean(st['step'])}]({st['url']})" if st.get("url")
+                else f"{clean(st['step'])}")
+        out.append(f"{i}. **{head}** {clean(st['note'])}")
+    out.append("")
+    return out
+
+
 def offer_table(t: dict) -> list[str]:
     out = ["", "| Field | Value |", "|---|---|"]
     out.append(row("Original price", clean(t["pricing"]["original"])))
@@ -522,6 +541,7 @@ def build(d: dict) -> str:
         o.append(f"### {daily_heading(i, t)}")
         o.append("")
         o.append(clean(t["blurb"]))
+        o.extend(onboarding_block(t))
         o.extend(offer_table(t))
         for cav in t.get("caveats") or []:
             o.append(f"*Note: {clean(cav)}*")
@@ -537,6 +557,7 @@ def build(d: dict) -> str:
         o.append(f"### {secondary_heading(t)}")
         o.append("")
         o.append(clean(t["blurb"]))
+        o.extend(onboarding_block(t))
         o.extend(offer_table(t))
 
     if rest:

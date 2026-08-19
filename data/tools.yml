@@ -1155,24 +1155,44 @@ tools:
       - 'https://wisprflow.ai/students'
       - 'https://wisprflow.ai/pricing'
       - 'https://docs.wisprflow.ai/articles/1128761434-flow-discounts'
-    # Affiliate link, approved 2026-08-19. Deliberately NOT the bare partner link
-    # ref.wisprflow.ai/taewan: that 302s to the homepage and drops the reader off
-    # the students page where the offer is actually claimed. This form lands on
-    # /students and carries the same via= attribution parameter.
+    # The partner link leads. Verified 2026-08-19 that this costs the reader
+    # nothing: ref.wisprflow.ai/taewan sets a real cookie
+    # (dub_id_ref.wisprflow.ai_taewan) on the wisprflow.ai domain, and Dub's
+    # script (dubcdn.com/analytics/script.js) runs there, so attribution persists
+    # when the reader moves on to /students in step 2. The bare link 302s to the
+    # homepage, which is why the student page is a named second step rather than
+    # something the reader is left to find.
     referral_link:
-      url: 'https://wisprflow.ai/students?via=taewan'
+      url: 'https://ref.wisprflow.ai/taewan'
       you_get: >-
-        exactly the same offer as the plain link above, 3 months free then 50
-        percent off. Nothing extra, and nothing less
+        the same 3 months free then 50 percent off, claimed at step 2. The link
+        itself adds nothing for you
       i_get: '25 percent of your first year if you subscribe'
       caveat: >-
         Worth being blunt about the difference from the Otter link: that one gives
         you a free month you would not otherwise get, so clicking it is in your
-        interest. This one gives you nothing you cannot get from the plain link
-        beside it. It only tells Wispr Flow the visit came from here. Use either.
-        Separately, Wispr Flow runs an in-app referral that is better for you than
-        both: a friend's link gets you a 30-day Pro trial, or 90 days on a Student
-        plan, and pays them a free month. If you know an existing user, ask them.
+        interest. This one gives you nothing you cannot get by going straight to
+        wisprflow.ai/students. It routes through my partner link first, which is
+        how I get credited. If you would rather not, skip step 1 and start at
+        step 2; the offer is identical. Separately, Wispr Flow's in-app referral
+        beats both for you: a friend's link gets you a 30-day Pro trial, or 90
+        days on a Student plan.
+    onboarding:
+      - step: 'Open the partner link'
+        url: 'https://ref.wisprflow.ai/taewan'
+        note: >-
+          My partner link. It earns me 25 percent of your first year and gives you
+          nothing extra, so skip to step 2 if you would rather it did not.
+      - step: 'Claim the student rate'
+        url: 'https://wisprflow.ai/students'
+        note: >-
+          Sign up with your .edu address and the offer activates automatically:
+          3 months free, then 6 USD a month billed annually.
+      - step: 'No .edu address?'
+        note: >-
+          Submit a student ID, enrolment confirmation, fee receipt or a screenshot
+          of your student dashboard through the support form. Reviewed in a few
+          business days.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1927,6 +1947,16 @@ backlog:
 changelog:
   - date: '2026-08-19'
     entries:
+      - >-
+        Restructured the Wispr Flow entry into a numbered claim flow that leads
+        with the partner link. Verified first that this costs the reader nothing:
+        the partner link sets a dub_id cookie on wisprflow.ai and Dub's script
+        runs there, so attribution survives the move to /students at step 2.
+      - >-
+        The bare partner link redirects to the homepage, so the student page is a
+        named step rather than something the reader has to find. Step 1 says what
+        the link is and tells anyone who would rather not use it to start at
+        step 2 instead.
       - >-
         Added the Wispr Flow affiliate link, approved the same day. Used the
         /students?via=taewan form rather than the bare partner link, because

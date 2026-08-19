@@ -884,6 +884,8 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-19** Restructured the Wispr Flow entry into a numbered claim flow that leads with the partner link. Verified first that this costs the reader nothing: the partner link sets a dub_id cookie on wisprflow.ai and Dub's script runs there, so attribution survives the move to /students at step 2.
+- **2026-08-19** The bare partner link redirects to the homepage, so the student page is a named step rather than something the reader has to find. Step 1 says what the link is and tells anyone who would rather not use it to start at step 2 instead.
 - **2026-08-19** Added the Wispr Flow affiliate link, approved the same day. Used the /students?via=taewan form rather than the bare partner link, because ref.wisprflow.ai/taewan redirects to the homepage and would drop readers off the page where the student offer is actually claimed.
 - **2026-08-19** Its disclosure says plainly that the link gives the reader nothing extra, unlike the Otter one, and points to Wispr Flow's in-app referral as the better option for the reader since it grants a 30 or 90-day Pro trial.
 - **2026-08-19** No bonus badge on the Wispr Flow card. The badge component advertises a reader benefit and there is none here; using it would imply otherwise.

@@ -314,6 +314,14 @@ def _recommended_entry(t: dict, heading: str) -> list[str]:
     out = [f"### {heading}", ""]
     out.append(clean(t["blurb"]))
     out.append("")
+    steps = t.get("onboarding")
+    if steps:
+        out.append(f"**How to claim {t['name']}**")
+        out.append("")
+        for i, st in enumerate(steps, 1):
+            head = f"[{clean(st['step'])}]({st['url']})" if st.get("url") else clean(st["step"])
+            out.append(f"{i}. **{head}** {clean(st['note'])}")
+        out.append("")
     out.append(f"- Sign up: {t['links'][0]}")
     out.append(f"- Verification: {clean(t['verification'])}")
     if t.get("length"):
