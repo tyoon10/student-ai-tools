@@ -53,10 +53,10 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 15. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
 16. **Amp**: Sourcegraph's coding agent, half price for students and teachers with no document check. Treat this as provisional. It was announced the same day this entry was
 17. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
-18. **Wispr Flow**: Voice dictation that types into any app, so you talk instead of typing. Fills a gap the rest of this list does not cover: Otter transcribes meetings and Speechi
+18. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
 
 ### Tier C: Specialty and growing
-19. **Zed**: AI-native editor, and the most credible remaining free route to a premium AI IDE now that Cursor's student discount has closed. Fast, lightweight, and the offer
+19. **Zed**: The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real mode
 20. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
 21. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
 22. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
@@ -884,6 +884,9 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-19** Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the public list and keeps its free year; it is no longer presented as something used every day.
+- **2026-08-19** Consequence worth noting: the daily five now has no AI editor in it. Zed was promoted there in the first place to fill the slot Cursor vacated on 2026-06-25, so that slot is open again. GitHub Copilot Student still covers the coding side through the Student Developer Pack.
+- **2026-08-19** Zed drops from a full write-up to a one-line entry, because full entries are tiers S, A and B and Zed is tier C. Its tier was not changed to keep it long, since tier tracks mindshare and editing it to control placement would make the field mean nothing.
 - **2026-08-18 (dictation)** Added Wispr Flow and Aqua Voice, opening a voice-dictation category the guide had no coverage of. Otter transcribes meetings and Speechify reads aloud; neither turns speech into text you are writing now.
 - **2026-08-18 (dictation)** Wispr Flow: 3 months free then 50 percent off Pro at 6 USD a month annually, .edu activating automatically. It also runs a two-sided referral where the STUDENT plan counts as an earning plan, which no other tool here does. Friend gets a 30-day Pro trial, or 90 days on a Student plan; you get a free month once they dictate 2,000 words or upgrade.
 - **2026-08-18 (dictation)** Aqua Voice: 70 percent off Pro and Max, the steepest percentage on the list, self-serve on a school email. Web checkout only; buying through an app store forfeits it.

@@ -37,7 +37,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Figma](#2-figma-free-for-1-year) | Free for 1 year | Design |
 | [Granola](#3-granola-free-for-12-months) | Free for 12 months | Meeting notes |
 | [GitHub Student Developer Pack](#4-github-student-developer-pack-free) | Free | Developer tools |
-| [Zed](#5-zed-free-for-1-year) | Free for 1 year | AI code editor |
+| [Wispr Flow](#5-wispr-flow-3-months-free-then-50-off) | 3 months free, then 50% off | Voice dictation |
 
 **[Worth knowing about](#worth-knowing-about)**
 
@@ -54,12 +54,12 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Obsidian](#obsidian-40-off-sync-and-publish) | 40% off Sync and Publish | Notes and knowledge |
 | [Loom](#loom-up-to-50-off-75-for-classroom-use) | Up to 50% off, 75% for classroom use | Async video |
 | [Amp](#amp-50-off-10month) | 50% off, $10/month | AI coding agent |
-| [Wispr Flow](#wispr-flow-3-months-free-then-50-off) | 3 months free, then 50% off | Voice dictation |
 
 **[The rest](#the-rest)**
 
 | Tool | Offer | Category |
 |---|---|---|
+| [Zed](#the-rest) | Free for 1 year | AI code editor |
 | [Consensus](#the-rest) | 40% off Premium | Academic search |
 | [Framer](#the-rest) | Free Basic plan, worth $120/year | Design and web |
 | [Reclaim.ai](#the-rest) | 50% off for 12 months | Scheduling |
@@ -127,14 +127,16 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 
 *The verification step that blocks most applications. Add the school email first, under Settings then Emails.*
 
-### 5. Zed (Free for 1 year)
+### 5. Wispr Flow (3 months free, then 50% off)
 
-AI-native editor, and the most credible remaining free route to a premium AI IDE now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real model credits rather than a trial.
+Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers something nothing else here does: Otter transcribes meetings and Speechify reads to you, but neither turns your voice into the text you are writing right now.
 
-- Sign up: https://zed.dev/education
-- Verification: Enrolled at an accredited university, at least 18 years old, a GitHub account older than 30 days, and a valid current university email. Enrolment is checked against JetBrains' open-source database of university domains.
-- Length: 12 months.
-- Eligibility: International students accepted.
+- Sign up: https://wisprflow.ai/students
+- Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
+- Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
+- Eligibility: Not restricted in the published terms.
+- Note: The 3-month free trial is for new subscribers only.
+- Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
 
 ---
 
@@ -258,19 +260,9 @@ Sourcegraph's coding agent, half price for students and teachers with no documen
 - Note: Announced 2026-08-18, the same day it was first recorded here. Unproven. Re-check before relying on it.
 - Note: Amp states it can change or discontinue the discount and its criteria at any time.
 
-### Wispr Flow (3 months free, then 50% off)
-
-Voice dictation that types into any app, so you talk instead of typing. Fills a gap the rest of this list does not cover: Otter transcribes meetings and Speechify reads to you, but neither turns your voice into text you are writing right now.
-
-- Sign up: https://wisprflow.ai/students
-- Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
-- Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
-- Eligibility: Not restricted in the published terms.
-- Note: The 3-month free trial is for new subscribers only.
-- Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
-
 ### The rest
 
+- **Zed** (Free for 1 year). The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real model credits rather than a trial. Worth claiming even if you do not switch to it full time, because a free year is a free year. https://zed.dev/education
 - **Consensus** (40% off Premium). Citation-grounded academic search. Strong fit for research-heavy programmes. https://help.consensus.app/en/articles/10064359-how-to-get-a-student-or-clinician-discount
 - **Framer** (Free Basic plan, worth $120/year). Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year. https://www.framer.com/education/
 - **Reclaim.ai** (50% off for 12 months). AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your calendar for it to pay off. https://reclaim.ai/pricing/education-discount
@@ -342,6 +334,9 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-19** Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the public list and keeps its free year; it is no longer presented as something used every day.
+- **2026-08-19** Consequence worth noting: the daily five now has no AI editor in it. Zed was promoted there in the first place to fill the slot Cursor vacated on 2026-06-25, so that slot is open again. GitHub Copilot Student still covers the coding side through the Student Developer Pack.
+- **2026-08-19** Zed drops from a full write-up to a one-line entry, because full entries are tiers S, A and B and Zed is tier C. Its tier was not changed to keep it long, since tier tracks mindshare and editing it to control placement would make the field mean nothing.
 - **2026-08-18 (dictation)** Added Wispr Flow and Aqua Voice, opening a voice-dictation category the guide had no coverage of. Otter transcribes meetings and Speechify reads aloud; neither turns speech into text you are writing now.
 - **2026-08-18 (dictation)** Wispr Flow: 3 months free then 50 percent off Pro at 6 USD a month annually, .edu activating automatically. It also runs a two-sided referral where the STUDENT plan counts as an earning plan, which no other tool here does. Friend gets a 30-day Pro trial, or 90 days on a Student plan; you get a free month once they dictate 2,000 words or upgrade.
 - **2026-08-18 (dictation)** Aqua Voice: 70 percent off Pro and Max, the steepest percentage on the list, self-serve on a school email. Web checkout only; buying through an app store forfeits it.

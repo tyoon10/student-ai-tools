@@ -230,13 +230,13 @@ tools:
     tier: C
     status: active
     published: true
-    daily_use: true
-    rank: 5
+    daily_use: false
     headline: Free for 1 year
     blurb: >-
-      AI-native editor, and the most credible remaining free route to a premium AI
-      IDE now that Cursor's student discount has closed. Fast, lightweight, and the
-      offer includes real model credits rather than a trial.
+      The most credible remaining free route to a premium AI editor now that
+      Cursor's student discount has closed. Fast, lightweight, and the offer
+      includes real model credits rather than a trial. Worth claiming even if you
+      do not switch to it full time, because a free year is a free year.
     pricing:
       original: Zed Pro paid plan.
       student: Zed Pro free for one year.
@@ -1104,13 +1104,15 @@ tools:
     tier: B
     status: active
     published: true
-    daily_use: false
+    daily_use: true
+    rank: 5
     headline: 3 months free, then 50% off
     blurb: >-
-      Voice dictation that types into any app, so you talk instead of typing.
-      Fills a gap the rest of this list does not cover: Otter transcribes
-      meetings and Speechify reads to you, but neither turns your voice into
-      text you are writing right now.
+      Voice dictation that types into any app, so I talk instead of typing. It is
+      the one on this list I reach for most without thinking about it, and it
+      covers something nothing else here does: Otter transcribes meetings and
+      Speechify reads to you, but neither turns your voice into the text you are
+      writing right now.
     pricing:
       original: Flow Pro at 12 USD per user per month billed annually, or 15 USD billed monthly.
       student: >-
@@ -1903,6 +1905,22 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-19'
+    entries:
+      - >-
+        Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the
+        public list and keeps its free year; it is no longer presented as
+        something used every day.
+      - >-
+        Consequence worth noting: the daily five now has no AI editor in it. Zed
+        was promoted there in the first place to fill the slot Cursor vacated on
+        2026-06-25, so that slot is open again. GitHub Copilot Student still
+        covers the coding side through the Student Developer Pack.
+      - >-
+        Zed drops from a full write-up to a one-line entry, because full entries
+        are tiers S, A and B and Zed is tier C. Its tier was not changed to keep
+        it long, since tier tracks mindshare and editing it to control placement
+        would make the field mean nothing.
   - date: '2026-08-18 (dictation)'
     entries:
       - >-
