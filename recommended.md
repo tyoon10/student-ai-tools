@@ -54,6 +54,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Obsidian](#obsidian-40-off-sync-and-publish) | 40% off Sync and Publish | Notes and knowledge |
 | [Loom](#loom-up-to-50-off-75-for-classroom-use) | Up to 50% off, 75% for classroom use | Async video |
 | [Amp](#amp-50-off-10month) | 50% off, $10/month | AI coding agent |
+| [Wispr Flow](#wispr-flow-3-months-free-then-50-off) | 3 months free, then 50% off | Voice dictation |
 
 **[The rest](#the-rest)**
 
@@ -63,6 +64,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Framer](#the-rest) | Free Basic plan, worth $120/year | Design and web |
 | [Reclaim.ai](#the-rest) | 50% off for 12 months | Scheduling |
 | [Speechify](#the-rest) | 25% off Premium | Text to speech |
+| [Aqua Voice](#the-rest) | 70% off Pro and Max | Voice dictation |
 
 **[Cloud credits](#cloud-credits)**
 
@@ -256,12 +258,24 @@ Sourcegraph's coding agent, half price for students and teachers with no documen
 - Note: Announced 2026-08-18, the same day it was first recorded here. Unproven. Re-check before relying on it.
 - Note: Amp states it can change or discontinue the discount and its criteria at any time.
 
+### Wispr Flow (3 months free, then 50% off)
+
+Voice dictation that types into any app, so you talk instead of typing. Fills a gap the rest of this list does not cover: Otter transcribes meetings and Speechify reads to you, but neither turns your voice into text you are writing right now.
+
+- Sign up: https://wisprflow.ai/students
+- Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
+- Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
+- Eligibility: Not restricted in the published terms.
+- Note: The 3-month free trial is for new subscribers only.
+- Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
+
 ### The rest
 
 - **Consensus** (40% off Premium). Citation-grounded academic search. Strong fit for research-heavy programmes. https://help.consensus.app/en/articles/10064359-how-to-get-a-student-or-clinician-discount
 - **Framer** (Free Basic plan, worth $120/year). Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year. https://www.framer.com/education/
 - **Reclaim.ai** (50% off for 12 months). AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your calendar for it to pay off. https://reclaim.ai/pricing/education-discount
 - **Speechify** (25% off Premium). Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading terms. https://www.myunidays.com/US/en-US/partners/speechify/view
+- **Aqua Voice** (70% off Pro and Max). Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough to be worth a look if you dictate a lot. https://aquavoice.com/pricing
 
 ### Cloud credits
 
@@ -328,6 +342,10 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-18 (dictation)** Added Wispr Flow and Aqua Voice, opening a voice-dictation category the guide had no coverage of. Otter transcribes meetings and Speechify reads aloud; neither turns speech into text you are writing now.
+- **2026-08-18 (dictation)** Wispr Flow: 3 months free then 50 percent off Pro at 6 USD a month annually, .edu activating automatically. It also runs a two-sided referral where the STUDENT plan counts as an earning plan, which no other tool here does. Friend gets a 30-day Pro trial, or 90 days on a Student plan; you get a free month once they dictate 2,000 words or upgrade.
+- **2026-08-18 (dictation)** Aqua Voice: 70 percent off Pro and Max, the steepest percentage on the list, self-serve on a school email. Web checkout only; buying through an app store forfeits it.
+- **2026-08-18 (dictation)** Superwhisper and Willow Voice were probed and returned nothing usable to an automated check. Neither a student offer nor its absence is recorded for them rather than guessing. Noted in the backlog.
 - **2026-08-18 (referral audit)** The Otter card in the offer grid now carries a second, outlined badge reading "+1 month Pro Lite free (referral)". It is a label rather than a link, since the card is already one anchor and nesting anchors is invalid, so the link and its disclosure stay in the entry the card points at.
 - **2026-08-18 (referral audit)** Added one referral link, for Otter.ai, at the maintainer's request. The no-affiliate-links policy was rewritten in the same change, and the README, the guide, CONTRIBUTING and the live post were all updated, so no surface is left claiming the guide carries none. The link renders with a disclosure naming what each side gets.
 - **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.

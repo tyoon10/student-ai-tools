@@ -14,3 +14,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Local-only, for scripts/check_render.js
+node_modules/
+package-lock.json

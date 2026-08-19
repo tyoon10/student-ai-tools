@@ -53,21 +53,23 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 15. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
 16. **Amp**: Sourcegraph's coding agent, half price for students and teachers with no document check. Treat this as provisional. It was announced the same day this entry was
 17. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
+18. **Wispr Flow**: Voice dictation that types into any app, so you talk instead of typing. Fills a gap the rest of this list does not cover: Otter transcribes meetings and Speechi
 
 ### Tier C: Specialty and growing
-18. **Zed**: AI-native editor, and the most credible remaining free route to a premium AI IDE now that Cursor's student discount has closed. Fast, lightweight, and the offer
-19. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
-20. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
-21. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
-22. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
-23. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
-24. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
-25. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
-26. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
+19. **Zed**: AI-native editor, and the most credible remaining free route to a premium AI IDE now that Cursor's student discount has closed. Fast, lightweight, and the offer
+20. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
+21. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
+22. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
+23. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
+24. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
+25. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
+26. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
+27. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
+28. **Aqua Voice**: Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough
 
 ### Tier D: Niche, lower general awareness
-27. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
-28. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
+29. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
+30. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
 
 ## Individual-claimable offers
 
@@ -570,6 +572,45 @@ Status: active.
   - https://www.tabnine.com/pricing/
 - Last checked: 2026-08-18 | Confidence: medium
 
+### Wispr Flow: Flow Pro (Student)
+
+Status: active.
+
+- Category: Voice dictation | Tier: B
+- Original pricing: Flow Pro at 12 USD per user per month billed annually, or 15 USD billed monthly.
+- Student pricing: 3 months free, then 6 USD per month billed annually. A 50 percent discount on Pro.
+- Included features: Speech to text across 100-plus languages on Mac, Windows, iOS and Android, unlimited dictation on Pro, a meeting notetaker on Mac, and access to the advanced AI models. A free tier exists without any of this: 2,000 dictated words a week on desktop, 1,000 on iPhone, unlimited on Android.
+- Effective length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
+- Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
+- Regions: Not restricted in the published terms.
+- Caveat: The 3-month free trial is for new subscribers only.
+- Caveat: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
+- Referral programme: **two-sided**. Both sides benefit, and the student plan counts as an earning plan, which is unusual. Your friend gets a 30-day Pro trial for signing up through your link regardless of your plan, and 90 days if they are on a Student plan, which supersedes the 30-day trial. You get one free month of Pro per successful referral, credited on your next billing cycle, once your friend dictates 2,000 words or upgrades to Pro. Earning requires an active paid Pro or Student plan bought through the Wispr Flow website. App Store subscribers and Enterprise members can share invites but cannot earn.
+- Official sources:
+  - https://wisprflow.ai/students
+  - https://wisprflow.ai/pricing
+  - https://docs.wisprflow.ai/articles/1128761434-flow-discounts
+- Referral sources:
+  - https://docs.wisprflow.ai/articles/6496688316-how-to-find-your-referral-link
+- Last checked: 2026-08-18 | Confidence: high
+
+### Aqua Voice: Pro and Max (Student)
+
+Status: active.
+
+- Category: Voice dictation | Tier: C
+- Original pricing: Pro at 8 USD per month billed annually, 96 USD a year. Max at 24 USD per month billed annually.
+- Student pricing: 70 percent off both. Pro at 3 USD monthly or 2.40 USD per month billed annually. Max at 9 USD monthly or 7.20 USD per month billed annually.
+- Included features: Unlimited dictation on Pro. Max adds realtime mode and voice commands. A free Starter tier gives 1,000 words.
+- Effective length: Ongoing while eligible.
+- Verification: Sign up with a school email address. Self-serve, with no form or support ticket, which is rarer than it should be.
+- Regions: Not restricted in the published terms.
+- Caveat: Applies to web checkout, not App Store purchases. Buying through the app store forfeits the discount.
+- Referral programme: **none**. No referral programme documented on the pricing page.
+- Official sources:
+  - https://aquavoice.com/pricing
+- Last checked: 2026-08-18 | Confidence: high
+
 ## AI-adjacent cloud credits
 
 ### Microsoft Azure for Students
@@ -797,6 +838,7 @@ These are on the student-offer axis above, so they are not repeated in the table
 | **Grammarly** | discontinued |
 | **QuillBot** | affiliate-only |
 | **Reclaim.ai** | asymmetric |
+| **Wispr Flow** | two-sided |
 
 ### Claimed but not confirmed on a vendor page
 
@@ -842,6 +884,10 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-18 (dictation)** Added Wispr Flow and Aqua Voice, opening a voice-dictation category the guide had no coverage of. Otter transcribes meetings and Speechify reads aloud; neither turns speech into text you are writing now.
+- **2026-08-18 (dictation)** Wispr Flow: 3 months free then 50 percent off Pro at 6 USD a month annually, .edu activating automatically. It also runs a two-sided referral where the STUDENT plan counts as an earning plan, which no other tool here does. Friend gets a 30-day Pro trial, or 90 days on a Student plan; you get a free month once they dictate 2,000 words or upgrade.
+- **2026-08-18 (dictation)** Aqua Voice: 70 percent off Pro and Max, the steepest percentage on the list, self-serve on a school email. Web checkout only; buying through an app store forfeits it.
+- **2026-08-18 (dictation)** Superwhisper and Willow Voice were probed and returned nothing usable to an automated check. Neither a student offer nor its absence is recorded for them rather than guessing. Noted in the backlog.
 - **2026-08-18 (referral audit)** The Otter card in the offer grid now carries a second, outlined badge reading "+1 month Pro Lite free (referral)". It is a label rather than a link, since the card is already one anchor and nesting anchors is invalid, so the link and its disclosure stay in the entry the card points at.
 - **2026-08-18 (referral audit)** Added one referral link, for Otter.ai, at the maintainer's request. The no-affiliate-links policy was rewritten in the same change, and the README, the guide, CONTRIBUTING and the live post were all updated, so no surface is left claiming the guide carries none. The link renders with a disclosure naming what each side gets.
 - **2026-08-18 (referral audit)** Suno and Granola confirmed from in-product panels, which is first-party evidence and outranks the help pages used before. Two corrections to Suno: the cap is 2,500 credits PER PERSON, not per ten referrals, and the earlier "referrer must be a paid member" note is dropped, since the panel offers subscribing as an alternative rather than a prerequisite.

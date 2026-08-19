@@ -1096,6 +1096,104 @@ tools:
     last_checked: '2026-08-18'
     confidence: medium
 
+  - id: wispr-flow
+    logo_domain: 'wisprflow.ai'
+    name: Wispr Flow
+    offer: Flow Pro (Student)
+    category: Voice dictation
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: 3 months free, then 50% off
+    blurb: >-
+      Voice dictation that types into any app, so you talk instead of typing.
+      Fills a gap the rest of this list does not cover: Otter transcribes
+      meetings and Speechify reads to you, but neither turns your voice into
+      text you are writing right now.
+    pricing:
+      original: Flow Pro at 12 USD per user per month billed annually, or 15 USD billed monthly.
+      student: >-
+        3 months free, then 6 USD per month billed annually. A 50 percent
+        discount on Pro.
+    features: >-
+      Speech to text across 100-plus languages on Mac, Windows, iOS and Android,
+      unlimited dictation on Pro, a meeting notetaker on Mac, and access to the
+      advanced AI models. A free tier exists without any of this: 2,000 dictated
+      words a week on desktop, 1,000 on iPhone, unlimited on Android.
+    length: >-
+      The 3-month trial is for new subscribers only, then the subscription
+      auto-renews at the discounted rate. Cancel anytime.
+    verification: >-
+      A .edu address activates the offer automatically. Without one, submit a
+      student ID, enrolment confirmation, fee receipt or a screenshot of your
+      student dashboard through the support form, reviewed in a few business days.
+    regions: Not restricted in the published terms.
+    caveats:
+      - The 3-month free trial is for new subscribers only.
+      - >-
+        Teachers, researchers and non-profit staff get the same 50 percent rate
+        through the same flow.
+    referral:
+      status: two-sided
+      detail: >-
+        Both sides benefit, and the student plan counts as an earning plan, which
+        is unusual. Your friend gets a 30-day Pro trial for signing up through
+        your link regardless of your plan, and 90 days if they are on a Student
+        plan, which supersedes the 30-day trial. You get one free month of Pro per
+        successful referral, credited on your next billing cycle, once your friend
+        dictates 2,000 words or upgrades to Pro. Earning requires an active paid
+        Pro or Student plan bought through the Wispr Flow website. App Store
+        subscribers and Enterprise members can share invites but cannot earn.
+      links:
+        - 'https://docs.wisprflow.ai/articles/6496688316-how-to-find-your-referral-link'
+    links:
+      - 'https://wisprflow.ai/students'
+      - 'https://wisprflow.ai/pricing'
+      - 'https://docs.wisprflow.ai/articles/1128761434-flow-discounts'
+    last_checked: '2026-08-18'
+    confidence: high
+
+  - id: aqua-voice
+    logo_domain: 'aquavoice.com'
+    name: Aqua Voice
+    offer: Pro and Max (Student)
+    category: Voice dictation
+    tier: C
+    status: active
+    published: true
+    daily_use: false
+    headline: 70% off Pro and Max
+    blurb: >-
+      Another dictation tool, and the steepest percentage discount anywhere on
+      this list. Smaller and less proven than Wispr Flow, but the student price
+      is low enough to be worth a look if you dictate a lot.
+    pricing:
+      original: Pro at 8 USD per month billed annually, 96 USD a year. Max at 24 USD per month billed annually.
+      student: >-
+        70 percent off both. Pro at 3 USD monthly or 2.40 USD per month billed
+        annually. Max at 9 USD monthly or 7.20 USD per month billed annually.
+    features: >-
+      Unlimited dictation on Pro. Max adds realtime mode and voice commands. A
+      free Starter tier gives 1,000 words.
+    length: Ongoing while eligible.
+    verification: >-
+      Sign up with a school email address. Self-serve, with no form or support
+      ticket, which is rarer than it should be.
+    regions: Not restricted in the published terms.
+    caveats:
+      - >-
+        Applies to web checkout, not App Store purchases. Buying through the app
+        store forfeits the discount.
+    referral:
+      status: none
+      detail: No referral programme documented on the pricing page.
+      links: []
+    links:
+      - 'https://aquavoice.com/pricing'
+    last_checked: '2026-08-18'
+    confidence: high
+
 # ---------------------------------------------------------------------------
 # Cloud credits. Adjacent to the list, ranked separately.
 # ---------------------------------------------------------------------------
@@ -1805,6 +1903,26 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-18 (dictation)'
+    entries:
+      - >-
+        Added Wispr Flow and Aqua Voice, opening a voice-dictation category the
+        guide had no coverage of. Otter transcribes meetings and Speechify reads
+        aloud; neither turns speech into text you are writing now.
+      - >-
+        Wispr Flow: 3 months free then 50 percent off Pro at 6 USD a month
+        annually, .edu activating automatically. It also runs a two-sided referral
+        where the STUDENT plan counts as an earning plan, which no other tool here
+        does. Friend gets a 30-day Pro trial, or 90 days on a Student plan; you get
+        a free month once they dictate 2,000 words or upgrade.
+      - >-
+        Aqua Voice: 70 percent off Pro and Max, the steepest percentage on the
+        list, self-serve on a school email. Web checkout only; buying through an
+        app store forfeits it.
+      - >-
+        Superwhisper and Willow Voice were probed and returned nothing usable to an
+        automated check. Neither a student offer nor its absence is recorded for
+        them rather than guessing. Noted in the backlog.
   - date: '2026-08-18 (referral audit)'
     entries:
       - >-

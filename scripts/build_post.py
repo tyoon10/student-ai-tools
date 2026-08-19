@@ -66,7 +66,7 @@ FILTER_GROUPS = {
     ]),
     "writing": ("Writing and research", [
         "Writing", "Academic writing", "Academic search", "AI search",
-        "Transcription", "Text to speech",
+        "Transcription", "Text to speech", "Voice dictation",
     ]),
     "notes": ("Notes and meetings", [
         "Notes and knowledge", "Meeting notes", "Scheduling", "Daily planning",
