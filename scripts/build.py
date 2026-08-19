@@ -312,6 +312,12 @@ def build_recommended(d: dict) -> str:
 
 def _recommended_entry(t: dict, heading: str) -> list[str]:
     out = [f"### {heading}", ""]
+    img = t.get("image")
+    if img:
+        out.append(f"![{img['alt']}]({img['src']})")
+        out.append("")
+        out.append(f"*{clean(img['caption'])}*")
+        out.append("")
     out.append(clean(t["blurb"]))
     out.append("")
     steps = t.get("onboarding")
@@ -337,12 +343,6 @@ def _recommended_entry(t: dict, heading: str) -> list[str]:
                    f"I get {clean(rl['i_get'])}. The plain links above earn nothing.")
         out.append(f"  - {clean(rl['caveat'])}")
     out.append("")
-    img = t.get("image")
-    if img:
-        out.append(f"![{img['alt']}]({img['src']})")
-        out.append("")
-        out.append(f"*{clean(img['caption'])}*")
-        out.append("")
     return out
 
 

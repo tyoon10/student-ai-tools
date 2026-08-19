@@ -386,6 +386,26 @@ def row(label: str, value: str) -> str:
     return f"| {label} | {value} |"
 
 
+def image_block(t: dict, copied: list) -> list[str]:
+    """Representative screenshot, directly under the heading.
+
+    Astro optimises markdown images referenced relatively from the entry file,
+    so the asset is copied next to index.md and referenced as ./name. Keeping
+    the master in the repo's images/ means the data file stays the one input.
+    """
+    img = t.get("image")
+    if not img:
+        return []
+    src = ROOT / img["src"].lstrip("./")
+    if not src.exists():
+        raise FileNotFoundError(f"{t['name']}: image not found at {src}")
+    dest = SITE_DIR / src.name
+    dest.write_bytes(src.read_bytes())
+    copied.append(src.name)
+    return ["", f"![{img['alt']}](./{src.name})", "",
+            f"*{clean(img['caption'])}*", ""]
+
+
 def onboarding_block(t: dict) -> list[str]:
     """Numbered claim flow, rendered before the offer table.
 
@@ -432,7 +452,8 @@ def _domain(url: str) -> str:
     return url.split("//", 1)[-1].split("/", 1)[0].removeprefix("www.")
 
 
-def build(d: dict) -> str:
+def build(d: dict, copied: list | None = None) -> str:
+    copied = copied if copied is not None else []
     meta = d["meta"]
     tools = d["tools"]
     date = meta["last_full_review"]
@@ -539,6 +560,7 @@ def build(d: dict) -> str:
     o.append("")
     for i, t in enumerate(daily, 1):
         o.append(f"### {daily_heading(i, t)}")
+        o.extend(image_block(t, copied))
         o.append("")
         o.append(clean(t["blurb"]))
         o.extend(onboarding_block(t))
@@ -555,6 +577,7 @@ def build(d: dict) -> str:
     o.append("")
     for t in secondary:
         o.append(f"### {secondary_heading(t)}")
+        o.extend(image_block(t, copied))
         o.append("")
         o.append(clean(t["blurb"]))
         o.extend(onboarding_block(t))
@@ -662,7 +685,8 @@ def main() -> int:
     meta = data["meta"]
     if args.out is None:
         args.out = default_out(meta)
-    content = build(data)
+    copied: list[str] = []
+    content = build(data, copied)
 
     # A blank line inside <style>/<script> ends markdown's raw-HTML block, which
     # closes the tag early and lets smartypants rewrite quotes into typographic
@@ -710,6 +734,9 @@ def main() -> int:
         return 1
     args.out.write_text(content, encoding="utf-8")
     print(f"wrote {args.out} ({len(content):,} bytes)")
+    if copied:
+        print(f"copied {len(copied)} image(s) into the post directory: "
+              f"{', '.join(copied)}")
     if args.out.name.endswith(".draft.md"):
         print("NOTE: this is a draft. Astro ignores index.draft.md. "
               "Set meta.live_post_published: true in data/tools.yml to publish.")

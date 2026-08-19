@@ -113,6 +113,10 @@ AI notepad for meetings and lectures. Listens in the background without a bot jo
 
 ### 4. GitHub Student Developer Pack (Free)
 
+![GitHub Education benefits application screen showing the school email verification step](./images/github-education-email-verification.png)
+
+*The verification step that blocks most applications. Add the school email first, under Settings then Emails.*
+
 The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap domain, JetBrains and roughly 30 other developer tools, all unlocked once you verify.
 
 - Sign up: https://education.github.com/pack/
@@ -120,10 +124,6 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 - Length: Re-evaluated by GitHub while student status remains valid.
 - Note: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
 - Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
-
-![GitHub Education benefits application screen showing the school email verification step](./images/github-education-email-verification.png)
-
-*The verification step that blocks most applications. Add the school email first, under Settings then Emails.*
 
 ### 5. Wispr Flow (3 months free, then 50% off)
 
