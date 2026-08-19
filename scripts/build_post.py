@@ -481,13 +481,14 @@ def build(d: dict) -> str:
         o.append("> **No affiliate links.** Nothing here pays me. Every link goes "
                  "straight to the vendor.")
     else:
-        subject = "One link" if n == 1 else f"{n} links"
-        verb = "is" if n == 1 else "are"
-        pronoun = "it" if n == 1 else "they"
+        one = n == 1
+        subject = "One link" if one else f"{n} links"
+        clause = "is a referral link" if one else "are referral links"
+        where = "where it appears" if one else "where they appear"
         o.append(
-            f"> **Disclosure.** {subject} on this page {verb} a referral link, "
-            f"labelled where {pronoun} appears with what you get and what I get. "
-            "Every other link goes straight to the vendor and earns me nothing."
+            f"> **Disclosure.** {subject} on this page {clause}, labelled "
+            f"{where} with what you get and what I get. Every other link goes "
+            "straight to the vendor and earns me nothing."
         )
     o.append("")
     o.append("---")

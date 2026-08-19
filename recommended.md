@@ -8,7 +8,7 @@ The AI tools I actually use, plus a curated secondary list. Every offer on this 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
-- **Disclosure:** This guide contains exactly one referral link, for Otter.ai, and it is labelled where it appears. Using it gives you a free month of Otter Pro Lite and gives me referral credit. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
+- **Disclosure:** This guide contains two links that earn me something, for Otter.ai and Wispr Flow. Both are labelled where they appear with what you get and what I get. The Otter link gives you a free month you would not otherwise get; the Wispr Flow link gives you exactly the same offer as the plain link beside it and simply carries attribution. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
 
 ---
 
@@ -137,6 +137,9 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 - Eligibility: Not restricted in the published terms.
 - Note: The 3-month free trial is for new subscribers only.
 - Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
+- **Referral link:** https://wisprflow.ai/students?via=taewan
+  - **Disclosure.** You get exactly the same offer as the plain link above, 3 months free then 50 percent off. Nothing extra, and nothing less. I get 25 percent of your first year if you subscribe. The plain links above earn nothing.
+  - Worth being blunt about the difference from the Otter link: that one gives you a free month you would not otherwise get, so clicking it is in your interest. This one gives you nothing you cannot get from the plain link beside it. It only tells Wispr Flow the visit came from here. Use either. Separately, Wispr Flow runs an in-app referral that is better for you than both: a friend's link gets you a 30-day Pro trial, or 90 days on a Student plan, and pays them a free month. If you know an existing user, ask them.
 
 ---
 
@@ -334,6 +337,9 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-19** Added the Wispr Flow affiliate link, approved the same day. Used the /students?via=taewan form rather than the bare partner link, because ref.wisprflow.ai/taewan redirects to the homepage and would drop readers off the page where the student offer is actually claimed.
+- **2026-08-19** Its disclosure says plainly that the link gives the reader nothing extra, unlike the Otter one, and points to Wispr Flow's in-app referral as the better option for the reader since it grants a 30 or 90-day Pro trial.
+- **2026-08-19** No bonus badge on the Wispr Flow card. The badge component advertises a reader benefit and there is none here; using it would imply otherwise.
 - **2026-08-19** Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the public list and keeps its free year; it is no longer presented as something used every day.
 - **2026-08-19** Consequence worth noting: the daily five now has no AI editor in it. Zed was promoted there in the first place to fill the slot Cursor vacated on 2026-06-25, so that slot is open again. GitHub Copilot Student still covers the coding side through the Student Developer Pack.
 - **2026-08-19** Zed drops from a full write-up to a one-line entry, because full entries are tiers S, A and B and Zed is tier C. Its tier was not changed to keep it long, since tier tracks mindshare and editing it to control placement would make the field mean nothing.

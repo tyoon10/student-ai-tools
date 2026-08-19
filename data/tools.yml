@@ -34,12 +34,14 @@ meta:
   # one, and every surface that used to claim otherwise was updated in the same
   # commit rather than left stating something untrue.
   affiliate_policy: >-
-    This guide contains exactly one referral link, for Otter.ai, and it is labelled
-    where it appears. Using it gives you a free month of Otter Pro Lite and gives
-    me referral credit. Every other link goes to the vendor's own help-centre or
-    pricing page and earns nothing. Referral programmes for all other tools are
-    documented as facts, not as an invitation to use anyone's link.
-  referral_link_count: 1
+    This guide contains two links that earn me something, for Otter.ai and Wispr
+    Flow. Both are labelled where they appear with what you get and what I get.
+    The Otter link gives you a free month you would not otherwise get; the Wispr
+    Flow link gives you exactly the same offer as the plain link beside it and
+    simply carries attribution. Every other link goes to the vendor's own
+    help-centre or pricing page and earns nothing. Referral programmes for all
+    other tools are documented as facts, not as an invitation to use anyone's link.
+  referral_link_count: 2
 
 # ---------------------------------------------------------------------------
 # Tools with a student offer that an individual can claim.
@@ -1153,6 +1155,24 @@ tools:
       - 'https://wisprflow.ai/students'
       - 'https://wisprflow.ai/pricing'
       - 'https://docs.wisprflow.ai/articles/1128761434-flow-discounts'
+    # Affiliate link, approved 2026-08-19. Deliberately NOT the bare partner link
+    # ref.wisprflow.ai/taewan: that 302s to the homepage and drops the reader off
+    # the students page where the offer is actually claimed. This form lands on
+    # /students and carries the same via= attribution parameter.
+    referral_link:
+      url: 'https://wisprflow.ai/students?via=taewan'
+      you_get: >-
+        exactly the same offer as the plain link above, 3 months free then 50
+        percent off. Nothing extra, and nothing less
+      i_get: '25 percent of your first year if you subscribe'
+      caveat: >-
+        Worth being blunt about the difference from the Otter link: that one gives
+        you a free month you would not otherwise get, so clicking it is in your
+        interest. This one gives you nothing you cannot get from the plain link
+        beside it. It only tells Wispr Flow the visit came from here. Use either.
+        Separately, Wispr Flow runs an in-app referral that is better for you than
+        both: a friend's link gets you a 30-day Pro trial, or 90 days on a Student
+        plan, and pays them a free month. If you know an existing user, ask them.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1907,6 +1927,18 @@ backlog:
 changelog:
   - date: '2026-08-19'
     entries:
+      - >-
+        Added the Wispr Flow affiliate link, approved the same day. Used the
+        /students?via=taewan form rather than the bare partner link, because
+        ref.wisprflow.ai/taewan redirects to the homepage and would drop readers
+        off the page where the student offer is actually claimed.
+      - >-
+        Its disclosure says plainly that the link gives the reader nothing extra,
+        unlike the Otter one, and points to Wispr Flow's in-app referral as the
+        better option for the reader since it grants a 30 or 90-day Pro trial.
+      - >-
+        No bonus badge on the Wispr Flow card. The badge component advertises a
+        reader benefit and there is none here; using it would imply otherwise.
       - >-
         Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the
         public list and keeps its free year; it is no longer presented as

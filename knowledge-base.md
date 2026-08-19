@@ -8,7 +8,7 @@ The full working record behind the public list. Every tool evaluated, with claim
 - **Last full review:** 2026-08-18
 - **Previous reviews:** 2026-07-19, 2026-05-14, 2026-05-03
 - **Source of truth:** `data/tools.yml`. This file and `recommended.md` are both generated from it, so the two can no longer drift apart.
-- **Disclosure:** This guide contains exactly one referral link, for Otter.ai, and it is labelled where it appears. Using it gives you a free month of Otter Pro Lite and gives me referral credit. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
+- **Disclosure:** This guide contains two links that earn me something, for Otter.ai and Wispr Flow. Both are labelled where they appear with what you get and what I get. The Otter link gives you a free month you would not otherwise get; the Wispr Flow link gives you exactly the same offer as the plain link beside it and simply carries attribution. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
 
 ## Per-entry schema
 
@@ -884,6 +884,9 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-19** Added the Wispr Flow affiliate link, approved the same day. Used the /students?via=taewan form rather than the bare partner link, because ref.wisprflow.ai/taewan redirects to the homepage and would drop readers off the page where the student offer is actually claimed.
+- **2026-08-19** Its disclosure says plainly that the link gives the reader nothing extra, unlike the Otter one, and points to Wispr Flow's in-app referral as the better option for the reader since it grants a 30 or 90-day Pro trial.
+- **2026-08-19** No bonus badge on the Wispr Flow card. The badge component advertises a reader benefit and there is none here; using it would imply otherwise.
 - **2026-08-19** Swapped Wispr Flow in for Zed in the daily-use five. Zed stays on the public list and keeps its free year; it is no longer presented as something used every day.
 - **2026-08-19** Consequence worth noting: the daily five now has no AI editor in it. Zed was promoted there in the first place to fill the slot Cursor vacated on 2026-06-25, so that slot is open again. GitHub Copilot Student still covers the coding side through the Student Developer Pack.
 - **2026-08-19** Zed drops from a full write-up to a one-line entry, because full entries are tiers S, A and B and Zed is tier C. Its tier was not changed to keep it long, since tier tracks mindshare and editing it to control placement would make the field mean nothing.
