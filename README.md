@@ -70,8 +70,30 @@ deals-hunter list. The bar is "worth setting up an account for."
 Offers that require your university to buy something are not dropped, they are
 recorded under `excluded` with a check path, so the question stays answered.
 
-## Licence
+## Licence and notices
 
-Content is [CC BY 4.0](./LICENSE). The scripts are also available under MIT.
-Offer terms are facts about third-party products restated from public pages, and
-are not warranted to be current. Confirm with the vendor before relying on them.
+Copyright 2026 Taewan Yoon.
+
+The content of this repository, meaning the guide in
+[`recommended.md`](./recommended.md), the research notes in
+[`knowledge-base.md`](./knowledge-base.md) and the dataset in
+[`data/tools.yml`](./data/tools.yml), is licensed under
+[CC BY 4.0](./LICENSE). Share and adapt it freely, including commercially, with
+attribution.
+
+**Scripts.** Everything under [`scripts/`](./scripts) is additionally offered
+under the MIT Licence, at your option, so it can be reused without an
+attribution requirement.
+
+**Offer terms are not warranted.** Prices, discounts and eligibility rules
+described here are facts about third-party products, restated from those
+vendors' own public pages on the dates recorded in each entry. They change
+without notice, and at least one vendor page has proved misleading. Confirm with
+the vendor before relying on anything here.
+
+**Trademarks.** Vendor names and logos belong to their respective owners and are
+used to identify the products under review.
+
+**Affiliate links.** Two links earn a commission, for Otter.ai and Wispr Flow.
+Both are labelled where they appear. Every other link goes to the vendor's own
+page and earns nothing.
