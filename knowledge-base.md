@@ -581,14 +581,11 @@ Status: active.
 - Student pricing: 3 months free, then 6 USD per month billed annually. A 50 percent discount on Pro.
 - Included features: Speech to text across 100-plus languages on Mac, Windows, iOS and Android, unlimited dictation on Pro, a meeting notetaker on Mac, and access to the advanced AI models. A free tier exists without any of this: 2,000 dictated words a week on desktop, 1,000 on iPhone, unlimited on Android.
 - Effective length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
-- Verification: Proof of enrolment is ALWAYS required. Wispr Flow support confirmed on 2026-08-19 that there is no automatic .edu verification, despite the students page implying a .edu address activates the offer on its own. Submit through wisprflow.ai/support: request type Billing, discount reason Student, attached to a student ID or enrolment letter.
+- Verification: Proof of enrolment always required. There is no automatic .edu verification, despite what the students page implies. See the steps above.
 - Regions: Not restricted in the published terms.
-- Caveat: The 3-month free trial is for new subscribers only.
-- Caveat: The students page reads as though a .edu address activates the offer by itself. It does not. Support confirmed proof is always required. Budget for a review rather than expecting instant access.
-- Caveat: Extended-trial promo codes do NOT stack with student pricing. Support confirmed two reasons: promos cannot combine with another active code, and student accounts run through a separate path where a signup promo code is not applied at all. So it is one or the other, and the student rate usually wins. Take the longest trial code in circulation, 6 months, against the student rate: the trial costs 72 USD in year one (6 free months, then 6 at the full 12 USD) while the student rate costs 54 USD (3 free months, then 9 at 6 USD). The trial then expires into full price while the student discount persists, so the gap widens every year after.
-- Caveat: If you do take a trial code, set a reminder before it ends. It renews at full price, and switching to the student rate afterwards means going through the billing request above rather than flipping a setting.
-- Caveat: Teaching or working at an institution qualifies for the same 50 percent educator rate, claimed the same way with Education as the reason and a work email confirmation or employment document.
-- Caveat: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
+- Caveat: New subscribers only.
+- Caveat: Trial codes do not stack with the student rate. Take the student rate: 54 USD in year one against 72 USD on a 6-month trial, and it keeps the discount afterwards rather than reverting to full price.
+- Caveat: Teaching or non-profit staff get the same 50 percent rate, claimed the same way with Education as the reason.
 - Referral programme: **two-sided**. Both sides benefit, and the student plan counts as an earning plan, which is unusual. Your friend gets a 30-day Pro trial for signing up through your link regardless of your plan, and 90 days if they are on a Student plan, which supersedes the 30-day trial. You get one free month of Pro per successful referral, credited on your next billing cycle, once your friend dictates 2,000 words or upgrades to Pro. Earning requires an active paid Pro or Student plan bought through the Wispr Flow website. App Store subscribers and Enterprise members can share invites but cannot earn.
 - Official sources:
   - https://wisprflow.ai/students
