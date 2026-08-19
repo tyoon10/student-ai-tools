@@ -1145,9 +1145,16 @@ tools:
         Extended-trial promo codes do NOT stack with student pricing. Support
         confirmed two reasons: promos cannot combine with another active code,
         and student accounts run through a separate path where a signup promo
-        code is not applied at all. If you are eligible for the student rate,
-        take it rather than a trial code, since the reduced price continues past
-        the point a trial would expire.
+        code is not applied at all. So it is one or the other, and the student
+        rate usually wins. Take the longest trial code in circulation, 6 months,
+        against the student rate: the trial costs 72 USD in year one (6 free
+        months, then 6 at the full 12 USD) while the student rate costs 54 USD
+        (3 free months, then 9 at 6 USD). The trial then expires into full price
+        while the student discount persists, so the gap widens every year after.
+      - >-
+        If you do take a trial code, set a reminder before it ends. It renews at
+        full price, and switching to the student rate afterwards means going
+        through the billing request above rather than flipping a setting.
       - >-
         Teaching or working at an institution qualifies for the same 50 percent
         educator rate, claimed the same way with Education as the reason and a
@@ -1966,6 +1973,12 @@ backlog:
 changelog:
   - date: '2026-08-19 (vendor correction)'
     entries:
+      - >-
+        Quantified the trial-versus-student-rate trade-off rather than asserting
+        it. Against the longest trial code in circulation (6 months), the student
+        rate is still cheaper in year one, 54 USD against 72 USD, and the gap
+        widens after because a trial expires into full price while the discount
+        persists. Added a warning to set a reminder before a trial renews.
       - >-
         CORRECTION from Wispr Flow support: there is no automatic .edu
         verification. The entry said a .edu address activates the offer on its

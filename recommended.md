@@ -143,7 +143,8 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 - Eligibility: Not restricted in the published terms.
 - Note: The 3-month free trial is for new subscribers only.
 - Note: The students page reads as though a .edu address activates the offer by itself. It does not. Support confirmed proof is always required. Budget for a review rather than expecting instant access.
-- Note: Extended-trial promo codes do NOT stack with student pricing. Support confirmed two reasons: promos cannot combine with another active code, and student accounts run through a separate path where a signup promo code is not applied at all. If you are eligible for the student rate, take it rather than a trial code, since the reduced price continues past the point a trial would expire.
+- Note: Extended-trial promo codes do NOT stack with student pricing. Support confirmed two reasons: promos cannot combine with another active code, and student accounts run through a separate path where a signup promo code is not applied at all. So it is one or the other, and the student rate usually wins. Take the longest trial code in circulation, 6 months, against the student rate: the trial costs 72 USD in year one (6 free months, then 6 at the full 12 USD) while the student rate costs 54 USD (3 free months, then 9 at 6 USD). The trial then expires into full price while the student discount persists, so the gap widens every year after.
+- Note: If you do take a trial code, set a reminder before it ends. It renews at full price, and switching to the student rate afterwards means going through the billing request above rather than flipping a setting.
 - Note: Teaching or working at an institution qualifies for the same 50 percent educator rate, claimed the same way with Education as the reason and a work email confirmation or employment document.
 - Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
 - **Referral link:** https://ref.wisprflow.ai/taewan
@@ -346,6 +347,7 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-19 (vendor correction)** Quantified the trial-versus-student-rate trade-off rather than asserting it. Against the longest trial code in circulation (6 months), the student rate is still cheaper in year one, 54 USD against 72 USD, and the gap widens after because a trial expires into full price while the discount persists. Added a warning to set a reminder before a trial renews.
 - **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
 - **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.
 - **2026-08-19 (vendor correction)** Confirmed extended-trial codes do NOT stack with student pricing, for two separate reasons: promos cannot combine with another active code, and student accounts run through a path where signup promo codes are not applied at all. The guidance to take the student rate over a trial code is now vendor-confirmed rather than inferred from list prices.
