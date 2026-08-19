@@ -879,6 +879,8 @@ Listed so they are not re-probed every cycle.
 - Write the seasonal-versus-always-on campaign policy. Raw material now exists: Perplexity's expired campaign sits beside its always-on Education Pro rate, Grammarly and QuillBot are both campaign-based, and CapCut's rollout was dated.
 - Get vendor-side discount numbers for Prezi, Trinka and Sunsama. All three are confirmed to have a student offer but none publishes a percentage, which is why all three are held back from the public list.
 - Re-verify Adobe pricing manually each cycle since Adobe blocks automated checks.
+- Capture the four declared screenshots (Notion, Figma, Granola, Wispr Flow). Alt text and captions are already written; the generator lists them as pending on every build until the files land in images/.
+- Replace the GitHub image. The current one is the Education verification screen, which shows friction rather than what the Pack gives you. The benefits page with its wall of partner tiles is the representative shot; the verification screen is worth keeping as a second image lower in the entry.
 - Re-check Amp around 2026-11-01. It was announced the same day it was recorded here and the vendor reserves the right to withdraw it.
 
 ## Validation log

@@ -84,6 +84,10 @@ Tried, used extensively, kept.
 
 ### 1. Notion (Free)
 
+![A Notion database of Product Management coursework, with one row opened as a full page showing its properties and notes](./images/notion.png)
+
+*Every row is a page. That is what makes it an operating system rather than a document.*
+
 The single best note and knowledge tool for grad school. Free Plus plan for a one-member workspace if you have an eligible school email. I run Notion as an operating system for my Product Management coursework and side projects.
 
 - Sign up: https://www.notion.com/help/notion-for-education
@@ -94,6 +98,10 @@ The single best note and knowledge tool for grad school. Free Plus plan for a on
 
 ### 2. Figma (Free for 1 year)
 
+![A case competition slide open on the Figma canvas, with a collaborator's named cursor visible on it](./images/figma.png)
+
+*Someone else's cursor is always on the canvas. Multiplayer is why this beats slides for group work.*
+
 Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product designers and PMs.
 
 - Sign up: https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education
@@ -102,6 +110,10 @@ Full Professional plan for verified higher-ed students. Slide alternatives, mock
 - Note: Must reapply annually, it does not auto-renew as free.
 
 ### 3. Granola (Free for 12 months)
+
+![A Granola meeting note showing a structured summary generated from a handful of typed fragments](./images/granola.png)
+
+*Scrappy fragments in, structured note out. That gap is the whole product.*
 
 AI notepad for meetings and lectures. Listens in the background without a bot joining the call, then generates clean structured notes afterwards. I use it for internal team meetings.
 
@@ -126,6 +138,10 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 - Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
 
 ### 5. Wispr Flow (3 months free, then 50% off)
+
+![Wispr Flow's dictation overlay active while dictated text appears in a Gmail compose window](./images/wispr-flow.png)
+
+*Dictating into someone else's app. That is the part built-in dictation does not do.*
 
 Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers something nothing else here does: Otter transcribes meetings and Speechify reads to you, but neither turns your voice into the text you are writing right now.
 

@@ -386,6 +386,9 @@ def row(label: str, value: str) -> str:
     return f"| {label} | {value} |"
 
 
+PENDING: list[str] = []
+
+
 def image_block(t: dict, copied: list) -> list[str]:
     """Representative screenshot, directly under the heading.
 
@@ -398,7 +401,12 @@ def image_block(t: dict, copied: list) -> list[str]:
         return []
     src = ROOT / img["src"].lstrip("./")
     if not src.exists():
-        raise FileNotFoundError(f"{t['name']}: image not found at {src}")
+        # Declared but not captured yet. Skipping is right here: the alt text and
+        # caption are editorial work that can land before the screenshot, and a
+        # hard failure would block every other build until someone opens a
+        # screen-capture tool. Reported so it never becomes invisible.
+        PENDING.append(f"{t['name']} -> {img['src']}")
+        return []
     dest = SITE_DIR / src.name
     dest.write_bytes(src.read_bytes())
     copied.append(src.name)
@@ -737,6 +745,10 @@ def main() -> int:
     if copied:
         print(f"copied {len(copied)} image(s) into the post directory: "
               f"{', '.join(copied)}")
+    if PENDING:
+        print(f"{len(PENDING)} screenshot(s) declared but not captured yet:")
+        for x in PENDING:
+            print(f"  - {x}")
     if args.out.name.endswith(".draft.md"):
         print("NOTE: this is a draft. Astro ignores index.draft.md. "
               "Set meta.live_post_published: true in data/tools.yml to publish.")

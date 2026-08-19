@@ -85,6 +85,12 @@ tools:
     links:
       - 'https://www.notion.com/help/notion-for-education'
       - 'https://www.notion.com/pricing'
+    image:
+      src: './images/notion.png'
+      alt: >-
+        A Notion database of Product Management coursework, with one row opened as a full page showing its properties and notes
+      caption: >-
+        Every row is a page. That is what makes it an operating system rather than a document.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -121,6 +127,12 @@ tools:
       links: []
     links:
       - 'https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education'
+    image:
+      src: './images/figma.png'
+      alt: >-
+        A case competition slide open on the Figma canvas, with a collaborator's named cursor visible on it
+      caption: >-
+        Someone else's cursor is always on the canvas. Multiplayer is why this beats slides for group work.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -166,6 +178,12 @@ tools:
         - 'https://partners.dub.co/granola'
     links:
       - 'https://www.granola.ai/students'
+    image:
+      src: './images/granola.png'
+      alt: >-
+        A Granola meeting note showing a structured summary generated from a handful of typed fragments
+      caption: >-
+        Scrappy fragments in, structured note out. That gap is the whole product.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1180,6 +1198,12 @@ tools:
         note: >-
           Student ID or enrolment letter. Only one attachment per submission, so
           merge multiple pages first. Then 3 months free, 6 USD a month after.
+    image:
+      src: './images/wispr-flow.png'
+      alt: >-
+        Wispr Flow's dictation overlay active while dictated text appears in a Gmail compose window
+      caption: >-
+        Dictating into someone else's app. That is the part built-in dictation does not do.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1927,6 +1951,15 @@ backlog:
     confirmed to have a student offer but none publishes a percentage, which is why
     all three are held back from the public list.
   - 'Re-verify Adobe pricing manually each cycle since Adobe blocks automated checks.'
+  - >-
+    Capture the four declared screenshots (Notion, Figma, Granola, Wispr Flow).
+    Alt text and captions are already written; the generator lists them as
+    pending on every build until the files land in images/.
+  - >-
+    Replace the GitHub image. The current one is the Education verification
+    screen, which shows friction rather than what the Pack gives you. The
+    benefits page with its wall of partner tiles is the representative shot; the
+    verification screen is worth keeping as a second image lower in the entry.
   - >-
     Re-check Amp around 2026-11-01. It was announced the same day it was recorded
     here and the vendor reserves the right to withdraw it.
