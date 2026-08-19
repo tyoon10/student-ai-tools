@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build and check artefacts
+report.md
+*.log
+
+# OS and editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local-only, for scripts/check_render.js.
+# No trailing slash: with one, this matches directories only, and a symlinked
+# node_modules slips past it. That is exactly how a symlink to /tmp got
+# committed once.
+node_modules
+package-lock.json
