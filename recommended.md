@@ -89,7 +89,7 @@ The single best note and knowledge tool for grad school. Free Plus plan for a on
 - Sign up: https://www.notion.com/help/notion-for-education
 - Verification: School email only. The school must be an accredited institution listed in the World Higher Education Database. Notion does not accept student IDs or other documentation.
 - Length: Continues while eligibility and school email status remain valid.
-- Note: Notion AI is NOT usefully included. As of 2026-08-18 there is no standalone AI add-on to buy. Free and Plus get trial-level AI only, and full AI (Agent, Meeting Notes, Enterprise Search) requires the Business tier at 20 USD per member per month. Custom Agents are metered separately.
+- Note: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
 - Note: Requires a single-member workspace.
 
 ### 2. Figma (Free for 1 year)
@@ -119,9 +119,7 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 - Verification: GitHub Education benefits application.
 - Length: Re-evaluated by GitHub while student status remains valid.
 - Note: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
-- Note: The temporary pause on new student sign-ups that GitHub documented in early 2026 is no longer present in the docs as of 2026-08-18.
 - Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
-- Note: The Pack gains and loses partners quietly. Two AI-relevant additions worth knowing about are Camber (research compute) and SlideCoach (AI presentation coaching, 2,000 credits for verified students).
 
 ![GitHub Education benefits application screen showing the school email verification step](./images/github-education-email-verification.png)
 
@@ -175,7 +173,7 @@ The full app suite plus Firefly generative AI in Photoshop, Illustrator and Prem
 
 ### OpenAI Codex ($100 in Codex credits)
 
-100 USD of ChatGPT credits earmarked for Codex. Worth being precise about what this is: it is not a ChatGPT Plus discount, and it is not API credit.
+100 USD of credit for Codex, OpenAI's coding agent, spendable in the CLI, the IDE extensions or the web app. Note the scope: the credits work only in Codex, so this is neither a ChatGPT Plus discount nor general API credit.
 
 - Sign up: https://developers.openai.com/community/students
 - Verification: SheerID-style verification with a university email through the claim page.
@@ -198,7 +196,7 @@ Half price on the full Office suite with Copilot built into Word, Excel, PowerPo
 
 ### Grammarly (50% off, seasonal)
 
-Writing assistant. The discount runs as a seasonal SheerID campaign rather than a standing offer.
+Grammar, clarity and tone checking across everything you write, in the browser and on the desktop. The one to leave running in the background on long assignments. The discount is a seasonal campaign, so check it is live first.
 
 - Sign up: https://shop.sheerid.com/brands/grammarly/
 - Verification: SheerID.
@@ -220,7 +218,7 @@ Transcription for lectures, interviews and group meetings. Individual Pro only, 
 
 ### QuillBot (Up to 25% off)
 
-Paraphrasing and grammar tool with heavy student usage.
+Rewrites sentences you have already written, which is the job Grammarly is weakest at. Useful when a paragraph is technically correct and still does not read well.
 
 - Sign up: https://quillbot.com/upgrade/studentbeans
 - Verification: Student Beans or UNiDAYS.
@@ -239,7 +237,7 @@ AI slide-deck builder that does the layout work for you. A free year of Pro is a
 
 ### Obsidian (40% off Sync and Publish)
 
-The app itself is free and always has been. This discounts the two paid add-ons, which is what you actually pay for once your vault outgrows one device. A good counterweight to Notion if you want local files you own.
+40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one device. The counterweight to Notion if you want local files you own.
 
 - Sign up: https://obsidian.md/help/discounts
 - Verification: Apply from your Obsidian account dashboard using an educational email. Support may accept a student ID or transcript if your institution does not issue one.
@@ -260,7 +258,7 @@ Screen recording with AI summaries and transcripts. Genuinely useful for group p
 
 ### Amp (50% off, $10/month)
 
-Sourcegraph's coding agent, half price for students and teachers with no document check. Treat this as provisional. It was announced the same day this entry was written and has no track record yet.
+Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the terms could still move, so check them before you commit.
 
 - Sign up: https://ampcode.com/edu
 - Verification: Self-declaration. Sign in and complete a form declaring student or teacher status. No SheerID, no .edu requirement, no document upload.

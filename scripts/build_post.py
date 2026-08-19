@@ -559,6 +559,12 @@ def build(d: dict) -> str:
         o.append(clean(t["blurb"]))
         o.extend(onboarding_block(t))
         o.extend(offer_table(t))
+        # Caveats were rendered for the daily five only, so 17 warnings the
+        # dataset holds never reached a reader. Adobe's year-two price jump was
+        # among them, on an entry headlined "~71% off".
+        for cav in t.get("caveats") or []:
+            o.append(f"*Note: {clean(cav)}*")
+            o.append("")
 
     if rest:
         o.append("### The rest")

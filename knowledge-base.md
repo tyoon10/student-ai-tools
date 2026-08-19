@@ -36,22 +36,22 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 2. **GitHub Student Developer Pack**: The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap domain, JetBrains and roughly 30 other developer tools, all unlocked once you verif
 3. **Perplexity**: The best AI search tool for academic work. Citations, Learn Mode, full Pro model access. If your coursework is research-heavy this is probably the biggest singl
 4. **Adobe Creative Cloud**: The full app suite plus Firefly generative AI in Photoshop, Illustrator and Premiere. The discount is steep in year one and much less so afterwards, so set a re
-5. **OpenAI Codex**: 100 USD of ChatGPT credits earmarked for Codex. Worth being precise about what this is: it is not a ChatGPT Plus discount, and it is not API credit.
+5. **OpenAI Codex**: 100 USD of credit for Codex, OpenAI's coding agent, spendable in the CLI, the IDE extensions or the web app. Note the scope: the credits work only in Codex, so 
 6. **Microsoft 365 Personal**: Half price on the full Office suite with Copilot built into Word, Excel, PowerPoint, OneNote and Outlook, plus 1 TB of OneDrive. The broadest single offer on th
 
 ### Tier A: Major, widely adopted tools
 7. **Figma**: Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product d
-8. **Grammarly**: Writing assistant. The discount runs as a seasonal SheerID campaign rather than a standing offer.
+8. **Grammarly**: Grammar, clarity and tone checking across everything you write, in the browser and on the desktop. The one to leave running in the background on long assignment
 9. **Cursor**: Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. It was a full year of Pro free and it was the strongest offer on this list, so i *Offer closed 2026-06-25.*
 
 ### Tier B: Category leaders in popular niches
 10. **Granola**: AI notepad for meetings and lectures. Listens in the background without a bot joining the call, then generates clean structured notes afterwards. I use it for i
 11. **Otter.ai**: Transcription for lectures, interviews and group meetings. Individual Pro only, not workspace or team plans.
-12. **QuillBot**: Paraphrasing and grammar tool with heavy student usage.
+12. **QuillBot**: Rewrites sentences you have already written, which is the job Grammarly is weakest at. Useful when a paragraph is technically correct and still does not read we
 13. **Beautiful.ai**: AI slide-deck builder that does the layout work for you. A free year of Pro is a strong fit for case competitions and pitch decks, where the bottleneck is usual
-14. **Obsidian**: The app itself is free and always has been. This discounts the two paid add-ons, which is what you actually pay for once your vault outgrows one device. A good 
+14. **Obsidian**: 40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one 
 15. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
-16. **Amp**: Sourcegraph's coding agent, half price for students and teachers with no document check. Treat this as provisional. It was announced the same day this entry was
+16. **Amp**: Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the 
 17. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
 18. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
 
@@ -83,7 +83,7 @@ Status: active.
 - Included features: Unlimited uploads, unlimited pages and blocks, 30-day page edit history, up to 100 guests.
 - Effective length: Continues while eligibility and school email status remain valid.
 - Verification: School email only. The school must be an accredited institution listed in the World Higher Education Database. Notion does not accept student IDs or other documentation.
-- Caveat: Notion AI is NOT usefully included. As of 2026-08-18 there is no standalone AI add-on to buy. Free and Plus get trial-level AI only, and full AI (Agent, Meeting Notes, Enterprise Search) requires the Business tier at 20 USD per member per month. Custom Agents are metered separately.
+- Caveat: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
 - Caveat: Requires a single-member workspace.
 - Referral programme: **discontinued**. The friend-referral programme was discontinued on 2020-05-19. Only the affiliate programme remains, and it is closed to new affiliates.
 - Official sources:
@@ -140,9 +140,7 @@ Status: active.
 - Effective length: Re-evaluated by GitHub while student status remains valid.
 - Verification: GitHub Education benefits application.
 - Caveat: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
-- Caveat: The temporary pause on new student sign-ups that GitHub documented in early 2026 is no longer present in the docs as of 2026-08-18.
 - Caveat: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
-- Caveat: The Pack gains and loses partners quietly. Two AI-relevant additions worth knowing about are Camber (research compute) and SlideCoach (AI presentation coaching, 2,000 credits for verified students).
 - Referral programme: **none**. No personal referral programme for the Student Pack. Only a B2B partner programme.
 - Official sources:
   - https://education.github.com/pack/

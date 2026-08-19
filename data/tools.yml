@@ -72,10 +72,9 @@ tools:
       documentation.
     caveats:
       - >-
-        Notion AI is NOT usefully included. As of 2026-08-18 there is no standalone
-        AI add-on to buy. Free and Plus get trial-level AI only, and full AI
-        (Agent, Meeting Notes, Enterprise Search) requires the Business tier at
-        20 USD per member per month. Custom Agents are metered separately.
+        Notion AI is not included. There is no standalone AI add-on to buy: Free
+        and Plus get trial-level AI only, and the full set (Agent, Meeting Notes,
+        Enterprise Search) needs Business at 20 USD per member per month.
       - Requires a single-member workspace.
     referral:
       status: discontinued
@@ -196,18 +195,11 @@ tools:
         Add and verify your school-issued email under Settings then Emails before
         applying. This is the one-time blocker most students hit.
       - >-
-        The temporary pause on new student sign-ups that GitHub documented in
-        early 2026 is no longer present in the docs as of 2026-08-18.
-      - >-
         Copilot access inside the Pack was restructured in March 2026 into a
         standalone plan called GitHub Copilot Student. It is still free for
         verified students. GitHub's changelog says the model lineup changed but
         does not itemise it, so treat any specific model list you read elsewhere
         as unverified.
-      - >-
-        The Pack gains and loses partners quietly. Two AI-relevant additions worth
-        knowing about are Camber (research compute) and SlideCoach (AI presentation
-        coaching, 2,000 credits for verified students).
     image:
       src: './images/github-education-email-verification.png'
       alt: 'GitHub Education benefits application screen showing the school email verification step'
@@ -429,8 +421,9 @@ tools:
     daily_use: false
     headline: $100 in Codex credits
     blurb: >-
-      100 USD of ChatGPT credits earmarked for Codex. Worth being precise about what
-      this is: it is not a ChatGPT Plus discount, and it is not API credit.
+      100 USD of credit for Codex, OpenAI's coding agent, spendable in the CLI, the
+      IDE extensions or the web app. Note the scope: the credits work only in Codex,
+      so this is neither a ChatGPT Plus discount nor general API credit.
     pricing:
       original: No standing global ChatGPT Plus student discount.
       student: 100 USD in ChatGPT credits, equal to 2,500 credits, for use in Codex.
@@ -472,7 +465,10 @@ tools:
     published: true
     daily_use: false
     headline: 50% off, seasonal
-    blurb: Writing assistant. The discount runs as a seasonal SheerID campaign rather than a standing offer.
+    blurb: >-
+      Grammar, clarity and tone checking across everything you write, in the browser
+      and on the desktop. The one to leave running in the background on long
+      assignments. The discount is a seasonal campaign, so check it is live first.
     pricing:
       original: Grammarly Pro regular pricing.
       student: 50 percent off through the SheerID campaign listing.
@@ -502,7 +498,10 @@ tools:
     published: true
     daily_use: false
     headline: Up to 25% off
-    blurb: Paraphrasing and grammar tool with heavy student usage.
+    blurb: >-
+      Rewrites sentences you have already written, which is the job Grammarly is
+      weakest at. Useful when a paragraph is technically correct and still does not
+      read well.
     pricing:
       original: QuillBot Premium standard pricing.
       student: >-
@@ -659,9 +658,9 @@ tools:
     daily_use: false
     headline: 40% off Sync and Publish
     blurb: >-
-      The app itself is free and always has been. This discounts the two paid
-      add-ons, which is what you actually pay for once your vault outgrows one
-      device. A good counterweight to Notion if you want local files you own.
+      40 percent off Sync and Publish, the two paid add-ons. The app itself has
+      always been free, so these are what you actually pay for once your vault
+      outgrows one device. The counterweight to Notion if you want local files you own.
     pricing:
       original: Sync is 4 USD per month billed annually. Publish is 8 USD per month per site.
       student: 40 percent off both, so roughly 2.40 and 4.80 USD per month.
@@ -741,9 +740,9 @@ tools:
     daily_use: false
     headline: 50% off, $10/month
     blurb: >-
-      Sourcegraph's coding agent, half price for students and teachers with no
-      document check. Treat this as provisional. It was announced the same day
-      this entry was written and has no track record yet.
+      Sourcegraph's coding agent at half price, and the only offer here that takes
+      your word for it: no document upload, no verification service. New enough that
+      the terms could still move, so check them before you commit.
     pricing:
       original: 20 USD per month for Amp Megawatt.
       student: 10 USD per month, a 50 percent discount.
