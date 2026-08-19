@@ -34,13 +34,10 @@ meta:
   # one, and every surface that used to claim otherwise was updated in the same
   # commit rather than left stating something untrue.
   affiliate_policy: >-
-    This guide contains two links that earn me something, for Otter.ai and Wispr
-    Flow. Both are labelled where they appear with what you get and what I get.
-    The Otter link gives you a free month you would not otherwise get; the Wispr
-    Flow link gives you exactly the same offer as the plain link beside it and
-    simply carries attribution. Every other link goes to the vendor's own
-    help-centre or pricing page and earns nothing. Referral programmes for all
-    other tools are documented as facts, not as an invitation to use anyone's link.
+    Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are
+    labelled where they appear. The Otter one also gets you a free month; the
+    Wispr Flow one costs you nothing extra. Every other link goes to the vendor's
+    own page and earns nothing.
   referral_link_count: 2
 
 # ---------------------------------------------------------------------------
@@ -1167,15 +1164,14 @@ tools:
     # something the reader is left to find.
     referral_link:
       url: 'https://ref.wisprflow.ai/taewan'
-      you_get: 'the same offer as the plain link, nothing extra'
+      you_get: 'the same offer, at no extra cost'
       i_get: '25 percent of your first year'
-      caveat: 'Skip step 1 if you would rather it did not. The offer is identical either way.'
+      caveat: 'Prefer not to? Start at step 2 instead.'
     onboarding:
       - step: 'Open the partner link'
         url: 'https://ref.wisprflow.ai/taewan'
         note: >-
-          My partner link. Earns me 25 percent of your first year, gives you
-          nothing extra. Skip to step 2 if you prefer.
+          My partner link. Same offer either way, it just credits this guide.
       - step: 'Open a billing request'
         url: 'https://wisprflow.ai/support'
         note: >-

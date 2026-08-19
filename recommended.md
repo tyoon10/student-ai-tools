@@ -8,7 +8,7 @@ The AI tools I actually use, plus a curated secondary list. Every offer on this 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
-- **Disclosure:** This guide contains two links that earn me something, for Otter.ai and Wispr Flow. Both are labelled where they appear with what you get and what I get. The Otter link gives you a free month you would not otherwise get; the Wispr Flow link gives you exactly the same offer as the plain link beside it and simply carries attribution. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
+- **Disclosure:** Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow one costs you nothing extra. Every other link goes to the vendor's own page and earns nothing.
 
 ---
 
@@ -133,7 +133,7 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 
 **How to claim Wispr Flow**
 
-1. **[Open the partner link](https://ref.wisprflow.ai/taewan)** My partner link. Earns me 25 percent of your first year, gives you nothing extra. Skip to step 2 if you prefer.
+1. **[Open the partner link](https://ref.wisprflow.ai/taewan)** My partner link. Same offer either way, it just credits this guide.
 2. **[Open a billing request](https://wisprflow.ai/support)** Request type Billing, reason Student. Required even with a .edu address: there is no automatic verification.
 3. **Attach proof, one file** Student ID or enrolment letter. Only one attachment per submission, so merge multiple pages first. Then 3 months free, 6 USD a month after.
 
@@ -145,8 +145,8 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 - Note: Trial codes do not stack with the student rate. Take the student rate: 54 USD in year one against 72 USD on a 6-month trial, and it keeps the discount afterwards rather than reverting to full price.
 - Note: Teaching or non-profit staff get the same 50 percent rate, claimed the same way with Education as the reason.
 - **Referral link:** https://ref.wisprflow.ai/taewan
-  - **Disclosure.** You get the same offer as the plain link, nothing extra. I get 25 percent of your first year. The plain links above earn nothing.
-  - Skip step 1 if you would rather it did not. The offer is identical either way.
+  - **Disclosure.** You get the same offer, at no extra cost. I get 25 percent of your first year. The plain links above earn nothing.
+  - Prefer not to? Start at step 2 instead.
 
 ---
 

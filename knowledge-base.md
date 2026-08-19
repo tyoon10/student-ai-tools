@@ -8,7 +8,7 @@ The full working record behind the public list. Every tool evaluated, with claim
 - **Last full review:** 2026-08-18
 - **Previous reviews:** 2026-07-19, 2026-05-14, 2026-05-03
 - **Source of truth:** `data/tools.yml`. This file and `recommended.md` are both generated from it, so the two can no longer drift apart.
-- **Disclosure:** This guide contains two links that earn me something, for Otter.ai and Wispr Flow. Both are labelled where they appear with what you get and what I get. The Otter link gives you a free month you would not otherwise get; the Wispr Flow link gives you exactly the same offer as the plain link beside it and simply carries attribution. Every other link goes to the vendor's own help-centre or pricing page and earns nothing. Referral programmes for all other tools are documented as facts, not as an invitation to use anyone's link.
+- **Disclosure:** Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow one costs you nothing extra. Every other link goes to the vendor's own page and earns nothing.
 
 ## Per-entry schema
 
