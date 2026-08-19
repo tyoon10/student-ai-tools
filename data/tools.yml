@@ -1129,12 +1129,29 @@ tools:
       The 3-month trial is for new subscribers only, then the subscription
       auto-renews at the discounted rate. Cancel anytime.
     verification: >-
-      A .edu address activates the offer automatically. Without one, submit a
-      student ID, enrolment confirmation, fee receipt or a screenshot of your
-      student dashboard through the support form, reviewed in a few business days.
+      Proof of enrolment is ALWAYS required. Wispr Flow support confirmed on
+      2026-08-19 that there is no automatic .edu verification, despite the
+      students page implying a .edu address activates the offer on its own.
+      Submit through wisprflow.ai/support: request type Billing, discount reason
+      Student, attached to a student ID or enrolment letter.
     regions: Not restricted in the published terms.
     caveats:
       - The 3-month free trial is for new subscribers only.
+      - >-
+        The students page reads as though a .edu address activates the offer by
+        itself. It does not. Support confirmed proof is always required. Budget
+        for a review rather than expecting instant access.
+      - >-
+        Extended-trial promo codes do NOT stack with student pricing. Support
+        confirmed two reasons: promos cannot combine with another active code,
+        and student accounts run through a separate path where a signup promo
+        code is not applied at all. If you are eligible for the student rate,
+        take it rather than a trial code, since the reduced price continues past
+        the point a trial would expire.
+      - >-
+        Teaching or working at an institution qualifies for the same 50 percent
+        educator rate, claimed the same way with Education as the reason and a
+        work email confirmation or employment document.
       - >-
         Teachers, researchers and non-profit staff get the same 50 percent rate
         through the same flow.
@@ -1183,16 +1200,18 @@ tools:
         note: >-
           My partner link. It earns me 25 percent of your first year and gives you
           nothing extra, so skip to step 2 if you would rather it did not.
-      - step: 'Claim the student rate'
-        url: 'https://wisprflow.ai/students'
+      - step: 'Open a billing request'
+        url: 'https://wisprflow.ai/support'
         note: >-
-          Sign up with your .edu address and the offer activates automatically:
-          3 months free, then 6 USD a month billed annually.
-      - step: 'No .edu address?'
+          Choose request type Billing, then discount reason Student. There is no
+          automatic .edu verification, so this step is required even with a school
+          address. Wispr Flow support confirmed this directly on 2026-08-19.
+      - step: 'Attach proof, as a single file'
         note: >-
-          Submit a student ID, enrolment confirmation, fee receipt or a screenshot
-          of your student dashboard through the support form. Reviewed in a few
-          business days.
+          A student ID or enrolment letter. Only ONE attachment is allowed per
+          submission, so combine multiple pages into a single PDF or image first
+          or you will be asked to resubmit. The offer is 3 months free, then 6 USD
+          a month billed annually.
     last_checked: '2026-08-18'
     confidence: high
 
@@ -1945,6 +1964,29 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-19 (vendor correction)'
+    entries:
+      - >-
+        CORRECTION from Wispr Flow support: there is no automatic .edu
+        verification. The entry said a .edu address activates the offer on its
+        own, which is what the students page implies, and that was wrong. Proof
+        of enrolment is always required through a Billing request on the support
+        page. Both the verification field and the claim flow are fixed.
+      - >-
+        Added the exact claim path support gave, including that only ONE
+        attachment is allowed per submission, so multi-page proof has to be
+        combined into a single file first.
+      - >-
+        Confirmed extended-trial codes do NOT stack with student pricing, for two
+        separate reasons: promos cannot combine with another active code, and
+        student accounts run through a path where signup promo codes are not
+        applied at all. The guidance to take the student rate over a trial code
+        is now vendor-confirmed rather than inferred from list prices.
+      - >-
+        Still open: whether a custom extended-trial code can be attached to a
+        partner link, and whether student-discounted plans are commissionable at
+        the 25 percent partner rate. Support escalated both to the partnerships
+        team as commercial terms.
   - date: '2026-08-19'
     entries:
       - >-

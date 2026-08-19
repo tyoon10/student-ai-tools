@@ -134,14 +134,17 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 **How to claim Wispr Flow**
 
 1. **[Open the partner link](https://ref.wisprflow.ai/taewan)** My partner link. It earns me 25 percent of your first year and gives you nothing extra, so skip to step 2 if you would rather it did not.
-2. **[Claim the student rate](https://wisprflow.ai/students)** Sign up with your .edu address and the offer activates automatically: 3 months free, then 6 USD a month billed annually.
-3. **No .edu address?** Submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form. Reviewed in a few business days.
+2. **[Open a billing request](https://wisprflow.ai/support)** Choose request type Billing, then discount reason Student. There is no automatic .edu verification, so this step is required even with a school address. Wispr Flow support confirmed this directly on 2026-08-19.
+3. **Attach proof, as a single file** A student ID or enrolment letter. Only ONE attachment is allowed per submission, so combine multiple pages into a single PDF or image first or you will be asked to resubmit. The offer is 3 months free, then 6 USD a month billed annually.
 
 - Sign up: https://wisprflow.ai/students
-- Verification: A .edu address activates the offer automatically. Without one, submit a student ID, enrolment confirmation, fee receipt or a screenshot of your student dashboard through the support form, reviewed in a few business days.
+- Verification: Proof of enrolment is ALWAYS required. Wispr Flow support confirmed on 2026-08-19 that there is no automatic .edu verification, despite the students page implying a .edu address activates the offer on its own. Submit through wisprflow.ai/support: request type Billing, discount reason Student, attached to a student ID or enrolment letter.
 - Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
 - Eligibility: Not restricted in the published terms.
 - Note: The 3-month free trial is for new subscribers only.
+- Note: The students page reads as though a .edu address activates the offer by itself. It does not. Support confirmed proof is always required. Budget for a review rather than expecting instant access.
+- Note: Extended-trial promo codes do NOT stack with student pricing. Support confirmed two reasons: promos cannot combine with another active code, and student accounts run through a separate path where a signup promo code is not applied at all. If you are eligible for the student rate, take it rather than a trial code, since the reduced price continues past the point a trial would expire.
+- Note: Teaching or working at an institution qualifies for the same 50 percent educator rate, claimed the same way with Education as the reason and a work email confirmation or employment document.
 - Note: Teachers, researchers and non-profit staff get the same 50 percent rate through the same flow.
 - **Referral link:** https://ref.wisprflow.ai/taewan
   - **Disclosure.** You get the same 3 months free then 50 percent off, claimed at step 2. The link itself adds nothing for you. I get 25 percent of your first year if you subscribe. The plain links above earn nothing.
@@ -343,6 +346,10 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
+- **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.
+- **2026-08-19 (vendor correction)** Confirmed extended-trial codes do NOT stack with student pricing, for two separate reasons: promos cannot combine with another active code, and student accounts run through a path where signup promo codes are not applied at all. The guidance to take the student rate over a trial code is now vendor-confirmed rather than inferred from list prices.
+- **2026-08-19 (vendor correction)** Still open: whether a custom extended-trial code can be attached to a partner link, and whether student-discounted plans are commissionable at the 25 percent partner rate. Support escalated both to the partnerships team as commercial terms.
 - **2026-08-19** Restructured the Wispr Flow entry into a numbered claim flow that leads with the partner link. Verified first that this costs the reader nothing: the partner link sets a dub_id cookie on wisprflow.ai and Dub's script runs there, so attribution survives the move to /students at step 2.
 - **2026-08-19** The bare partner link redirects to the homepage, so the student page is a named step rather than something the reader has to find. Step 1 says what the link is and tells anyone who would rather not use it to start at step 2 instead.
 - **2026-08-19** Added the Wispr Flow affiliate link, approved the same day. Used the /students?via=taewan form rather than the bare partner link, because ref.wisprflow.ai/taewan redirects to the homepage and would drop readers off the page where the student offer is actually claimed.
