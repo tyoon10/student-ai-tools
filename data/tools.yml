@@ -53,7 +53,7 @@ tools:
     status: active
     published: true
     daily_use: true
-    rank: 1
+    rank: 3
     headline: Free
     blurb: >-
       The single best note and knowledge tool for grad school. Free Plus plan for a
@@ -102,8 +102,7 @@ tools:
     tier: A
     status: active
     published: true
-    daily_use: true
-    rank: 2
+    daily_use: false
     headline: Free for 1 year
     blurb: >-
       Full Professional plan for verified higher-ed students. Slide alternatives,
@@ -144,7 +143,7 @@ tools:
     status: active
     published: true
     daily_use: true
-    rank: 3
+    rank: 2
     headline: Free for 12 months
     blurb: >-
       AI notepad for meetings and lectures. Listens in the background without a bot
@@ -196,7 +195,7 @@ tools:
     status: active
     published: true
     daily_use: true
-    rank: 4
+    rank: 5
     headline: Free
     blurb: >-
       The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap
@@ -218,10 +217,6 @@ tools:
         verified students. GitHub's changelog says the model lineup changed but
         does not itemise it, so treat any specific model list you read elsewhere
         as unverified.
-    image:
-      src: './images/github-education-email-verification.png'
-      alt: 'GitHub Education benefits application screen showing the school email verification step'
-      caption: 'The verification step that blocks most applications. Add the school email first, under Settings then Emails.'
     referral:
       status: none
       detail: No personal referral programme for the Student Pack. Only a B2B partner programme.
@@ -633,7 +628,8 @@ tools:
     tier: S
     status: active
     published: true
-    daily_use: false
+    daily_use: true
+    rank: 1
     headline: Free for 12 months
     blurb: >-
       Google's general AI assistant, bundled with Gmail, Docs and a large storage
@@ -1186,7 +1182,7 @@ tools:
     status: active
     published: true
     daily_use: true
-    rank: 5
+    rank: 4
     headline: 3 months free, then 50% off
     blurb: >-
       Voice dictation that types into any app, so I talk instead of typing. It is
@@ -2020,6 +2016,14 @@ changelog:
       - >-
         NotebookLM: updated the cross-reference to the Google Gemini entry, which
         no longer says Google AI Pro's student offers "have all expired."
+      - >-
+        Reordered the daily-use five: Google Gemini promoted to rank 1 now that
+        its student trial is back, Figma demoted out of daily use into "Worth
+        knowing about" to keep the list at five. New order: Google Gemini,
+        Granola, Notion, Wispr Flow, GitHub Student Developer Pack.
+      - >-
+        GitHub Student Developer Pack: removed the email-verification screenshot
+        and its declared image entry.
   - date: '2026-08-19 (vendor correction)'
     entries:
       - >-

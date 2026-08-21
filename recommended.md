@@ -32,11 +32,11 @@ Jump straight to any tool. Terms and sources are in each entry.
 
 | Tool | Offer | Category |
 |---|---|---|
-| [Notion](#1-notion-free) | Free | Notes and knowledge |
-| [Figma](#2-figma-free-for-1-year) | Free for 1 year | Design |
-| [Granola](#3-granola-free-for-12-months) | Free for 12 months | Meeting notes |
-| [GitHub Student Developer Pack](#4-github-student-developer-pack-free) | Free | Developer tools |
-| [Wispr Flow](#5-wispr-flow-3-months-free-then-50-off) | 3 months free, then 50% off | Voice dictation |
+| [Google Gemini](#1-google-gemini-free-for-12-months) | Free for 12 months | Productivity suite |
+| [Granola](#2-granola-free-for-12-months) | Free for 12 months | Meeting notes |
+| [Notion](#3-notion-free) | Free | Notes and knowledge |
+| [Wispr Flow](#4-wispr-flow-3-months-free-then-50-off) | 3 months free, then 50% off | Voice dictation |
+| [GitHub Student Developer Pack](#5-github-student-developer-pack-free) | Free | Developer tools |
 
 **[Worth knowing about](#worth-knowing-about)**
 
@@ -46,7 +46,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Adobe Creative Cloud](#adobe-creative-cloud-71-off-first-year) | ~71% off first year | Design and creative |
 | [OpenAI Codex](#openai-codex-100-in-codex-credits) | $100 in Codex credits | AI coding |
 | [Microsoft 365 Personal](#microsoft-365-personal-499month-50-off) | $4.99/month, 50% off | Productivity suite |
-| [Google Gemini](#google-gemini-free-for-12-months) | Free for 12 months | Productivity suite |
+| [Figma](#figma-free-for-1-year) | Free for 1 year | Design |
 | [Grammarly](#grammarly-50-off-seasonal) | 50% off, seasonal | Writing |
 | [Otter.ai](#otterai-20-off-pro) | 20% off Pro | Transcription |
 | [QuillBot](#quillbot-up-to-25-off) | Up to 25% off | Writing |
@@ -82,34 +82,19 @@ Jump straight to any tool. Terms and sources are in each entry.
 
 Tried, used extensively, kept.
 
-### 1. Notion (Free)
+### 1. Google Gemini (Free for 12 months)
 
-![A Notion database of Product Management coursework, with one row opened as a full page showing its properties and notes](./images/notion.png)
+Google's general AI assistant, bundled with Gmail, Docs and a large storage bump. The free year that closed 2026-03-11 is back under a new offer code, and it splits sharply by region: US students get the full Pro tier, students elsewhere get a smaller Plus tier instead.
 
-*Every row is a page. That is what makes it an operating system rather than a document.*
+- Sign up: https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
+- Verification: SheerID, using a school email. A valid payment method must be on file at signup even though the first 12 months are free.
+- Length: 12 months from signup, then automatic monthly billing at the regular rate unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is required, usually annually, for up to 4 consecutive years; miss it and the trial converts to a paid subscription.
+- Eligibility: US students get the Pro tier. Students in 140-plus other eligible markets get the smaller Plus tier instead, except in Bolivia, Albania, Canada, Macau, Hong Kong and Tunisia, where the standalone trial is not offered at all.
+- Note: This is a new offer code, not the old page reopening. The offer this guide previously recorded as closed on 2026-03-11 is still closed; this is a separate relaunch, announced 2026-08-19.
+- Note: Signing up while already on another Google One extended trial revokes that trial. Check what an existing Google One plan gives up before switching.
+- Note: Upgrading from the trial to a paid plan before it ends makes you ineligible for future Google One trials.
 
-The single best note and knowledge tool for grad school. Free Plus plan for a one-member workspace if you have an eligible school email. I run Notion as an operating system for my Product Management coursework and side projects.
-
-- Sign up: https://www.notion.com/help/notion-for-education
-- Verification: School email only. The school must be an accredited institution listed in the World Higher Education Database. Notion does not accept student IDs or other documentation.
-- Length: Continues while eligibility and school email status remain valid.
-- Note: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
-- Note: Requires a single-member workspace.
-
-### 2. Figma (Free for 1 year)
-
-![A case competition slide open on the Figma canvas, with a collaborator's named cursor visible on it](./images/figma.png)
-
-*Someone else's cursor is always on the canvas. Multiplayer is why this beats slides for group work.*
-
-Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product designers and PMs.
-
-- Sign up: https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education
-- Verification: School-issued email, then the education application page with "Higher Ed" selected as institution type. Figma verifies all applications through SheerID.
-- Length: One year, then reapply.
-- Note: Must reapply annually, it does not auto-renew as free.
-
-### 3. Granola (Free for 12 months)
+### 2. Granola (Free for 12 months)
 
 ![A Granola meeting note showing a structured summary generated from a handful of typed fragments](./images/granola.png)
 
@@ -123,21 +108,21 @@ AI notepad for meetings and lectures. Listens in the background without a bot jo
 - Eligibility: Currently enrolled students at accredited universities in the US, UK and Canada.
 - Note: The page labels this a LIMITED EDITION promotion, so it may be withdrawn without notice.
 
-### 4. GitHub Student Developer Pack (Free)
+### 3. Notion (Free)
 
-![GitHub Education benefits application screen showing the school email verification step](./images/github-education-email-verification.png)
+![A Notion database of Product Management coursework, with one row opened as a full page showing its properties and notes](./images/notion.png)
 
-*The verification step that blocks most applications. Add the school email first, under Settings then Emails.*
+*Every row is a page. That is what makes it an operating system rather than a document.*
 
-The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap domain, JetBrains and roughly 30 other developer tools, all unlocked once you verify.
+The single best note and knowledge tool for grad school. Free Plus plan for a one-member workspace if you have an eligible school email. I run Notion as an operating system for my Product Management coursework and side projects.
 
-- Sign up: https://education.github.com/pack/
-- Verification: GitHub Education benefits application.
-- Length: Re-evaluated by GitHub while student status remains valid.
-- Note: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
-- Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
+- Sign up: https://www.notion.com/help/notion-for-education
+- Verification: School email only. The school must be an accredited institution listed in the World Higher Education Database. Notion does not accept student IDs or other documentation.
+- Length: Continues while eligibility and school email status remain valid.
+- Note: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
+- Note: Requires a single-member workspace.
 
-### 5. Wispr Flow (3 months free, then 50% off)
+### 4. Wispr Flow (3 months free, then 50% off)
 
 ![Wispr Flow's dictation overlay active while dictated text appears in a Gmail compose window](./images/wispr-flow.png)
 
@@ -161,6 +146,16 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 - **Referral link:** https://ref.wisprflow.ai/taewan
   - **Disclosure.** You get the same offer, at no extra cost. I get 25 percent of your first year. The plain links above earn nothing.
   - Prefer not to? Start at step 2 instead.
+
+### 5. GitHub Student Developer Pack (Free)
+
+The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap domain, JetBrains and roughly 30 other developer tools, all unlocked once you verify.
+
+- Sign up: https://education.github.com/pack/
+- Verification: GitHub Education benefits application.
+- Length: Re-evaluated by GitHub while student status remains valid.
+- Note: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
+- Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
 
 ---
 
@@ -210,17 +205,18 @@ Half price on the full Office suite with Copilot built into Word, Excel, PowerPo
 - Note: You add payment details before verification completes, so set a reminder rather than assuming the re-verification prompt will reach you.
 - Note: This is the consumer Personal plan. It is separate from any Microsoft 365 Education licence your school may already give you, which is worth checking first.
 
-### Google Gemini (Free for 12 months)
+### Figma (Free for 1 year)
 
-Google's general AI assistant, bundled with Gmail, Docs and a large storage bump. The free year that closed 2026-03-11 is back under a new offer code, and it splits sharply by region: US students get the full Pro tier, students elsewhere get a smaller Plus tier instead.
+![A case competition slide open on the Figma canvas, with a collaborator's named cursor visible on it](./images/figma.png)
 
-- Sign up: https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
-- Verification: SheerID, using a school email. A valid payment method must be on file at signup even though the first 12 months are free.
-- Length: 12 months from signup, then automatic monthly billing at the regular rate unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is required, usually annually, for up to 4 consecutive years; miss it and the trial converts to a paid subscription.
-- Eligibility: US students get the Pro tier. Students in 140-plus other eligible markets get the smaller Plus tier instead, except in Bolivia, Albania, Canada, Macau, Hong Kong and Tunisia, where the standalone trial is not offered at all.
-- Note: This is a new offer code, not the old page reopening. The offer this guide previously recorded as closed on 2026-03-11 is still closed; this is a separate relaunch, announced 2026-08-19.
-- Note: Signing up while already on another Google One extended trial revokes that trial. Check what an existing Google One plan gives up before switching.
-- Note: Upgrading from the trial to a paid plan before it ends makes you ineligible for future Google One trials.
+*Someone else's cursor is always on the canvas. Multiplayer is why this beats slides for group work.*
+
+Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product designers and PMs.
+
+- Sign up: https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education
+- Verification: School-issued email, then the education application page with "Higher Ed" selected as institution type. Figma verifies all applications through SheerID.
+- Length: One year, then reapply.
+- Note: Must reapply annually, it does not auto-renew as free.
 
 ### Grammarly (50% off, seasonal)
 
@@ -366,6 +362,8 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 - **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.
 - **2026-08-21** NotebookLM: updated the cross-reference to the Google Gemini entry, which no longer says Google AI Pro's student offers "have all expired."
+- **2026-08-21** Reordered the daily-use five: Google Gemini promoted to rank 1 now that its student trial is back, Figma demoted out of daily use into "Worth knowing about" to keep the list at five. New order: Google Gemini, Granola, Notion, Wispr Flow, GitHub Student Developer Pack.
+- **2026-08-21** GitHub Student Developer Pack: removed the email-verification screenshot and its declared image entry.
 - **2026-08-19 (vendor correction)** Quantified the trial-versus-student-rate trade-off rather than asserting it. Against the longest trial code in circulation (6 months), the student rate is still cheaper in year one, 54 USD against 72 USD, and the gap widens after because a trial expires into full price while the discount persists. Added a warning to set a reminder before a trial renews.
 - **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
 - **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.
