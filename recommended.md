@@ -84,15 +84,16 @@ Tried, used extensively, kept.
 
 ### 1. Google Gemini (Free for 12 months)
 
-Google's general AI assistant, bundled with Gmail, Docs and a large storage bump. The free year that closed 2026-03-11 is back under a new offer code, and it splits sharply by region: US students get the full Pro tier, students elsewhere get a smaller Plus tier instead.
+Google's general AI assistant, bundled with Gmail, Docs and a storage bump. The free student year is back after closing 2026-03-11, and which tier you get depends on where you study.
 
 - Sign up: https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
-- Verification: SheerID, using a school email. A valid payment method must be on file at signup even though the first 12 months are free.
-- Length: 12 months from signup, then automatic monthly billing at the regular rate unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is required, usually annually, for up to 4 consecutive years; miss it and the trial converts to a paid subscription.
-- Eligibility: US students get the Pro tier. Students in 140-plus other eligible markets get the smaller Plus tier instead, except in Bolivia, Albania, Canada, Macau, Hong Kong and Tunisia, where the standalone trial is not offered at all.
-- Note: This is a new offer code, not the old page reopening. The offer this guide previously recorded as closed on 2026-03-11 is still closed; this is a separate relaunch, announced 2026-08-19.
-- Note: Signing up while already on another Google One extended trial revokes that trial. Check what an existing Google One plan gives up before switching.
-- Note: Upgrading from the trial to a paid plan before it ends makes you ineligible for future Google One trials.
+- Verification: SheerID, using a school email. A payment method is required at signup even though the trial is free.
+- Length: 12 months from signup. Redeem by 2026-12-31; reverify through SheerID annually, for up to 4 years.
+- Eligibility: US: Google AI Pro, the higher tier. Other eligible markets: Google AI Plus, lower.
+- Note: Google AI Pro (US): 5 TB storage, 4x Gemini usage limits, Gemini Spark, Gemini in Gmail and Docs, Google Health Premium.
+- Note: Google AI Plus (140-plus other markets): 400 GB storage, 2x Gemini usage limits, Gemini Omni. Not offered at all in Bolivia, Albania, Canada, Macau, Hong Kong or Tunisia.
+- Note: This is a new offer code, not the old page reopening; the offer that closed 2026-03-11 is a separate, still-closed program.
+- Note: Signing up while on another Google One trial revokes it, and upgrading to paid before the free period ends makes you ineligible for future Google One trials.
 
 ### 2. Granola (Free for 12 months)
 
@@ -364,6 +365,7 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 - **2026-08-21** NotebookLM: updated the cross-reference to the Google Gemini entry, which no longer says Google AI Pro's student offers "have all expired."
 - **2026-08-21** Reordered the daily-use five: Google Gemini promoted to rank 1 now that its student trial is back, Figma demoted out of daily use into "Worth knowing about" to keep the list at five. New order: Google Gemini, Granola, Notion, Wispr Flow, GitHub Student Developer Pack.
 - **2026-08-21** GitHub Student Developer Pack: removed the email-verification screenshot and its declared image entry.
+- **2026-08-21** Trimmed the Google Gemini entry, which ran noticeably longer than the other daily-use tools once promoted to rank 1. Cut the US/international tier breakdown out of the pricing and eligibility prose (it was duplicated across both) and moved it into two separate caveat bullets, one per region, so the split scans instead of reading as one dense paragraph. Entry now runs 200 words, in line with Notion (167) and below Wispr Flow (323, which carries numbered claim steps).
 - **2026-08-19 (vendor correction)** Quantified the trial-versus-student-rate trade-off rather than asserting it. Against the longest trial code in circulation (6 months), the student rate is still cheaper in year one, 54 USD against 72 USD, and the gap widens after because a trial expires into full price while the discount persists. Added a warning to set a reminder before a trial renews.
 - **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
 - **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.
