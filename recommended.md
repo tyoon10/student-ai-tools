@@ -3,7 +3,7 @@
 
 # AI Tools Worth Setting Up Today (with Student Benefit)
 
-The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages on 2026-08-18.
+The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-08-21.
 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
@@ -16,9 +16,8 @@ Summer is the best time of year to build, learn and try new tools. It is also th
 
 > **If you are a graduating student, move fast.** Most of these offers verify against your .edu email or active student status. The day you lose either, you lose the offer.
 
-There is a bigger pattern at work. AI tools open free or deeply discounted student plans early to drive adoption, then quietly close the door once they have enough traction. Two offers that were on this list have already gone that way:
+There is a bigger pattern at work. AI tools open free or deeply discounted student plans early to drive adoption, then quietly close the door once they have enough traction. One offer that was on this list has already gone that way:
 
-- **Google Gemini** closed on **2026-03-11**. The free year of Google AI Pro for students ended on 2026-03-11. The student page now reads "Our previous student offer ended on March 11, 2026 and is no longer available in your region."
 - **Cursor** closed on **2026-06-25**. Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. It was a full year of Pro free and it was the strongest offer on this list, so its removal is the single biggest change since the last refresh.
 
 So claim the live ones today, while they are still live.
@@ -47,6 +46,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Adobe Creative Cloud](#adobe-creative-cloud-71-off-first-year) | ~71% off first year | Design and creative |
 | [OpenAI Codex](#openai-codex-100-in-codex-credits) | $100 in Codex credits | AI coding |
 | [Microsoft 365 Personal](#microsoft-365-personal-499month-50-off) | $4.99/month, 50% off | Productivity suite |
+| [Google Gemini](#google-gemini-free-for-12-months) | Free for 12 months | Productivity suite |
 | [Grammarly](#grammarly-50-off-seasonal) | 50% off, seasonal | Writing |
 | [Otter.ai](#otterai-20-off-pro) | 20% off Pro | Transcription |
 | [QuillBot](#quillbot-up-to-25-off) | Up to 25% off | Writing |
@@ -74,7 +74,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Google Cloud for Students](#cloud-credits) | 200 Google Skills credits | Cloud and infrastructure |
 | [AWS Educate](#cloud-credits) | Free self-paced labs | Cloud and infrastructure |
 
-**Recently closed:** Cursor, Google Gemini. Kept on the page so you know not to go looking.
+**Recently closed:** Cursor. Kept on the page so you know not to go looking.
 
 ---
 
@@ -210,6 +210,18 @@ Half price on the full Office suite with Copilot built into Word, Excel, PowerPo
 - Note: You add payment details before verification completes, so set a reminder rather than assuming the re-verification prompt will reach you.
 - Note: This is the consumer Personal plan. It is separate from any Microsoft 365 Education licence your school may already give you, which is worth checking first.
 
+### Google Gemini (Free for 12 months)
+
+Google's general AI assistant, bundled with Gmail, Docs and a large storage bump. The free year that closed 2026-03-11 is back under a new offer code, and it splits sharply by region: US students get the full Pro tier, students elsewhere get a smaller Plus tier instead.
+
+- Sign up: https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
+- Verification: SheerID, using a school email. A valid payment method must be on file at signup even though the first 12 months are free.
+- Length: 12 months from signup, then automatic monthly billing at the regular rate unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is required, usually annually, for up to 4 consecutive years; miss it and the trial converts to a paid subscription.
+- Eligibility: US students get the Pro tier. Students in 140-plus other eligible markets get the smaller Plus tier instead, except in Bolivia, Albania, Canada, Macau, Hong Kong and Tunisia, where the standalone trial is not offered at all.
+- Note: This is a new offer code, not the old page reopening. The offer this guide previously recorded as closed on 2026-03-11 is still closed; this is a separate relaunch, announced 2026-08-19.
+- Note: Signing up while already on another Google One extended trial revokes that trial. Check what an existing Google One plan gives up before switching.
+- Note: Upgrading from the trial to a paid plan before it ends makes you ineligible for future Google One trials.
+
 ### Grammarly (50% off, seasonal)
 
 Grammar, clarity and tone checking across everything you write, in the browser and on the desktop. The one to leave running in the background on long assignments. The discount is a seasonal campaign, so check it is live first.
@@ -319,12 +331,6 @@ Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. 
 - Existing subscribers: If you already redeemed it you keep your current rate until the plan expires, after which it reverts to the standard 20 USD per month Pro rate.
 - Source: https://cursor.com/help/account-and-billing/student-discount
 
-### Google Gemini (closed 2026-03-11)
-
-The free year of Google AI Pro for students ended on 2026-03-11. The student page now reads "Our previous student offer ended on March 11, 2026 and is no longer available in your region."
-
-- Source: https://gemini.google/students/
-
 ### Tabnine (closed 2025-04-01)
 
 Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered.
@@ -343,7 +349,7 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 - **Midjourney**. No individual student programme in 2026. The 20 percent saving on annual billing is available to everyone and is not a student discount. Midjourney's educational-use policy is explicit that each student needs their own account and their own subscription. There are no shared accounts, no group plans and no way for a school to manage student accounts centrally, though schools can reimburse students directly.
 - **CapCut Creative Campus**. Restricted to a small set of named partner schools, none of them business or graduate programmes. There is no individual claim path. Check whether your institution is a named Creative Campus partner.
 - **Gemini CLI**. No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here. Flash is the default on the free tier, so the 1,000 daily requests are not 1,000 Pro requests. Authenticating with an unpaid API key instead of a Google account is materially worse: 250 requests per day, 10 per minute, Flash only. Sign in with the account, not the key. Nothing to claim. Install it and sign in.
-- **NotebookLM**. No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access. Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, whose student offers have all expired. See the Google Gemini entry. Nothing to claim. Use it free, and check Google Classroom if your course uses it.
+- **NotebookLM**. No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access. Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, which now has a live student trial again. See the Google Gemini entry. Nothing to claim directly. Use it free, check Google Classroom if your course uses it, or see the Google Gemini entry for the Pro-tier route.
 - **SciSpace, Julius AI, Humata**. Dropped. Official student terms could not be confirmed after more than three months of trying, so they are excluded rather than listed on a maybe.
 
 ---
@@ -358,6 +364,8 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.
+- **2026-08-21** NotebookLM: updated the cross-reference to the Google Gemini entry, which no longer says Google AI Pro's student offers "have all expired."
 - **2026-08-19 (vendor correction)** Quantified the trial-versus-student-rate trade-off rather than asserting it. Against the longest trial code in circulation (6 months), the student rate is still cheaper in year one, 54 USD against 72 USD, and the gap widens after because a trial expires into full price while the discount persists. Added a warning to set a reminder before a trial renews.
 - **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
 - **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.

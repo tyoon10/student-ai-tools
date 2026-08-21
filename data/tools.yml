@@ -625,6 +625,71 @@ tools:
     last_checked: '2026-08-18'
     confidence: high
 
+  - id: gemini
+    name: Google Gemini
+    logo_domain: 'gemini.google.com'
+    offer: Google AI Pro / Google AI Plus (Student trial)
+    category: Productivity suite
+    tier: S
+    status: active
+    published: true
+    daily_use: false
+    headline: Free for 12 months
+    blurb: >-
+      Google's general AI assistant, bundled with Gmail, Docs and a large storage
+      bump. The free year that closed 2026-03-11 is back under a new offer code,
+      and it splits sharply by region: US students get the full Pro tier, students
+      elsewhere get a smaller Plus tier instead.
+    pricing:
+      original: >-
+        Google AI Pro at 19.99 USD per month in the US. Google AI Plus at roughly
+        4.99 USD per month equivalent elsewhere.
+      student: >-
+        Free for 12 months, then auto-renews at the regular price unless
+        cancelled. US students get Google AI Pro: 5 TB storage, 4x Gemini usage
+        limits, Gemini Spark, Gemini in Gmail and Docs, Google Health Premium.
+        Students in other eligible markets get Google AI Plus instead, a lower
+        tier: 400 GB storage, 2x Gemini usage limits, Gemini Omni. A Google AI
+        Pro plus YouTube Premium bundle is also available in select markets, at
+        roughly 75 percent off.
+    features: >-
+      Gemini chat, Gemini built into Gmail, Docs and other Google apps, and
+      Google One cloud storage, at whichever tier the region grants.
+    length: >-
+      12 months from signup, then automatic monthly billing at the regular rate
+      unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is
+      required, usually annually, for up to 4 consecutive years; miss it and the
+      trial converts to a paid subscription.
+    verification: >-
+      SheerID, using a school email. A valid payment method must be on file at
+      signup even though the first 12 months are free.
+    regions: >-
+      US students get the Pro tier. Students in 140-plus other eligible markets
+      get the smaller Plus tier instead, except in Bolivia, Albania, Canada,
+      Macau, Hong Kong and Tunisia, where the standalone trial is not offered at
+      all.
+    caveats:
+      - >-
+        This is a new offer code, not the old page reopening. The offer this
+        guide previously recorded as closed on 2026-03-11 is still closed; this
+        is a separate relaunch, announced 2026-08-19.
+      - >-
+        Signing up while already on another Google One extended trial revokes
+        that trial. Check what an existing Google One plan gives up before
+        switching.
+      - >-
+        Upgrading from the trial to a paid plan before it ends makes you
+        ineligible for future Google One trials.
+    referral:
+      status: none
+      detail: No referral or affiliate programme found for this offer.
+      links: []
+    links:
+      - 'https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/'
+      - 'https://support.google.com/googleone/answer/17422238?hl=en'
+    last_checked: '2026-08-21'
+    confidence: high
+
   - id: beautiful-ai
     logo_domain: 'beautiful.ai'
     name: Beautiful.ai
@@ -1373,32 +1438,6 @@ excluded:
     last_checked: '2026-08-18'
     confidence: high
 
-  - id: gemini
-    name: Google Gemini
-    status: ended
-    published: true
-    ended_on: '2026-03-11'
-    headline_loss: true
-    reason: >-
-      The free year of Google AI Pro for students ended on 2026-03-11. The student
-      page now reads "Our previous student offer ended on March 11, 2026 and is no
-      longer available in your region."
-    detail: >-
-      This is the clearest example of the pattern the guide warns about. A generous
-      student offer ran long enough to drive adoption and was then withdrawn. Note
-      that a SECOND Google student promotion also existed and also expired: the
-      Google One special student pricing offer (US only, 18+, SheerID verification,
-      subscribe through the Play Store) had to be redeemed by 2026-04-30. Aggregator
-      sites still advertise both as live, quoting a 9.99 USD student rate. Neither
-      is claimable. If you find such a claim, check the redemption deadline in
-      Google's own offer terms before believing it.
-    check_path: Monitor the student page for a regional relaunch.
-    links:
-      - 'https://gemini.google/students/'
-      - 'https://one.google.com/offer/studentoffer6'
-    last_checked: '2026-08-18'
-    confidence: high
-
   - id: microsoft-copilot
     name: Microsoft Copilot (Microsoft 365 Education)
     status: institutional
@@ -1525,12 +1564,14 @@ excluded:
       Higher-education students aged 18 and over can create personal class
       notebooks inside Google Classroom, grounded in materials their educator
       provides, but that is an institutional integration rather than a claimable
-      discount. The paid tier rides on Google AI Pro, whose student offers have
-      all expired. See the Google Gemini entry.
-    check_path: Nothing to claim. Use it free, and check Google Classroom if your course uses it.
+      discount. The paid tier rides on Google AI Pro, which now has a live
+      student trial again. See the Google Gemini entry.
+    check_path: >-
+      Nothing to claim directly. Use it free, check Google Classroom if your
+      course uses it, or see the Google Gemini entry for the Pro-tier route.
     links:
       - 'https://edu.google.com/intl/ALL_us/ai-notebooklm/'
-    last_checked: '2026-08-18'
+    last_checked: '2026-08-21'
     confidence: medium
 
 # ---------------------------------------------------------------------------
@@ -1965,6 +2006,20 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-21'
+    entries:
+      - >-
+        Google Gemini reopened. Google relaunched the student trial on 2026-08-19
+        under a new offer code (studentoffer8, not the studentoffer6 page that
+        closed 2026-03-11): 12 months free, US students get Google AI Pro,
+        students elsewhere get the smaller Google AI Plus tier. Moved from
+        excluded/ended back into the active tools list, Tier S, in the
+        Productivity suite category. Sourced from blog.google and
+        support.google.com, not the offer landing page alone, since that page
+        requires a signed-in session to render.
+      - >-
+        NotebookLM: updated the cross-reference to the Google Gemini entry, which
+        no longer says Google AI Pro's student offers "have all expired."
   - date: '2026-08-19 (vendor correction)'
     entries:
       - >-

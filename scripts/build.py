@@ -165,7 +165,8 @@ def build_recommended(d: dict) -> str:
         "There is a bigger pattern at work. AI tools open free or deeply discounted "
         "student plans early to drive adoption, then quietly close the door once they "
         f"have enough traction. {_number_word(len(lost)).capitalize()} "
-        f"{'offer' if len(lost) == 1 else 'offers'} that were on this list "
+        f"{'offer' if len(lost) == 1 else 'offers'} that "
+        f"{'was' if len(lost) == 1 else 'were'} on this list "
         f"{'has' if len(lost) == 1 else 'have'} already gone that way:"
     )
     out.append("")

@@ -38,38 +38,39 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 4. **Adobe Creative Cloud**: The full app suite plus Firefly generative AI in Photoshop, Illustrator and Premiere. The discount is steep in year one and much less so afterwards, so set a re
 5. **OpenAI Codex**: 100 USD of credit for Codex, OpenAI's coding agent, spendable in the CLI, the IDE extensions or the web app. Note the scope: the credits work only in Codex, so 
 6. **Microsoft 365 Personal**: Half price on the full Office suite with Copilot built into Word, Excel, PowerPoint, OneNote and Outlook, plus 1 TB of OneDrive. The broadest single offer on th
+7. **Google Gemini**: Google's general AI assistant, bundled with Gmail, Docs and a large storage bump. The free year that closed 2026-03-11 is back under a new offer code, and it sp
 
 ### Tier A: Major, widely adopted tools
-7. **Figma**: Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product d
-8. **Grammarly**: Grammar, clarity and tone checking across everything you write, in the browser and on the desktop. The one to leave running in the background on long assignment
-9. **Cursor**: Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. It was a full year of Pro free and it was the strongest offer on this list, so i *Offer closed 2026-06-25.*
+8. **Figma**: Full Professional plan for verified higher-ed students. Slide alternatives, mockups, quick visuals, case-comp decks. Still the default design tool for product d
+9. **Grammarly**: Grammar, clarity and tone checking across everything you write, in the browser and on the desktop. The one to leave running in the background on long assignment
+10. **Cursor**: Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. It was a full year of Pro free and it was the strongest offer on this list, so i *Offer closed 2026-06-25.*
 
 ### Tier B: Category leaders in popular niches
-10. **Granola**: AI notepad for meetings and lectures. Listens in the background without a bot joining the call, then generates clean structured notes afterwards. I use it for i
-11. **Otter.ai**: Transcription for lectures, interviews and group meetings. Individual Pro only, not workspace or team plans.
-12. **QuillBot**: Rewrites sentences you have already written, which is the job Grammarly is weakest at. Useful when a paragraph is technically correct and still does not read we
-13. **Beautiful.ai**: AI slide-deck builder that does the layout work for you. A free year of Pro is a strong fit for case competitions and pitch decks, where the bottleneck is usual
-14. **Obsidian**: 40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one 
-15. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
-16. **Amp**: Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the 
-17. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
-18. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
+11. **Granola**: AI notepad for meetings and lectures. Listens in the background without a bot joining the call, then generates clean structured notes afterwards. I use it for i
+12. **Otter.ai**: Transcription for lectures, interviews and group meetings. Individual Pro only, not workspace or team plans.
+13. **QuillBot**: Rewrites sentences you have already written, which is the job Grammarly is weakest at. Useful when a paragraph is technically correct and still does not read we
+14. **Beautiful.ai**: AI slide-deck builder that does the layout work for you. A free year of Pro is a strong fit for case competitions and pitch decks, where the bottleneck is usual
+15. **Obsidian**: 40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one 
+16. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
+17. **Amp**: Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the 
+18. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
+19. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
 
 ### Tier C: Specialty and growing
-19. **Zed**: The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real mode
-20. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
-21. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
-22. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
-23. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
-24. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
-25. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
-26. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
-27. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
-28. **Aqua Voice**: Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough
+20. **Zed**: The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real mode
+21. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
+22. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
+23. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
+24. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
+25. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
+26. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
+27. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
+28. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
+29. **Aqua Voice**: Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough
 
 ### Tier D: Niche, lower general awareness
-29. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
-30. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
+30. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
+31. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
 
 ## Individual-claimable offers
 
@@ -331,6 +332,26 @@ Status: active.
 - Official sources:
   - https://www.microsoft.com/en-us/microsoft-365/college-student-pricing
 - Last checked: 2026-08-18 | Confidence: high
+
+### Google Gemini: Google AI Pro / Google AI Plus (Student trial)
+
+Status: active.
+
+- Category: Productivity suite | Tier: S
+- Original pricing: Google AI Pro at 19.99 USD per month in the US. Google AI Plus at roughly 4.99 USD per month equivalent elsewhere.
+- Student pricing: Free for 12 months, then auto-renews at the regular price unless cancelled. US students get Google AI Pro: 5 TB storage, 4x Gemini usage limits, Gemini Spark, Gemini in Gmail and Docs, Google Health Premium. Students in other eligible markets get Google AI Plus instead, a lower tier: 400 GB storage, 2x Gemini usage limits, Gemini Omni. A Google AI Pro plus YouTube Premium bundle is also available in select markets, at roughly 75 percent off.
+- Included features: Gemini chat, Gemini built into Gmail, Docs and other Google apps, and Google One cloud storage, at whichever tier the region grants.
+- Effective length: 12 months from signup, then automatic monthly billing at the regular rate unless cancelled. Redeem by 2026-12-31. Reverification through SheerID is required, usually annually, for up to 4 consecutive years; miss it and the trial converts to a paid subscription.
+- Verification: SheerID, using a school email. A valid payment method must be on file at signup even though the first 12 months are free.
+- Regions: US students get the Pro tier. Students in 140-plus other eligible markets get the smaller Plus tier instead, except in Bolivia, Albania, Canada, Macau, Hong Kong and Tunisia, where the standalone trial is not offered at all.
+- Caveat: This is a new offer code, not the old page reopening. The offer this guide previously recorded as closed on 2026-03-11 is still closed; this is a separate relaunch, announced 2026-08-19.
+- Caveat: Signing up while already on another Google One extended trial revokes that trial. Check what an existing Google One plan gives up before switching.
+- Caveat: Upgrading from the trial to a paid plan before it ends makes you ineligible for future Google One trials.
+- Referral programme: **none**. No referral or affiliate programme found for this offer.
+- Official sources:
+  - https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
+  - https://support.google.com/googleone/answer/17422238?hl=en
+- Last checked: 2026-08-21 | Confidence: high
 
 ### Beautiful.ai: Pro (Education)
 
@@ -665,17 +686,6 @@ Status: active.
   - https://claude.com/pricing
 - Last checked: 2026-08-18 | Confidence: high
 
-### Google Gemini
-
-- Status: ended
-- Reason: The free year of Google AI Pro for students ended on 2026-03-11. The student page now reads "Our previous student offer ended on March 11, 2026 and is no longer available in your region."
-- Detail: This is the clearest example of the pattern the guide warns about. A generous student offer ran long enough to drive adoption and was then withdrawn. Note that a SECOND Google student promotion also existed and also expired: the Google One special student pricing offer (US only, 18+, SheerID verification, subscribe through the Play Store) had to be redeemed by 2026-04-30. Aggregator sites still advertise both as live, quoting a 9.99 USD student rate. Neither is claimable. If you find such a claim, check the redemption deadline in Google's own offer terms before believing it.
-- Check path: Monitor the student page for a regional relaunch.
-- Sources:
-  - https://gemini.google/students/
-  - https://one.google.com/offer/studentoffer6
-- Last checked: 2026-08-18 | Confidence: high
-
 ### Microsoft Copilot (Microsoft 365 Education)
 
 - Status: institutional
@@ -742,11 +752,11 @@ Status: active.
 
 - Status: none
 - Reason: No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access.
-- Detail: Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, whose student offers have all expired. See the Google Gemini entry.
-- Check path: Nothing to claim. Use it free, and check Google Classroom if your course uses it.
+- Detail: Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, which now has a live student trial again. See the Google Gemini entry.
+- Check path: Nothing to claim directly. Use it free, check Google Classroom if your course uses it, or see the Google Gemini entry for the Pro-tier route.
 - Sources:
   - https://edu.google.com/intl/ALL_us/ai-notebooklm/
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-08-21 | Confidence: medium
 
 ## Dropped: unresolved after repeated attempts
 
@@ -885,6 +895,8 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.
+- **2026-08-21** NotebookLM: updated the cross-reference to the Google Gemini entry, which no longer says Google AI Pro's student offers "have all expired."
 - **2026-08-19 (vendor correction)** Quantified the trial-versus-student-rate trade-off rather than asserting it. Against the longest trial code in circulation (6 months), the student rate is still cheaper in year one, 54 USD against 72 USD, and the gap widens after because a trial expires into full price while the discount persists. Added a warning to set a reminder before a trial renews.
 - **2026-08-19 (vendor correction)** CORRECTION from Wispr Flow support: there is no automatic .edu verification. The entry said a .edu address activates the offer on its own, which is what the students page implies, and that was wrong. Proof of enrolment is always required through a Billing request on the support page. Both the verification field and the claim flow are fixed.
 - **2026-08-19 (vendor correction)** Added the exact claim path support gave, including that only ONE attachment is allowed per submission, so multi-page proof has to be combined into a single file first.

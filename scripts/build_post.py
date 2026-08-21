@@ -510,7 +510,7 @@ def build(d: dict, copied: list | None = None) -> str:
              "student plans early to drive adoption, then quietly close the door once "
              "they have enough traction. This is not hypothetical. Since I started "
              f"tracking these, {_word(len(lost))} of the offers on this very list "
-             "have gone:")
+             f"{'has' if len(lost) == 1 else 'have'} gone:")
     o.append("")
     for t in sorted(lost, key=lambda x: x.get("ended_on", "")):
         o.append(f"- **{t['name']}** closed **{t.get('ended_on', 'recently')}**. "
