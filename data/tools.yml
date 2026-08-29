@@ -1230,7 +1230,7 @@ tools:
     referral_link:
       url: 'https://ref.wisprflow.ai/taewan'
       you_get: 'the same offer, at no extra cost'
-      i_get: '25 percent of your first year'
+      i_get: 'a referral commission'
       caveat: 'Prefer not to? Start at step 2 instead.'
     onboarding:
       - step: 'Open the partner link'
@@ -1252,7 +1252,7 @@ tools:
         Wispr Flow's dictation overlay active while dictated text appears in a Gmail compose window
       caption: >-
         Dictating into someone else's app. That is the part built-in dictation does not do.
-    last_checked: '2026-08-18'
+    last_checked: '2026-08-28'
     confidence: high
 
   - id: aqua-voice
@@ -1989,6 +1989,19 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-08-28'
+    entries:
+      - >-
+        Wispr Flow referral disclosure simplified. The specific commission rate
+        has been replaced with a plain statement of referral credit. Partner
+        commission terms are not published by the vendor, so a specific figure
+        does not belong in reader-facing copy. The live post already rendered
+        this as "I get referral credit" and is unchanged.
+      - >-
+        Wispr Flow mechanics reconfirmed with vendor support on 2026-08-28: no
+        automatic .edu verification so proof is always required, one attachment
+        per submission, and trial codes do not stack with the student rate.
+        last_checked bumped, no factual changes needed.
   - date: '2026-08-21'
     entries:
       - >-

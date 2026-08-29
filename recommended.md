@@ -3,7 +3,7 @@
 
 # AI Tools Worth Setting Up Today (with Student Benefit)
 
-The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-08-21.
+The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-08-28.
 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
@@ -145,7 +145,7 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 - Note: Trial codes do not stack with the student rate. Take the student rate: 54 USD in year one against 72 USD on a 6-month trial, and it keeps the discount afterwards rather than reverting to full price.
 - Note: Teaching or non-profit staff get the same 50 percent rate, claimed the same way with Education as the reason.
 - **Referral link:** https://ref.wisprflow.ai/taewan
-  - **Disclosure.** You get the same offer, at no extra cost. I get 25 percent of your first year. The plain links above earn nothing.
+  - **Disclosure.** You get the same offer, at no extra cost. I get a referral commission. The plain links above earn nothing.
   - Prefer not to? Start at step 2 instead.
 
 ### 5. GitHub Student Developer Pack (Free)
@@ -361,6 +361,8 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-08-28** Wispr Flow referral disclosure simplified. The specific commission rate has been replaced with a plain statement of referral credit. Partner commission terms are not published by the vendor, so a specific figure does not belong in reader-facing copy. The live post already rendered this as "I get referral credit" and is unchanged.
+- **2026-08-28** Wispr Flow mechanics reconfirmed with vendor support on 2026-08-28: no automatic .edu verification so proof is always required, one attachment per submission, and trial codes do not stack with the student rate. last_checked bumped, no factual changes needed.
 - **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.
 - **2026-08-21** NotebookLM: updated the cross-reference to the Google Gemini entry, which no longer says Google AI Pro's student offers "have all expired."
 - **2026-08-21** Reordered the daily-use five: Google Gemini promoted to rank 1 now that its student trial is back, Figma demoted out of daily use into "Worth knowing about" to keep the list at five. New order: Google Gemini, Granola, Notion, Wispr Flow, GitHub Student Developer Pack.
