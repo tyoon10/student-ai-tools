@@ -3,12 +3,12 @@
 
 # AI Tools Worth Setting Up Today (with Student Benefit)
 
-The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-08-28.
+The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-09-17.
 
 - **Last refreshed:** 2026-08-18
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
-- **Disclosure:** Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow one costs you nothing extra. Every other link goes to the vendor's own page and earns nothing.
+- **Disclosure:** Three links here earn me a commission, for Otter.ai, Wispr Flow and ElevenLabs, and all three are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow and ElevenLabs ones cost you nothing extra and get you nothing extra either. Every other link goes to the vendor's own page and earns nothing.
 
 ---
 
@@ -54,6 +54,7 @@ Jump straight to any tool. Terms and sources are in each entry.
 | [Obsidian](#obsidian-40-off-sync-and-publish) | 40% off Sync and Publish | Notes and knowledge |
 | [Loom](#loom-up-to-50-off-75-for-classroom-use) | Up to 50% off, 75% for classroom use | Async video |
 | [Amp](#amp-50-off-10month) | 50% off, $10/month | AI coding agent |
+| [ElevenLabs](#elevenlabs-free-for-12-months) | Free for 12 months | Text to speech |
 
 **[The rest](#the-rest)**
 
@@ -293,6 +294,20 @@ Sourcegraph's coding agent at half price, and the only offer here that takes you
 - Note: Announced 2026-08-18, the same day it was first recorded here. Unproven. Re-check before relying on it.
 - Note: Amp states it can change or discontinue the discount and its criteria at any time.
 
+### ElevenLabs (Free for 12 months)
+
+Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note that the student offer covers ElevenReader, the reading app, not the voice generation platform the company is better known for.
+
+- Sign up: https://elevenreader.io/students
+- Verification: School-issued email. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over.
+- Length: 12 months, then it auto-renews at the regular annual price unless you cancel first.
+- Eligibility: Varies by institution. Eligibility depends on your school's domain and country, with a request form for schools not yet covered.
+- Note: This is ElevenReader, not the main ElevenLabs platform. Voice generation on Starter, Creator, Pro and Scale is billed separately and is not part of the student offer.
+- Note: Auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
+- **Referral link:** https://try.elevenlabs.io/o5n7q67n9ic6
+  - **Disclosure.** You get nothing extra, the price is identical either way. I get a commission on paid ElevenLabs plans only, and nothing at all on the free student year. The plain links above earn nothing.
+  - The student offer is the reason to be here, and it earns me nothing either way.
+
 ### The rest
 
 - **Zed** (Free for 1 year). The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real model credits rather than a trial. Worth claiming even if you do not switch to it full time, because a free year is a free year. https://zed.dev/education
@@ -361,6 +376,10 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader free, a 99 USD annual value, verified by school-issued email. Sourced from elevenreader.io/students. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs affiliate link added and labelled as one-sided. Checked the affiliate terms and the partner guide on 2026-09-17: the person who clicks receives no discount, credit or extended trial. Per the referral link rules, it is disclosed as giving the reader nothing rather than presented as a benefit. Commission applies to paid platform plans only, so the free student year this entry recommends earns nothing.
+- **2026-09-17** Referral programme row for ElevenLabs upgraded to high confidence with the full commission terms (22 percent on Starter, Creator, Pro and Scale for 12 months, 11 percent on Business, 90-day attribution).
+- **2026-09-17** Affiliate link count raised from 2 to 3 in meta.affiliate_policy and the README, which must not disagree.
 - **2026-08-28** Wispr Flow referral disclosure simplified. The specific commission rate has been replaced with a plain statement of referral credit. Partner commission terms are not published by the vendor, so a specific figure does not belong in reader-facing copy. The live post already rendered this as "I get referral credit" and is unchanged.
 - **2026-08-28** Wispr Flow mechanics reconfirmed with vendor support on 2026-08-28: no automatic .edu verification so proof is always required, one attachment per submission, and trial codes do not stack with the student rate. last_checked bumped, no factual changes needed.
 - **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.

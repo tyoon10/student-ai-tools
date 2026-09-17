@@ -282,12 +282,16 @@ def build_grid(rows: list[tuple[dict, str]], logo_dir: pathlib.Path) -> list[str
         group = _CATEGORY_TO_GROUP.get(cat, "")
         is_free = "free" in headline.lower()
         rl = e.get("referral_link")
-        bonus = ""
-        if rl:
-            # Precise tier: the referral grants Pro Lite, not the Pro the
-            # headline discount applies to. "1 month free" alone would overstate.
-            bonus = "+1 month Pro Lite free (referral)"
-        haystack = " ".join([name, headline, desc, cat, bonus]).lower()
+        # Only a link that actually gives the reader something earns a badge,
+        # and each one declares its own wording. This was once hardcoded to
+        # Otter's "+1 month Pro Lite free" for every referral link, which
+        # advertised a benefit on the Wispr Flow card that its link does not
+        # grant. Keep the wording specific: "1 month free" alone would overstate
+        # Otter's, which grants Pro Lite rather than the Pro in its headline
+        # discount. Search still matches on the full you_get either way.
+        bonus = f"{rl['bonus']} (referral)" if rl and rl.get("bonus") else ""
+        searchable = f"{rl.get('you_get', '')} (referral)" if rl else ""
+        haystack = " ".join([name, headline, desc, cat, searchable]).lower()
 
         logo = next(iter(sorted(logo_dir.glob(f"{e['id']}.*"))), None) if logo_dir.exists() else None
         if logo:

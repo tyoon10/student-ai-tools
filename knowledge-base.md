@@ -8,7 +8,7 @@ The full working record behind the public list. Every tool evaluated, with claim
 - **Last full review:** 2026-08-18
 - **Previous reviews:** 2026-07-19, 2026-05-14, 2026-05-03
 - **Source of truth:** `data/tools.yml`. This file and `recommended.md` are both generated from it, so the two can no longer drift apart.
-- **Disclosure:** Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow one costs you nothing extra. Every other link goes to the vendor's own page and earns nothing.
+- **Disclosure:** Three links here earn me a commission, for Otter.ai, Wispr Flow and ElevenLabs, and all three are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow and ElevenLabs ones cost you nothing extra and get you nothing extra either. Every other link goes to the vendor's own page and earns nothing.
 
 ## Per-entry schema
 
@@ -53,24 +53,25 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 15. **Obsidian**: 40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one 
 16. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
 17. **Amp**: Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the 
-18. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
-19. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
+18. **ElevenLabs**: Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note that the student offer covers ElevenReader, the reading app, not the voice generatio
+19. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
+20. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
 
 ### Tier C: Specialty and growing
-20. **Zed**: The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real mode
-21. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
-22. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
-23. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
-24. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
-25. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
-26. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
-27. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
-28. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
-29. **Aqua Voice**: Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough
+21. **Zed**: The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real mode
+22. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
+23. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
+24. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
+25. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
+26. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
+27. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
+28. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
+29. **Trinka AI**: Academic writing and grammar tool with a real student claim mechanism. Withheld from the public list because the vendor does not publish the discount size anywh
+30. **Aqua Voice**: Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough
 
 ### Tier D: Niche, lower general awareness
-30. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
-31. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
+31. **Sunsama**: Daily planning tool with a documented student mechanism and duration but no published discount percentage. Same reason as Trinka for staying off the public list
+32. **Tabnine**: Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered. *Offer closed 2025-04-01.*
 
 ## Individual-claimable offers
 
@@ -463,6 +464,28 @@ Status: active.
   - https://reclaim.ai/pricing
 - Last checked: 2026-08-18 | Confidence: high
 
+### ElevenLabs: ElevenReader Ultra (Student)
+
+Status: active.
+
+- Category: Text to speech | Tier: B
+- Original pricing: ElevenReader at 99 USD a year, the figure quoted on the student page.
+- Student pricing: Free for 12 months.
+- Included features: Unlimited premium text to audio for PDFs, research papers and lecture notes, with voice selection and real-time highlighting.
+- Effective length: 12 months, then it auto-renews at the regular annual price unless you cancel first.
+- Verification: School-issued email. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over.
+- Regions: Varies by institution. Eligibility depends on your school's domain and country, with a request form for schools not yet covered.
+- Caveat: This is ElevenReader, not the main ElevenLabs platform. Voice generation on Starter, Creator, Pro and Scale is billed separately and is not part of the student offer.
+- Caveat: Auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
+- Referral programme: **affiliate-only**. A PartnerStack affiliate programme pays the sharer 22 percent of payments on Starter, Creator, Pro and Scale plans for the first 12 months, and 11 percent on Business, attributed within 90 days. There is no peer reward: the person who clicks gets nothing. The terms explicitly prohibit affiliates from making promises to users about coupons or cash back.
+- Official sources:
+  - https://elevenreader.io/students
+  - https://elevenlabs.io/students
+- Referral sources:
+  - https://elevenlabs.io/affiliates
+  - https://elevenlabs.io/affiliates-terms
+- Last checked: 2026-09-17 | Confidence: high
+
 ### Speechify: Premium (Student)
 
 Status: active.
@@ -800,7 +823,7 @@ A separate audit targeting tools where both parties receive a defined benefit. T
 | **Replit** | App builders | referrer-only | 10 USD in Core credits per friend who upgrades | No explicit bonus beyond the standard new-user grant | medium | 2026-05-14 |
 | **Scite** | Research | referrer-only | 1 free month of Premium per referred colleague, repeatable | Trial available, but the referrer benefit is the primary one | low | 2026-05-14 |
 | **v0 (Vercel)** | App builders | referrer-only | 5 credits per friend | Standard new-user credits only | low | 2026-05-14 |
-| **ElevenLabs** | Voice AI | affiliate | 22 percent recurring commission for 12 months, via PartnerStack | Nothing documented | medium | 2026-08-18 |
+| **ElevenLabs** | Voice AI | affiliate | 22 percent of payments on Starter, Creator, Pro and Scale for the first 12 months, 11 percent on Business, via PartnerStack, attributed within 90 days | Nothing. Confirmed 2026-09-17 against the affiliate terms and the partner guide, neither of which documents any discount, credit or trial for the person who clicks. | high | 2026-09-17 |
 | **Decktopus** | Slides | affiliate | Up to 50 percent commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
 | **Synthesia** | Video generation | affiliate | Recurring commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
 
@@ -814,7 +837,7 @@ Caveats and sources:
 - **Kling AI**: Only users who have already bought an individual plan can generate a code, and the friend must be a first-time individual-plan buyer. Credits land within an hour and expire after 31 days. Run as a limited-time campaign, so confirm it is live. Added 2026-08-18. Source: https://kling.ai/app/invitation
 - **Descript**: Moved in from ruled_out on 2026-08-18 when the bar widened. Referrals must be new users with no prior account. Paid within 7 days of first payment. Unlimited referrals. Source: https://www.descript.com/
 - **HeyGen**: Moved in from ruled_out on 2026-08-18 when the bar widened. This is an ambassador programme with an application, not a self-serve referral link. The older two-sided article is gone (404). Source: https://help.heygen.com/en/articles/14648487-heygen-ambassador-program-faq
-- **ElevenLabs**: Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. Included because the bar now admits one-sided programmes, but it is an affiliate scheme. Source: https://elevenlabs.io/affiliates
+- **ElevenLabs**: Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. The terms prohibit affiliates from making promises to users about coupons or cash back, so a one-sided link must be labelled as one. Commission is on the paid platform plans, so the free ElevenReader student year earns nothing. Source: https://elevenlabs.io/affiliates-terms
 - **Synthesia**: Moved in from ruled_out on 2026-08-18. Affiliate commission only, no peer benefit. Rate not re-verified. Source: https://www.synthesia.io/affiliate-program
 - **Decktopus**: Moved in from ruled_out on 2026-08-18. Affiliate commission only. Rate not re-verified. Source: https://www.decktopus.com/
 - **Runway**: Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks. Source: https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes
@@ -848,6 +871,7 @@ These are on the student-offer axis above, so they are not repeated in the table
 | **Grammarly** | discontinued |
 | **QuillBot** | affiliate-only |
 | **Reclaim.ai** | asymmetric |
+| **ElevenLabs** | affiliate-only |
 | **Wispr Flow** | two-sided |
 
 ### Claimed but not confirmed on a vendor page
@@ -896,6 +920,10 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader free, a 99 USD annual value, verified by school-issued email. Sourced from elevenreader.io/students. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs affiliate link added and labelled as one-sided. Checked the affiliate terms and the partner guide on 2026-09-17: the person who clicks receives no discount, credit or extended trial. Per the referral link rules, it is disclosed as giving the reader nothing rather than presented as a benefit. Commission applies to paid platform plans only, so the free student year this entry recommends earns nothing.
+- **2026-09-17** Referral programme row for ElevenLabs upgraded to high confidence with the full commission terms (22 percent on Starter, Creator, Pro and Scale for 12 months, 11 percent on Business, 90-day attribution).
+- **2026-09-17** Affiliate link count raised from 2 to 3 in meta.affiliate_policy and the README, which must not disagree.
 - **2026-08-28** Wispr Flow referral disclosure simplified. The specific commission rate has been replaced with a plain statement of referral credit. Partner commission terms are not published by the vendor, so a specific figure does not belong in reader-facing copy. The live post already rendered this as "I get referral credit" and is unchanged.
 - **2026-08-28** Wispr Flow mechanics reconfirmed with vendor support on 2026-08-28: no automatic .edu verification so proof is always required, one attachment per submission, and trial codes do not stack with the student rate. last_checked bumped, no factual changes needed.
 - **2026-08-21** Google Gemini reopened. Google relaunched the student trial on 2026-08-19 under a new offer code (studentoffer8, not the studentoffer6 page that closed 2026-03-11): 12 months free, US students get Google AI Pro, students elsewhere get the smaller Google AI Plus tier. Moved from excluded/ended back into the active tools list, Tier S, in the Productivity suite category. Sourced from blog.google and support.google.com, not the offer landing page alone, since that page requires a signed-in session to render.

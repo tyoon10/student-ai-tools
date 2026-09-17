@@ -94,6 +94,7 @@ the vendor before relying on anything here.
 **Trademarks.** Vendor names and logos belong to their respective owners and are
 used to identify the products under review.
 
-**Affiliate links.** Two links earn a commission, for Otter.ai and Wispr Flow.
-Both are labelled where they appear. Every other link goes to the vendor's own
-page and earns nothing.
+**Affiliate links.** Three links earn a commission, for Otter.ai, Wispr Flow and
+ElevenLabs. All three are labelled where they appear, including where the reader
+gets nothing in return. Every other link goes to the vendor's own page and earns
+nothing.

@@ -34,11 +34,12 @@ meta:
   # one, and every surface that used to claim otherwise was updated in the same
   # commit rather than left stating something untrue.
   affiliate_policy: >-
-    Two links here earn me a commission, for Otter.ai and Wispr Flow, and both are
-    labelled where they appear. The Otter one also gets you a free month; the
-    Wispr Flow one costs you nothing extra. Every other link goes to the vendor's
+    Three links here earn me a commission, for Otter.ai, Wispr Flow and
+    ElevenLabs, and all three are labelled where they appear. The Otter one also
+    gets you a free month; the Wispr Flow and ElevenLabs ones cost you nothing
+    extra and get you nothing extra either. Every other link goes to the vendor's
     own page and earns nothing.
-  referral_link_count: 2
+  referral_link_count: 3
 
 # ---------------------------------------------------------------------------
 # Tools with a student offer that an individual can claim.
@@ -380,6 +381,7 @@ tools:
     referral_link:
       url: 'https://otter.ai/referrals/SSHQGFP3'
       you_get: '1 month of Otter Pro Lite free, 300 minutes per month'
+      bonus: '+1 month Pro Lite free'
       i_get: 'Promotional credits or Pro Lite minutes, capped at 10,000 minutes or 12 months'
       caveat: >-
         This is the referral programme, which is separate from the 20 percent
@@ -913,6 +915,67 @@ tools:
       - 'https://reclaim.ai/pricing/education-discount'
       - 'https://reclaim.ai/pricing'
     last_checked: '2026-08-18'
+    confidence: high
+
+  - id: elevenlabs
+    logo_domain: 'elevenlabs.io'
+    name: ElevenLabs
+    offer: ElevenReader Ultra (Student)
+    category: Text to speech
+    tier: B
+    status: active
+    published: true
+    daily_use: false
+    headline: Free for 12 months
+    blurb: >-
+      Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note
+      that the student offer covers ElevenReader, the reading app, not the voice
+      generation platform the company is better known for.
+    pricing:
+      original: ElevenReader at 99 USD a year, the figure quoted on the student page.
+      student: Free for 12 months.
+    features: >-
+      Unlimited premium text to audio for PDFs, research papers and lecture
+      notes, with voice selection and real-time highlighting.
+    length: >-
+      12 months, then it auto-renews at the regular annual price unless you
+      cancel first.
+    verification: >-
+      School-issued email. Your ElevenLabs account email must match a valid .edu
+      or equivalent address, and you must be currently enrolled and 18 or over.
+    regions: >-
+      Varies by institution. Eligibility depends on your school's domain and
+      country, with a request form for schools not yet covered.
+    caveats:
+      - >-
+        This is ElevenReader, not the main ElevenLabs platform. Voice generation
+        on Starter, Creator, Pro and Scale is billed separately and is not part
+        of the student offer.
+      - >-
+        Auto-renews at 99 USD once the free year ends, so put the cancellation
+        date in your calendar if you do not intend to keep it.
+    referral:
+      status: affiliate-only
+      detail: >-
+        A PartnerStack affiliate programme pays the sharer 22 percent of payments
+        on Starter, Creator, Pro and Scale plans for the first 12 months, and 11
+        percent on Business, attributed within 90 days. There is no peer reward:
+        the person who clicks gets nothing. The terms explicitly prohibit
+        affiliates from making promises to users about coupons or cash back.
+      links:
+        - 'https://elevenlabs.io/affiliates'
+        - 'https://elevenlabs.io/affiliates-terms'
+    referral_link:
+      url: 'https://try.elevenlabs.io/o5n7q67n9ic6'
+      you_get: 'nothing extra, the price is identical either way'
+      i_get: >-
+        a commission on paid ElevenLabs plans only, and nothing at all on the
+        free student year
+      caveat: 'The student offer is the reason to be here, and it earns me nothing either way.'
+    links:
+      - 'https://elevenreader.io/students'
+      - 'https://elevenlabs.io/students'
+    last_checked: '2026-09-17'
     confidence: high
 
   - id: speechify
@@ -1701,12 +1764,12 @@ referral_tools:
       name: 'ElevenLabs'
       category: 'Voice AI'
       sided: 'affiliate'
-      referrer: '22 percent recurring commission for 12 months, via PartnerStack'
-      referee: 'Nothing documented'
-      caveats: 'Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. Included because the bar now admits one-sided programmes, but it is an affiliate scheme.'
-      link: 'https://elevenlabs.io/affiliates'
-      confidence: 'medium'
-      last_checked: '2026-08-18'
+      referrer: '22 percent of payments on Starter, Creator, Pro and Scale for the first 12 months, 11 percent on Business, via PartnerStack, attributed within 90 days'
+      referee: 'Nothing. Confirmed 2026-09-17 against the affiliate terms and the partner guide, neither of which documents any discount, credit or trial for the person who clicks.'
+      caveats: 'Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. The terms prohibit affiliates from making promises to users about coupons or cash back, so a one-sided link must be labelled as one. Commission is on the paid platform plans, so the free ElevenReader student year earns nothing.'
+      link: 'https://elevenlabs.io/affiliates-terms'
+      confidence: 'high'
+      last_checked: '2026-09-17'
     - id: 'synthesia'
       name: 'Synthesia'
       category: 'Video generation'
@@ -1989,6 +2052,28 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-09-17'
+    entries:
+      - >-
+        ElevenLabs added as a full entry, Tier B, Text to speech. Students get
+        one year of ElevenReader free, a 99 USD annual value, verified by
+        school-issued email. Sourced from elevenreader.io/students. The offer
+        covers ElevenReader rather than the main voice platform, which the entry
+        states plainly.
+      - >-
+        ElevenLabs affiliate link added and labelled as one-sided. Checked the
+        affiliate terms and the partner guide on 2026-09-17: the person who
+        clicks receives no discount, credit or extended trial. Per the referral
+        link rules, it is disclosed as giving the reader nothing rather than
+        presented as a benefit. Commission applies to paid platform plans only,
+        so the free student year this entry recommends earns nothing.
+      - >-
+        Referral programme row for ElevenLabs upgraded to high confidence with
+        the full commission terms (22 percent on Starter, Creator, Pro and Scale
+        for 12 months, 11 percent on Business, 90-day attribution).
+      - >-
+        Affiliate link count raised from 2 to 3 in meta.affiliate_policy and the
+        README, which must not disagree.
   - date: '2026-08-28'
     entries:
       - >-
