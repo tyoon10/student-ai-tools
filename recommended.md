@@ -299,11 +299,12 @@ Sourcegraph's coding agent at half price, and the only offer here that takes you
 Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note that the student offer covers ElevenReader, the reading app, not the voice generation platform the company is better known for.
 
 - Sign up: https://elevenreader.io/students
-- Verification: School-issued email. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over.
+- Verification: School-issued email, not SheerID. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over. Educators qualify on the same terms.
 - Length: 12 months, then it auto-renews at the regular annual price unless you cancel first.
-- Eligibility: Varies by institution. Eligibility depends on your school's domain and country, with a request form for schools not yet covered.
+- Eligibility: Gated by an institution allowlist rather than by country. ElevenLabs keeps a list of eligible institutions and yours must be on it, so a .edu address alone is not enough. Unlisted schools can be submitted through the request form.
 - Note: This is ElevenReader, not the main ElevenLabs platform. Voice generation on Starter, Creator, Pro and Scale is billed separately and is not part of the student offer.
 - Note: Auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
+- Note: Already paying for ElevenReader? There are no refunds against an existing subscription. You have to cancel it and claim the free year once the current period runs out.
 - **Referral link:** https://try.elevenlabs.io/o5n7q67n9ic6
   - **Disclosure.** You get nothing extra, the price is identical either way. I get a commission on paid ElevenLabs plans only, and nothing at all on the free student year. The plain links above earn nothing.
   - The student offer is the reason to be here, and it earns me nothing either way.
@@ -376,7 +377,8 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
-- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader free, a 99 USD annual value, verified by school-issued email. Sourced from elevenreader.io/students. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader Ultra free, verified by school-issued email. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs re-verified against the raw pages the same day rather than a summary. The 99 USD list price checks out: Ultra is 11 USD monthly or 8.25 USD a month billed annually, which is 99 USD a year, so the figure now cites the pricing page rather than a meta description. Three points the first pass missed are now recorded: eligibility is an institution allowlist rather than any .edu address, educators qualify on the same terms, and existing paid subscribers get no refund and must cancel first. Minimum age confirmed as 18, not the 16 that search results suggested.
 - **2026-09-17** ElevenLabs affiliate link added and labelled as one-sided. Checked the affiliate terms and the partner guide on 2026-09-17: the person who clicks receives no discount, credit or extended trial. Per the referral link rules, it is disclosed as giving the reader nothing rather than presented as a benefit. Commission applies to paid platform plans only, so the free student year this entry recommends earns nothing.
 - **2026-09-17** Referral programme row for ElevenLabs upgraded to high confidence with the full commission terms (22 percent on Starter, Creator, Pro and Scale for 12 months, 11 percent on Business, 90-day attribution).
 - **2026-09-17** Affiliate link count raised from 2 to 3 in meta.affiliate_policy and the README, which must not disagree.

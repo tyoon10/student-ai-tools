@@ -469,18 +469,21 @@ Status: active.
 Status: active.
 
 - Category: Text to speech | Tier: B
-- Original pricing: ElevenReader at 99 USD a year, the figure quoted on the student page.
+- Original pricing: Ultra at 11 USD a month, or 8.25 USD a month billed annually, which is 99 USD a year.
 - Student pricing: Free for 12 months.
-- Included features: Unlimited premium text to audio for PDFs, research papers and lecture notes, with voice selection and real-time highlighting.
+- Included features: Unlimited text to audio for your own PDFs, research papers and lecture notes, plus 200,000-plus premium audiobooks, 20 hours of premium titles a month, offline downloads, custom voices and real-time word highlighting.
 - Effective length: 12 months, then it auto-renews at the regular annual price unless you cancel first.
-- Verification: School-issued email. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over.
-- Regions: Varies by institution. Eligibility depends on your school's domain and country, with a request form for schools not yet covered.
+- Verification: School-issued email, not SheerID. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over. Educators qualify on the same terms.
+- Regions: Gated by an institution allowlist rather than by country. ElevenLabs keeps a list of eligible institutions and yours must be on it, so a .edu address alone is not enough. Unlisted schools can be submitted through the request form.
 - Caveat: This is ElevenReader, not the main ElevenLabs platform. Voice generation on Starter, Creator, Pro and Scale is billed separately and is not part of the student offer.
 - Caveat: Auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
+- Caveat: Already paying for ElevenReader? There are no refunds against an existing subscription. You have to cancel it and claim the free year once the current period runs out.
 - Referral programme: **affiliate-only**. A PartnerStack affiliate programme pays the sharer 22 percent of payments on Starter, Creator, Pro and Scale plans for the first 12 months, and 11 percent on Business, attributed within 90 days. There is no peer reward: the person who clicks gets nothing. The terms explicitly prohibit affiliates from making promises to users about coupons or cash back.
 - Official sources:
   - https://elevenreader.io/students
   - https://elevenlabs.io/students
+  - https://elevenreader.io/pricing
+  - https://form.typeform.com/to/hNJXkrpR
 - Referral sources:
   - https://elevenlabs.io/affiliates
   - https://elevenlabs.io/affiliates-terms
@@ -920,7 +923,8 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
-- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader free, a 99 USD annual value, verified by school-issued email. Sourced from elevenreader.io/students. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader Ultra free, verified by school-issued email. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
+- **2026-09-17** ElevenLabs re-verified against the raw pages the same day rather than a summary. The 99 USD list price checks out: Ultra is 11 USD monthly or 8.25 USD a month billed annually, which is 99 USD a year, so the figure now cites the pricing page rather than a meta description. Three points the first pass missed are now recorded: eligibility is an institution allowlist rather than any .edu address, educators qualify on the same terms, and existing paid subscribers get no refund and must cancel first. Minimum age confirmed as 18, not the 16 that search results suggested.
 - **2026-09-17** ElevenLabs affiliate link added and labelled as one-sided. Checked the affiliate terms and the partner guide on 2026-09-17: the person who clicks receives no discount, credit or extended trial. Per the referral link rules, it is disclosed as giving the reader nothing rather than presented as a benefit. Commission applies to paid platform plans only, so the free student year this entry recommends earns nothing.
 - **2026-09-17** Referral programme row for ElevenLabs upgraded to high confidence with the full commission terms (22 percent on Starter, Creator, Pro and Scale for 12 months, 11 percent on Business, 90-day attribution).
 - **2026-09-17** Affiliate link count raised from 2 to 3 in meta.affiliate_policy and the README, which must not disagree.
