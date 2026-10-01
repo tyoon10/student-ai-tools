@@ -53,7 +53,7 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 15. **Obsidian**: 40 percent off Sync and Publish, the two paid add-ons. The app itself has always been free, so these are what you actually pay for once your vault outgrows one 
 16. **Loom**: Screen recording with AI summaries and transcripts. Genuinely useful for group projects where scheduling a call costs more than recording a four-minute walkthro
 17. **Amp**: Sourcegraph's coding agent at half price, and the only offer here that takes your word for it: no document upload, no verification service. New enough that the 
-18. **ElevenLabs**: Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note that the student offer covers ElevenReader, the reading app, not the voice generatio
+18. **ElevenLabs**: Voice generation, agents and an API, plus an e-reader that turns PDFs, papers and lecture notes into audio. Launched 2026-09-25 and it is two offers in one: thr
 19. **Prezi**: Presentation tool with student pricing. Held back from the public list because the headline percentage is vendor-confirmed but the underlying dollar figures are
 20. **Wispr Flow**: Voice dictation that types into any app, so I talk instead of typing. It is the one on this list I reach for most without thinking about it, and it covers somet
 
@@ -464,30 +464,34 @@ Status: active.
   - https://reclaim.ai/pricing
 - Last checked: 2026-08-18 | Confidence: high
 
-### ElevenLabs: ElevenReader Ultra (Student)
+### ElevenLabs: ElevenLabs for Students
 
 Status: active.
 
 - Category: Text to speech | Tier: B
-- Original pricing: Ultra at 11 USD a month, or 8.25 USD a month billed annually, which is 99 USD a year.
-- Student pricing: Free for 12 months.
-- Included features: Unlimited text to audio for your own PDFs, research papers and lecture notes, plus 200,000-plus premium audiobooks, 20 hours of premium titles a month, offline downloads, custom voices and real-time word highlighting.
-- Effective length: 12 months, then it auto-renews at the regular annual price unless you cancel first.
-- Verification: School-issued email, not SheerID. Your ElevenLabs account email must match a valid .edu or equivalent address, and you must be currently enrolled and 18 or over. Educators qualify on the same terms.
-- Regions: Gated by an institution allowlist rather than by country. ElevenLabs keeps a list of eligible institutions and yours must be on it, so a .edu address alone is not enough. Unlisted schools can be submitted through the request form.
-- Caveat: This is ElevenReader, not the main ElevenLabs platform. Voice generation on Starter, Creator, Pro and Scale is billed separately and is not part of the student offer.
-- Caveat: Auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
+- Original pricing: Creator at 22 USD a month for 121,000 credits, or 18.33 USD a month billed annually. ElevenReader Ultra at 99 USD a year separately.
+- Student pricing: Creator free for 3 months, roughly 66 USD, and ElevenReader Ultra free for 12 months, 99 USD. About 165 USD together.
+- Included features: Three months at Creator level across ElevenCreative for film, podcast and social production, ElevenAgents for building your own voice agents, and the ElevenAPI for dropping the voice, sound and music models into your own projects. Separately, 12 months of ElevenReader Ultra: unlimited text to audio for your own PDFs and papers, 200,000-plus premium audiobooks, offline downloads and real-time word highlighting.
+- Effective length: 3 months on the platform plan, 12 months on ElevenReader. The reader auto-renews at the regular annual price unless you cancel first.
+- Verification: Student status is verified in the app, through the Get 3 months free button on the students page. The ElevenReader year has its own older route on a school-issued email, where your account email must match a valid .edu or equivalent, and educators qualify on the same terms.
+- Regions: The platform plan covers university students aged 18 and over in the US, Canada, the EU27, Australia and the UK, with more countries promised. The ElevenReader route is gated differently, on an institution allowlist, so a .edu address alone is not enough and unlisted schools go through a request form.
+- Caveat: New as of 2026-09-25, so the terms have had no time to settle. Treat the detail here as a first reading rather than a well-tested one.
+- Caveat: The two halves are gated differently. The platform plan goes by country and age, the reader year by whether your institution is on a list, so it is possible to qualify for one and not the other.
+- Caveat: Three months is short. Set a reminder before it lapses, because Creator is 22 USD a month afterwards.
+- Caveat: ElevenReader auto-renews at 99 USD once the free year ends, so put the cancellation date in your calendar if you do not intend to keep it.
 - Caveat: Already paying for ElevenReader? There are no refunds against an existing subscription. You have to cancel it and claim the free year once the current period runs out.
 - Referral programme: **affiliate-only**. A PartnerStack affiliate programme pays the sharer 22 percent of payments on Starter, Creator, Pro and Scale plans for the first 12 months, and 11 percent on Business, attributed within 90 days. There is no peer reward: the person who clicks gets nothing. The terms explicitly prohibit affiliates from making promises to users about coupons or cash back.
 - Official sources:
-  - https://elevenreader.io/students
   - https://elevenlabs.io/students
+  - https://elevenreader.io/students
+  - https://elevenlabs.io/blog/introducing-elevenlabs-for-students
+  - https://elevenlabs.io/pricing
   - https://elevenreader.io/pricing
   - https://form.typeform.com/to/hNJXkrpR
 - Referral sources:
   - https://elevenlabs.io/affiliates
   - https://elevenlabs.io/affiliates-terms
-- Last checked: 2026-09-17 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Speechify: Premium (Student)
 
@@ -923,6 +927,9 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-10-01** ElevenLabs rewritten: the student offer got much bigger and the entry was wrong. ElevenLabs for Students launched 2026-09-25, eight days after this entry was first checked, and adds 3 months of the Creator plan across ElevenCreative, ElevenAgents and the ElevenAPI on top of the year of ElevenReader Ultra. The old caveat saying the main voice platform was not part of the student offer has been removed, because it no longer is true. Sourced from the launch post and the students page.
+- **2026-10-01** Recorded that the two halves are gated differently. The platform plan goes by country and age, covering university students 18 and over in the US, Canada, the EU27, Australia and the UK. The ElevenReader year keeps its institution allowlist. You can qualify for one and not the other.
+- **2026-10-01** Referral disclosure adjusted. Creator is a commissionable plan, so the link can now earn something if a reader keeps paying past the free months, where before the recommended path earned nothing at all. Still nothing for the reader, and still labelled that way.
 - **2026-09-17** ElevenLabs added as a full entry, Tier B, Text to speech. Students get one year of ElevenReader Ultra free, verified by school-issued email. The offer covers ElevenReader rather than the main voice platform, which the entry states plainly.
 - **2026-09-17** ElevenLabs re-verified against the raw pages the same day rather than a summary. The 99 USD list price checks out: Ultra is 11 USD monthly or 8.25 USD a month billed annually, which is 99 USD a year, so the figure now cites the pricing page rather than a meta description. Three points the first pass missed are now recorded: eligibility is an institution allowlist rather than any .edu address, educators qualify on the same terms, and existing paid subscribers get no refund and must cancel first. Minimum age confirmed as 18, not the 16 that search results suggested.
 - **2026-09-17** ElevenLabs affiliate link added and labelled as one-sided. Checked the affiliate terms and the partner guide on 2026-09-17: the person who clicks receives no discount, credit or extended trial. Per the referral link rules, it is disclosed as giving the reader nothing rather than presented as a benefit. Commission applies to paid platform plans only, so the free student year this entry recommends earns nothing.

@@ -920,46 +920,60 @@ tools:
   - id: elevenlabs
     logo_domain: 'elevenlabs.io'
     name: ElevenLabs
-    offer: ElevenReader Ultra (Student)
+    offer: ElevenLabs for Students
     category: Text to speech
     tier: B
     status: active
     published: true
     daily_use: false
-    headline: Free for 12 months
+    headline: 3 months free, plus a year of ElevenReader
     blurb: >-
-      Turns PDFs, papers and lecture notes into audio in ElevenLabs' voices. Note
-      that the student offer covers ElevenReader, the reading app, not the voice
-      generation platform the company is better known for.
+      Voice generation, agents and an API, plus an e-reader that turns PDFs,
+      papers and lecture notes into audio. Launched 2026-09-25 and it is two
+      offers in one: three months of the paid platform, and a full year of the
+      reader app.
     pricing:
       original: >-
-        Ultra at 11 USD a month, or 8.25 USD a month billed annually, which is
-        99 USD a year.
-      student: Free for 12 months.
+        Creator at 22 USD a month for 121,000 credits, or 18.33 USD a month
+        billed annually. ElevenReader Ultra at 99 USD a year separately.
+      student: >-
+        Creator free for 3 months, roughly 66 USD, and ElevenReader Ultra free
+        for 12 months, 99 USD. About 165 USD together.
     features: >-
-      Unlimited text to audio for your own PDFs, research papers and lecture
-      notes, plus 200,000-plus premium audiobooks, 20 hours of premium titles a
-      month, offline downloads, custom voices and real-time word highlighting.
+      Three months at Creator level across ElevenCreative for film, podcast and
+      social production, ElevenAgents for building your own voice agents, and
+      the ElevenAPI for dropping the voice, sound and music models into your own
+      projects. Separately, 12 months of ElevenReader Ultra: unlimited text to
+      audio for your own PDFs and papers, 200,000-plus premium audiobooks,
+      offline downloads and real-time word highlighting.
     length: >-
-      12 months, then it auto-renews at the regular annual price unless you
-      cancel first.
+      3 months on the platform plan, 12 months on ElevenReader. The reader
+      auto-renews at the regular annual price unless you cancel first.
     verification: >-
-      School-issued email, not SheerID. Your ElevenLabs account email must match
-      a valid .edu or equivalent address, and you must be currently enrolled and
-      18 or over. Educators qualify on the same terms.
+      Student status is verified in the app, through the Get 3 months free
+      button on the students page. The ElevenReader year has its own older route
+      on a school-issued email, where your account email must match a valid .edu
+      or equivalent, and educators qualify on the same terms.
     regions: >-
-      Gated by an institution allowlist rather than by country. ElevenLabs keeps
-      a list of eligible institutions and yours must be on it, so a .edu address
-      alone is not enough. Unlisted schools can be submitted through the request
+      The platform plan covers university students aged 18 and over in the US,
+      Canada, the EU27, Australia and the UK, with more countries promised. The
+      ElevenReader route is gated differently, on an institution allowlist, so a
+      .edu address alone is not enough and unlisted schools go through a request
       form.
     caveats:
       - >-
-        This is ElevenReader, not the main ElevenLabs platform. Voice generation
-        on Starter, Creator, Pro and Scale is billed separately and is not part
-        of the student offer.
+        New as of 2026-09-25, so the terms have had no time to settle. Treat the
+        detail here as a first reading rather than a well-tested one.
       - >-
-        Auto-renews at 99 USD once the free year ends, so put the cancellation
-        date in your calendar if you do not intend to keep it.
+        The two halves are gated differently. The platform plan goes by country
+        and age, the reader year by whether your institution is on a list, so it
+        is possible to qualify for one and not the other.
+      - >-
+        Three months is short. Set a reminder before it lapses, because Creator
+        is 22 USD a month afterwards.
+      - >-
+        ElevenReader auto-renews at 99 USD once the free year ends, so put the
+        cancellation date in your calendar if you do not intend to keep it.
       - >-
         Already paying for ElevenReader? There are no refunds against an existing
         subscription. You have to cancel it and claim the free year once the
@@ -979,15 +993,17 @@ tools:
       url: 'https://try.elevenlabs.io/o5n7q67n9ic6'
       you_get: 'nothing extra, the price is identical either way'
       i_get: >-
-        a commission on paid ElevenLabs plans only, and nothing at all on the
-        free student year
-      caveat: 'The student offer is the reason to be here, and it earns me nothing either way.'
+        a commission only if you go on paying after the free months, and nothing
+        during them
+      caveat: 'Nothing about your price changes either way. Skip it if you would rather.'
     links:
-      - 'https://elevenreader.io/students'
       - 'https://elevenlabs.io/students'
+      - 'https://elevenreader.io/students'
+      - 'https://elevenlabs.io/blog/introducing-elevenlabs-for-students'
+      - 'https://elevenlabs.io/pricing'
       - 'https://elevenreader.io/pricing'
       - 'https://form.typeform.com/to/hNJXkrpR'
-    last_checked: '2026-09-17'
+    last_checked: '2026-10-01'
     confidence: high
 
   - id: speechify
@@ -2064,6 +2080,26 @@ backlog:
     here and the vendor reserves the right to withdraw it.
 
 changelog:
+  - date: '2026-10-01'
+    entries:
+      - >-
+        ElevenLabs rewritten: the student offer got much bigger and the entry
+        was wrong. ElevenLabs for Students launched 2026-09-25, eight days after
+        this entry was first checked, and adds 3 months of the Creator plan
+        across ElevenCreative, ElevenAgents and the ElevenAPI on top of the year
+        of ElevenReader Ultra. The old caveat saying the main voice platform was
+        not part of the student offer has been removed, because it no longer is
+        true. Sourced from the launch post and the students page.
+      - >-
+        Recorded that the two halves are gated differently. The platform plan
+        goes by country and age, covering university students 18 and over in the
+        US, Canada, the EU27, Australia and the UK. The ElevenReader year keeps
+        its institution allowlist. You can qualify for one and not the other.
+      - >-
+        Referral disclosure adjusted. Creator is a commissionable plan, so the
+        link can now earn something if a reader keeps paying past the free
+        months, where before the recommended path earned nothing at all. Still
+        nothing for the reader, and still labelled that way.
   - date: '2026-09-17'
     entries:
       - >-
