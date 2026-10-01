@@ -5,7 +5,7 @@
 
 The AI tools I actually use, plus a curated secondary list. Every offer on this list was checked against the vendor's own pages between 2026-08-18 and 2026-10-01.
 
-- **Last refreshed:** 2026-08-18
+- **Last refreshed:** 2026-10-01
 - **Full research notes:** [knowledge-base.md](./knowledge-base.md)
 - **Live post:** [twyoon.com/writings/student-ai-tools](https://twyoon.com/writings/student-ai-tools) (unlisted: reachable by link, not indexed or listed)
 - **Disclosure:** Three links here earn me a commission, for Otter.ai, Wispr Flow and ElevenLabs, and all three are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow and ElevenLabs ones cost you nothing extra and get you nothing extra either. Every other link goes to the vendor's own page and earns nothing.
@@ -61,10 +61,9 @@ Jump straight to any tool. Terms and sources are in each entry.
 | Tool | Offer | Category |
 |---|---|---|
 | [Zed](#the-rest) | Free for 1 year | AI code editor |
-| [Consensus](#the-rest) | 40% off Premium | Academic search |
+| [Consensus](#the-rest) | 40% off paid plans | Academic search |
 | [Framer](#the-rest) | Free Basic plan, worth $120/year | Design and web |
 | [Reclaim.ai](#the-rest) | 50% off for 12 months | Scheduling |
-| [Speechify](#the-rest) | 25% off Premium | Text to speech |
 | [Aqua Voice](#the-rest) | 70% off Pro and Max | Voice dictation |
 
 **[Cloud credits](#cloud-credits)**
@@ -89,12 +88,13 @@ Google's general AI assistant, bundled with Gmail, Docs and a storage bump. The 
 
 - Sign up: https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
 - Verification: SheerID, using a school email. A payment method is required at signup even though the trial is free.
-- Length: 12 months from signup. Redeem by 2026-12-31; reverify through SheerID annually, for up to 4 years.
+- Length: 12 months from signup. Redeem by 2026-12-31. It converts to the paid plan automatically when the year ends unless you cancel.
 - Eligibility: US: Google AI Pro, the higher tier. Other eligible markets: Google AI Plus, lower.
 - Note: Google AI Pro (US): 5 TB storage, 4x Gemini usage limits, Gemini Spark, Gemini in Gmail and Docs, Google Health Premium.
 - Note: Google AI Plus (140-plus other markets): 400 GB storage, 2x Gemini usage limits, Gemini Omni. Not offered at all in Bolivia, Albania, Canada, Macau, Hong Kong or Tunisia.
 - Note: This is a new offer code, not the old page reopening; the offer that closed 2026-03-11 is a separate, still-closed program.
 - Note: Signing up while on another Google One trial revokes it, and upgrading to paid before the free period ends makes you ineligible for future Google One trials.
+- Note: Separate from the free year: a Google AI Pro and YouTube Premium Student bundle at up to 70 percent off, for up to 4 consecutive years while you remain a student.
 
 ### 2. Granola (Free for 12 months)
 
@@ -123,6 +123,8 @@ The single best note and knowledge tool for grad school. Free Plus plan for a on
 - Length: Continues while eligibility and school email status remain valid.
 - Note: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
 - Note: Requires a single-member workspace.
+- Note: Student organisations can apply separately for a free Education Plan with unlimited members, which is the route for a club or society workspace.
+- Note: Already paying for Plus? Downgrade to the Free plan first, then claim the Education Plan.
 
 ### 4. Wispr Flow (3 months free, then 50% off)
 
@@ -135,16 +137,17 @@ Voice dictation that types into any app, so I talk instead of typing. It is the 
 **How to claim Wispr Flow**
 
 1. **[Open the partner link](https://ref.wisprflow.ai/taewan)** My partner link. Same offer either way, it just credits this guide.
-2. **[Open a billing request](https://wisprflow.ai/support)** Request type Billing, reason Student. Required even with a .edu address: there is no automatic verification.
-3. **Attach proof, one file** Student ID or enrolment letter. Only one attachment per submission, so merge multiple pages first. Then 3 months free, 6 USD a month after.
+2. **[Sign up with your school email](https://wisprflow.ai/students)** A .edu or recognised university address gets the student rate automatically at signup. Some universities get Flow free outright.
+3. **[No .edu address? Send proof](https://wisprflow.ai/support)** Billing request, Student as the category, one file: student ID or enrolment letter. The web form takes a PDF; the desktop app takes images only.
 
 - Sign up: https://wisprflow.ai/students
-- Verification: Proof of enrolment always required. There is no automatic .edu verification, despite what the students page implies. See the steps above.
+- Verification: Automatic at signup if your email ends in .edu or is on a recognised university domain, with nothing to upload. Anyone else applies through support with a student ID or enrolment letter.
 - Length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
 - Eligibility: Not restricted in the published terms.
 - Note: New subscribers only.
+- Note: Some universities now get Flow free outright: an annual 0 USD Student plan with no card and no trial. Sign up with your school email to see whether yours is one.
 - Note: Trial codes do not stack with the student rate. Take the student rate: 54 USD in year one against 72 USD on a 6-month trial, and it keeps the discount afterwards rather than reverting to full price.
-- Note: Teaching or non-profit staff get the same 50 percent rate, claimed the same way with Education as the reason.
+- Note: Teaching or non-profit staff get the same 50 percent rate through a support request, choosing Education or Non-Profit as the category.
 - **Referral link:** https://ref.wisprflow.ai/taewan
   - **Disclosure.** You get the same offer, at no extra cost. I get a referral commission. The plain links above earn nothing.
   - Prefer not to? Start at step 2 instead.
@@ -155,7 +158,7 @@ The gold-standard student bundle. Copilot, DigitalOcean credits, a Namecheap dom
 
 - Sign up: https://education.github.com/pack/
 - Verification: GitHub Education benefits application.
-- Length: Re-evaluated by GitHub while student status remains valid.
+- Length: Re-evaluated monthly. GitHub re-checks your student eligibility every month, so access lapses soon after you stop being a student.
 - Note: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
 - Note: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
 
@@ -177,12 +180,12 @@ The best AI search tool for academic work. Citations, Learn Mode, full Pro model
 
 The full app suite plus Firefly generative AI in Photoshop, Illustrator and Premiere. The discount is steep in year one and much less so afterwards, so set a renewal reminder the day you sign up.
 
-- Sign up: https://www.adobe.com/creativecloud/buy/students/explore/ccforstudents.html
+- Sign up: https://www.adobe.com/creativecloud/buy/students.html
 - Verification: Student verification in the Adobe checkout flow, school email or documents.
 - Length: Promotional pricing for the first year, then a materially higher renewal rate.
 - Eligibility: Pricing shown is the US market. Other markets differ.
 - Note: The year-two price increase is the main trap. Diarise the renewal date.
-- Note: Adobe blocks automated checks, so prices here were confirmed against the Adobe education store and secondary sources rather than a direct fetch. Verify the exact figure at checkout.
+- Note: Verification may ask for a school email or for documentation from the current academic year.
 
 ### OpenAI Codex ($100 in Codex credits)
 
@@ -193,7 +196,7 @@ The full app suite plus Firefly generative AI in Photoshop, Illustrator and Prem
 - Length: Credits expire 12 months after the grant date. Unused credits are lost.
 - Eligibility: Degree-granting universities in the US or Canada, and you must be residing in the US or Canada when you claim. One offer per student.
 - Note: Requires an existing ChatGPT Free, Go, Plus or Pro account.
-- Note: Announced 2026-03-21 with no published end date. Still live as of 2026-08-18.
+- Note: Announced 2026-03-21 with no published end date. Still live as of 2026-10-01.
 - Note: This is the route to Codex CLI for students. There is no separate CLI offer. The credits are spent through whichever Codex surface you use, including the CLI and IDE extensions.
 
 ### Microsoft 365 Personal ($4.99/month, 50% off)
@@ -206,6 +209,7 @@ Half price on the full Office suite with Copilot built into Word, Excel, PowerPo
 - Eligibility: Enrolled full-time or part-time students at accredited universities and colleges.
 - Note: You add payment details before verification completes, so set a reminder rather than assuming the re-verification prompt will reach you.
 - Note: This is the consumer Personal plan. It is separate from any Microsoft 365 Education licence your school may already give you, which is worth checking first.
+- Note: Create the Microsoft account with a personal email, not your school account. The school address is only used at the verification step.
 
 ### Figma (Free for 1 year)
 
@@ -227,17 +231,19 @@ Grammar, clarity and tone checking across everything you write, in the browser a
 - Sign up: https://shop.sheerid.com/brands/grammarly/
 - Verification: SheerID.
 - Length: Campaign-based and seasonal. Not always available.
-- Note: This is a campaign, not a standing offer. Check whether it is live before relying on it.
+- Note: This is a campaign, not a standing offer. Live as of 2026-10-01 through SheerID in the US, Canada, Australia and 228 more countries, but check before relying on it.
 
 ### Otter.ai (20% off Pro)
 
 Transcription for lectures, interviews and group meetings. Individual Pro only, not workspace or team plans.
 
 - Sign up: https://help.otter.ai/hc/en-us/articles/4402467517847-Student-Teacher-discount-program-for-the-Pro-plan
-- Verification: Otter account with a .edu email through the student discount flow.
+- Verification: Sign up with an email ending in .edu, then choose Student & Teacher Discount when upgrading. Without a .edu domain, support can verify you with documents from your school.
 - Length: Ongoing while discount eligibility is met.
 - Eligibility: Verify at checkout, availability is not clearly global.
 - Note: Applies to the individual Pro plan only, not workspace or team plans.
+- Note: Teachers and full-time staff at eligible institutions qualify too.
+- Note: Already on a paid plan? Cancel first, then resubscribe at the discounted rate. Earlier payments are not refunded, and only credit cards are accepted.
 - **Referral link:** https://otter.ai/referrals/SSHQGFP3
   - **Disclosure.** You get 1 month of Otter Pro Lite free, 300 minutes per month. I get Promotional credits or Pro Lite minutes, capped at 10,000 minutes or 12 months. The plain links above earn nothing.
   - This is the referral programme, which is separate from the 20 percent student discount above. Otter states the referral cannot be combined with other referral promotions. Whether it stacks with the student discount is not documented either way, so if the student rate matters more to you, claim that first and skip this link.
@@ -255,11 +261,11 @@ Rewrites sentences you have already written, which is the job Grammarly is weake
 
 AI slide-deck builder that does the layout work for you. A free year of Pro is a strong fit for case competitions and pitch decks, where the bottleneck is usually formatting rather than content.
 
-- Sign up: https://support.beautiful.ai/hc/en-us/articles/360030719052-Does-Beautiful-ai-offer-discounts-for-education-or-non-profits
-- Verification: Verify a .edu email address and Beautiful.ai emails back a custom coupon code. No promo code hunting required.
-- Length: 12 months from activation, then it reverts to the free plan unless you renew.
-- Eligibility: Built around .edu addresses. International students without one are told to contact support about alternative verification.
-- Note: New student subscribers only. It does not apply to an existing paid account.
+- Sign up: https://support.beautiful.ai/hc/en-us/articles/46055219859597-Educational-Accounts
+- Verification: Create a Beautiful.ai account with your .edu address, then email support@beautiful.ai to have it upgraded to an EDU Pro plan. Without a .edu address, email them official documentation of your university affiliation instead.
+- Length: An annual Pro subscription, per the education page. The current help article does not say what happens when it ends.
+- Eligibility: Students affiliated with an accredited university, anywhere. A .edu address is the quick route and documentation works for everyone else.
+- Note: Not automatic. Support reviews each request by hand, so allow a few days and check your spam folder for the reply.
 
 ### Obsidian (40% off Sync and Publish)
 
@@ -291,7 +297,8 @@ Sourcegraph's coding agent at half price, and the only offer here that takes you
 - Length: Ongoing while enrolled. If you already subscribe, the discount applies at your next renewal with no retroactive refund.
 - Eligibility: No geographic restriction stated.
 - Note: Applies to the Megawatt tier only, not Gigawatt or other plans.
-- Note: Announced 2026-08-18, the same day it was first recorded here. Unproven. Re-check before relying on it.
+- Note: Megawatt is designed to run on your own ChatGPT or SuperGrok subscription for model usage. The included 10 USD of agent usage is for incidental use on top, so budget for one of those subscriptions as well.
+- Note: Launched 2026-08-18 and still live as of 2026-10-01.
 - Note: Amp states it can change or discontinue the discount and its criteria at any time.
 
 ### ElevenLabs (3 months free, plus a year of ElevenReader)
@@ -314,10 +321,9 @@ Voice generation, agents and an API, plus an e-reader that turns PDFs, papers an
 ### The rest
 
 - **Zed** (Free for 1 year). The most credible remaining free route to a premium AI editor now that Cursor's student discount has closed. Fast, lightweight, and the offer includes real model credits rather than a trial. Worth claiming even if you do not switch to it full time, because a free year is a free year. https://zed.dev/education
-- **Consensus** (40% off Premium). Citation-grounded academic search. Strong fit for research-heavy programmes. https://help.consensus.app/en/articles/10064359-how-to-get-a-student-or-clinician-discount
-- **Framer** (Free Basic plan, worth $120/year). Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year. https://www.framer.com/education/
+- **Consensus** (40% off paid plans). Citation-grounded academic search. Strong fit for research-heavy programmes. https://help.consensus.app/en/articles/10064359-how-to-get-a-student-or-clinician-discount
+- **Framer** (Free Basic plan, worth $120/year). Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year. https://www.framer.com/education/students/
 - **Reclaim.ai** (50% off for 12 months). AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your calendar for it to pay off. https://reclaim.ai/pricing/education-discount
-- **Speechify** (25% off Premium). Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading terms. https://www.myunidays.com/US/en-US/partners/speechify/view
 - **Aqua Voice** (70% off Pro and Max). Another dictation tool, and the steepest percentage discount anywhere on this list. Smaller and less proven than Wispr Flow, but the student price is low enough to be worth a look if you dictate a lot. https://aquavoice.com/pricing
 
 ### Cloud credits
@@ -331,6 +337,15 @@ Voice generation, agents and an API, plus an e-reader that turns PDFs, papers an
 ## Recently closed (kept here on purpose)
 
 Offers are removed from the live list but not deleted from the record. Knowing an offer is gone is as useful as knowing one exists.
+
+### Speechify (gone by 2026-10-01)
+
+Speechify's 25 percent university discount is no longer listed anywhere it used to be. Recorded so the question stays answered.
+
+- UNiDAYS now shows "Stay tuned for new Speechify offers" and its claim page is a 404. The Student Beans brand page is a 404, and speechify.com/students redirects to the homepage.
+- The end date is not published. It was still listed on 2026-08-18.
+- The free Premium route for US K-12 students is a separate programme and was not re-checked.
+- Source: https://www.myunidays.com/US/en-US/partners/speechify/view
 
 ### Coda (now Superhuman Docs) (closed 2026-06-30)
 
@@ -351,20 +366,20 @@ Cursor discontinued new sign-ups for the legacy student discount on 2026-06-25. 
 Tabnine ended its free Basic plan in April 2025 and no longer offers a student plan. Recorded so the question stays answered.
 
 - The current pricing page shows no free tier, no trial and no student pricing.
-- Existing subscribers: n/a
+- tabnine.com now redirects to Tricentis, so the standalone product appears to have been absorbed.
 - Source: https://www.tabnine.com/pricing/
 
 ---
 
 ## What is *not* on this list (and why)
 
-- **Claude (Anthropic)**. No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro. The old self-serve Student Builder path (a form, a school email, roughly 50 USD in API credit) is gone from Anthropic's site. It has been folded into the Claude Campus Program, which runs two application-gated tracks: Campus Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus unspecified API credits and a stipend, but neither publishes a dollar figure, and applications for the current cohort are CLOSED as of 2026-08-18. The External Researcher Access Program (around 1,000 USD in credit) remains a separate route. Outside those, the cheapest official option is Pro on annual billing at 17 USD per month, billed 200 USD up front, against 20 USD billed monthly. Ask your IT or procurement team whether your campus holds a Claude for Education agreement. If it does, signing in to claude.ai with your school email provisions the account at no cost to you.
-- **Microsoft Copilot (Microsoft 365 Education)**. Microsoft 365 Copilot Chat costs nothing extra when you sign in with a school account, but only if your institution holds an eligible Microsoft 365 Education licence (A1, A3 or A5) and an admin has switched it on. Neither is something you can claim yourself. Microsoft confirmed in May 2025 that students aged 13 and over can use Copilot Chat once the school enables it. Note the scope: Education A1 does not include the consumer Copilot embedded in Word, Excel and PowerPoint, only the more limited Copilot Chat. Ask your school IT team whether the tenant holds an A1, A3 or A5 licence and whether Copilot Chat is enabled for student accounts.
+- **Claude (Anthropic)**. No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro. The Claude Campus Program now runs three application-based tracks, each paying a 3,600 USD cash stipend: Claude Builder Clubs for undergraduates, Claude Campus Conversations for master's students, and Claude Science workshops for PhD students and postdocs. Separately, the Team plan for scientists lets a verified principal investigator at an accredited university or nonprofit research institute put their research group on free Standard seats, normally 20 USD a month, or Premium seats at 15 USD, for 12 months; a graduate student in that group gets Claude through their PI. The External Researcher Access Program (around 1,000 USD in credit, not re-checked on 2026-10-01) remains a separate route. Outside those, Pro is 17 USD a month on annual billing, 200 USD up front, against 20 USD billed monthly. Ask your IT or procurement team whether your campus holds a Claude for Education agreement. If it does, signing in to claude.ai with your school email provisions the account at no cost to you.
+- **Microsoft Copilot (Microsoft 365 Education)**. Microsoft Copilot Chat, formerly Microsoft 365 Copilot Chat, costs nothing extra when you sign in with a school account, but only if your institution holds an eligible Microsoft 365 Education licence (A1, A3 or A5) and an admin has switched it on. Neither is something you can claim yourself. Microsoft confirmed in May 2025 that students aged 13 and over can use Copilot Chat once the school enables it. Note the scope: Education A1 does not include the consumer Copilot embedded in Word, Excel and PowerPoint, only the more limited Copilot Chat. Ask your school IT team whether the tenant holds an A1, A3 or A5 licence and whether Copilot Chat is enabled for student accounts.
 - **Canva**. Canva for Education is the eligibility-based K-12 offer. Higher-education access runs through Canva Campus, which the institution buys and manages. There is no individual higher-ed claim, so without a Campus licence a university student is on Canva Free. One adjacent route exists. Canva opened Campus Canvassadors, a student ambassador programme for US university students, with its first cohort running August to December 2026. Applications are prioritised for students already at Canva for Campus schools, so it rewards existing access rather than creating it. Ask whether your school has procured Canva Campus.
 - **Midjourney**. No individual student programme in 2026. The 20 percent saving on annual billing is available to everyone and is not a student discount. Midjourney's educational-use policy is explicit that each student needs their own account and their own subscription. There are no shared accounts, no group plans and no way for a school to manage student accounts centrally, though schools can reimburse students directly.
 - **CapCut Creative Campus**. Restricted to a small set of named partner schools, none of them business or graduate programmes. There is no individual claim path. Check whether your institution is a named Creative Campus partner.
-- **Gemini CLI**. No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here. Flash is the default on the free tier, so the 1,000 daily requests are not 1,000 Pro requests. Authenticating with an unpaid API key instead of a Google account is materially worse: 250 requests per day, 10 per minute, Flash only. Sign in with the account, not the key. Nothing to claim. Install it and sign in.
-- **NotebookLM**. No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access. Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, which now has a live student trial again. See the Google Gemini entry. Nothing to claim directly. Use it free, check Google Classroom if your course uses it, or see the Google Gemini entry for the Pro-tier route.
+- **Gemini CLI**. No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here. Those are Gemini 3 models with a 1M-token context window. An unpaid Gemini API key now gets the same 1,000 requests a day, mixing Flash and Pro, so either route works; use the key if you want to pick a specific model. Nothing to claim. Install it and sign in.
+- **Gemini Notebook (formerly NotebookLM)**. No student-specific offer. The core product is free to everyone with a Google account. Google has renamed NotebookLM to Gemini Notebook; it still lives at notebooklm.google. Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. Using it with a school Google account needs a qualifying Workspace for Education edition and an admin to switch it on. The paid tier rides on Google AI Pro, which has a live student trial. See the Google Gemini entry. Nothing to claim directly. Use it free, check Google Classroom if your course uses it, or see the Google Gemini entry for the Pro-tier route.
 - **SciSpace, Julius AI, Humata**. Dropped. Official student terms could not be confirmed after more than three months of trying, so they are excluded rather than listed on a maybe.
 
 ---
@@ -379,6 +394,13 @@ Tabnine ended its free Basic plan in April 2025 and no longer offers a student p
 
 ## Changelog
 
+- **2026-10-01** Full review against vendor pages. Every published entry was re-checked, and last_checked moves to 2026-10-01 wherever a vendor page confirmed it. Help centres that block automated checks were read through their public API (Otter, Runway, Midjourney) or the vendor's own indexed article (Perplexity, Consensus).
+- **2026-10-01** Wispr Flow corrected. Its help centre now says .edu and recognised university addresses get the student rate automatically at signup, the opposite of what support told this guide in August. Verification and the onboarding steps are rewritten so readers sign up with their school email first and only send proof if that fails. Also recorded: some universities now get Flow free outright, and the referral terms changed.
+- **2026-10-01** Speechify ended. Its 25 percent university discount is gone from UNiDAYS and Student Beans, and its student page redirects to the homepage. The end date is not published, so 2026-10-01 records when it was found gone.
+- **2026-10-01** Beautiful.ai's process changed. The old help article is gone, and the free Pro year now means creating an account with a .edu address and emailing support, rather than receiving a coupon automatically.
+- **2026-10-01** Smaller corrections. Notion's plan is now just the Education Plan, with a free unlimited-member plan for student organisations. Zed's student plan excludes Claude Fable, Claude Opus and GPT Pro models. Gemini's 4-year limit belongs to the YouTube Premium bundle, not the free year. Amp is designed to run on a ChatGPT or SuperGrok subscription. Microsoft 365 needs a personal account rather than a school one. Otter covers teachers and staff. Adobe is now confirmed by a direct fetch. Consensus is described as 40 percent off paid plans while its plan naming is unclear.
+- **2026-10-01** Excluded entries. NotebookLM is now Gemini Notebook. Gemini CLI's unpaid API key now gets 1,000 requests a day across Flash and Pro, not 250 Flash-only, so the advice to avoid it is withdrawn. Claude's campus programme now runs three tracks with a published 3,600 USD stipend, and a new Team plan for scientists gives research groups free seats through their PI. Microsoft 365 Copilot Chat is now Microsoft Copilot Chat.
+- **2026-10-01** Referral programmes re-audited. Bolt, StackBlitz, Replit, Fireflies, Tactiq and Heptabase rewritten to their current terms; Krisp, Tome and Scite moved to ruled out. Unpublished: Tabnine's site now redirects to Tricentis.
 - **2026-10-01** ElevenLabs rewritten: the student offer got much bigger and the entry was wrong. ElevenLabs for Students launched 2026-09-25, eight days after this entry was first checked, and adds 3 months of the Creator plan across ElevenCreative, ElevenAgents and the ElevenAPI on top of the year of ElevenReader Ultra. The old caveat saying the main voice platform was not part of the student offer has been removed, because it no longer is true. Sourced from the launch post and the students page.
 - **2026-10-01** Recorded that the two halves are gated differently. The platform plan goes by country and age, covering university students 18 and over in the US, Canada, the EU27, Australia and the UK. The ElevenReader year keeps its institution allowlist. You can qualify for one and not the other.
 - **2026-10-01** Referral disclosure adjusted. Creator is a commissionable plan, so the link can now earn something if a reader keeps paying past the free months, where before the recommended path earned nothing at all. Still nothing for the reader, and still labelled that way.

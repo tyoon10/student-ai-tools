@@ -34,6 +34,18 @@ BANNER = (
 # Tiers that earn a full write-up in recommended.md rather than a one-line bullet.
 FULL_ENTRY_TIERS = ("S", "A", "B")
 
+
+def _closed(t: dict) -> str:
+    """'closed 2026-06-25', or 'gone by 2026-10-01' when the vendor never
+    published an end date and ended_on only records when it was found gone."""
+    d = t.get("ended_on", "")
+    return f"gone by {d}" if t.get("ended_on_exact") is False else f"closed {d}"
+
+
+def _has_length(t: dict) -> bool:
+    """An ended entry's length line only says something if it is not n/a."""
+    return bool(t.get("length")) and t["length"].strip().lower() != "n/a"
+
 TIER_LABELS = {
     "S": ("Tier S", "Ubiquitous, mainstream AI tools"),
     "A": ("Tier A", "Major, widely adopted tools"),
@@ -247,13 +259,13 @@ def build_recommended(d: dict) -> str:
         )
         out.append("")
         for t in sorted(ended, key=lambda x: x.get("ended_on", ""), reverse=True):
-            out.append(f"### {t['name']} (closed {t.get('ended_on', 'date unknown')})")
+            out.append(f"### {t['name']} ({_closed(t)})")
             out.append("")
             out.append(clean(t.get("reason") or t.get("blurb")))
             out.append("")
             for cav in t.get("caveats") or []:
                 out.append(f"- {clean(cav)}")
-            if t.get("length"):
+            if _has_length(t):
                 out.append(f"- Existing subscribers: {clean(t['length'])}")
             out.append(f"- Source: {t['links'][0]}")
             out.append("")
@@ -416,7 +428,7 @@ def build_knowledge_base(d: dict) -> str:
         for t in members:
             note = ""
             if t["status"] == "ended":
-                note = f" *Offer closed {t.get('ended_on', '')}.*"
+                note = f" *Offer {_closed(t)}.*"
             elif t["status"] == "institutional":
                 note = " *Institutional access only.*"
             out.append(f"{n}. **{t['name']}**: {clean(t.get('blurb') or t.get('reason'))[:160]}{note}")
@@ -562,7 +574,7 @@ def build_knowledge_base(d: dict) -> str:
 def _kb_entry(t: dict) -> list[str]:
     out = [f"### {t['name']}: {t['offer']}", ""]
     status_note = {
-        "ended": f"**Status: ENDED {t.get('ended_on', '')}.** Closed to new sign-ups.",
+        "ended": f"**Status: ENDED, {_closed(t)}.** Closed to new sign-ups.",
         "active": "Status: active.",
     }.get(t["status"], f"Status: {t['status']}.")
     out.append(status_note)

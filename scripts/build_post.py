@@ -59,6 +59,18 @@ def clean(text) -> str:
 # Category -> coarse filter group. This is presentation, so it lives in the
 # generator rather than the data. Unmapped categories are reported by build_grid
 # so a new tool never lands silently in a catch-all bucket.
+
+def _closed(t: dict) -> str:
+    """'closed 2026-06-25', or 'gone by 2026-10-01' when the vendor never
+    published an end date and ended_on only records when it was found gone."""
+    d = t.get("ended_on", "")
+    return f"gone by {d}" if t.get("ended_on_exact") is False else f"closed {d}"
+
+
+def _has_length(t: dict) -> bool:
+    """An ended entry's length line only says something if it is not n/a."""
+    return bool(t.get("length")) and t["length"].strip().lower() != "n/a"
+
 FILTER_GROUPS = {
     "coding": ("Coding and dev", [
         "AI code editor", "AI coding", "AI coding agent", "Developer tools",
@@ -630,12 +642,12 @@ def build(d: dict, copied: list | None = None) -> str:
                  "these things move.")
         o.append("")
         for t in ended:
-            o.append(f"**{t['name']}**, closed {t.get('ended_on', 'recently')}. "
+            o.append(f"**{t['name']}**, {_closed(t)}. "
                      f"{clean(t.get('reason') or t.get('blurb'))}")
             o.append("")
             for cav in t.get("caveats") or []:
                 o.append(f"- {clean(cav)}")
-            if t.get("length") and t.get("status") == "ended" and t in tools:
+            if _has_length(t) and t.get("status") == "ended" and t in tools:
                 o.append(f"- Existing subscribers: {clean(t['length'])}")
             o.append("")
         o.append("---")

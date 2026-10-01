@@ -5,8 +5,8 @@
 
 The full working record behind the public list. Every tool evaluated, with claim records and verification notes. The curated public list lives in [recommended.md](./recommended.md).
 
-- **Last full review:** 2026-08-18
-- **Previous reviews:** 2026-07-19, 2026-05-14, 2026-05-03
+- **Last full review:** 2026-10-01
+- **Previous reviews:** 2026-08-18, 2026-07-19, 2026-05-14, 2026-05-03
 - **Source of truth:** `data/tools.yml`. This file and `recommended.md` are both generated from it, so the two can no longer drift apart.
 - **Disclosure:** Three links here earn me a commission, for Otter.ai, Wispr Flow and ElevenLabs, and all three are labelled where they appear. The Otter one also gets you a free month; the Wispr Flow and ElevenLabs ones cost you nothing extra and get you nothing extra either. Every other link goes to the vendor's own page and earns nothing.
 
@@ -25,7 +25,7 @@ For each validated tool:
 9. **Official source links**: direct help-centre or pricing URLs.
 10. **Last checked** and **Confidence**.
 
-## Popularity tier ranking (2026-08-18)
+## Popularity tier ranking (2026-10-01)
 
 Ranked by general 2026 mindshare weighted toward grad-student relevance. This ordering drives what makes the short list. Tier does not track student-offer quality, which is a separate axis: some Tier S tools have weak offers and some Tier C tools have very strong ones.
 
@@ -62,7 +62,7 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 22. **Consensus**: Citation-grounded academic search. Strong fit for research-heavy programmes.
 23. **Framer**: Design-to-web tool with a free student plan that includes monthly AI credits. The obvious use is hosting a portfolio or personal site without paying for a year.
 24. **Reclaim.ai**: AI calendar that defends time for tasks and habits against meeting creep. Low eligibility bar and a real discount, though you have to actually live in your cale
-25. **Speechify**: Text to speech for getting through case studies and papers while doing something else. A modest discount, but the use case is a real one during heavy reading te
+25. **Speechify**: Speechify's 25 percent university discount is no longer listed anywhere it used to be. Recorded so the question stays answered. *Offer gone by 2026-10-01.*
 26. **Wordtune**: Rewriting and paraphrasing assistant. Kept off the public list because it duplicates Grammarly and QuillBot, and stacking rules make the real saving against alr
 27. **Craft**: Genuine free education plan. Kept off the public list because it duplicates Notion's slot for a smaller, less widely used vendor.
 28. **Litmaps**: Literature-mapping tool for tracing citation networks. Strong discount but narrow. Kept in the knowledge base because it overlaps Consensus and suits PhD work m
@@ -75,25 +75,27 @@ Scope: tools with a validated or formerly validated student offer. Referral-only
 
 ## Individual-claimable offers
 
-### Notion: Education Plus
+### Notion: Education Plan
 
 Status: active.
 
 - Category: Notes and knowledge | Tier: S
 - Original pricing: Plus is a paid tier for general users.
-- Student pricing: Plus free for eligible students and educators, one-member workspace.
+- Student pricing: The Education Plan, free for a one-member workspace for students and teachers.
 - Included features: Unlimited uploads, unlimited pages and blocks, 30-day page edit history, up to 100 guests.
 - Effective length: Continues while eligibility and school email status remain valid.
 - Verification: School email only. The school must be an accredited institution listed in the World Higher Education Database. Notion does not accept student IDs or other documentation.
 - Caveat: Notion AI is not included. There is no standalone AI add-on to buy: Free and Plus get trial-level AI only, and the full set (Agent, Meeting Notes, Enterprise Search) needs Business at 20 USD per member per month.
 - Caveat: Requires a single-member workspace.
+- Caveat: Student organisations can apply separately for a free Education Plan with unlimited members, which is the route for a club or society workspace.
+- Caveat: Already paying for Plus? Downgrade to the Free plan first, then claim the Education Plan.
 - Referral programme: **discontinued**. The friend-referral programme was discontinued on 2020-05-19. Only the affiliate programme remains, and it is closed to new affiliates.
 - Official sources:
   - https://www.notion.com/help/notion-for-education
   - https://www.notion.com/pricing
 - Referral sources:
   - https://www.notion.com/affiliates
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Figma: Professional (Education)
 
@@ -102,14 +104,14 @@ Status: active.
 - Category: Design | Tier: A
 - Original pricing: Figma Professional paid plan.
 - Student pricing: Free Professional plan access for verified higher-ed students.
-- Included features: Education plan access to the Professional feature set.
+- Included features: Education plan access to the Professional feature set. Higher-ed and bootcamp users also get the AI tools, including Figma Make and the agent in Figma Design, with 3,000 AI credits a month.
 - Effective length: One year, then reapply.
 - Verification: School-issued email, then the education application page with "Higher Ed" selected as institution type. Figma verifies all applications through SheerID.
 - Caveat: Must reapply annually, it does not auto-renew as free.
 - Referral programme: **unclear**. No current public referral page. Third-party blogs reference a historical loyalty mechanic, but nothing official is published for 2025 or 2026.
 - Official sources:
   - https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Granola: Business (Student)
 
@@ -129,7 +131,7 @@ Status: active.
 - Referral sources:
   - https://docs.granola.ai/help-center/managing-your-account/referral-program
   - https://partners.dub.co/granola
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### GitHub Student Developer Pack: Student Developer Pack (incl. Copilot)
 
@@ -139,15 +141,15 @@ Status: active.
 - Original pricing: Copilot paid plans.
 - Student pricing: Free Copilot access for verified GitHub Education students, plus the pack.
 - Included features: Copilot for verified students plus the bundled third-party offers.
-- Effective length: Re-evaluated by GitHub while student status remains valid.
+- Effective length: Re-evaluated monthly. GitHub re-checks your student eligibility every month, so access lapses soon after you stop being a student.
 - Verification: GitHub Education benefits application.
 - Caveat: Add and verify your school-issued email under Settings then Emails before applying. This is the one-time blocker most students hit.
 - Caveat: Copilot access inside the Pack was restructured in March 2026 into a standalone plan called GitHub Copilot Student. It is still free for verified students. GitHub's changelog says the model lineup changed but does not itemise it, so treat any specific model list you read elsewhere as unverified.
 - Referral programme: **none**. No personal referral programme for the Student Pack. Only a B2B partner programme.
 - Official sources:
   - https://education.github.com/pack/
-  - https://docs.github.com/copilot/how-tos/manage-your-account/free-access-with-copilot-student
-- Last checked: 2026-08-18 | Confidence: high
+  - https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Zed: Zed Pro (Education)
 
@@ -157,13 +159,14 @@ Status: active.
 - Original pricing: Zed Pro paid plan.
 - Student pricing: Zed Pro free for one year.
 - Included features: Zed Pro, 10 USD per month in AI token credits, unlimited edit predictions, realtime collaboration.
-- Effective length: 12 months.
+- Effective length: 12 months, then it drops to the Free plan automatically rather than charging you.
 - Verification: Enrolled at an accredited university, at least 18 years old, a GitHub account older than 30 days, and a valid current university email. Enrolment is checked against JetBrains' open-source database of university domains.
 - Regions: International students accepted.
+- Caveat: The Student plan does not include Claude Fable, Claude Opus or GPT Pro models.
 - Referral programme: **none**. No referral programme on the official pricing, FAQ or education pages.
 - Official sources:
   - https://zed.dev/education
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Perplexity: Education Pro
 
@@ -180,7 +183,7 @@ Status: active.
   - https://www.perplexity.ai/help-center/en/articles/12590157-what-is-education-pro
 - Referral sources:
   - https://www.perplexity.ai/hub/legal/refer-a-friend-program
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Adobe Creative Cloud: Creative Cloud Pro (Students and Teachers)
 
@@ -194,13 +197,13 @@ Status: active.
 - Verification: Student verification in the Adobe checkout flow, school email or documents.
 - Regions: Pricing shown is the US market. Other markets differ.
 - Caveat: The year-two price increase is the main trap. Diarise the renewal date.
-- Caveat: Adobe blocks automated checks, so prices here were confirmed against the Adobe education store and secondary sources rather than a direct fetch. Verify the exact figure at checkout.
+- Caveat: Verification may ask for a school email or for documentation from the current academic year.
 - Referral programme: **none**. No referral programme for full Creative Cloud. Adobe Express for Education runs a separate student referral scheme worth up to 15 referrals, but it applies to Express only and does not convert into a Creative Cloud discount.
 - Official sources:
-  - https://www.adobe.com/creativecloud/buy/students/explore/ccforstudents.html
+  - https://www.adobe.com/creativecloud/buy/students.html
 - Referral sources:
   - https://helpx.adobe.com/express/web/adobe-express-for-education/for-students/student-referrals.html
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Otter.ai: Pro (Student and Teacher discount)
 
@@ -211,16 +214,18 @@ Status: active.
 - Student pricing: 20 percent off Otter Pro. Annual works out at about 6.67 USD per month billed 79.99 USD yearly. Monthly is about 13.59 USD.
 - Included features: Otter Pro transcription and AI meeting-note features.
 - Effective length: Ongoing while discount eligibility is met.
-- Verification: Otter account with a .edu email through the student discount flow.
+- Verification: Sign up with an email ending in .edu, then choose Student & Teacher Discount when upgrading. Without a .edu domain, support can verify you with documents from your school.
 - Regions: Verify at checkout, availability is not clearly global.
 - Caveat: Applies to the individual Pro plan only, not workspace or team plans.
+- Caveat: Teachers and full-time staff at eligible institutions qualify too.
+- Caveat: Already on a paid plan? Cancel first, then resubscribe at the discounted rate. Earlier payments are not refunded, and only credit cards are accepted.
 - Referral programme: **two-sided**. The referrer earns promotional credits or Pro Lite minutes per qualifying signup, capped at 10,000 minutes or 12 months of Pro Lite. The referee gets one month of Pro Lite at 300 minutes per month. Cannot be combined with other referral promotions. Otter Business users are excluded.
 - Official sources:
   - https://help.otter.ai/hc/en-us/articles/4402467517847-Student-Teacher-discount-program-for-the-Pro-plan
   - https://otter.ai/pricing
 - Referral sources:
   - https://otter.ai/referral-terms
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Consensus: Premium (Student and Faculty)
 
@@ -232,12 +237,10 @@ Status: active.
 - Included features: Discounted access to the paid Consensus tier.
 - Effective length: Ongoing while eligible.
 - Verification: Claim button on the pricing page, select your profession, then verify with a .edu or .ac email. Support can also verify manually with proof of enrolment and a graduation year.
-- Referral programme: **b2b**. The enterprise referral scheme pays gift cards across demo and closed-won milestones. A consumer ambassador programme exists but its rewards are not publicly itemised. Neither is useful for student peer-sharing.
+- Referral programme: **b2b**. The enterprise referral scheme pays gift cards across demo and closed-won milestones. The consumer ambassador programme's terms page has been taken down. Neither is useful for student peer-sharing.
 - Official sources:
   - https://help.consensus.app/en/articles/10064359-how-to-get-a-student-or-clinician-discount
-- Referral sources:
-  - https://consensus.app/home/blog/consensus-ambassador-program-terms-and-conditions/
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### OpenAI Codex: Codex for Students credits
 
@@ -251,7 +254,7 @@ Status: active.
 - Verification: SheerID-style verification with a university email through the claim page.
 - Regions: Degree-granting universities in the US or Canada, and you must be residing in the US or Canada when you claim. One offer per student.
 - Caveat: Requires an existing ChatGPT Free, Go, Plus or Pro account.
-- Caveat: Announced 2026-03-21 with no published end date. Still live as of 2026-08-18.
+- Caveat: Announced 2026-03-21 with no published end date. Still live as of 2026-10-01.
 - Caveat: This is the route to Codex CLI for students. There is no separate CLI offer. The credits are spent through whichever Codex surface you use, including the CLI and IDE extensions.
 - Referral programme: **campaign-gated**. Separate from this offer, eligible Plus subscribers sometimes hold one to three invite codes granting short Plus trials, and past campaigns have offered a free month or account credit. Availability is gated per campaign and region and does not stack with other promotions.
 - Official sources:
@@ -259,7 +262,7 @@ Status: active.
 - Referral sources:
   - https://help.openai.com/en/articles/8381046-chatgpt-promotional-subscriptionsfree-trial-invites-faq
   - https://help.openai.com/en/articles/10492689-chatgpt-plus-promotions-and-referrals
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Grammarly: Premium (SheerID campaign)
 
@@ -271,13 +274,13 @@ Status: active.
 - Included features: Grammarly Pro features under a discounted subscription.
 - Effective length: Campaign-based and seasonal. Not always available.
 - Verification: SheerID.
-- Caveat: This is a campaign, not a standing offer. Check whether it is live before relying on it.
+- Caveat: This is a campaign, not a standing offer. Live as of 2026-10-01 through SheerID in the US, Canada, Australia and 228 more countries, but check before relying on it.
 - Referral programme: **discontinued**. The Refer Friends programme has been shut down and its help-centre article is gone. The affiliate programme still runs but pays commission rather than a peer benefit.
 - Official sources:
   - https://shop.sheerid.com/brands/grammarly/
 - Referral sources:
   - https://www.grammarly.com/referral-program-terms
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### QuillBot: Premium (Student)
 
@@ -296,11 +299,11 @@ Status: active.
   - https://www.myunidays.com/US/en-US/partners/quillbot/view
 - Referral sources:
   - https://quillbot.com/affiliates
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Cursor: Legacy student discount
 
-**Status: ENDED 2026-06-25.** Closed to new sign-ups.
+**Status: ENDED, closed 2026-06-25.** Closed to new sign-ups.
 
 - Category: AI code editor | Tier: A
 - Original pricing: Cursor Pro at 20 USD per month.
@@ -314,7 +317,7 @@ Status: active.
   - https://cursor.com/help/account-and-billing/student-discount
 - Referral sources:
   - https://forum.cursor.com/t/cursor-referral-program/40555
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Microsoft 365 Personal: Personal with Copilot (College student pricing)
 
@@ -329,10 +332,11 @@ Status: active.
 - Regions: Enrolled full-time or part-time students at accredited universities and colleges.
 - Caveat: You add payment details before verification completes, so set a reminder rather than assuming the re-verification prompt will reach you.
 - Caveat: This is the consumer Personal plan. It is separate from any Microsoft 365 Education licence your school may already give you, which is worth checking first.
+- Caveat: Create the Microsoft account with a personal email, not your school account. The school address is only used at the verification step.
 - Referral programme: **none**. No peer-referral programme for the student pricing offer.
 - Official sources:
   - https://www.microsoft.com/en-us/microsoft-365/college-student-pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Google Gemini: Google AI Pro / Google AI Plus (Student trial)
 
@@ -342,18 +346,19 @@ Status: active.
 - Original pricing: Google AI Pro at 19.99 USD per month (US). Google AI Plus at about 4.99 USD per month (elsewhere).
 - Student pricing: Free for 12 months, then auto-renews at the regular rate unless cancelled.
 - Included features: Gemini chat plus Gemini in Gmail and Docs, at whichever tier the region grants.
-- Effective length: 12 months from signup. Redeem by 2026-12-31; reverify through SheerID annually, for up to 4 years.
+- Effective length: 12 months from signup. Redeem by 2026-12-31. It converts to the paid plan automatically when the year ends unless you cancel.
 - Verification: SheerID, using a school email. A payment method is required at signup even though the trial is free.
 - Regions: US: Google AI Pro, the higher tier. Other eligible markets: Google AI Plus, lower.
 - Caveat: Google AI Pro (US): 5 TB storage, 4x Gemini usage limits, Gemini Spark, Gemini in Gmail and Docs, Google Health Premium.
 - Caveat: Google AI Plus (140-plus other markets): 400 GB storage, 2x Gemini usage limits, Gemini Omni. Not offered at all in Bolivia, Albania, Canada, Macau, Hong Kong or Tunisia.
 - Caveat: This is a new offer code, not the old page reopening; the offer that closed 2026-03-11 is a separate, still-closed program.
 - Caveat: Signing up while on another Google One trial revokes it, and upgrading to paid before the free period ends makes you ineligible for future Google One trials.
+- Caveat: Separate from the free year: a Google AI Pro and YouTube Premium Student bundle at up to 70 percent off, for up to 4 consecutive years while you remain a student.
 - Referral programme: **none**. No referral or affiliate programme found for this offer.
 - Official sources:
   - https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/
   - https://support.google.com/googleone/answer/17422238?hl=en
-- Last checked: 2026-08-21 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Beautiful.ai: Pro (Education)
 
@@ -363,15 +368,15 @@ Status: active.
 - Original pricing: Pro is about 12 USD per month, roughly 144 USD per year.
 - Student pricing: Free Pro subscription for 12 months.
 - Included features: Full Pro plan. Unlimited slides, AI content generation, analytics, custom fonts, and PowerPoint import and export.
-- Effective length: 12 months from activation, then it reverts to the free plan unless you renew.
-- Verification: Verify a .edu email address and Beautiful.ai emails back a custom coupon code. No promo code hunting required.
-- Regions: Built around .edu addresses. International students without one are told to contact support about alternative verification.
-- Caveat: New student subscribers only. It does not apply to an existing paid account.
+- Effective length: An annual Pro subscription, per the education page. The current help article does not say what happens when it ends.
+- Verification: Create a Beautiful.ai account with your .edu address, then email support@beautiful.ai to have it upgraded to an EDU Pro plan. Without a .edu address, email them official documentation of your university affiliation instead.
+- Regions: Students affiliated with an accredited university, anywhere. A .edu address is the quick route and documentation works for everyone else.
+- Caveat: Not automatic. Support reviews each request by hand, so allow a few days and check your spam folder for the reply.
 - Referral programme: **none**. A one-sided referral scheme pays the referrer only, so it is not useful for sharing with classmates.
 - Official sources:
-  - https://support.beautiful.ai/hc/en-us/articles/360030719052-Does-Beautiful-ai-offer-discounts-for-education-or-non-profits
+  - https://support.beautiful.ai/hc/en-us/articles/46055219859597-Educational-Accounts
   - https://www.beautiful.ai/education
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Obsidian: Sync and Publish (Education discount)
 
@@ -389,7 +394,7 @@ Status: active.
 - Official sources:
   - https://obsidian.md/help/discounts
   - https://obsidian.md/pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Loom: Business and Business+AI (Education discount)
 
@@ -408,7 +413,7 @@ Status: active.
 - Official sources:
   - https://support.atlassian.com/loom/docs/loom-education-discount-verification/
   - https://www.atlassian.com/software/loom/pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Amp: Amp Megawatt (Edu discount)
 
@@ -422,13 +427,14 @@ Status: active.
 - Verification: Self-declaration. Sign in and complete a form declaring student or teacher status. No SheerID, no .edu requirement, no document upload.
 - Regions: No geographic restriction stated.
 - Caveat: Applies to the Megawatt tier only, not Gigawatt or other plans.
-- Caveat: Announced 2026-08-18, the same day it was first recorded here. Unproven. Re-check before relying on it.
+- Caveat: Megawatt is designed to run on your own ChatGPT or SuperGrok subscription for model usage. The included 10 USD of agent usage is for incidental use on top, so budget for one of those subscriptions as well.
+- Caveat: Launched 2026-08-18 and still live as of 2026-10-01.
 - Caveat: Amp states it can change or discontinue the discount and its criteria at any time.
 - Referral programme: **none**. No referral programme on the education or pricing pages.
 - Official sources:
   - https://ampcode.com/edu
   - https://ampcode.com/pricing
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Framer: Basic (Student)
 
@@ -441,10 +447,11 @@ Status: active.
 - Effective length: One year. You can reapply every 11 months for as long as you are a student.
 - Verification: Enrolment in a certified in-person or online programme. Framer reviews applications within about five working days, and you can use free account features while you wait.
 - Regions: High school, college or university, in person or online.
+- Caveat: Only new customers can redeem the coupon for now. Framer says existing customers will be able to later.
 - Referral programme: **none**. No referral programme documented.
 - Official sources:
-  - https://www.framer.com/education/
-- Last checked: 2026-08-18 | Confidence: high
+  - https://www.framer.com/education/students/
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Reclaim.ai: Starter or Business (Education discount)
 
@@ -462,7 +469,7 @@ Status: active.
 - Official sources:
   - https://reclaim.ai/pricing/education-discount
   - https://reclaim.ai/pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### ElevenLabs: ElevenLabs for Students
 
@@ -495,21 +502,21 @@ Status: active.
 
 ### Speechify: Premium (Student)
 
-Status: active.
+**Status: ENDED, gone by 2026-10-01.** Closed to new sign-ups.
 
 - Category: Text to speech | Tier: C
 - Original pricing: Premium at about 139 USD per year, or 29 USD billed monthly.
-- Student pricing: 25 percent off through UNiDAYS or Student Beans.
-- Included features: Speechify Premium text-to-speech features and voices.
-- Effective length: Ongoing while verification holds.
-- Verification: UNiDAYS or Student Beans.
-- Regions: Verify at checkout.
-- Caveat: The free Premium route Speechify advertises is for US K-12 students, not higher education. University students get the 25 percent discount.
-- Caveat: Routed through third-party verification hubs rather than a first-party flow.
+- Student pricing: None found. The 25 percent off through UNiDAYS or Student Beans is no longer listed.
+- Included features: n/a
+- Effective length: n/a
+- Verification: n/a
+- Caveat: UNiDAYS now shows "Stay tuned for new Speechify offers" and its claim page is a 404. The Student Beans brand page is a 404, and speechify.com/students redirects to the homepage.
+- Caveat: The end date is not published. It was still listed on 2026-08-18.
+- Caveat: The free Premium route for US K-12 students is a separate programme and was not re-checked.
 - Referral programme: **unclear**. A referral programme is referenced but its two-sided terms are not clearly documented.
 - Official sources:
   - https://www.myunidays.com/US/en-US/partners/speechify/view
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Prezi: Student plans
 
@@ -525,7 +532,7 @@ Status: active.
 - Referral programme: **unclear**. Not audited.
 - Official sources:
   - https://prezi.com/students/
-- Last checked: 2026-08-18 | Confidence: low
+- Last checked: 2026-10-01 | Confidence: low
 
 ### Wordtune: Premium (Student)
 
@@ -541,7 +548,7 @@ Status: active.
 - Referral programme: **unclear**. Not audited.
 - Official sources:
   - https://www.wordtune.com/
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Craft: Education plan
 
@@ -555,8 +562,8 @@ Status: active.
 - Verification: Educational email verification.
 - Referral programme: **unclear**. Not audited.
 - Official sources:
-  - https://www.craft.do/
-- Last checked: 2026-08-18 | Confidence: medium
+  - https://www.craft.do/education
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Litmaps: Pro (Student)
 
@@ -571,7 +578,7 @@ Status: active.
 - Referral programme: **unclear**. Not audited.
 - Official sources:
   - https://www.litmaps.com/pricing
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Trinka AI: Premium (Student)
 
@@ -587,7 +594,7 @@ Status: active.
 - Referral programme: **unclear**. Not audited.
 - Official sources:
   - https://www.trinka.ai/pricing
-- Last checked: 2026-08-18 | Confidence: low
+- Last checked: 2026-10-01 | Confidence: low
 
 ### Sunsama: Pro (Student)
 
@@ -604,11 +611,11 @@ Status: active.
 - Official sources:
   - https://help.sunsama.com/docs/billing/overview/
   - https://www.sunsama.com/pricing
-- Last checked: 2026-08-18 | Confidence: low
+- Last checked: 2026-10-01 | Confidence: low
 
 ### Tabnine: Student plan
 
-**Status: ENDED 2025-04-01.** Closed to new sign-ups.
+**Status: ENDED, closed 2025-04-01.** Closed to new sign-ups.
 
 - Category: AI coding assistant | Tier: D
 - Original pricing: Paid plans only.
@@ -617,10 +624,11 @@ Status: active.
 - Effective length: n/a
 - Verification: n/a
 - Caveat: The current pricing page shows no free tier, no trial and no student pricing.
+- Caveat: tabnine.com now redirects to Tricentis, so the standalone product appears to have been absorbed.
 - Referral programme: **none**. None documented.
 - Official sources:
   - https://www.tabnine.com/pricing/
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
 ### Wispr Flow: Flow Pro (Student)
 
@@ -631,19 +639,20 @@ Status: active.
 - Student pricing: 3 months free, then 6 USD per month billed annually. A 50 percent discount on Pro.
 - Included features: Speech to text across 100-plus languages on Mac, Windows, iOS and Android, unlimited dictation on Pro, a meeting notetaker on Mac, and access to the advanced AI models. A free tier exists without any of this: 2,000 dictated words a week on desktop, 1,000 on iPhone, unlimited on Android.
 - Effective length: The 3-month trial is for new subscribers only, then the subscription auto-renews at the discounted rate. Cancel anytime.
-- Verification: Proof of enrolment always required. There is no automatic .edu verification, despite what the students page implies. See the steps above.
+- Verification: Automatic at signup if your email ends in .edu or is on a recognised university domain, with nothing to upload. Anyone else applies through support with a student ID or enrolment letter.
 - Regions: Not restricted in the published terms.
 - Caveat: New subscribers only.
+- Caveat: Some universities now get Flow free outright: an annual 0 USD Student plan with no card and no trial. Sign up with your school email to see whether yours is one.
 - Caveat: Trial codes do not stack with the student rate. Take the student rate: 54 USD in year one against 72 USD on a 6-month trial, and it keeps the discount afterwards rather than reverting to full price.
-- Caveat: Teaching or non-profit staff get the same 50 percent rate, claimed the same way with Education as the reason.
-- Referral programme: **two-sided**. Both sides benefit, and the student plan counts as an earning plan, which is unusual. Your friend gets a 30-day Pro trial for signing up through your link regardless of your plan, and 90 days if they are on a Student plan, which supersedes the 30-day trial. You get one free month of Pro per successful referral, credited on your next billing cycle, once your friend dictates 2,000 words or upgrades to Pro. Earning requires an active paid Pro or Student plan bought through the Wispr Flow website. App Store subscribers and Enterprise members can share invites but cannot earn.
+- Caveat: Teaching or non-profit staff get the same 50 percent rate through a support request, choosing Education or Non-Profit as the category.
+- Referral programme: **two-sided**. Both sides benefit. Your friend gets a 30-day Pro trial instead of the standard 14 days, or 90 days if they are an eligible student; students on the free Student plan get no trial because they pay nothing. You get one month of credit per qualifying referral once your friend dictates 2,000 words or has an active or trialling personal subscription, up to 1,000 referrals. Credit applies to Pro or Student plans billed through the Wispr Flow website, and free-plan users bank it until they upgrade. App Store, Play Store and team-billed subscribers can share invites but earn nothing.
 - Official sources:
   - https://wisprflow.ai/students
   - https://wisprflow.ai/pricing
   - https://docs.wisprflow.ai/articles/1128761434-flow-discounts
 - Referral sources:
   - https://docs.wisprflow.ai/articles/6496688316-how-to-find-your-referral-link
-- Last checked: 2026-08-28 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Aqua Voice: Pro and Max (Student)
 
@@ -655,12 +664,12 @@ Status: active.
 - Included features: Unlimited dictation on Pro. Max adds realtime mode and voice commands. A free Starter tier gives 1,000 words.
 - Effective length: Ongoing while eligible.
 - Verification: Sign up with a school email address. Self-serve, with no form or support ticket, which is rarer than it should be.
-- Regions: Not restricted in the published terms.
-- Caveat: Applies to web checkout, not App Store purchases. Buying through the app store forfeits the discount.
+- Regions: Accepts .edu and international academic domains such as .ac.uk, .ac.jp, .ac.kr and .ac.in.
+- Caveat: Available on Mac, Windows and iOS. Android is waitlist-only.
 - Referral programme: **none**. No referral programme documented on the pricing page.
 - Official sources:
   - https://aquavoice.com/pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ## AI-adjacent cloud credits
 
@@ -710,23 +719,25 @@ Status: active.
 - Status: institutional
 - Reason: No individual student discount on consumer pricing. Anthropic does not issue one-off discounts or coupons for Pro.
 - Detail: Access for students runs through Claude for Education, a university-wide plan licensed to the institution. Campus-wide agreements in place by mid-2026 include Stanford, which rolled out to all students, faculty and staff from 2026-06-30, plus Northeastern, the London School of Economics, Champlain College and Northumbria.
-- Individual routes: The old self-serve Student Builder path (a form, a school email, roughly 50 USD in API credit) is gone from Anthropic's site. It has been folded into the Claude Campus Program, which runs two application-gated tracks: Campus Ambassadors and Claude Builder Clubs. Both grant Claude Pro access plus unspecified API credits and a stipend, but neither publishes a dollar figure, and applications for the current cohort are CLOSED as of 2026-08-18. The External Researcher Access Program (around 1,000 USD in credit) remains a separate route. Outside those, the cheapest official option is Pro on annual billing at 17 USD per month, billed 200 USD up front, against 20 USD billed monthly.
+- Individual routes: The Claude Campus Program now runs three application-based tracks, each paying a 3,600 USD cash stipend: Claude Builder Clubs for undergraduates, Claude Campus Conversations for master's students, and Claude Science workshops for PhD students and postdocs. Separately, the Team plan for scientists lets a verified principal investigator at an accredited university or nonprofit research institute put their research group on free Standard seats, normally 20 USD a month, or Premium seats at 15 USD, for 12 months; a graduate student in that group gets Claude through their PI. The External Researcher Access Program (around 1,000 USD in credit, not re-checked on 2026-10-01) remains a separate route. Outside those, Pro is 17 USD a month on annual billing, 200 USD up front, against 20 USD billed monthly.
 - Check path: Ask your IT or procurement team whether your campus holds a Claude for Education agreement. If it does, signing in to claude.ai with your school email provisions the account at no cost to you.
 - Sources:
   - https://claude.com/solutions/education
+  - https://claude.com/programs/campus
+  - https://claude.com/programs/team-plan-for-scientists
   - https://claude.com/pricing
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Microsoft Copilot (Microsoft 365 Education)
 
 - Status: institutional
-- Reason: Microsoft 365 Copilot Chat costs nothing extra when you sign in with a school account, but only if your institution holds an eligible Microsoft 365 Education licence (A1, A3 or A5) and an admin has switched it on. Neither is something you can claim yourself.
+- Reason: Microsoft Copilot Chat, formerly Microsoft 365 Copilot Chat, costs nothing extra when you sign in with a school account, but only if your institution holds an eligible Microsoft 365 Education licence (A1, A3 or A5) and an admin has switched it on. Neither is something you can claim yourself.
 - Detail: Microsoft confirmed in May 2025 that students aged 13 and over can use Copilot Chat once the school enables it. Note the scope: Education A1 does not include the consumer Copilot embedded in Word, Excel and PowerPoint, only the more limited Copilot Chat.
 - Check path: Ask your school IT team whether the tenant holds an A1, A3 or A5 licence and whether Copilot Chat is enabled for student accounts.
 - Sources:
   - https://learn.microsoft.com/en-us/copilot/manage
   - https://www.microsoft.com/en-us/education/products/office
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### Canva
 
@@ -748,7 +759,7 @@ Status: active.
 - Sources:
   - https://docs.midjourney.com/hc/en-us/articles/42428820154765-Educational-Use-Student-Billing
   - https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans
-- Last checked: 2026-08-18 | Confidence: high
+- Last checked: 2026-10-01 | Confidence: high
 
 ### CapCut Creative Campus
 
@@ -773,21 +784,21 @@ Status: active.
 
 - Status: none
 - Reason: No student offer, and none is needed. Signing in with any personal Google account gives 1,000 model requests per day and 60 per minute at no cost, with no trial expiry. A student would gain nothing from a discount here.
-- Detail: Flash is the default on the free tier, so the 1,000 daily requests are not 1,000 Pro requests. Authenticating with an unpaid API key instead of a Google account is materially worse: 250 requests per day, 10 per minute, Flash only. Sign in with the account, not the key.
+- Detail: Those are Gemini 3 models with a 1M-token context window. An unpaid Gemini API key now gets the same 1,000 requests a day, mixing Flash and Pro, so either route works; use the key if you want to pick a specific model.
 - Check path: Nothing to claim. Install it and sign in.
 - Sources:
   - https://github.com/google-gemini/gemini-cli
-- Last checked: 2026-08-18 | Confidence: medium
+- Last checked: 2026-10-01 | Confidence: medium
 
-### NotebookLM
+### Gemini Notebook (formerly NotebookLM)
 
 - Status: none
-- Reason: No student-specific offer. The core product is free to everyone with a Google account, and the free Gemini tier includes NotebookLM access.
-- Detail: Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. The paid tier rides on Google AI Pro, which now has a live student trial again. See the Google Gemini entry.
+- Reason: No student-specific offer. The core product is free to everyone with a Google account. Google has renamed NotebookLM to Gemini Notebook; it still lives at notebooklm.google.
+- Detail: Higher-education students aged 18 and over can create personal class notebooks inside Google Classroom, grounded in materials their educator provides, but that is an institutional integration rather than a claimable discount. Using it with a school Google account needs a qualifying Workspace for Education edition and an admin to switch it on. The paid tier rides on Google AI Pro, which has a live student trial. See the Google Gemini entry.
 - Check path: Nothing to claim directly. Use it free, check Google Classroom if your course uses it, or see the Google Gemini entry for the Pro-tier route.
 - Sources:
-  - https://edu.google.com/intl/ALL_us/ai-notebooklm/
-- Last checked: 2026-08-21 | Confidence: medium
+  - https://edu.google.com/intl/ALL_us/ai-gemini-notebook/
+- Last checked: 2026-10-01 | Confidence: medium
 
 ## Dropped: unresolved after repeated attempts
 
@@ -797,42 +808,39 @@ These sat in a pending state for more than three months. A maybe is worse than a
 - **Julius AI** (opened 2026-05-03). No stable official student pricing terms found. Open for more than three months with no confirmation. Removed from the tier ranking and excluded from the public list.
 - **Humata** (opened 2026-05-03). The pricing FAQ references student billing while the visible plan cards differ. Open for more than three months with no confirmation. Removed from the tier ranking and excluded from the public list.
 
-## Peer-referral programmes (secondary axis, audited 2026-08-18)
+## Peer-referral programmes (secondary axis, audited 2026-10-01)
 
 A separate audit targeting tools where both parties receive a defined benefit. These are **not** validated for student discounts, so they do not appear on the public list. Recorded here as reference, not as a recommendation to farm credits.
 
 **Bar to qualify:** An official vendor page must document a defined benefit to at least one party. `sided` records who actually benefits, so a referrer-only scheme is never presented as a mutual one. Affiliate programmes are included but labelled, because commission to the sharer is a different thing from a peer reward.
 
-**Coverage:** Six entries were re-verified against vendor pages on 2026-08-18 and three new ones added. Runway, Krisp and Perplexity returned 403 to automated checks and Windsurf served an FAQ with no answers, so those keep their 2026-05-14 date and are NOT reconfirmed. Everything still dated 2026-05-14 below is carried over unverified.
+**Coverage:** Fifteen entries were reconfirmed against vendor pages on 2026-10-01, including Runway, now readable through its help centre's public API. Six of them had changed and were rewritten: Bolt, StackBlitz (which now serves Bolt's page), Replit, Fireflies, Tactiq and Heptabase. Krisp, Tome and Scite moved to ruled_out because their pages are gone. Suno, Kling, Descript, Decktopus, Windsurf, Lovable, v0 and Shortwave could not be reconfirmed from a public vendor page and keep their earlier dates.
 
 | Tool | Category | Who benefits | Referrer gets | Referee gets | Confidence | Checked |
 |---|---|---|---|---|---|---|
-| **Fathom** | Meeting AI | two-sided | 100 points plus 30 extra days of Premium | Trial extended from 30 to 60 days of Premium | high | 2026-08-18 |
+| **Bolt.new** | App builders | two-sided | 15 percent of what your friend pays, up to 50 USD per referral, paid by PayPal or Venmo | 20 percent off the first 3 months on a monthly plan, or the first annual payment | high | 2026-10-01 |
+| **Fathom** | Meeting AI | two-sided | 100 points plus 30 extra days of Premium | Trial extended from 30 to 60 days of Premium | high | 2026-10-01 |
+| **Fireflies.ai** | Meeting AI | two-sided | 5 USD in referral credit per activated referral, applied to future payments | 10 percent off any plan for the first 3 days | high | 2026-10-01 |
 | **Kling AI** | Video generation | two-sided | 500 credits per friend who buys an individual plan | 50 percent bonus credits on first plan purchase, capped at 5,000 | medium | 2026-08-18 |
-| **Raycast** | Productivity | two-sided | 1 free month of Raycast Pro | 1 free month of Raycast Pro | high | 2026-08-18 |
-| **Recraft** | Image generation | two-sided | 200 credits once the friend generates their first image | 200 extra credits on signup | high | 2026-08-18 |
+| **Raycast** | Productivity | two-sided | 1 free month of Raycast Pro | 1 free month of Raycast Pro | high | 2026-10-01 |
+| **Recraft** | Image generation | two-sided | 200 credits once the friend generates their first image | 200 extra credits on signup | high | 2026-10-01 |
+| **Replit** | App builders | two-sided | 20 USD in credits per new paying customer | 20 USD in credits once they pay | high | 2026-10-01 |
+| **Runway** | Video generation | two-sided | 1,000 credits | 1,000 credits | high | 2026-10-01 |
+| **StackBlitz** | App builders | two-sided | 15 percent of what your friend pays, up to 50 USD per referral, paid by PayPal or Venmo | 20 percent off the first 3 months on a monthly plan, or the first annual payment | high | 2026-10-01 |
 | **Suno** | Music | two-sided | 250 credits per friend | 250 credits | high | 2026-08-18 |
-| **Superhuman** | Email | two-sided | 1 free month | 1 free month | high | 2026-08-18 |
-| **Bolt.new** | App builders | two-sided | 200k tokens plus 5M on Pro upgrade | 200k tokens plus 5M on Pro upgrade | medium | 2026-05-14 |
-| **Fireflies.ai** | Meeting AI | two-sided | 3 transcription credits on Free, or 5 AI credits on paid | 10 percent off any plan for the first 3 days | medium | 2026-05-14 |
-| **Heptabase** | Notes | two-sided | 5 USD off | 5 USD off | medium | 2026-05-14 |
-| **Krisp** | Calls | two-sided | 2 months free Pro per friend, cumulative | 1 month free Pro | medium | 2026-05-14 |
+| **Superhuman** | Email | two-sided | 1 free month | 1 free month | high | 2026-10-01 |
 | **Lovable** | App builders | two-sided | 10 credits per referral | 10 credits | low | 2026-05-14 |
-| **Runway** | Video generation | two-sided | 1,000 credits | 1,000 credits | medium | 2026-05-14 |
 | **Shortwave** | Email | two-sided | 1 free month of Premium | 1 free month of Premium | low | 2026-05-14 |
-| **StackBlitz** | App builders | two-sided | 200k bonus tokens | 200k bonus tokens | medium | 2026-05-14 |
-| **Tactiq** | Meeting AI | two-sided | 5 free meetings plus 1 AI credit, and 1 AI credit per month while active | Free meetings plus AI credits | medium | 2026-05-14 |
-| **Tome** | Slides | two-sided | 30 percent off 3 months plus 10 USD credits | 30 percent off 3 months plus 10 USD credits | low | 2026-05-14 |
 | **Windsurf** | AI code editor | two-sided | 10 USD usage or 500 flex credits | 250 free flex credits on Pro signup | medium | 2026-05-14 |
 | **Descript** | Audio and video editing | referrer-only | 30 percent of the referred user payments, capped at 20 USD, paid by PayPal or Venmo | Nothing documented | medium | 2026-08-18 |
-| **HeyGen** | Video avatars | referrer-only | 5,000 generative credits and a 6-month Creator trial for accepted ambassadors | Nothing documented | medium | 2026-08-18 |
-| **Gamma** | Slides | referrer-only | 200 credits per signup, balance capped at 2,000 | Standard new-user credits only, no extra for being referred | medium | 2026-05-14 |
-| **Replit** | App builders | referrer-only | 10 USD in Core credits per friend who upgrades | No explicit bonus beyond the standard new-user grant | medium | 2026-05-14 |
-| **Scite** | Research | referrer-only | 1 free month of Premium per referred colleague, repeatable | Trial available, but the referrer benefit is the primary one | low | 2026-05-14 |
+| **Gamma** | Slides | referrer-only | 200 credits per signup, balance capped at 2,000 | Standard new-user credits only, no extra for being referred | high | 2026-10-01 |
+| **HeyGen** | Video avatars | referrer-only | 5,000 generative credits and a 6-month Creator trial for accepted ambassadors | Nothing documented | medium | 2026-10-01 |
+| **Tactiq** | Meeting AI | referrer-only | 5 free meeting credits plus 1 AI credit per successful referral | Nothing documented | high | 2026-10-01 |
 | **v0 (Vercel)** | App builders | referrer-only | 5 credits per friend | Standard new-user credits only | low | 2026-05-14 |
-| **ElevenLabs** | Voice AI | affiliate | 22 percent of payments on Starter, Creator, Pro and Scale for the first 12 months, 11 percent on Business, via PartnerStack, attributed within 90 days | Nothing. Confirmed 2026-09-17 against the affiliate terms and the partner guide, neither of which documents any discount, credit or trial for the person who clicks. | high | 2026-09-17 |
+| **ElevenLabs** | Voice AI | affiliate | 22 percent of payments on Starter, Creator, Pro and Scale for the first 12 months, 11 percent on Business, via PartnerStack, attributed within 90 days | Nothing. Confirmed 2026-09-17 against the affiliate terms and the partner guide, neither of which documents any discount, credit or trial for the person who clicks. | high | 2026-10-01 |
+| **Heptabase** | Notes | affiliate | 20 percent lifetime commission per subscriber, by application for content creators | Nothing documented | medium | 2026-10-01 |
+| **Synthesia** | Video generation | affiliate | Recurring commission via the affiliate programme | Nothing documented | low | 2026-10-01 |
 | **Decktopus** | Slides | affiliate | Up to 50 percent commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
-| **Synthesia** | Video generation | affiliate | Recurring commission via the affiliate programme | Nothing documented | low | 2026-05-14 |
 
 Caveats and sources:
 
@@ -844,24 +852,21 @@ Caveats and sources:
 - **Kling AI**: Only users who have already bought an individual plan can generate a code, and the friend must be a first-time individual-plan buyer. Credits land within an hour and expire after 31 days. Run as a limited-time campaign, so confirm it is live. Added 2026-08-18. Source: https://kling.ai/app/invitation
 - **Descript**: Moved in from ruled_out on 2026-08-18 when the bar widened. Referrals must be new users with no prior account. Paid within 7 days of first payment. Unlimited referrals. Source: https://www.descript.com/
 - **HeyGen**: Moved in from ruled_out on 2026-08-18 when the bar widened. This is an ambassador programme with an application, not a self-serve referral link. The older two-sided article is gone (404). Source: https://help.heygen.com/en/articles/14648487-heygen-ambassador-program-faq
-- **ElevenLabs**: Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. The terms prohibit affiliates from making promises to users about coupons or cash back, so a one-sided link must be labelled as one. Commission is on the paid platform plans, so the free ElevenReader student year earns nothing. Source: https://elevenlabs.io/affiliates-terms
-- **Synthesia**: Moved in from ruled_out on 2026-08-18. Affiliate commission only, no peer benefit. Rate not re-verified. Source: https://www.synthesia.io/affiliate-program
+- **ElevenLabs**: Moved in from ruled_out on 2026-08-18. Commission to the sharer, not a peer reward. The terms prohibit affiliates from making promises to users about coupons or cash back, so a one-sided link must be labelled as one. Since 2026-09-25 the student offer includes 3 months of the Creator plan, which is commissionable once a student keeps paying. Source: https://elevenlabs.io/affiliates-terms
+- **Synthesia**: Moved in from ruled_out on 2026-08-18. Affiliate commission only, no peer benefit. Rate not re-verified. Source: https://www.synthesia.io/partners
 - **Decktopus**: Moved in from ruled_out on 2026-08-18. Affiliate commission only. Rate not re-verified. Source: https://www.decktopus.com/
-- **Runway**: Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks. Source: https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes
-- **Krisp**: NOT re-verified on 2026-08-18: the help centre returned 403 to automated checks. Source: https://help.krisp.ai/hc/en-us/articles/360017349600-Tracking-your-referrals
+- **Runway**: Both sides must subscribe to a paid plan within 7 days and stay paid for 2 months. Moving to a cheaper paid plan keeps the reward; dropping to free does not. No referral limit. Source: https://help.runwayml.com/hc/en-us/articles/45681304402707-How-do-I-use-referral-codes
 - **Windsurf**: Friend must upgrade to Pro for the full reward. NOT re-verified on 2026-08-18: the referrals page served FAQ headings with no answers. Source: https://windsurf.com/refer
-- **Bolt.new**: Two-tier. The 5M bonus requires the referrer to also be on Pro. Not re-verified on 2026-08-18. Source: https://support.bolt.new/external-resources/referral-program
-- **StackBlitz**: Same mechanic as Bolt.new, its parent platform. Not re-verified on 2026-08-18. Source: https://stackblitz.mintlify.app/external-resources/referral-program
-- **Tactiq**: Friend must be brand new to Tactiq. Not re-verified on 2026-08-18. Source: https://help.tactiq.io/en/articles/9403567-how-do-i-sign-up-for-a-tactiq-account
-- **Fireflies.ai**: New users only. Reward is small on the free tier. Not re-verified on 2026-08-18. Source: https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program
-- **Tome**: Friend must upgrade to Pro for the reward to fire. Source is a third-party invite-code site, not a vendor page. Not re-verified on 2026-08-18. Source: https://invitation.codes/tome
-- **Replit**: Reclassified from two-sided to referrer-only on 2026-08-18. Friend must upgrade to paid Core. Not re-verified. Source: https://replit.com/refer
+- **Bolt.new**: Rewards fire only on paid subscriptions, and the link lives on a personal account under Earn 50 USD in the sidebar. This replaced the earlier token-based scheme. Source: https://support.bolt.new/external-resources/referral-program
+- **StackBlitz**: StackBlitz's referral page now serves the Bolt programme word for word, so these are Bolt's terms. Source: https://stackblitz.mintlify.app/external-resources/referral-program
+- **Tactiq**: Reclassified from two-sided to referrer-only on 2026-10-01. The friend must be new to Tactiq. The earlier monthly AI credit and invitee reward are no longer documented. Source: https://help.tactiq.io/en/articles/15472739-how-to-earn-free-meetings-and-ai-credits-with-tactiq-s-invite-a-friend-program
+- **Fireflies.ai**: New users only. Credit applies to future payments, including plan renewals and AI credit purchases. Source: https://guide.fireflies.ai/articles/5301758065-learn-about-the-fireflies-referral-program
+- **Replit**: Reclassified back to two-sided on 2026-10-01 when the page changed. Rewards fire only when the friend becomes a paying customer, and Replit says the terms can change at any time. Source: https://replit.com/refer
 - **Lovable**: Referrer must publish a first site. Some reports say a paid plan is required. Only third-party sources found on 2026-08-18; the vendor states terms in the account dashboard rather than a public page. Source: https://lovable.dev/faq/referral
 - **v0 (Vercel)**: Reclassified from two-sided to referrer-only on 2026-08-18. Community reports of credits not applying. Only a community thread found, no vendor page. Source: https://community.vercel.com/t/referral-code/28465
 - **Shortwave**: Friend must upgrade. Source is an official social post from 2023. Verify in-app. Not re-verified on 2026-08-18. Source: https://x.com/Shortwave/status/1722728816488137018
-- **Gamma**: Reclassified from two-sided to referrer-only on 2026-08-18, which is what the mechanic always was. Not re-verified. Source: https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma
-- **Heptabase**: Friend must complete the trial and subscribe. One-time. Not re-verified on 2026-08-18. Source: https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a
-- **Scite**: Reclassified from two-sided to referrer-only on 2026-08-18. Weakly documented. Not re-verified. Source: https://scite.ai/affiliate
+- **Gamma**: Referral credits are for Free-plan users only, and a Free account holds at most 2,000 credits at a time. Reclassified from two-sided to referrer-only on 2026-08-18, which is what the mechanic always was. Source: https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma
+- **Heptabase**: The page this row cites describes only the creator affiliate programme. The earlier 5 USD two-sided referral is not documented on any current page. Source: https://support.heptabase.com/en/articles/10733047-affiliate-program-q-a
 
 ### Tracked tools that also run a referral programme
 
@@ -889,10 +894,13 @@ Credible third-party reporting describes these. None could be verified on the ve
 - **ChatGPT (OpenAI)**: Invite-only referral granting a free month of Plus. *Why unconfirmed:* Described as a narrow pilot limited to specific universities in Australia and Colombia. No general programme found on OpenAI's own pages.
 - **Meshy, Evoto, Virbo, AI Collab, MindMap AI**: Various two-sided credit bonuses surfaced during discovery. *Why unconfirmed:* Not verified on vendor pages and all are narrow-use tools with little relevance to this guide's audience. Listed only so they are not re-probed.
 
-## Probed and ruled out (audited 2026-05-14)
+## Probed and ruled out (audited 2026-10-01)
 
 Listed so they are not re-probed every cycle.
 
+- **Krisp**: Referral help article and krisp.ai/referral both 404 as of 2026-10-01.
+- **Tome**: tome.app no longer resolves to a product (deployment not found) as of 2026-10-01.
+- **Scite**: Affiliate page 404 as of 2026-10-01. Scite is now part of Research Solutions.
 - **Read.ai**: No public peer-referral programme.
 - **DeepL**: Affiliate-only.
 - **Mem.ai**: Invitations are for collaboration, not rewarded referrals.
@@ -927,6 +935,13 @@ Listed so they are not re-probed every cycle.
 
 ## Validation log
 
+- **2026-10-01** Full review against vendor pages. Every published entry was re-checked, and last_checked moves to 2026-10-01 wherever a vendor page confirmed it. Help centres that block automated checks were read through their public API (Otter, Runway, Midjourney) or the vendor's own indexed article (Perplexity, Consensus).
+- **2026-10-01** Wispr Flow corrected. Its help centre now says .edu and recognised university addresses get the student rate automatically at signup, the opposite of what support told this guide in August. Verification and the onboarding steps are rewritten so readers sign up with their school email first and only send proof if that fails. Also recorded: some universities now get Flow free outright, and the referral terms changed.
+- **2026-10-01** Speechify ended. Its 25 percent university discount is gone from UNiDAYS and Student Beans, and its student page redirects to the homepage. The end date is not published, so 2026-10-01 records when it was found gone.
+- **2026-10-01** Beautiful.ai's process changed. The old help article is gone, and the free Pro year now means creating an account with a .edu address and emailing support, rather than receiving a coupon automatically.
+- **2026-10-01** Smaller corrections. Notion's plan is now just the Education Plan, with a free unlimited-member plan for student organisations. Zed's student plan excludes Claude Fable, Claude Opus and GPT Pro models. Gemini's 4-year limit belongs to the YouTube Premium bundle, not the free year. Amp is designed to run on a ChatGPT or SuperGrok subscription. Microsoft 365 needs a personal account rather than a school one. Otter covers teachers and staff. Adobe is now confirmed by a direct fetch. Consensus is described as 40 percent off paid plans while its plan naming is unclear.
+- **2026-10-01** Excluded entries. NotebookLM is now Gemini Notebook. Gemini CLI's unpaid API key now gets 1,000 requests a day across Flash and Pro, not 250 Flash-only, so the advice to avoid it is withdrawn. Claude's campus programme now runs three tracks with a published 3,600 USD stipend, and a new Team plan for scientists gives research groups free seats through their PI. Microsoft 365 Copilot Chat is now Microsoft Copilot Chat.
+- **2026-10-01** Referral programmes re-audited. Bolt, StackBlitz, Replit, Fireflies, Tactiq and Heptabase rewritten to their current terms; Krisp, Tome and Scite moved to ruled out. Unpublished: Tabnine's site now redirects to Tricentis.
 - **2026-10-01** ElevenLabs rewritten: the student offer got much bigger and the entry was wrong. ElevenLabs for Students launched 2026-09-25, eight days after this entry was first checked, and adds 3 months of the Creator plan across ElevenCreative, ElevenAgents and the ElevenAPI on top of the year of ElevenReader Ultra. The old caveat saying the main voice platform was not part of the student offer has been removed, because it no longer is true. Sourced from the launch post and the students page.
 - **2026-10-01** Recorded that the two halves are gated differently. The platform plan goes by country and age, covering university students 18 and over in the US, Canada, the EU27, Australia and the UK. The ElevenReader year keeps its institution allowlist. You can qualify for one and not the other.
 - **2026-10-01** Referral disclosure adjusted. Creator is a commissionable plan, so the link can now earn something if a reader keeps paying past the free months, where before the recommended path earned nothing at all. Still nothing for the reader, and still labelled that way.
